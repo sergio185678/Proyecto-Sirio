@@ -1,30 +1,52 @@
-*{
+* {
     background-color: #141D2E;
     padding: 0;
+    margin: 0;
 }
 
-.container-fluid{
+.container-fluid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
     font-family: 'Roboto';
-    font-size: medium;
     font-weight: bolder;
-    padding: 40px 149px 40px 149px;
+    padding: 40px 32px;
+}
+.navbar-collapse{
+    align-items: start;
+}
+.navbar-brand{
+    grid-column: 2 / span 4;
 }
 .navbar-nav{
-    padding-right: 14px;
+    grid-column: 6 / span 6;
+    gap: 32px;
 }
-.navbar-nav .nav-item .nav-link.active {
+.navbar-nav .nav-link.active {
     padding-bottom: 10.5px;
     border-bottom: 3px solid white;
 }
-
-.navbar-nav .nav-item:not(:last-child) .nav-link {
-    margin-right: 32px;
+.navbar-nav .nav-item{
+    text-align: center;
+}
+.navbar-nav a{
+    color: white;
+    width: 86px;
+}
+.navbar-nav  a:hover{
+    color: #0047FF;
 }
 
 @media (max-width: 1034px) {
+    
     .navbar-brand{
-      padding-bottom: 30px; /* Adjust this value to control the spacing */
+        padding-bottom: 30px;
     }
+    .navbar-nav{
+        justify-content: start;
+        align-items: start;
+    }
+
     .navbar-nav .nav-item:not(:last-child) .nav-link {
         margin-bottom: 8px;
         padding-bottom: 2px;
