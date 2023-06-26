@@ -1,12 +1,17 @@
 *{
     background-color: #141D2E;
     padding: 0;
-    color: aliceblue;
+    color: white;
 }
 
 .container-fluid{
+    font-family: 'Roboto';
+    font-size: 20px;
     padding: 40px 149px 40px 149px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+}
+.navbar-nav{
+    padding-right: 14px;
+}
+.navbar-toggler-icon {
+    
 }
