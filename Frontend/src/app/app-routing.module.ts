@@ -7,7 +7,7 @@ import { NoticiasComponent } from './components/noticias/noticias.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'/Inicio',pathMatch:'full'},
+  {path:'',redirectTo:'Inicio',pathMatch:'full'},
   {path:'Inicio',component:InicioComponent},
   {path:'Acerca',component:AcercaComponent},
   {path:'Proyectos',component:ProyectosComponent,
