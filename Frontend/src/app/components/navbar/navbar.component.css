@@ -1,0 +1,12 @@
+*{
+    background-color: #141D2E;
+    padding: 0;
+    color: aliceblue;
+}
+
+.container-fluid{
+    padding: 40px 149px 40px 149px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
