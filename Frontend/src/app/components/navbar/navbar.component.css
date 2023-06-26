@@ -1,17 +1,36 @@
 *{
     background-color: #141D2E;
     padding: 0;
-    color: white;
 }
 
 .container-fluid{
     font-family: 'Roboto';
-    font-size: 20px;
+    font-size: medium;
+    font-weight: bolder;
     padding: 40px 149px 40px 149px;
 }
 .navbar-nav{
     padding-right: 14px;
 }
+.navbar-nav .nav-item .nav-link.active {
+    padding-bottom: 10.5px;
+    border-bottom: 3px solid white;
+}
+
+.navbar-nav .nav-item:not(:last-child) .nav-link {
+    margin-right: 32px;
+}
+
+@media (max-width: 1034px) {
+    .navbar-brand{
+      padding-bottom: 30px; /* Adjust this value to control the spacing */
+    }
+    .navbar-nav .nav-item:not(:last-child) .nav-link {
+        margin-bottom: 8px;
+        padding-bottom: 2px;
+    }
+  }
+  
 .navbar-toggler-icon {
     
 }
