@@ -1,2 +1,46 @@
 <app-navbar></app-navbar>
-<p>contacto works!</p>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="contacto.component.css">
+
+<div class="grid-layout">
+
+  <div class="title">
+    <h1>Contáctanos</h1>
+  </div>
+  <form class="form">
+    <div class="form-group">
+      <input type="text" class="form-control" id="name" placeholder="Nombre" [(ngModel)]="name">
+      <br>
+      <input type="text" class="form-control" id="email" placeholder="Correo" [(ngModel)]="email">
+      <br>
+      <textarea class="form-text" id="message" placeholder="Escribe tu mensaje" [(ngModel)]="message"></textarea>
+
+
+    </div>
+  </form>
+
+  <div class="buttonDiv">
+    <button>
+      <h2><a>Enviar</a></h2>
+    </button>
+  </div>
+
+  <div class="contactInfo">
+    <p>✉ Sirio@Sirio.com</p>
+    <p>☏ +987 6541 3654</p>
+  </div>
+  <div class="socialMedia">
+    <a target="_blank" href="https://es-la.facebook.com/"><img src="../../../assets/images/contact/fb.png"></a>
+    <a target="_blank" href="https://twitter.com/"><img src="../../../assets/images/contact/tw.png"></a>
+    <a target="_blank" href="https://linkedin.com/"><img src="../../../assets/images/contact/link.png"></a>
+    <a target="_blank" href="https://www.instagram.com/"><img src="../../../assets/images/contact/ins.png"></a>
+  </div>
+  <div class="background">
+
+  </div>
+</div>
