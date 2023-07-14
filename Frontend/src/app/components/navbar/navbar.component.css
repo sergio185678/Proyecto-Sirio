@@ -6,8 +6,8 @@
 }
 
 .navbar{
-    /* display: flex; */
-    /* justify-content: center; */
+    display: flex;
+    flex-wrap: wrap; 
 }
 
 .container-fluid {
@@ -23,7 +23,7 @@
 .navbar-brand{
     grid-column: 2 / span 3;
     padding-bottom: 30px;
-}
+}  
 
 .navbarNav{
     grid-column: 11 / span 1;

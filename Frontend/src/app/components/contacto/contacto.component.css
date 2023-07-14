@@ -1,11 +1,10 @@
-body{
-  background-image: url("../../../assets/images/contact/background.jpg");
+.grid-layout{
+  background-image: url("../../../assets/images/contact/background2.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   margin:0;
 }
-
 .grid-layout{
   display: grid;
   grid-template-columns: repeat(12,auto);
@@ -16,7 +15,6 @@ body{
 a{
   cursor: pointer;
 }
-
 .container{
   grid-column: 4/ span 6;
   grid-row: 1/ span 6;
@@ -31,8 +29,8 @@ a{
   font-family: 'Martel', serif;
   font-size: 8vh;
 }
-/*Form*/
 
+/*Form*/
 .form{
   grid-column: 4 /span  6;
 }
@@ -57,10 +55,10 @@ a{
 .form-control::placeholder {
   font-family: 'Martel', serif;
 }
-
 .form-text::placeholder {
   font-family: 'Martel', serif;
 }
+
 /*Button*/
 .buttonDiv{
   grid-column: 6 / span  2;
@@ -95,6 +93,7 @@ a{
 .socialMedia img{
   height: 50px;
 }
+
 /*Background*/
 .background{
   position: absolute;
