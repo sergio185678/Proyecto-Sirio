@@ -9,24 +9,32 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 32px;
+    align-items: center;
     font-family: 'Roboto';
     font-size: 20px;
     padding: 40px 32px;
 }
 
 .navbar-brand{
-    grid-column: 2 / 4;
+    grid-column: 2 / span 2;
 }
 .navbar-nav{
-    grid-column: 11 / -1;
+    grid-column: 11 / span 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-nav ul{
+    display: flex;
+    flex-direction: row-reverse;
 }
 .navbar-nav li{
-    max-width: 86px;
+    margin-left: 32px;
+    /* max-width: 86px; */
 }
 
 @media (min-width: 992px){
     .navbar-expand-lg .navbar-collapse {
-        display: block !important;
+        /* display: block !important; */
     }
 }
 .navbar-nav .nav-link.active {
