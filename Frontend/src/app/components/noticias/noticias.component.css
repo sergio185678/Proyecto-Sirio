@@ -1,0 +1,14 @@
+body{
+  background-image: url("../../../assets/images/contact/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin:0;
+}
+.grid-layout{
+  display: grid;
+  grid-template-columns: repeat(12,auto);
+
+  gap:32px;
+  text-align: center;
+}
