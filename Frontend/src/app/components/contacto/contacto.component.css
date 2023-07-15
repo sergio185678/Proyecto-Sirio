@@ -1,4 +1,4 @@
-.grid-layout{
+body{
   background-image: url("../../../assets/images/contact/background2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +72,7 @@ a{
   text-align: center;
   cursor: pointer;
 }
-.buttonDiv h2{
+.buttonDiv p{
   font-family: 'Alfa Slab One', cursive;
   font-size: 2.4vh;
 }
