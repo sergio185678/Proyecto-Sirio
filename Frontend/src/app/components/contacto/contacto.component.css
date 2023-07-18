@@ -7,7 +7,7 @@ body{
 }
 .grid-layout{
   display: grid;
-  grid-template-columns: repeat(12,auto);
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 
   gap:32px;
   text-align: center;
@@ -22,12 +22,13 @@ a{
 
 /*title*/
 .title{
-  grid-column: 4/ span 6;
+  grid-column: span 12;
   color: white;
 }
 .title h1{
   font-family: 'Martel', serif;
   font-size: 8vh;
+
 }
 
 /*Form*/
@@ -41,6 +42,7 @@ a{
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
+  background-color:#D0D0D0 ;
 }
 .form-text{
   border-radius: 10px;
@@ -51,6 +53,7 @@ a{
   width: 100%;
   height: 100px;
   text-align: left;
+  background-color:#D0D0D0 ;
 }
 .form-control::placeholder {
   font-family: 'Martel', serif;
@@ -64,8 +67,8 @@ a{
   grid-column: 6 / span  2;
 }
 .buttonDiv button{
-  width: 60%;
-  border-radius: 29px;
+  width: 15vh;
+  border-radius: 15px;
   border: none;
   background-color: #050D24;
   color: white;
@@ -82,16 +85,18 @@ a{
   grid-column: 6 / span 2;
   color: white;
   text-align: center;
+  justify-content: center;
 }
 .contactInfo p{
-  font-size: 15px;
+  font-size: 2.5vh;
   font-family: 'Roboto', sans-serif;
 }
 .socialMedia{
   grid-column: 5/ span 4;
 }
 .socialMedia img{
-  height: 50px;
+  height: 10vh;
+  padding: 3vh;
 }
 
 /*Background*/
