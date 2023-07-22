@@ -26,6 +26,14 @@ h1{
 p{
   font-family: 'Roboto', serif;
 }
+
+/*news*/
+.new{
+  grid-column: 6/ span 2;
+  display: flex;
+}
+
+
 /*newsimages*/
 .news1{
   grid-column: 2/ span 4;
@@ -40,6 +48,7 @@ p{
   grid-column: 2/ span 4;
   height: 40vh;
 }
+
 /*InfoNews*/
 .newsDetails1{
   grid-column: 6/ span 6;
