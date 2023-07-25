@@ -1,109 +1,127 @@
-body{
-  background-image: url("../../../assets/images/contact/background2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin:0;
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    gap: 32px;
+    text-align: center;
+    background-image: url("../../../assets/images/contact/background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0;
 }
-.grid-layout{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 
-  gap:32px;
-  text-align: center;
+a {
+    cursor: pointer;
 }
-a{
-  cursor: pointer;
+
+.container {
+    grid-column: 4/ span 6;
+    grid-row: 1/ span 6;
 }
-.container{
-  grid-column: 4/ span 6;
-  grid-row: 1/ span 6;
-}
+
 
 /*title*/
-.title{
-  grid-column: span 12;
-  color: white;
-}
-.title h1{
-  font-family: 'Martel', serif;
-  font-size: 8vh;
 
+.title {
+    grid-column: span 12;
+    color: white;
 }
+
+.title h1 {
+    font-family: 'Martel', serif;
+    font-size: 8vh;
+}
+
 
 /*Form*/
-.form{
-  grid-column: 4 /span  6;
+
+.form {
+    grid-column: 4 /span 6;
 }
-.form-control{
-  border-radius: 10px;
-  border: none;
-  padding: 17px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 100%;
-  background-color:#D0D0D0 ;
+
+.form-control {
+    border-radius: 10px;
+    border: none;
+    padding: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #D0D0D0;
 }
-.form-text{
-  border-radius: 10px;
-  border: none;
-  padding: 17px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 100%;
-  height: 100px;
-  text-align: left;
-  background-color:#D0D0D0 ;
+
+.form-text {
+    border-radius: 10px;
+    border: none;
+    padding: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    background-color: #D0D0D0;
 }
+
 .form-control::placeholder {
-  font-family: 'Martel', serif;
+    font-family: 'Martel', serif;
 }
+
 .form-text::placeholder {
-  font-family: 'Martel', serif;
+    font-family: 'Martel', serif;
 }
+
 
 /*Button*/
-.buttonDiv{
-  grid-column: 6 / span  2;
+
+.buttonDiv {
+    grid-column: 6 / span 2;
 }
-.buttonDiv button{
-  width: 15vh;
-  border-radius: 15px;
-  border: none;
-  background-color: #050D24;
-  color: white;
-  text-align: center;
-  cursor: pointer;
+
+.buttonDiv button {
+    width: 15vh;
+    border-radius: 15px;
+    border: none;
+    background-color: #050D24;
+    color: white;
+    text-align: center;
+    cursor: pointer;
 }
-.buttonDiv p{
-  font-family: 'Alfa Slab One', cursive;
-  font-size: 2.4vh;
+
+.buttonDiv p {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2.4vh;
 }
+
 
 /*Contact info*/
-.contactInfo{
-  grid-column: 6 / span 2;
-  color: white;
-  text-align: center;
-  justify-content: center;
-}
-.contactInfo p{
-  font-size: 2.5vh;
-  font-family: 'Roboto', sans-serif;
-}
-.socialMedia{
-  grid-column: 5/ span 4;
-}
-.socialMedia img{
-  height: 10vh;
-  padding: 3vh;
+
+.contactInfo {
+    grid-column: 6 / span 2;
+    color: white;
+    text-align: center;
+    justify-content: center;
 }
 
+.contactInfo p {
+    font-size: 2.5vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.socialMedia {
+    grid-column: 5/ span 4;
+}
+
+.socialMedia img {
+    height: 10vh;
+    padding: 3vh;
+}
+
+
 /*Background*/
-.background{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  z-index: -1;
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
