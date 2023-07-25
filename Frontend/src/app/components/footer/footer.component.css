@@ -1,0 +1,33 @@
+body{
+  background-image: url("../../../assets/images/contact/background2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin:5%;
+  color: white;
+}
+
+.grid-layout
+{
+  float: left;
+  width: 50%;
+}
+
+.parte-derecha
+{
+  float: right;
+  width: 45%;
+}
+.parte-derecha-paginas-hr{
+  padding: 0px;
+  color: blue;
+}
+.socialMedia
+{
+  padding: 10px;
+  
+}
+.socialMedia img{
+  height: 50px;
+  padding: 20px;
+}
