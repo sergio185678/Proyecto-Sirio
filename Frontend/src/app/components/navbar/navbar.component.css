@@ -63,6 +63,33 @@
     margin-bottom: 8px;
 }
 
+@media (max-width: 1320px) {
+    .navbar-collapse {
+        grid-column: 6 / span 1;
+    }
+    .navbar-brand {
+        grid-column: 2 / span 1;
+        padding-bottom: 32px;
+    }
+    .navbar-brand img {
+        width: 120px;
+        height: 124px;
+    }
+    .navbar-toggler {
+        font-size: large;
+    }
+    .navbar>.container-fluid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 40px;
+        align-items: center;
+        font-family: 'Roboto';
+        font-size: 30px;
+        padding: 60px 50px;
+        width: fit-content;
+    }
+}
+
 @media (max-width: 992px) {
     .navbar-collapse {
         grid-column: 6 / span 1;
