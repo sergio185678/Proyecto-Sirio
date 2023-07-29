@@ -1,13 +1,15 @@
+body{
+  background-image: url("../../../assets/images/contact/background2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+}
 .grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
     gap: 32px;
     text-align: center;
-    background-image: url("../../../assets/images/contact/background2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin: 0;
 }
 
 a {
@@ -77,8 +79,7 @@ a {
 }
 
 .buttonDiv button {
-    width: 10vw;
-    height: 8vh;
+    width: 15vh;
     border-radius: 15px;
     border: none;
     background-color: #050D24;
@@ -88,7 +89,6 @@ a {
 }
 
 .buttonDiv p {
-    margin: 0;
     font-family: 'Alfa Slab One', cursive;
     font-size: 2.4vh;
 }
