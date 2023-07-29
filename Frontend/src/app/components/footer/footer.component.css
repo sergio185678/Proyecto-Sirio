@@ -1,27 +1,21 @@
-body{
-  background-image: url("../../../assets/images/contact/background2.png");
+.grid-layout
+{
+  background-image: url("../../../assets/images/footer/footer.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin:5%;
   color: white;
 }
-
-.grid-layout
-{
-  float: left;
-  width: 50%;
+#bloque-superior{
+  /*padre grid*/
 }
-
-.parte-derecha
-{
-  float: right;
-  width: 45%;
+#parte-izquierda{
+  /*especificar sus columnas*/
 }
-.parte-derecha-paginas-hr{
-  padding: 0px;
-  color: blue;
+#parte-derecha{
+  /*especificar sus columnas*/
 }
+/*similar as la parte inferior*/
 .socialMedia
 {
   padding: 10px;
