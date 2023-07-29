@@ -79,7 +79,8 @@ a {
 }
 
 .buttonDiv button {
-    width: 15vh;
+    padding-right: 3vh;
+    padding-left: 3vh;
     border-radius: 15px;
     border: none;
     background-color: #050D24;
@@ -113,8 +114,8 @@ a {
 }
 
 .socialMedia img {
-    height: 10vh;
-    padding: 3vh;
+    height: 5vw;
+    padding: 1vw;
 }
 
 
@@ -127,3 +128,4 @@ a {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
+
