@@ -7,19 +7,31 @@
   color: white;
 }
 #bloque-superior{
-  /*padre grid*/
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 #parte-izquierda{
-  /*especificar sus columnas*/
+  padding: 3em;
 }
 #parte-derecha{
-  /*especificar sus columnas*/
+  padding: 3em;
 }
+
 /*similar as la parte inferior*/
+
+#bloque-inferior{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.copyright
+{
+  display: grid;
+  padding: 3em;
+}
 .socialMedia
 {
-  padding: 10px;
-  
+  gap: 5em;
 }
 .socialMedia img{
   height: 50px;
