@@ -88,7 +88,9 @@ a {
     text-align: center;
     cursor: pointer;
 }
-
+.buttonDiv button:hover{
+  background-color: #061C5B;
+}
 .buttonDiv p {
     font-family: 'Alfa Slab One', cursive;
     font-size: 2.4vh;
@@ -100,8 +102,6 @@ a {
 .contactInfo {
     grid-column: 6 / span 2;
     color: white;
-    text-align: center;
-    justify-content: center;
 }
 
 .contactInfo p {
