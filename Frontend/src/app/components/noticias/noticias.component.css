@@ -85,6 +85,9 @@ button{
   border-radius: 29px;
   margin: 10px;
 }
+button>p{
+  margin: 15px;
+}
 /*Background*/
 .background{
   position: absolute;
