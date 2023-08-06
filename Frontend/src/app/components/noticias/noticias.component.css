@@ -61,9 +61,11 @@ p{
   background-color: #01111B;
   text-align: center;
   color: white;
-  border-radius: 29px;
+  border-radius: 39px;
   padding: 15px;
   margin-left: 20px;
+  height: 40vh;
+  align-items: baseline;
 
 }
 .newsDetails2{
@@ -72,18 +74,20 @@ p{
   background-color: #01111B;
   text-align: center;
   color: white;
-  border-radius: 29px;
+  border-radius: 39px;
   padding: 15px;
   margin-left: 20px;
+  height: 40vh;
 }
 .newsDetails3{
   grid-column: 6/ span 6;
   background-color: #01111B;
   text-align: center;
   color: white;
-  border-radius: 29px;
+  border-radius: 39px;
   padding: 15px;
   margin-left: 20px;
+  height: 40vh;
 }
 button{
   border: 1px solid white;
@@ -91,6 +95,8 @@ button{
   color: white;
   border-radius: 29px;
   margin: 10px;
+
+
 }
 button>p{
   margin: 15px;
