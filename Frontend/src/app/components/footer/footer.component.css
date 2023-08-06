@@ -7,33 +7,53 @@
   color: white;
 }
 #bloque-superior{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 #parte-izquierda{
-  padding: 3em;
+    padding-top:3em;
+    padding-right:0em ;
+    padding-bottom: 0em;
+    padding-left: 10em;
+    font-size: 23px;
 }
 #parte-derecha{
-  padding: 3em;
+    padding-top:3em;
+  padding-right:0em ;
+  padding-bottom: 0em;
+  padding-left: 3em;
+  font-size: 23px;
 }
-
+.enlace{
+    text-decoration: none;
+    color: white;
+}
+ 
+.hr{
+    width:30%; 
+}
 /*similar as la parte inferior*/
-
 #bloque-inferior{
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
-
 .copyright
 {
   display: grid;
-  padding: 3em;
+  padding-top:0em;
+    padding-right:0em ;
+    padding-bottom: 0em;
+    padding-left: 10em;
+    font-size: 23px;
 }
 .socialMedia
 {
-  gap: 5em;
+  padding-top:0em;
+  padding-right:0em ;
+  padding-bottom: 0em;
+  padding-left: 6em;
 }
 .socialMedia img{
-  height: 50px;
-  padding: 20px;
+  height: 7vh;
+  padding: 1vh;
 }
