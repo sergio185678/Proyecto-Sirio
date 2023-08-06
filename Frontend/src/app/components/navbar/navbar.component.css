@@ -7,7 +7,7 @@
 
 .navbar {
     display: grid;
-    width: 100vw;
+    /* width: 100vw; */
     justify-content: unset;
 }
 
@@ -18,7 +18,7 @@
     font-family: 'Roboto';
     font-size: 20px;
     padding: 40px 32px;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 .navbar-brand {
@@ -67,20 +67,16 @@
     .navbar-toggler {
         font-size: larger;
     }
-    .navbar {
-        display: grid;
-        width: 100vw;
-    }
     .navbar>.container-fluid {
-        font-size: 30px;
-        padding: 40px 32px;
+        font-size: 24px;
+        padding: 16px 24px;
         max-width: 2560px;
     }
     .navbar-brand {
-        padding-bottom: 30px;
+        padding-bottom: 12px;
     }
     .navbar-nav .nav-item {
-        margin-left: 64px;
+        margin-left: 32px;
         text-align: center;
     }
     .navbar-brand img {
@@ -100,20 +96,16 @@
     .navbar-toggler {
         font-size: large;
     }
-    .navbar {
-        display: grid;
-        width: 100vw;
-    }
     .navbar>.container-fluid {
         font-size: 20px;
-        padding: 32px 24px;
+        padding: 14px 20px;
         max-width: 1440px;
     }
     .navbar-brand {
-        padding-bottom: 22px;
+        padding-bottom: 10px;
     }
     .navbar-nav .nav-item {
-        margin-left: 48px;
+        margin-left: 24px;
         text-align: center;
     }
     .navbar-brand img {
@@ -133,20 +125,16 @@
     .navbar-toggler {
         font-size: medium;
     }
-    .navbar {
-        display: grid;
-        width: 100vw;
-    }
     .navbar>.container-fluid {
         font-size: 16px;
-        padding: 24px 16px;
+        padding: 12px 18px;
         max-width: 1024px;
     }
     .navbar-brand {
-        padding-bottom: 18px;
+        padding-bottom: 8px;
     }
     .navbar-nav .nav-item {
-        margin-left: 24px;
+        margin-left: 16px;
         text-align: center;
     }
     .navbar-brand img {
@@ -163,20 +151,12 @@
 }
 
 @media (max-width: 992px) {
-    .navbar {
-        display: grid;
-        width: 100vw;
-    }
     .navbar-collapse {
         grid-column: 6 / span 1;
     }
 }
 
 @media (min-width: 992px) {
-    .navbar {
-        display: grid;
-        width: 100vw;
-    }
     .navbar-collapse {
         grid-column: 11 / span 1;
     }
@@ -184,22 +164,18 @@
 
 @media (max-width: 768px) {
     .navbar-toggler {
-        font-size: small;
-    }
-    .navbar {
-        display: grid;
-        width: 100vw;
+        font-size: medium;
     }
     .navbar>.container-fluid {
         font-size: 14px;
-        padding: 22px 14px;
+        padding: 10px 16px;
         max-width: 768px;
     }
     .navbar-brand {
-        padding-bottom: 16px;
+        padding-bottom: 6px;
     }
     .navbar-nav .nav-item {
-        margin-left: 24px;
+        margin-left: 14px;
         text-align: center;
     }
     .navbar-brand img {
@@ -207,8 +183,8 @@
         height: max-content;
     }
     .navbar-nav .nav-link.active {
-        padding-bottom: 10.5px;
-        border-bottom: 3px solid white;
+        padding-bottom: 1px;
+        border-bottom: 2px solid white;
     }
     .navbar-nav .nav-item:not(:last-child) .nav-link {
         margin-bottom: 4px;
@@ -216,101 +192,85 @@
 }
 
 @media (max-width: 425px) {
-    .navbar {
-        display: grid;
-        width: 100vw;
-        justify-content: unset;
-    }
     .navbar-toggler {
-        font-size: xx-small;
-        width: 27px;
-    }
-    .navbar>.container-fluid {
-        font-size: 14px;
-        max-width: 425px;
-    }
-    .navbar-brand {
-        padding-bottom: 12px;
-    }
-    .navbar-nav .nav-item {
-        margin-left: 16px;
-        text-align: center;
-    }
-    .navbar-brand img {
-        width: 48px;
-        height: max-content;
-    }
-    .navbar-nav .nav-link.active {
-        padding-bottom: 10.5px;
-        border-bottom: 3px solid white;
-    }
-    .navbar-nav .nav-item:not(:last-child) .nav-link {
-        margin-bottom: 2px;
-    }
-}
-
-@media (max-width: 375px) {
-    .navbar {
-        display: grid;
-        width: 100vw;
-        justify-content: unset;
-    }
-    .navbar-toggler {
-        font-size: x-small;
-    }
-    .navbar>.container-fluid {
-        font-size: 12px;
-        max-width: 375px;
-    }
-    .navbar-brand {
-        padding-bottom: 12px;
-    }
-    .navbar-nav .nav-item {
-        margin-left: 16px;
-        text-align: center;
-    }
-    .navbar-brand img {
-        width: 48px;
-        height: max-content;
-    }
-    .navbar-nav .nav-link.active {
-        padding-bottom: 10.5px;
-        border-bottom: 3px solid white;
-    }
-    .navbar-nav .nav-item:not(:last-child) .nav-link {
-        margin-bottom: 2px;
-    }
-}
-
-@media (max-width: 320px) {
-    .navbar {
-        display: grid;
-        width: 100vw;
-        justify-content: unset;
-    }
-    .navbar-toggler {
-        font-size: xx-small;
+        font-size: medium;
     }
     .navbar>.container-fluid {
         font-size: 10px;
-        max-width: 320px;
+        max-width: 425px;
     }
     .navbar-brand {
-        padding-bottom: 8px;
+        padding-bottom: 4px;
     }
     .navbar-nav .nav-item {
         margin-left: 14px;
         text-align: center;
     }
     .navbar-brand img {
-        width: 40px;
+        width: 56px;
         height: max-content;
     }
     .navbar-nav .nav-link.active {
-        padding-bottom: 10.5px;
-        border-bottom: 3px solid white;
+        padding-bottom: 1px;
+        border-bottom: 2px solid white;
     }
     .navbar-nav .nav-item:not(:last-child) .nav-link {
-        margin-bottom: 2px;
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar-toggler {
+        font-size: medium;
+    }
+    .navbar>.container-fluid {
+        font-size: 8px;
+        max-width: 375px;
+    }
+    .navbar-brand {
+        padding-bottom: 2px;
+    }
+    .navbar-nav .nav-item {
+        margin-left: 10px;
+        text-align: center;
+    }
+    .navbar-brand img {
+        width: 48px;
+        height: max-content;
+    }
+    .navbar-nav .nav-link.active {
+        padding-bottom: 1px;
+        border-bottom: 2px solid white;
+    }
+    .navbar-nav .nav-item:not(:last-child) .nav-link {
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar-toggler {
+        font-size: medium;
+    }
+    .navbar>.container-fluid {
+        font-size: 6px;
+        max-width: 320px;
+    }
+    .navbar-brand {
+        padding-bottom: 2px;
+    }
+    .navbar-nav .nav-item {
+        margin-left: 8px;
+        text-align: center;
+    }
+    .navbar-brand img {
+        width: 48px;
+        height: max-content;
+    }
+    .navbar-nav .nav-link.active {
+        padding-bottom: 1px;
+        border-bottom: 1px solid white;
+    }
+    .navbar-nav .nav-item:not(:last-child) .nav-link {
+        margin-bottom: 3px;
     }
 }
