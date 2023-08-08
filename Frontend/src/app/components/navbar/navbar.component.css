@@ -44,18 +44,32 @@
 
 .navbar-nav .nav-link {
     color: white;
-    margin-bottom: 2px;
+    margin-bottom: 10.5px;
+    position: relative;
 }
 
 .navbar-nav .nav-link.active {
-    margin-bottom: 10.5px;
     border-bottom: 3px solid white;
 }
 
 .navbar-nav .nav-link:hover {
     color: #0047FF;
-    margin-bottom: 100.5px;
-    border-bottom: 3px solid #0047FF;
+}
+
+.navbar-nav .nav-link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2.5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #0047FF;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 100%;
 }
 
 @media (max-width: 2560px) {
@@ -85,7 +99,6 @@
         align-self: center;
         justify-self: center;
         width: max-content;
-        margin-bottom: 0px;
     }
 }
 
@@ -146,22 +159,18 @@
         grid-column: span 12;
         margin: auto;
     }
-    .navbar-nav .nav-item:not(:last-child) .nav-link {
-        margin-bottom: 5px;
-    }
-    .navbar-nav .nav-item {
-        margin-left: 0px;
+    .navbar-nav .nav-link {
+        margin-bottom: 5.25px;
     }
     .navbar-nav .nav-item {
         align-self: center;
     }
     .navbar-nav .nav-link.active {
-        margin-bottom: 0.5px;
-        border-bottom: 1x solid white;
+        border-bottom: 2x solid white;
     }
-    .navbar-nav .nav-link:hover {
-        margin-bottom: 0.5px;
-        border-bottom: 1px solid #0047FF;
+    .navbar-nav .nav-link::before {
+        height: 2px;
+        bottom: -2px;
     }
 }
 
@@ -243,7 +252,7 @@
         height: max-content;
     }
     .navbar-nav .nav-link.active {
-        margin-bottom: 1px;
-        border-bottom: 1px solid white;
+        margin-bottom: 0px;
+        border-bottom: 2px solid white;
     }
 }
