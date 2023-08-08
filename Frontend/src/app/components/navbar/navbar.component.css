@@ -37,7 +37,6 @@
 
 .navbar-nav .nav-item {
     margin-left: 32px;
-    text-align: center;
 }
 
 .navbar-brand img {
@@ -59,36 +58,34 @@
     color: #0047FF;
 }
 
-.navbar-nav .nav-item:not(:last-child) .nav-link {
-    margin-bottom: 8px;
-}
-
 @media (max-width: 2560px) {
     .navbar-toggler {
         font-size: larger;
     }
     .navbar>.container-fluid {
-        font-size: 24px;
-        padding: 16px 24px;
+        font-size: 16px;
+        padding: 14px 20px;
         max-width: 2560px;
     }
     .navbar-brand {
-        padding-bottom: 12px;
+        padding-bottom: 4px;
     }
     .navbar-nav .nav-item {
         margin-left: 32px;
-        text-align: center;
     }
     .navbar-brand img {
-        width: 144px;
+        width: 72px;
         height: max-content;
     }
     .navbar-nav .nav-link.active {
-        padding-bottom: 10.5px;
+        padding-bottom: 5.5px;
         border-bottom: 3px solid white;
     }
     .navbar-nav .nav-item:not(:last-child) .nav-link {
-        margin-bottom: 8px;
+        align-self: center;
+        justify-self: center;
+        width: max-content;
+        margin-bottom: 0px;
     }
 }
 
@@ -97,27 +94,29 @@
         font-size: large;
     }
     .navbar>.container-fluid {
-        font-size: 20px;
-        padding: 14px 20px;
+        font-size: 14px;
+        padding: 10px 16px;
         max-width: 1440px;
     }
     .navbar-brand {
-        padding-bottom: 10px;
+        padding-bottom: 4px;
     }
     .navbar-nav .nav-item {
         margin-left: 24px;
-        text-align: center;
     }
     .navbar-brand img {
-        width: 112px;
+        width: 64px;
         height: max-content;
     }
     .navbar-nav .nav-link.active {
-        padding-bottom: 10.5px;
+        padding-bottom: 5.5px;
         border-bottom: 3px solid white;
     }
     .navbar-nav .nav-item:not(:last-child) .nav-link {
-        margin-bottom: 6px;
+        align-self: center;
+        justify-self: center;
+        width: max-content;
+        margin-bottom: 0px;
     }
 }
 
@@ -126,27 +125,29 @@
         font-size: medium;
     }
     .navbar>.container-fluid {
-        font-size: 16px;
-        padding: 12px 18px;
+        font-size: 12px;
+        padding: 8px 14px;
         max-width: 1024px;
     }
     .navbar-brand {
-        padding-bottom: 8px;
+        padding-bottom: 2px;
     }
     .navbar-nav .nav-item {
-        margin-left: 16px;
-        text-align: center;
+        margin-left: 12px;
     }
     .navbar-brand img {
-        width: 88px;
+        width: 56px;
         height: max-content;
     }
     .navbar-nav .nav-link.active {
-        padding-bottom: 10.5px;
+        padding-bottom: 5.5px;
         border-bottom: 3px solid white;
     }
     .navbar-nav .nav-item:not(:last-child) .nav-link {
-        margin-bottom: 4px;
+        align-self: center;
+        justify-self: center;
+        width: max-content;
+        margin-bottom: 0px;
     }
 }
 
@@ -154,11 +155,29 @@
     .navbar-collapse {
         grid-column: 6 / span 1;
     }
+    .navbar-nav .nav-item:not(:last-child) .nav-link {
+        margin-bottom: 4px;
+    }
+    .navbar-nav .nav-item {
+        margin-left: 12px;
+    }
+    .navbar-nav .nav-link.active {
+        padding-bottom: 1px;
+        border-bottom: 2x solid white;
+    }
+    .navbar-nav .nav-item.nav-link {
+        align-self: center;
+        justify-self: center;
+    }
 }
 
 @media (min-width: 992px) {
     .navbar-collapse {
         grid-column: 11 / span 1;
+    }
+    .navbar-nav .nav-link.active {
+        padding-bottom: 5.5px;
+        border-bottom: 3x solid white;
     }
 }
 
@@ -167,27 +186,26 @@
         font-size: medium;
     }
     .navbar>.container-fluid {
-        font-size: 14px;
-        padding: 10px 16px;
+        font-size: 12px;
+        padding: 6px 12px;
         max-width: 768px;
     }
     .navbar-brand {
-        padding-bottom: 6px;
-    }
-    .navbar-nav .nav-item {
-        margin-left: 14px;
-        text-align: center;
+        padding-bottom: 2px;
     }
     .navbar-brand img {
         width: 56px;
         height: max-content;
     }
-    .navbar-nav .nav-link.active {
-        padding-bottom: 1px;
-        border-bottom: 2px solid white;
+    .navbar-nav .nav-item.nav-link {
+        align-self: center;
+        justify-self: center;
+        text-align: center;
     }
-    .navbar-nav .nav-item:not(:last-child) .nav-link {
-        margin-bottom: 4px;
+    .navbar-nav>ul {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -203,19 +221,11 @@
         padding-bottom: 4px;
     }
     .navbar-nav .nav-item {
-        margin-left: 14px;
-        text-align: center;
+        margin-left: 0px;
     }
     .navbar-brand img {
         width: 56px;
         height: max-content;
-    }
-    .navbar-nav .nav-link.active {
-        padding-bottom: 1px;
-        border-bottom: 2px solid white;
-    }
-    .navbar-nav .nav-item:not(:last-child) .nav-link {
-        margin-bottom: 4px;
     }
 }
 
@@ -231,19 +241,11 @@
         padding-bottom: 2px;
     }
     .navbar-nav .nav-item {
-        margin-left: 10px;
-        text-align: center;
+        margin-left: 0px;
     }
     .navbar-brand img {
-        width: 48px;
+        width: 56px;
         height: max-content;
-    }
-    .navbar-nav .nav-link.active {
-        padding-bottom: 1px;
-        border-bottom: 2px solid white;
-    }
-    .navbar-nav .nav-item:not(:last-child) .nav-link {
-        margin-bottom: 4px;
     }
 }
 
@@ -259,8 +261,7 @@
         padding-bottom: 2px;
     }
     .navbar-nav .nav-item {
-        margin-left: 8px;
-        text-align: center;
+        margin-left: 0px;
     }
     .navbar-brand img {
         width: 48px;
@@ -269,8 +270,5 @@
     .navbar-nav .nav-link.active {
         padding-bottom: 1px;
         border-bottom: 1px solid white;
-    }
-    .navbar-nav .nav-item:not(:last-child) .nav-link {
-        margin-bottom: 3px;
     }
 }
