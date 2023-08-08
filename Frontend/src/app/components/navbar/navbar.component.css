@@ -92,7 +92,6 @@
         height: max-content;
     }
     .navbar-nav .nav-link.active {
-        margin-bottom: 10.5px;
         border-bottom: 3px solid white;
     }
     .navbar-nav .nav-item .nav-link {
@@ -159,6 +158,9 @@
         grid-column: span 12;
         margin: auto;
     }
+    .navbar>.container-fluid {
+        padding: 6px 12px;
+    }
     .navbar-nav .nav-link {
         margin-bottom: 5.25px;
     }
@@ -178,10 +180,6 @@
     .navbar-collapse {
         grid-column: 11 / span 1;
     }
-    .navbar-nav .nav-link.active {
-        margin-bottom: 5.5px;
-        border-bottom: 3x solid white;
-    }
 }
 
 @media (max-width: 768px) {
@@ -189,7 +187,7 @@
         font-size: medium;
     }
     .navbar>.container-fluid {
-        font-size: 12px;
+        font-size: 14px;
         padding: 6px 12px;
         max-width: 768px;
     }
@@ -200,6 +198,10 @@
         width: 56px;
         height: max-content;
     }
+    .navbar-nav .nav-link::before {
+        height: 2.2px;
+        bottom: -2.4px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -207,11 +209,11 @@
         font-size: medium;
     }
     .navbar>.container-fluid {
-        font-size: 10px;
+        font-size: 14px;
         max-width: 425px;
     }
     .navbar-brand {
-        padding-bottom: 4px;
+        padding-bottom: 2px;
     }
     .navbar-brand img {
         width: 56px;
@@ -224,7 +226,7 @@
         font-size: medium;
     }
     .navbar>.container-fluid {
-        font-size: 8px;
+        font-size: 14px;
         max-width: 375px;
     }
     .navbar-brand {
@@ -234,6 +236,10 @@
         width: 56px;
         height: max-content;
     }
+    .navbar-nav .nav-link::before {
+        height: 2.2px;
+        bottom: -2.6px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -241,18 +247,21 @@
         font-size: medium;
     }
     .navbar>.container-fluid {
-        font-size: 6px;
+        font-size: 14px;
         max-width: 320px;
     }
     .navbar-brand {
         padding-bottom: 2px;
     }
     .navbar-brand img {
-        width: 48px;
+        width: 56px;
         height: max-content;
     }
     .navbar-nav .nav-link.active {
-        margin-bottom: 0px;
         border-bottom: 2px solid white;
+    }
+    .navbar-nav .nav-link::before {
+        height: 2.2px;
+        bottom: -2.6px;
     }
 }
