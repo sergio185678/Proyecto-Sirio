@@ -7,7 +7,6 @@
 
 .navbar {
     display: grid;
-    /* width: 100vw; */
     justify-content: unset;
 }
 
@@ -18,7 +17,6 @@
     font-family: 'Roboto';
     font-size: 20px;
     padding: 40px 32px;
-    /* width: 100vw; */
 }
 
 .navbar-brand {
@@ -46,16 +44,18 @@
 
 .navbar-nav .nav-link {
     color: white;
-    padding-bottom: 2px;
+    margin-bottom: 2px;
 }
 
 .navbar-nav .nav-link.active {
-    padding-bottom: 10.5px;
+    margin-bottom: 10.5px;
     border-bottom: 3px solid white;
 }
 
 .navbar-nav .nav-link:hover {
     color: #0047FF;
+    margin-bottom: 100.5px;
+    border-bottom: 3px solid #0047FF;
 }
 
 @media (max-width: 2560px) {
@@ -78,10 +78,10 @@
         height: max-content;
     }
     .navbar-nav .nav-link.active {
-        padding-bottom: 5.5px;
+        margin-bottom: 10.5px;
         border-bottom: 3px solid white;
     }
-    .navbar-nav .nav-item:not(:last-child) .nav-link {
+    .navbar-nav .nav-item .nav-link {
         align-self: center;
         justify-self: center;
         width: max-content;
@@ -108,15 +108,10 @@
         width: 64px;
         height: max-content;
     }
-    .navbar-nav .nav-link.active {
-        padding-bottom: 5.5px;
-        border-bottom: 3px solid white;
-    }
-    .navbar-nav .nav-item:not(:last-child) .nav-link {
+    .navbar-nav .nav-item.nav-link {
         align-self: center;
         justify-self: center;
         width: max-content;
-        margin-bottom: 0px;
     }
 }
 
@@ -139,35 +134,34 @@
         width: 56px;
         height: max-content;
     }
-    .navbar-nav .nav-link.active {
-        padding-bottom: 5.5px;
-        border-bottom: 3px solid white;
-    }
-    .navbar-nav .nav-item:not(:last-child) .nav-link {
+    .navbar-nav .nav-item .nav-link {
         align-self: center;
         justify-self: center;
         width: max-content;
-        margin-bottom: 0px;
     }
 }
 
 @media (max-width: 992px) {
     .navbar-collapse {
-        grid-column: 6 / span 1;
+        grid-column: span 12;
+        margin: auto;
     }
     .navbar-nav .nav-item:not(:last-child) .nav-link {
-        margin-bottom: 4px;
+        margin-bottom: 5px;
     }
     .navbar-nav .nav-item {
-        margin-left: 12px;
+        margin-left: 0px;
+    }
+    .navbar-nav .nav-item {
+        align-self: center;
     }
     .navbar-nav .nav-link.active {
-        padding-bottom: 1px;
-        border-bottom: 2x solid white;
+        margin-bottom: 0.5px;
+        border-bottom: 1x solid white;
     }
-    .navbar-nav .nav-item.nav-link {
-        align-self: center;
-        justify-self: center;
+    .navbar-nav .nav-link:hover {
+        margin-bottom: 0.5px;
+        border-bottom: 1px solid #0047FF;
     }
 }
 
@@ -176,7 +170,7 @@
         grid-column: 11 / span 1;
     }
     .navbar-nav .nav-link.active {
-        padding-bottom: 5.5px;
+        margin-bottom: 5.5px;
         border-bottom: 3x solid white;
     }
 }
@@ -197,16 +191,6 @@
         width: 56px;
         height: max-content;
     }
-    .navbar-nav .nav-item.nav-link {
-        align-self: center;
-        justify-self: center;
-        text-align: center;
-    }
-    .navbar-nav>ul {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 @media (max-width: 425px) {
@@ -219,9 +203,6 @@
     }
     .navbar-brand {
         padding-bottom: 4px;
-    }
-    .navbar-nav .nav-item {
-        margin-left: 0px;
     }
     .navbar-brand img {
         width: 56px;
@@ -240,9 +221,6 @@
     .navbar-brand {
         padding-bottom: 2px;
     }
-    .navbar-nav .nav-item {
-        margin-left: 0px;
-    }
     .navbar-brand img {
         width: 56px;
         height: max-content;
@@ -260,15 +238,12 @@
     .navbar-brand {
         padding-bottom: 2px;
     }
-    .navbar-nav .nav-item {
-        margin-left: 0px;
-    }
     .navbar-brand img {
         width: 48px;
         height: max-content;
     }
     .navbar-nav .nav-link.active {
-        padding-bottom: 1px;
+        margin-bottom: 1px;
         border-bottom: 1px solid white;
     }
 }
