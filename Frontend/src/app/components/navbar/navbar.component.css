@@ -1,5 +1,6 @@
 * {
     background-color: #141D2E;
+    z-index: 100;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -44,31 +45,44 @@
 
 .navbar-nav .nav-link {
     color: white;
-    margin-bottom: 10.5px;
+    padding-bottom: 10.5px;
     position: relative;
-}
-
-.navbar-nav .nav-link.active {
-    border-bottom: 3px solid white;
 }
 
 .navbar-nav .nav-link:hover {
     color: #0047FF;
 }
 
-.navbar-nav .nav-link::before {
+.navbar-nav .nav-link.active::before {
     content: "";
     display: block;
     position: absolute;
-    bottom: -2.5px;
+    bottom: 4px;
     left: 0;
-    width: 0;
-    height: 3px;
-    background-color: #0047FF;
-    transition: width 0.3s ease;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    z-index: -2;
 }
 
-.navbar-nav .nav-link:hover::before {
+.navbar-nav .nav-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0047FF;
+    z-index: -1;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -ms-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
     width: 100%;
 }
 
@@ -90,9 +104,6 @@
     .navbar-brand img {
         width: 72px;
         height: max-content;
-    }
-    .navbar-nav .nav-link.active {
-        border-bottom: 3px solid white;
     }
     .navbar-nav .nav-item .nav-link {
         align-self: center;
@@ -153,7 +164,36 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 600px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: inherit;
+    }
+    .navbar {
+        display: grid;
+        justify-content: unset;
+    }
+    .navbar-brand {
+        padding-bottom: 2px;
+    }
+    .navbar-toggler {
+        grid-column: 11/ span 1;
+    }
+    .navbar-collapse ul {
+        grid-column: 11 / span 1;
+        flex-direction: row;
+    }
+    .navbar-nav .nav-item {
+        margin-left: 32px;
+    }
+}
+
+
+/*changing the looking of the navbar here with the button menu toggler */
+
+@media (max-width: 600px) {
     .navbar-collapse {
         grid-column: span 12;
         margin: auto;
@@ -162,27 +202,14 @@
         padding: 6px 12px;
     }
     .navbar-nav .nav-link {
-        margin-bottom: 5.25px;
+        padding-bottom: 5.25px;
     }
     .navbar-nav .nav-item {
         align-self: center;
     }
-    .navbar-nav .nav-link.active {
-        border-bottom: 2x solid white;
-    }
-    .navbar-nav .nav-link::before {
-        height: 2px;
-        bottom: -2px;
-    }
 }
 
-@media (min-width: 992px) {
-    .navbar-collapse {
-        grid-column: 11 / span 1;
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .navbar-toggler {
         font-size: medium;
     }
@@ -198,9 +225,11 @@
         width: 56px;
         height: max-content;
     }
-    .navbar-nav .nav-link::before {
-        height: 2.2px;
-        bottom: -2.4px;
+}
+
+@media (min-width: 600px) {
+    .navbar-collapse {
+        grid-column: 11 / span 1;
     }
 }
 
@@ -236,10 +265,6 @@
         width: 56px;
         height: max-content;
     }
-    .navbar-nav .nav-link::before {
-        height: 2.2px;
-        bottom: -2.6px;
-    }
 }
 
 @media (max-width: 320px) {
@@ -256,12 +281,5 @@
     .navbar-brand img {
         width: 56px;
         height: max-content;
-    }
-    .navbar-nav .nav-link.active {
-        border-bottom: 2px solid white;
-    }
-    .navbar-nav .nav-link::before {
-        height: 2.2px;
-        bottom: -2.6px;
     }
 }
