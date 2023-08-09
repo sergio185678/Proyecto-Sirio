@@ -47,6 +47,7 @@
     color: white;
     padding-bottom: 10.5px;
     position: relative;
+    font-weight: bold;
 }
 
 .navbar-nav .nav-link:hover {
@@ -200,6 +201,9 @@
     }
     .navbar>.container-fluid {
         padding: 6px 12px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 12px;
     }
     .navbar-nav .nav-link {
         padding-bottom: 5.25px;
