@@ -35,7 +35,7 @@
 
 .title h1 {
   font-family: 'Martel', serif;
-  font-size: 7vw;
+  font-size: 6vw;
 }
 
 
@@ -89,7 +89,6 @@
 }
 
 .buttonDiv button {
-
   padding-right: 3vh;
   padding-left: 3vh;
   padding-top: 2vmin;
@@ -203,8 +202,32 @@
 @media screen and (max-width: 442px) {
   .background{
     grid-column: 1/ span 12;
+
+  }
+  .title h1 {
+    font-family: 'Martel', serif;
+    font-size: 10vw;
+  }
+  .contactInfo p {
+    font-size: 4vw;
+  }
+  .socialMedia i {
+    font-size: 8vw;
+
   }
 }
+@media screen and (max-width: 320px) {
+
+  .background{
+    grid-column: 1/ span 11;
+
+  }
+  .form {
+    grid-column: 1 /span 10;
+    margin-right: 3vw;
+  }
+}
+
 
 
 
