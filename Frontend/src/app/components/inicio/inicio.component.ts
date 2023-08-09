@@ -12,7 +12,6 @@ export class InicioComponent {
     if(screenWidth>800){
       this.altura_parteinicial(screenHeight);
     }
-    this.altura_proy_1();
 
     window.addEventListener('resize', this.handleResize);
   }
@@ -25,15 +24,6 @@ export class InicioComponent {
     var parte1_h1 = document.getElementById('part1_h1');
     
     parte1_h1!.style.marginTop = (screenHeight-altura1-altura2).toString()+"px";
-  }
-
-  altura_proy_1():void{
-    var fondo_proy1=document.getElementById('proy1');
-    var altura1=fondo_proy1!.clientHeight;
-    var textooo1=document.getElementById('textooo1');
-    var altura2=textooo1!.clientHeight;
-
-    textooo1!.style.marginTop = (altura1-altura2).toString()+"px";
   }
 
   handleResize(): void {
