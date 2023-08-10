@@ -228,6 +228,37 @@
   }
 }
 
+@media screen and (max-width: 280px) {
+  .grid-layout{
+    gap:0;
+  }
+  .background{
+    gap: 0;
+  }
+  .background{
+    grid-column: 1/ span 12;
+
+  }
+  .form {
+    grid-column: 1 /span 11;
+    margin-right: 1vw;
+  }
+  .socialMedia {
+    grid-column: 1 / span 11;
+  }
+
+  .contactInfo {
+    grid-column: 1 / span 11;
+  }
+  .buttonDiv {
+    grid-column: 4 / span 5;
+  }
+  .title{
+    grid-column: span 11;
+  }
+}
+
+
 
 
 
