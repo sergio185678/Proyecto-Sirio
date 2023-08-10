@@ -165,7 +165,33 @@
     }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
+    .navbar-toggler {
+        font-size: medium;
+    }
+    .navbar>.container-fluid {
+        font-size: 10px;
+        padding: 6px 12px;
+        max-width: 600px;
+    }
+    .navbar-brand {
+        padding-bottom: 2px;
+    }
+    .navbar-nav .nav-item {
+        margin-left: 12px;
+    }
+    .navbar-brand img {
+        width: 56px;
+        height: max-content;
+    }
+    .navbar-nav .nav-item .nav-link {
+        align-self: center;
+        justify-self: center;
+        width: max-content;
+    }
+}
+
+@media (min-width: 425px) {
     .navbar-expand-lg .navbar-toggler {
         display: none;
     }
@@ -182,28 +208,28 @@
     .navbar-toggler {
         grid-column: 11/ span 1;
     }
+    .navbar-collapse {
+        grid-column: 11 / span 1;
+    }
     .navbar-collapse ul {
         grid-column: 11 / span 1;
         flex-direction: row;
     }
     .navbar-nav .nav-item {
-        margin-left: 32px;
+        margin-left: 12px;
     }
 }
 
 
 /*changing the looking of the navbar here with the button menu toggler */
 
-@media (max-width: 600px) {
+@media (max-width: 425px) {
     .navbar-collapse {
         grid-column: span 12;
         margin: auto;
     }
     .navbar>.container-fluid {
-        padding: 6px 12px;
-    }
-    .navbar-nav .nav-link {
-        font-size: 12px;
+        padding: 4px 10px;
     }
     .navbar-nav .nav-link {
         padding-bottom: 5.25px;
@@ -211,39 +237,16 @@
     .navbar-nav .nav-item {
         align-self: center;
     }
-}
-
-@media (max-width: 600px) {
     .navbar-toggler {
         font-size: medium;
     }
     .navbar>.container-fluid {
         font-size: 14px;
         padding: 6px 12px;
-        max-width: 768px;
+        max-width: 400px;
     }
-    .navbar-brand {
-        padding-bottom: 2px;
-    }
-    .navbar-brand img {
-        width: 56px;
-        height: max-content;
-    }
-}
-
-@media (min-width: 600px) {
-    .navbar-collapse {
-        grid-column: 11 / span 1;
-    }
-}
-
-@media (max-width: 425px) {
     .navbar-toggler {
         font-size: medium;
-    }
-    .navbar>.container-fluid {
-        font-size: 14px;
-        max-width: 425px;
     }
     .navbar-brand {
         padding-bottom: 2px;
