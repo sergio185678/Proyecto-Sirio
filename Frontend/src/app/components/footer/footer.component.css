@@ -11,14 +11,23 @@
     grid-template-columns: repeat(2,1fr);
 }
 #parte-izquierda{
-    padding-top:3em;
-    padding-right:0em ;
+    padding-top:2em;
+    padding-right:8em ;
     padding-bottom: 0em;
-    padding-left: 10em;
+    padding-left: 9em;
     font-size: 23px;
 }
+.image img
+{
+    width: 86px;
+    height: 88px;
+}
+.correo{
+    text-decoration: none;
+    color: white;
+}
 #parte-derecha{
-    padding-top:3em;
+    padding-top:2em;
   padding-right:0em ;
   padding-bottom: 0em;
   padding-left: 3em;
@@ -30,7 +39,8 @@
 }
  
 .hr{
-    width:30%; 
+    width:25%; 
+    border-top: 3px solid ;
 }
 /*similar as la parte inferior*/
 #bloque-inferior{
@@ -42,18 +52,183 @@
   display: grid;
   padding-top:0em;
     padding-right:0em ;
-    padding-bottom: 0em;
-    padding-left: 10em;
+    padding-bottom: 2em;
+    padding-left: 9em;
     font-size: 23px;
 }
 .socialMedia
 {
   padding-top:0em;
   padding-right:0em ;
-  padding-bottom: 0em;
-  padding-left: 6em;
+  padding-bottom: 1em;
+  padding-left: 15em;
 }
 .socialMedia img{
   height: 7vh;
   padding: 1vh;
+}
+/*hover*/
+.socialMedia img:hover{
+    border-radius: 50%;
+}
+.facebook img:hover{
+    background-color: #3b5999;
+}
+.instagram img:hover{
+    background-color: #e4405f;
+}
+.twitter img:hover{
+    background-color: #55acee;
+}
+.linkedin img:hover{
+    background-color: #0077B5;
+}
+.enlace p:hover{
+    color: midnightblue;
+}
+.correo:hover{
+    color: midnightblue;
+}
+/*Responsive*/
+@media screen and (max-width: 1440px) {
+    #parte-izquierda{
+        padding-top:2em;
+        padding-right:0em ;
+        padding-bottom: 0em;
+        padding-left: 9em;
+        font-size: 18px;
+    }
+    #parte-derecha{
+        padding-top:2em;
+        padding-right:0em ;
+        padding-bottom: 0em;
+        padding-left: 5em;
+        font-size: 18px;
+    }
+    
+    /*similar as la parte inferior*/
+    .copyright
+    {
+      padding-top:0em;
+        padding-right:0em ;
+        padding-bottom: 2em;
+        padding-left: 9em;
+        font-size: 18px;
+    }
+    .socialMedia
+    {
+      padding-top:0em;
+      padding-right:0em ;
+      padding-bottom: 1em;
+      padding-left: 15em;
+    }
+}
+@media screen and (max-width: 1366px) {
+    #parte-izquierda{
+        padding-top:2em;
+        padding-right:0em ;
+        padding-bottom: 0em;
+        padding-left: 9em;
+        font-size: 17px;
+    }
+    #parte-derecha{
+        padding-top:2em;
+        padding-right:0em ;
+        padding-bottom: 0em;
+        padding-left: 5em;
+        font-size: 17px;
+    }
+    /*similar as la parte inferior*/
+    .copyright
+    {
+      padding-top:0em;
+        padding-right:0em ;
+        padding-bottom: 2em;
+        padding-left: 9em;
+        font-size: 17px;
+    }
+    .socialMedia
+    {
+      padding-top:0em;
+      padding-right:0em ;
+      padding-bottom: 1em;
+      padding-left: 15em;
+    }
+}
+@media screen and (max-width: 720px) {
+    #parte-izquierda{
+        padding-top:2em;
+        padding-right:0em ;
+        padding-bottom: 0em;
+        padding-left: 5em;
+        font-size: 15px;
+    }
+    #parte-derecha{
+        padding-top:2em;
+        padding-right:0em ;
+        padding-bottom: 0em;
+        padding-left: 5em;
+        font-size: 15px;
+    }
+    /*similar as la parte inferior*/
+    .copyright
+    {
+      padding-top:2em;
+        padding-right:0em ;
+        padding-bottom: 2em;
+        padding-left: 5em;
+        font-size: 15px;
+    }
+    .socialMedia
+    {
+      padding-top:2em;
+      padding-right:0em ;
+      padding-bottom: 1em;
+      padding-left: 8em;
+    }
+    .socialMedia img{
+      height: 4vh;
+      padding: 0.4vh;
+    }
+}
+@media screen and (max-width: 375px) {
+    #parte-izquierda{
+        padding-top:2em;
+        padding-right:0em ;
+        padding-bottom: 0em;
+        padding-left: 5em;
+        font-size: 8px;
+    }
+    .image img
+    {
+        width: 43px;
+        height: 44px;
+    }
+    #parte-derecha{
+        padding-top:2em;
+        padding-right:0em ;
+        padding-bottom: 0em;
+        padding-left: 5em;
+        font-size: 8px;
+    }
+    /*similar as la parte inferior*/
+    .copyright
+    {
+      padding-top:2em;
+        padding-right:0em ;
+        padding-bottom: 2em;
+        padding-left: 5em;
+        font-size: 8px;
+    }
+    .socialMedia
+    {
+      padding-top:1em;
+      padding-right:0em ;
+      padding-bottom: 2em;
+      padding-left: 3em;
+    }
+    .socialMedia img{
+      height: 4vh;
+      padding: 0.4vh;
+    }
 }
