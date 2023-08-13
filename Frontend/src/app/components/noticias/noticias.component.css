@@ -10,6 +10,7 @@ body{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   gap: 32px;
+  background-color: rgba(0,0,0,0.5);
   text-align: center;
 
 }
