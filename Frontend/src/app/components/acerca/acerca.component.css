@@ -20,7 +20,7 @@
 }
 
 .text-p1 {
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 2;
     width: 300px;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .p2 {
-    grid-column: 9 / span 3;
+    grid-column: 10 / span 2;
     width: 300px;
 }
 
@@ -58,4 +58,57 @@
     font-family: 'Martel';
     margin-bottom: 50px;
     width: 400px;
+}
+
+.vision-historia {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #141D2E;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Roboto';
+    font-size: 30px;
+}
+
+.historia {
+    grid-column: 2 / span 2;
+}
+
+.vision-historia .card-text {
+    background-color: #0a0f18;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    padding: 10%;
+    margin-bottom: 50px;
+}
+
+.vision-historia-img {
+    grid-column: 5 / span 4;
+    margin: auto;
+    width: 300px;
+    height: auto;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+
+.vision {
+    grid-column: 10/ span 2;
+}
+
+.directorio {
+    font-family: 'Martel';
+    font-size: 60px;
+}
+
+.directorio-title {
+    background-color: #0a0f18;
+    text-align: center;
 }
