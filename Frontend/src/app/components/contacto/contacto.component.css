@@ -20,7 +20,10 @@
   gap: 32px;
   background-color: rgba(0,0,0, 0.5);
   padding: 3vw;
-  margin: 3vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 3vw;
+  margin-bottom: 6vw;
   border-radius: 25px;
 }
 
@@ -35,7 +38,7 @@
 
 .title h1 {
   font-family: 'Martel', serif;
-  font-size: 6vw;
+  font-size: 4vw;
 }
 
 
@@ -54,13 +57,11 @@
   height: 7vh;
   background-color: #D0D0D0;
   font-size: 2vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+
 }
 
 .form-text {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+
   border-radius: 10px;
   border: none;
   padding: 1vw;
@@ -131,6 +132,53 @@
   font-size: 3vw;
   padding: 1vw;
 }
+
+@media screen and (width: 2560px) {
+
+  .form-control {
+    border-radius: 20px;
+  }
+
+  .form-text {
+    border-radius: 20px;
+  }
+  .buttonDiv button {
+    padding-right: 4vh;
+    padding-left: 4vh;
+    padding-top: 2vmin;
+    padding-bottom: 1vmin;
+    border-radius: 20px;
+
+  }
+}
+@media screen and (max-width: 920px) {
+  .buttonDiv {
+    grid-column: 2 / span 8;
+  }
+  .title h1 {
+    font-family: 'Martel', serif;
+    font-size: 6vw;
+  }
+  .form{
+    grid-column: 2 /span 8;
+  }
+  .form-control {
+
+    font-size: 1.3vh;
+  }
+
+  .form-text {
+
+    font-size: 1.3vh;
+  }
+
+  .contactInfo p {
+    font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
+  }
+
+}
+
 @media screen and (max-width: 798px) {
   .buttonDiv {
     grid-column: 4 / span 4;
@@ -158,7 +206,7 @@
   }
   .buttonDiv button {
 
-    padding-top: 3vmin;
+    padding-top: 2vmin;
 
 
   }
@@ -171,7 +219,14 @@
   .form {
     grid-column: 1 /span 10;
   }
-
+  .form-control{
+    height: 5vh;
+    border-radius: 5px;
+  }
+  .form-text{
+    height: 8vh;
+    border-radius: 5px;
+  }
   .socialMedia i {
     font-size: 5vw;
     padding: 2vw;
@@ -215,6 +270,9 @@
     font-size: 8vw;
 
   }
+  .form {
+    grid-column: 2 /span 8;
+  }
 }
 @media screen and (max-width: 320px) {
 
@@ -223,8 +281,8 @@
 
   }
   .form {
-    grid-column: 1 /span 10;
-    margin-right: 3vw;
+    grid-column: 2 /span 8;
+
   }
 }
 
@@ -240,7 +298,7 @@
 
   }
   .form {
-    grid-column: 1 /span 11;
+    grid-column: 2 /span 9;
     margin-right: 1vw;
   }
   .socialMedia {
@@ -255,6 +313,24 @@
   }
   .title{
     grid-column: span 11;
+  }
+
+  .form-control {
+    padding: 2vw;
+    font-size: 1.5vh;
+  }
+
+  .form-text {
+    padding: 2vw;
+    font-size: 1.5vh;
+  }
+  .buttonDiv button{
+    height: 70%;
+    border-radius: 10px;
+    padding-right: 3vh;
+    padding-left: 3vh;
+    padding-top: 2.5vmin;
+    padding-bottom: 0vmin;
   }
 }
 
