@@ -61,7 +61,6 @@
 }
 
 .form-text {
-
   border-radius: 10px;
   border: none;
   padding: 1vw;
@@ -82,34 +81,32 @@
 
 
 /*Button*/
-
-.buttonDiv {
-  grid-column: 5 / span 2;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.buttonDiv button {
+.buttonForm{
   padding-right: 3vh;
   padding-left: 3vh;
-  padding-top: 2vmin;
-  padding-bottom: 0vmin;
-  border-radius: 15px;
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
+  border-radius: 10px;
   border: none;
   background-color: #050D24;
   color: white;
   cursor: pointer;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 1.5vw;
+  margin-top: 3vh;
 
 }
-.buttonDiv button:hover{
+.buttonForm:hover{
   background-color: #061C5B;
   justify-content: center;
 }
-.buttonDiv p {
-  font-family: 'Alfa Slab One', cursive;
-  font-size: 1.5vw;
 
+.buttonDiv {
+  grid-column: 5 / span 2;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
+
 
 
 /*Contact info*/
@@ -142,19 +139,14 @@
   .form-text {
     border-radius: 20px;
   }
-  .buttonDiv button {
+  .buttonForm {
     padding-right: 4vh;
     padding-left: 4vh;
-    padding-top: 2vmin;
-    padding-bottom: 1vmin;
     border-radius: 20px;
 
   }
 }
 @media screen and (max-width: 920px) {
-  .buttonDiv {
-    grid-column: 2 / span 8;
-  }
   .title h1 {
     font-family: 'Martel', serif;
     font-size: 6vw;
@@ -180,9 +172,6 @@
 }
 
 @media screen and (max-width: 798px) {
-  .buttonDiv {
-    grid-column: 4 / span 4;
-  }
   .form {
     grid-column: 2 /span 8;
   }
@@ -201,14 +190,9 @@
     font-size: 2vw;
     font-family: 'Roboto', sans-serif;
   }
-  .buttonDiv p {
+
+  .buttonForm{
     font-size: 2vw;
-  }
-  .buttonDiv button {
-
-    padding-top: 2vmin;
-
-
   }
 }
 @media screen and (max-width: 590px) {
@@ -244,15 +228,9 @@
     font-size: 3vw;
   }
 
-  .buttonDiv p {
+  .buttonForm{
     font-size: 3vw;
   }
-
-  .buttonDiv button {
-
-    padding-top: 4vmin;
-  }
-
 }
 @media screen and (max-width: 442px) {
   .background{
@@ -273,6 +251,9 @@
   .form {
     grid-column: 2 /span 8;
   }
+  .buttonForm{
+    border-radius: 5px;
+  }
 }
 @media screen and (max-width: 320px) {
 
@@ -290,12 +271,10 @@
   .grid-layout{
     gap:0;
   }
-  .background{
-    gap: 0;
-  }
+
   .background{
     grid-column: 1/ span 12;
-
+    gap: 0;
   }
   .form {
     grid-column: 2 /span 9;
@@ -307,9 +286,6 @@
 
   .contactInfo {
     grid-column: 1 / span 11;
-  }
-  .buttonDiv {
-    grid-column: 4 / span 5;
   }
   .title{
     grid-column: span 11;
@@ -324,13 +300,8 @@
     padding: 2vw;
     font-size: 1.5vh;
   }
-  .buttonDiv button{
-    height: 70%;
-    border-radius: 10px;
-    padding-right: 3vh;
-    padding-left: 3vh;
-    padding-top: 2.5vmin;
-    padding-bottom: 0vmin;
+  .buttonForm{
+    margin-bottom: 2vh;
   }
 }
 

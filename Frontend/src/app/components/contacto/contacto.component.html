@@ -5,25 +5,20 @@
     <div class="title">
       <h1>Contáctanos</h1>
     </div>
-    <form class="form">
+    <form action="https://formsubmit.co/diegosf-17@hotmail.com" method="POST" class="form" >
       <div class="form-group">
-        <input type="text" class="form-control" id="name" placeholder="Nombre" [(ngModel)]="name" required>
+        <input type="text" name="name" class="form-control" id="name" placeholder="Nombre">
         <br>
-        <input type="text" class="form-control" id="email" placeholder="Correo" [(ngModel)]="email" required>
+        <input type="text" name="email" class="form-control" id="email" placeholder="Correo" >
         <br>
-        <textarea class="form-text" id="message" placeholder="Escribe tu mensaje" [(ngModel)]="message" required></textarea>
+        <textarea class="form-text" name="message" id="message" placeholder="Escribe tu mensaje"></textarea>
+        <br>
+        <button type="submit" class="buttonForm">Enviar</button>
       </div>
     </form>
 
-    <div class="buttonDiv">
-      <button>
-        <p><a>Enviar</a></p>
-      </button>
-    </div>
-
     <div class="contactInfo">
       <p>✉ Sirio@Sirio.com</p>
-      <p>☏ +987 6541 3654</p>
     </div>
 
     <div class="socialMedia">
