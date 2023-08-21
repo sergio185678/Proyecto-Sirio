@@ -8,102 +8,24 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 32px;
     text-align: center;
+    padding-bottom: 50px;
 }
 #parte1{
     grid-column: 1/ 9;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 #parte2{
-    grid-column: 9/ 13;
-    margin-top: 100px;
-}
-#parte2>img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    grid-column: 9/ 12;
+    margin-top: 50px;
 }
 #busss{
     display: flex;
-    gap: 30px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
 }
-#plat{
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: 600px;
-    border: 4px dashed rgb(255, 255, 255);
-    border-radius: 50%;
-    position: relative;
-
-    background-image: url("../../../../assets/images/proyectos/earth.png");
-    background-repeat: no-repeat;
-    background-size: 400px 400px;
-    background-position: center;
-}
-/*recalcular en el typscript*/
-.satelite1{
-    width: 100px;
-    height: 100px;
-    background-image: url("../../../../assets/images/proyectos/satellite1.png");
-    background-size: 100px 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: 250px;
-    left: 250px;
-    -webkit-animation: animastelite1 5s linear infinite;
-    animation: animastelite1 5s linear infinite;
-}
-
-@-webkit-keyframes animastelite1{
-    from{
-        transform: rotate(0deg)translate(-300px);
-    }
-    to{
-        transform:rotate(360deg)translate(-300px);
-    }
-}
-
-@keyframes animastelite1{
-    from{
-        transform: rotate(0deg)translate(-300px);
-    }
-    to{
-        transform:rotate(360deg)translate(-300px);
-    }
-}
-
-.satelite2{
-    width: 100px;
-    height: 100px;
-    background-image: url("../../../../assets/images/proyectos/satellite2.png");
-    background-size: 100px 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: 250px;
-    left: 250px;
-    -webkit-animation: animastelite2 5s linear infinite;
-    animation: animastelite2 5s linear infinite;
-}
-
-@-webkit-keyframes animastelite2{
-    from{
-        transform: rotate(0deg)translate(300px);
-    }
-    to{
-        transform:rotate(360deg)translate(300px);
-    }
-}
-
-@keyframes animastelite2{
-    from{
-        transform: rotate(0deg)translate(300px);
-    }
-    to{
-        transform:rotate(360deg)translate(300px);
-    }
+#busss>img{
+    cursor: pointer;
 }
 #busss>h3{
     font-family: 'Roboto';
@@ -111,4 +33,173 @@
     font-weight:bold;
     margin: 0;
     font-size: 40px;
+}
+#plat{
+    margin:70px auto 0 auto;
+    width: 800px;
+    height: 800px;
+    border: 4px dashed rgb(255, 255, 255);
+    border-radius: 50%;
+    position: relative;
+    background-image: url("../../../../assets/images/proyectos/earth.png");
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    background-position: center;
+}
+.proy_girando{
+    width: 100px;
+    height: 100px;
+    background-image: url("../../../../assets/images/proyectos/satellite1_recort.png");
+    background-size: 100px 100px;
+    position: absolute;
+    top: 350px;
+    left: 350px;
+    cursor: pointer;
+}
+#plat div:first-child {
+    animation: animastelite1 10s linear infinite;
+}
+
+#plat div:last-child {
+    animation: animastelite2 10s linear infinite;
+}
+@keyframes animastelite1{
+    from{
+        transform: rotate(0deg)translate(-400px);
+    }
+    to{
+        transform:rotate(360deg)translate(-400px);
+    }
+}
+@keyframes animastelite2{
+    from{
+        transform: rotate(0deg)translate(400px);
+    }
+    to{
+        transform:rotate(360deg)translate(400px);
+    }
+}
+#segcontenedor{
+    margin:0 auto 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    row-gap: 30px;
+}
+#txt-1{
+    background-color: rgba(167, 167, 170, 0.1);
+    border-radius: 15px;
+    width: 100%;
+}
+h3{
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    padding:10px 0 10px 0;
+    margin: 0;
+}
+.btn-primary{
+    background-color: #FFF;
+    border-color: #FFF;
+}
+.div_3_bus{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:15px;
+    width: 100%;
+}
+.div_3_bus>p{
+    grid-column: 1/ 3;
+}
+p{
+    text-align: start;
+    margin: auto 0 auto 0;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 19px;
+}
+.fa-magnifying-glass{
+    color: #a8a8a8;
+    grid-column: 7/ 8;
+    margin: auto;
+    scale: 1.2;
+}
+.lupa_activo:hover{
+    color: #FFF;
+    scale: 1.3;
+}
+.btn-group{
+    grid-column: 3/ 7;
+}
+.btn-group>button{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    border-radius: 50px;
+}
+.btn-group>button>p{
+    color: black;
+    font-weight: bold;
+    animation: parpadeo 2.5s infinite;
+}
+@keyframes parpadeo {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+}
+.btn-group>button::after{
+    margin: auto 0 auto 0;
+}
+a{
+    cursor: pointer;
+}
+#hrrr_bus{
+    color: #144ce7;
+    border-width: 15px;
+    margin:30px 0 30px 0;
+}
+#content_resul{
+    background-color: #282828;
+    border-radius: 20px;
+    min-height: 200px;
+}
+#res{
+    padding: 0;
+    margin-bottom: 30px;
+}
+#resultados_totales{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding:20px 0 20px 0;
+}
+.resultado{
+    margin:0 20px 0 20px;
+    padding: 10px;
+    background-color: #535353;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    cursor: pointer;
+}
+.resultado>img{
+    width: 100px;
+    height: 100px;
+}
+/*caso que no hay resultado*/
+#content_resul>p{
+    padding-top: 20px;
+    text-align: center;
+}
+.proyectos{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-column: 1/13;
 }

@@ -1,6 +1,7 @@
 .grid-layout
 {
   background-image: url("../../../assets/images/footer/footer.png");
+  grid-template-columns: repeat(12, 1fr);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -50,7 +51,7 @@
 .copyright
 {
   display: grid;
-  padding-top:0em;
+  padding-top:3em;
     padding-right:0em ;
     padding-bottom: 2em;
     padding-left: 9em;
@@ -58,7 +59,7 @@
 }
 .socialMedia
 {
-  padding-top:0em;
+  padding-top:3em;
   padding-right:0em ;
   padding-bottom: 1em;
   padding-left: 15em;
@@ -69,6 +70,8 @@
 }
 /*hover*/
 .socialMedia img:hover{
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 .facebook img:hover{
@@ -83,11 +86,21 @@
 .linkedin img:hover{
     background-color: #0077B5;
 }
-.enlace p:hover{
-    color: midnightblue;
+.enlace:after{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    height: 3px;
+    transition: 0.3s;
+}
+.enlace:hover{
+    color: blue;
+}
+.enlace:hover::after{
+    width: 5.5%;
 }
 .correo:hover{
-    color: midnightblue;
+    color: blue;
 }
 /*Responsive*/
 @media screen and (max-width: 1440px) {
@@ -153,6 +166,42 @@
       padding-right:0em ;
       padding-bottom: 1em;
       padding-left: 15em;
+    }
+}
+@media screen and (max-width:980px){
+    #parte-izquierda{
+        padding-top:2em;
+        padding-right:0em ;
+        padding-bottom: 0em;
+        padding-left: 9em;
+        font-size: 17px;
+    }
+    #parte-derecha{
+        padding-top:2em;
+        padding-right:0em ;
+        padding-bottom: 0em;
+        padding-left: 5em;
+        font-size: 17px;
+    }
+    /*similar as la parte inferior*/
+    .copyright
+    {
+      padding-top:3em;
+        padding-right:0em ;
+        padding-bottom: 2em;
+        padding-left: 9em;
+        font-size: 17px;
+    }
+    .socialMedia
+    {
+      padding-top:3em;
+      padding-right:0em ;
+      padding-bottom: 2em;
+      padding-left: 10em;
+    }
+    .socialMedia img{
+      height: 4vh;
+      padding: 0.4vh;
     }
 }
 @media screen and (max-width: 720px) {
@@ -228,7 +277,7 @@
       padding-left: 3em;
     }
     .socialMedia img{
-      height: 4vh;
+      height: 2.6vh;
       padding: 0.4vh;
     }
 }

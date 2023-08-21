@@ -1,16 +1,79 @@
 <div class="grid-layout">
     <div id="parte1">
         <div id="busss">
-            <img src="../../../../assets/images/proyectos/bt-iz.png">
-            <h3>2023</h3>
-            <img src="../../../../assets/images/proyectos/bt-der.png">
+            <img src="../../../../assets/images/proyectos/bt-iz.png" (click)="lastyear()">
+            <h3>{{year}}</h3>
+            <img src="../../../../assets/images/proyectos/bt-der.png" (click)="nextyear()">
         </div>
         <div id="plat">
-            <div class="satelite1"></div>
-            <div class="satelite2"></div>
+            <div class="proy_girando" *ngFor="let proyecto of proyectos_this_year" style="background-image: url({{proyecto.url_img_principal}});" (click)="aparecer_proyecto(proyecto.id)"></div>
         </div>
     </div>
     <div id="parte2">
-        <img src="../../../../assets/images/proyectos/aaaa.PNG">
+        <div id="segcontenedor">
+            <div id="txt-1"><h3>Buscador</h3></div>
+            <div class="div_3_bus">
+                <p>Categoría</p>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p id="op1">{{op1_p}}</p>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" (click)="op1_0()">-</a></li>
+                      <li><a class="dropdown-item" (click)="op1_1()">Satélite</a></li>
+                      <li><a class="dropdown-item" (click)="op1_2()">Cohete</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-magnifying-glass" id="lupa1" (click)="bus_filtro1()"></i>
+            </div>
+            <div class="div_3_bus">
+                <p>Año</p>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p id="op2">{{op2_p}}</p>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" (click)="op2_0()">-</a></li>
+                      <li><a class="dropdown-item" (click)="op2_1()">2023</a></li>
+                      <li><a class="dropdown-item" (click)="op2_2()">2024</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-magnifying-glass" id="lupa2" (click)="bus_filtro2()"></i>
+            </div>
+            <div class="div_3_bus">
+                <p>Concurso</p>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p id="op3">{{op3_p}}</p>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" (click)="op3_0()">-</a></li>
+                      <li><a class="dropdown-item" (click)="op3_1()">Concurso1</a></li>
+                      <li><a class="dropdown-item" (click)="op3_2()">Concurso2</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-magnifying-glass" id="lupa3" (click)="bus_filtro3()"></i>
+            </div>
+        </div>
+        <div *ngIf="user_search_list==true">
+            <hr id="hrrr_bus">
+            <h3 id="res">Resultados</h3>
+            <div id="content_resul">
+                <p *ngIf="hay_resultados==false">No se encontró resultados</p>
+                <div id="resultados_totales" *ngIf="hay_resultados==true">
+                    <div class="resultado" *ngFor="let proyecto of proyectos_filtrados" (click)="aparecer_proyecto(proyecto.id)">
+                        <img src={{proyecto.url_img_principal}} alt="">
+                        <div class="txt_result">
+                            <p><b>Proyecto:</b> {{proyecto.nombre}}</p>
+                            <p><b>Concurso:</b> {{proyecto.concurso}}</p>
+                            <p><b>Categoría:</b> {{proyecto.categoria}}</p>
+                            <p><b>Fecha:</b> {{proyecto.fecha | date:'MMMM'}}, {{proyecto.fecha.getFullYear()}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- actualizar poniendo mas componentes y id cambiando el *ngIf ID --> 
+    <app-proyecto1 *ngIf="proyecto_mostrar==1" class="proyectos"></app-proyecto1>
 </div>
