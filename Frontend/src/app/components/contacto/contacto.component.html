@@ -5,17 +5,17 @@
     <div class="title">
       <h1>Contáctanos</h1>
     </div>
-<form  action="https://formsubmit.co/" method="POST" class="form" >
+    <form (ngSubmit)="enviarCorreo()" class="form">
       <div class="form-group">
-        <input type="text" name="name" class="form-control" id="name" placeholder="Nombre">
+        <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" [(ngModel)]="correo.name">
         <br>
-        <input type="text" name="email" class="form-control" id="email" placeholder="Correo">
+        <input type="email" name="email" class="form-control" id="email" placeholder="Correo" [(ngModel)]="correo.email">
         <br>
-        <textarea class="form-text" name="message" id="message" placeholder="Escribe tu mensaje"></textarea>
+        <textarea class="form-text" name="message" id="message" placeholder="Escribe tu mensaje" [(ngModel)]="correo.message"></textarea>
         <br>
-        <button type="submit" class="buttonForm">Enviar</button>
+        <button type="submit" class="buttonForm" >Enviar</button>
       </div>
-    </form >
+    </form>
 
     <div class="contactInfo">
       <p>✉ Sirio@Sirio.com</p>
