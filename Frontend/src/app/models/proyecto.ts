@@ -3,9 +3,9 @@ export class Proyecto{
     nombre?:string;
     concurso?:string;
     categoria?:string;
-    fecha:Date;
+    fecha?:number;
     url_img_principal?:string;
-    constructor(id:number,nombre:string,concurso:string,categoria:string,fecha:Date,url_img_principal:string){
+    constructor(id:number,nombre:string,concurso:string,categoria:string,fecha:number,url_img_principal:string){
         this.id=id;
         this.nombre=nombre;
         this.concurso=concurso;
