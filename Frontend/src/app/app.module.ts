@@ -12,6 +12,7 @@ import { NoticiasComponent } from './components/noticias/noticias.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import {FormsModule} from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
+import { AcercaDirectorioComponent } from './components/acerca-directorio/acerca-directorio.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     ProyectosComponent,
     NoticiasComponent,
     ContactoComponent,
+    AcercaDirectorioComponent,
   ],
   imports: [
     BrowserModule,
