@@ -18,10 +18,13 @@
                     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         <p id="op1">{{op1_p}}</p>
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-end w-25">
                       <li><a class="dropdown-item" (click)="op1_0()">-</a></li>
-                      <li><a class="dropdown-item" (click)="op1_1()">Satélite</a></li>
-                      <li><a class="dropdown-item" (click)="op1_2()">Cohete</a></li>
+                      <li><a class="dropdown-item" (click)="op1_1('CanSat')">CanSat</a></li>
+                      <li><a class="dropdown-item" (click)="op1_1('CubeSat')">CubeSat</a></li>
+                      <li><a class="dropdown-item" (click)="op1_1('PocketSa')">PocketSa</a></li>
+                      <li><a class="dropdown-item" (click)="op1_1('Rocket')">Rocket</a></li>
+                      <li><a class="dropdown-item" (click)="op1_1('Rover')">Rover</a></li>
                     </ul>
                 </div>
                 <i class="fa-solid fa-magnifying-glass" id="lupa1" (click)="bus_filtro1()"></i>
@@ -32,10 +35,10 @@
                     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         <p id="op2">{{op2_p}}</p>
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-end">
                       <li><a class="dropdown-item" (click)="op2_0()">-</a></li>
-                      <li><a class="dropdown-item" (click)="op2_1()">2023</a></li>
-                      <li><a class="dropdown-item" (click)="op2_2()">2024</a></li>
+                      <li><a class="dropdown-item" (click)="op2_1('2023')">2023</a></li>
+                      <li><a class="dropdown-item" (click)="op2_1('2024')">2024</a></li>
                     </ul>
                 </div>
                 <i class="fa-solid fa-magnifying-glass" id="lupa2" (click)="bus_filtro2()"></i>
@@ -46,10 +49,15 @@
                     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         <p id="op3">{{op3_p}}</p>
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-end">
                       <li><a class="dropdown-item" (click)="op3_0()">-</a></li>
-                      <li><a class="dropdown-item" (click)="op3_1()">Concurso1</a></li>
-                      <li><a class="dropdown-item" (click)="op3_2()">Concurso2</a></li>
+                      <li><a class="dropdown-item" (click)="op3_1('Concurso Iberoamericano de Satélites Enlatados')">Concurso Iberoamericano de Satélites Enlatados</a></li>
+                      <li><a class="dropdown-item" (click)="op3_1('uropean Rover Challenge')">European Rover Challenge</a></li>
+                      <li><a class="dropdown-item" (click)="op3_1('University Rover Challenge')">University Rover Challenge</a></li>
+                      <li><a class="dropdown-item" (click)="op3_1('C’SPAC')">C’SPACE</a></li>
+                      <li><a class="dropdown-item" (click)="op3_1('LASC')">LASC</a></li>
+                      <li><a class="dropdown-item" (click)="op3_1('TEKNOFEST')">TEKNOFEST</a></li>
+                      <li><a class="dropdown-item" (click)="op3_1('Spaceport America Cup')">Spaceport America Cup</a></li>
                     </ul>
                 </div>
                 <i class="fa-solid fa-magnifying-glass" id="lupa3" (click)="bus_filtro3()"></i>
@@ -67,7 +75,7 @@
                             <p><b>Proyecto:</b> {{proyecto.nombre}}</p>
                             <p><b>Concurso:</b> {{proyecto.concurso}}</p>
                             <p><b>Categoría:</b> {{proyecto.categoria}}</p>
-                            <p><b>Fecha:</b> {{proyecto.fecha | date:'MMMM'}}, {{proyecto.fecha.getFullYear()}}</p>
+                            <p><b>Fecha:</b> {{proyecto.fecha}}</p>
                         </div>
                     </div>
                 </div>

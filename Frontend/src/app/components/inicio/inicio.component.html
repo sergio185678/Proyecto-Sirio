@@ -1,32 +1,30 @@
 <app-navbar></app-navbar>
 <div id="parte1">
     <h1 id="part1_h1">Sirio UPC</h1>
-    <p id="part1_p">Proyecto aeroespacial que competirá en el Concurso Iberoamericano de Satélites Enlatados 2023</p>
+    <p id="part1_p">Grupo de investigación y desarrollo de la UPC enfocado en competir en diversos concursos aeroespaciales nacionales e internacionales</p>
 </div>
 <div id="parte2">
     <h1>Somos</h1>
-    <p>Grupo de investigación y desarrollo multidisciplinario de UPC que tiene por objetivo principal competir en diversos concursos nacionales e internacionales en el campo aeroespacial. </p>
+    <p>Somos un equipo excepcional de individuos dedicados a la investigación y desarrollo en el campo aeroespacial. Nuestro objetivo principal es competir en una variedad de concursos nacionales e internacionales, impulsando la innovación y representando el potencial de nuestra pasión por la excelencia aeroespacial peruana.</p>
     <img src="../../../assets/images/home/imgsomos.png">
 </div>
 <div id="parte3">
-    <h3>“El hombre no puede vivir sin tratar de escribir y explicar el universo” - Isasia Berlin</h3>
+    <h3>{{frase}}</h3>
 </div>
 <div id="parte4">
     <h2>Echa un vistaso a</h2>
     <p>algunos proyectos que con mucho orgullo hemos realizado</p>
     <div id="proyectosss">
-        <div id="proy1">
+        <div id="proy1" (click)="abrir_proyecto(1)">
             <div id="textooo1">
                 <h4>Proyecto 1</h4>
                 <p>Lorem Ipsum is simply dummy text of theeeeeeeeeee.</p>
             </div>
         </div>
     </div>
-
-    <div id="btn_pro">
+    <div id="btn_pro" (click)="abrir_proyectos()">
         <p><a>Ver proyectos</a></p>
     </div>
     <div class="carddd"></div>
 </div>
-
 <app-footer></app-footer>

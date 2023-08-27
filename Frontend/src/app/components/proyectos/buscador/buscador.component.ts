@@ -22,14 +22,27 @@ export class BuscadorComponent {
   constructor(private proyectoservice:ProyectoService){
     this.proyectoservice.getJsonData().subscribe((data)=>{
       this.proyectos=data.Proyectos;
-      this.proyectos.forEach((proyecto)=>proyecto.fecha=new Date(proyecto.fecha)) //asegurar de convertir a Date
-
       this.actualizar_proyecto_año();
     })
+    const proyectoid = localStorage.getItem('proyecto');
+    if(proyectoid!=null){
+      this.proyecto_mostrar=parseInt(proyectoid);
+      setTimeout(() => {
+        const proyectoElement = document.getElementById("Proyecto" + proyectoid.toString());
+        proyectoElement!.scrollIntoView({ behavior: "smooth" });
+      }, 1000);
+    }
+    localStorage.removeItem('proyecto');
   }
+
+  scrollToDiv(targetDiv: HTMLElement | null) {
+    if (targetDiv) {
+        targetDiv.scrollIntoView({ behavior: "smooth" });
+    }
+}
   
   actualizar_proyecto_año(){
-    this.proyectos_this_year=this.proyectos.filter((proyecto)=>proyecto.fecha.getFullYear() == this.year);
+    this.proyectos_this_year=this.proyectos.filter((proyecto)=>proyecto.fecha == this.year);
   }
 
   activarlupa(lupa_n:string){
@@ -58,34 +71,22 @@ export class BuscadorComponent {
   op1_0(){
     this.limpiar_opcion("lupa1","op1");
   }
-  op1_1(){
-    this.btn_seleccion("Satélite","op1","op1_p");
-    this.activarlupa("lupa1");
-  }
-  op1_2(){
-    this.btn_seleccion("Cohete","op1","op1_p");
+  op1_1(categoria:string){
+    this.btn_seleccion(categoria,"op1","op1_p");
     this.activarlupa("lupa1");
   }
   op2_0(){
     this.limpiar_opcion("lupa2","op2");
   }
-  op2_1(){
-    this.btn_seleccion("2023","op2","op2_p");
-    this.activarlupa("lupa2");
-  }
-  op2_2(){
-    this.btn_seleccion("2024","op2","op2_p");
+  op2_1(año:string){
+    this.btn_seleccion(año,"op2","op2_p");
     this.activarlupa("lupa2");
   }
   op3_0(){
     this.limpiar_opcion("lupa3","op3");
   }
-  op3_1(){
-    this.btn_seleccion("Concurso1","op3","op3_p");
-    this.activarlupa("lupa3");
-  }
-  op3_2(){
-    this.btn_seleccion("Concurso2","op3","op3_p");
+  op3_1(concurso:string){
+    this.btn_seleccion(concurso,"op3","op3_p");
     this.activarlupa("lupa3");
   }
   lastyear(){
@@ -125,7 +126,7 @@ export class BuscadorComponent {
       this.hay_resultados=true;
     }
     if(this.op2_p!="│"){
-      this.proyectos_filtrados=this.proyectos_filtrados.filter((proyecto)=>proyecto.fecha.getFullYear() == parseInt(this.op2_p));
+      this.proyectos_filtrados=this.proyectos_filtrados.filter((proyecto)=>proyecto.fecha == parseInt(this.op2_p));
       this.hay_resultados=true;
     }
     if(this.op3_p!="│"){
@@ -138,6 +139,9 @@ export class BuscadorComponent {
   }
   aparecer_proyecto(id:number){
     this.proyecto_mostrar=id;
-    console.log(id);
+    setTimeout(() => {
+      const proyectoElement = document.getElementById("Proyecto" + id.toString());
+      proyectoElement!.scrollIntoView({ behavior: "smooth" });
+    }, 1000);
   }
 }

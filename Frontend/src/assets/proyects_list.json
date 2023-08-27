@@ -2,10 +2,10 @@
     "Proyectos":[
         {
             "id":1,
-            "nombre":"Proyecto1",
-            "concurso":"Concurso2",
-            "categoria":"Satélite",
-            "fecha":"2023-02-20",
+            "nombre":"STARVEK-SAT-1",
+            "concurso":"Concurso Iberoamericano de Satélites Enlatados",
+            "categoria":"CanSat",
+            "fecha":"2023",
             "url_img_principal":"../../../../assets/images/proyectos/satellite1_recort.png"
         },
         {
@@ -13,7 +13,7 @@
             "nombre":"Proyecto2",
             "concurso":"Concurso3",
             "categoria":"Cohete",
-            "fecha":"2023-10-20",
+            "fecha":"2023",
             "url_img_principal":"../../../../assets/images/proyectos/satellite2_recort.png"
         }
     ]
