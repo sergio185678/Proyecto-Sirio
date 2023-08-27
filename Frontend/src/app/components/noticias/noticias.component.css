@@ -37,7 +37,6 @@ p{
 
 .new{
   border-radius: 39px;
-
   grid-column: 2/ span 10;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
@@ -151,36 +150,64 @@ button:hover {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 426px)
+@media screen and (max-width: 425px)
 {
   .grid-layout{
     gap: 0;
   }
+  .title{
+  }
+
   .new{
     gap:0;
+    display: block;
+  }
+
+  .newsDetails1{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/ span 8;
+
+    text-align: center;
+    color: white;
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+  .newsDetails2{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/ span 8;
+    text-align: center;
+    color: white;
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+  .newsDetails3{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/ span 8;
+    text-align: center;
+    color: white;
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
   }
 
   .newsDetails1 p{
     font-size: 2vw;
   }
-
   .newsDetails2 p{
     font-size: 2vw;
   }
-
   .newsDetails3 p{
     font-size: 2vw;
   }
 
-  button{
-    border: 1px solid white;
-    background-color: transparent;
-    color: white;
-    border-radius: 29px;
-    padding-right: 3vh;
-    padding-left: 3vh;
-    padding-top: 3vmin;
-  }
   .new1img{
     display: flex;
     align-items: center;
@@ -204,6 +231,29 @@ button:hover {
   .news3{
     width: 100%;
     height: 70%;
+  }
+
+
+  button{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 29px;
+    padding-right: 3vh;
+    padding-left: 3vh;
+    padding-top: 3vmin;
+  }
+
+  button p{
+    margin-bottom: 10px;
+  }
+
+  button a{
+    font-size: 15px;
+  }
+
+  .verMas{
+    grid-column: 5/ span 4;
   }
 }
 @media screen and (max-width: 375px)
