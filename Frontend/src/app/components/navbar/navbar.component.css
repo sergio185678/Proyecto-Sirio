@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
+    box-sizing: unset;
 }
 
 .navbar {
@@ -16,13 +17,12 @@
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
     font-family: 'Roboto';
-    font-size: 20px;
-    padding: 40px 32px;
+    width: auto;
 }
 
 .navbar-brand {
     grid-column: 2 / span 1;
-    padding-bottom: 30px;
+    padding-bottom: 4px;
 }
 
 .navbar-toggler {
@@ -36,11 +36,12 @@
 
 .navbar-nav .nav-item {
     margin-left: 32px;
+    align-self: center;
 }
 
 .navbar-brand img {
-    width: 86px;
-    height: 88px;
+    width: 72px;
+    height: max-content;
 }
 
 .navbar-nav .nav-link {
@@ -48,6 +49,9 @@
     padding-bottom: 10.5px;
     position: relative;
     font-weight: bold;
+    align-self: center;
+    justify-self: center;
+    width: max-content;
 }
 
 .navbar-nav .nav-link:hover {
@@ -96,20 +100,12 @@
         padding: 14px 20px;
         max-width: 2560px;
     }
-    .navbar-brand {
-        padding-bottom: 4px;
-    }
     .navbar-nav .nav-item {
         margin-left: 32px;
     }
     .navbar-brand img {
         width: 72px;
         height: max-content;
-    }
-    .navbar-nav .nav-item .nav-link {
-        align-self: center;
-        justify-self: center;
-        width: max-content;
     }
 }
 
@@ -122,20 +118,12 @@
         padding: 10px 16px;
         max-width: 1440px;
     }
-    .navbar-brand {
-        padding-bottom: 4px;
-    }
     .navbar-nav .nav-item {
         margin-left: 24px;
     }
     .navbar-brand img {
         width: 64px;
         height: max-content;
-    }
-    .navbar-nav .nav-item.nav-link {
-        align-self: center;
-        justify-self: center;
-        width: max-content;
     }
 }
 
@@ -158,36 +146,13 @@
         width: 56px;
         height: max-content;
     }
-    .navbar-nav .nav-item .nav-link {
-        align-self: center;
-        justify-self: center;
-        width: max-content;
-    }
 }
 
 @media (max-width: 600px) {
-    .navbar-toggler {
-        font-size: medium;
-    }
     .navbar>.container-fluid {
         font-size: 10px;
         padding: 6px 12px;
         max-width: 600px;
-    }
-    .navbar-brand {
-        padding-bottom: 2px;
-    }
-    .navbar-nav .nav-item {
-        margin-left: 12px;
-    }
-    .navbar-brand img {
-        width: 56px;
-        height: max-content;
-    }
-    .navbar-nav .nav-item .nav-link {
-        align-self: center;
-        justify-self: center;
-        width: max-content;
     }
 }
 
@@ -197,19 +162,6 @@
     }
     .navbar-expand-lg .navbar-collapse {
         display: inherit;
-    }
-    .navbar {
-        display: grid;
-        justify-content: unset;
-    }
-    .navbar-brand {
-        padding-bottom: 2px;
-    }
-    .navbar-toggler {
-        grid-column: 11/ span 1;
-    }
-    .navbar-collapse {
-        grid-column: 11 / span 1;
     }
     .navbar-collapse ul {
         grid-column: 11 / span 1;
@@ -232,61 +184,26 @@
         padding: 4px 10px;
     }
     .navbar-nav .nav-link {
-        padding-bottom: 5.25px;
-    }
-    .navbar-nav .nav-item {
-        align-self: center;
-    }
-    .navbar-toggler {
-        font-size: medium;
+        padding-bottom: 6.25px;
     }
     .navbar>.container-fluid {
         font-size: 14px;
         padding: 6px 12px;
-        max-width: 400px;
-    }
-    .navbar-toggler {
-        font-size: medium;
-    }
-    .navbar-brand {
-        padding-bottom: 2px;
-    }
-    .navbar-brand img {
-        width: 56px;
-        height: max-content;
+        max-width: 425px;
     }
 }
 
 @media (max-width: 375px) {
-    .navbar-toggler {
-        font-size: medium;
-    }
     .navbar>.container-fluid {
-        font-size: 14px;
         max-width: 375px;
     }
     .navbar-brand {
         padding-bottom: 2px;
     }
-    .navbar-brand img {
-        width: 56px;
-        height: max-content;
-    }
 }
 
 @media (max-width: 320px) {
-    .navbar-toggler {
-        font-size: medium;
-    }
     .navbar>.container-fluid {
-        font-size: 14px;
         max-width: 320px;
-    }
-    .navbar-brand {
-        padding-bottom: 2px;
-    }
-    .navbar-brand img {
-        width: 56px;
-        height: max-content;
     }
 }
