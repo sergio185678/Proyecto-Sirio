@@ -4,13 +4,13 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
+    /*CUIDADO CON CAMBIAR ESTA LINEA*/
     box-sizing: unset;
+    /*CUIDADO CON CAMBIAR ESTA LINEA*/
 }
 
-.navbar {
-    display: grid;
-    justify-content: unset;
-}
+
+/* All NAVBAR */
 
 .navbar>.container-fluid {
     display: grid;
@@ -20,29 +20,47 @@
     width: auto;
 }
 
+
+/* Logo de Sirio */
+
 .navbar-brand {
     grid-column: 2 / span 1;
     padding-bottom: 4px;
 }
 
+
+/* Boton Toggler (para abrir el menu en movil) */
+
 .navbar-toggler {
     grid-column: 11/ span 1;
 }
+
+
+/* Menu que se cierra en movil */
 
 .navbar-collapse {
     grid-column: 11 / span 1;
     flex-direction: row-reverse;
 }
 
+
+/* Cada elemento del Menu */
+
 .navbar-nav .nav-item {
     margin-left: 32px;
     align-self: center;
 }
 
+
+/* Imagen del Logo de Sirio */
+
 .navbar-brand img {
     width: 72px;
     height: max-content;
 }
+
+
+/* Cada link del Menu */
 
 .navbar-nav .nav-link {
     color: white;
@@ -58,6 +76,10 @@
     color: #0047FF;
 }
 
+
+/* Cada link activo
+tiene su linea blanca abajo*/
+
 .navbar-nav .nav-link.active::before {
     content: "";
     display: block;
@@ -69,6 +91,10 @@
     background-color: #ffffff;
     z-index: -2;
 }
+
+
+/* Cada link  tiene su linea azul abajo
+pero solo saldra cuando se haga hover*/
 
 .navbar-nav .nav-link::after {
     content: "";
@@ -92,17 +118,21 @@
 }
 
 @media (max-width: 2560px) {
+    /* Boton Toggler (para abrir el menu en movil) */
     .navbar-toggler {
         font-size: larger;
     }
+    /*All navbar */
     .navbar>.container-fluid {
         font-size: 16px;
         padding: 14px 20px;
         max-width: 2560px;
     }
+    /* Cada elemento del Menu */
     .navbar-nav .nav-item {
         margin-left: 32px;
     }
+    /* Imagen del Logo de Sirio */
     .navbar-brand img {
         width: 72px;
         height: max-content;
@@ -156,6 +186,12 @@
     }
 }
 
+
+/*changing the looking of the navbar here with the button menu toggler */
+
+
+/* aqui abajo se cambia el aspecto del menu al boton toggler*/
+
 @media (min-width: 425px) {
     .navbar-expand-lg .navbar-toggler {
         display: none;
@@ -163,6 +199,7 @@
     .navbar-expand-lg .navbar-collapse {
         display: inherit;
     }
+    /* Este es el menu del navbar */
     .navbar-collapse ul {
         grid-column: 11 / span 1;
         flex-direction: row;
@@ -171,9 +208,6 @@
         margin-left: 12px;
     }
 }
-
-
-/*changing the looking of the navbar here with the button menu toggler */
 
 @media (max-width: 425px) {
     .navbar-collapse {
