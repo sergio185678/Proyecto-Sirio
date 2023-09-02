@@ -8,8 +8,8 @@
 .quienessomos {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding: 200px 40px;
-    font-size: 20px;
+    padding: 50px 0px 200px 0px;
+    font-size: 22px;
     background-image: url("../../../assets/images/about/about-background.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,11 +18,31 @@
 }
 
 .text-p1 {
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 5;
+}
+
+.text-p1 h2 {
+    text-align: center;
+    font-family: 'Martel';
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.card-text {
+    background-color: rgb(0, 0, 0, 0.75);
+    font-family: 'Roboto';
+    border-radius: 30px;
+    padding: 10%;
+    text-align: justify;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 .about-img {
-    grid-column: 5 / span 4;
+    grid-column: 7 / span 6;
     margin: auto;
     background-color: white;
     border-radius: 50%;
@@ -41,188 +61,931 @@
     height: auto;
 }
 
-.card-text {
-    background-color: rgb(0, 0, 0, 0.5);
-    font-family: 'Roboto';
-    border-radius: 30px;
-    padding: 10%;
+.valores-vision-historia {
+    display: grid;
+    background-color: #141D2E;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigcube {
+    margin: 0px 100px;
+}
+
+.title-valores {
+    font-family: 'Martel';
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.title-valores span {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.valores {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 10px 50px;
+    gap: 32px;
+}
+
+.card_img {
+    display: flex;
+    flex-direction: column;
+}
+
+.valores_circle_img {
+    display: flex;
+    width: 230px;
+    height: 230px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 30px auto;
+    box-shadow: 0px 0px 0px 8px #141313, 0 0 600px 0.5px var(--color);
+}
+
+.innovacion {
+    --color: hsl(302, 100%, 50%);
+}
+
+.pasion {
+    --color: hsl(0, 100%, 50%);
+}
+
+.excelencia {
+    --color: hsl(240, 100%, 50%);
+}
+
+.valores_circle_img img {
+    width: 230px;
+    height: auto;
+}
+
+.title-card_img {
+    font-family: 'Martel';
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.text-card-img {
+    display: flex;
+    flex-grow: 1;
     text-align: justify;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    background-color: rgb(10, 15, 24, 0.5);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.innovacion {
+    grid-column: 1 / span 4;
+}
+
+.pasion {
+    grid-column: 5 / span 4;
+}
+
+.excelencia {
+    grid-column: 9 / span 4;
+}
+
+.simple-line {
+    margin: auto;
+    width: 100%;
+    height: 5px;
+    background-color: #0047FF;
+    margin: 80px 0px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.vision-historia {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-bottom: 100px;
+}
+
+.vh-card {
+    align-self: center;
+}
+
+.vision-historia .vh-card:nth-child(1) {
+    grid-column: 1 / span 4;
+}
+
+.vision-historia .vh-card:nth-child(3) {
+    grid-column: 9 / span 4;
+}
+
+.vh-card-text {
+    font-family: 'Roboto';
+    font-size: 22px;
+    background-color: rgb(10, 15, 24, 0.5);
+    margin: auto;
+    padding: 25px;
+    text-align: justify;
+    border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
 
-.p2 {
-    grid-column: 10 / span 2;
-}
-
-.p2>.title {
+.vh-card-title {
     font-family: 'Martel';
-    margin-bottom: 50px;
-    width: max-content;
-}
-
-.vision-historia {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    background-color: #141D2E;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    font-family: 'Roboto';
     font-size: 30px;
+    font-weight: 500;
+    margin-top: 30px;
+    text-align: center;
 }
 
-.big-card {
-    grid-template-rows: repeat(3, 1fr);
-    grid-column: 2 / span 4;
-    padding: 30px;
-}
-
-.historia {
-    margin-bottom: 80px;
-}
-
-.vision-historia .card-text {
-    background-color: #0a0f18;
-    border-radius: 10%;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
-    padding: 10%;
-    margin-bottom: 50px;
-}
-
-.simple-line {
-    border: none;
-    height: 5px;
-    background-color: #ffffff;
-    margin-bottom: 80px;
-}
-
-.vision {
-    grid-column: 10/ span 2;
-}
-
-.vision-historia-img {
-    grid-column: 8 / span 4;
+.vh-card-astronaut {
+    width: 350px;
     margin: auto;
-    width: 300px;
-    height: auto;
-    border-radius: 20%;
-    -webkit-border-radius: 20%;
-    -moz-border-radius: 20%;
-    -ms-border-radius: 20%;
-    -o-border-radius: 20%;
+    grid-column: 5 / span 4;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
-.directorio {
-    font-family: 'Martel';
-    font-size: 60px;
-}
+@media (max-width: 2560px) {}
 
-.directorio-title {
-    background-color: #0a0f18;
-    text-align: center;
-}
-
-.text-card-title {
-    text-align: center;
-}
-
-@media (max-width: 2560px) {
+@media (max-width: 1440px) {
     .quienessomos {
-        font-size: 30px;
+        padding: 40px 0px 150px 0px;
+        font-size: 20px;
     }
     .text-p1 {
-        grid-column: 2 / span 3;
+        grid-column: 2 / span 5;
+    }
+    .text-p1 h2 {
+        font-size: 60px;
+        margin-bottom: 40px;
     }
     .about-img {
-        grid-column: 5 / span 4;
-        margin: auto;
-        background-color: white;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
+        grid-column: 7 / span 6;
+        padding: 15px;
     }
     .about-logo {
-        width: 300px;
+        width: 270px;
         height: auto;
     }
-    .card-text {
-        border-radius: 30px;
-        padding: 10%;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
+    .bigcube {
+        margin: 0px 80px;
     }
-    .p2 {
-        grid-column: 10 / span 2;
+    .title-valores {
+        font-size: 30px;
+        margin-top: 45px;
     }
-    .p2>.title {
-        font-size: 50px;
-        margin-bottom: 60px;
-        width: max-content;
+    .title-valores span {
+        font-size: 48px;
     }
-    .vision-historia {
-        padding: 200px 0;
-        font-size: 40px;
+    .valores {
+        margin: 8px 45px;
+        gap: 40px;
     }
-    .text-card-title {
-        font-size: 60px;
+    .valores_circle_img {
+        width: 220px;
+        height: 220px;
+        border: 7px solid #ffffff;
+        margin: 28px auto;
     }
-    .big-card {
-        grid-template-rows: repeat(3, 1fr);
-        grid-column: 2 / span 4;
-        padding: 30px;
+    .valores_circle_img img {
+        width: 220px;
+        height: auto;
     }
-    .vision-historia .card-text {
-        background-color: #0a0f18;
-        border-radius: 10%;
-        -webkit-border-radius: 10%;
-        -moz-border-radius: 10%;
-        -ms-border-radius: 10%;
-        -o-border-radius: 10%;
-        padding: 10%;
-        margin-bottom: 50px;
+    .title-card_img {
+        font-size: 28px;
+    }
+    .text-card-img {
+        font-size: 22px;
+        padding: 28px;
+        margin-top: 40px;
+    }
+    .innovacion {
+        grid-column: 1 / span 4;
+    }
+    .pasion {
+        grid-column: 5 / span 4;
+    }
+    .excelencia {
+        grid-column: 9 / span 4;
     }
     .simple-line {
-        height: 5px;
+        margin: auto;
+        width: 100%;
+        height: 4.5px;
+        margin: 80px 0px;
     }
-    .vision-historia-img {
-        grid-column: 8 / span 4;
-        width: 600px;
-        height: auto;
-        border-radius: 20%;
-        -webkit-border-radius: 20%;
-        -moz-border-radius: 20%;
-        -ms-border-radius: 20%;
-        -o-border-radius: 20%;
+    .vision-historia {
+        gap: 40px;
+        margin-bottom: 80px;
     }
-    .directorio {
-        font-size: 100px;
+    .vision-historia .vh-card:nth-child(1) {
+        grid-column: 1 / span 4;
+    }
+    .vision-historia .vh-card:nth-child(3) {
+        grid-column: 9 / span 4;
+    }
+    .vh-card-text {
+        font-size: 20px;
+        padding: 30px;
+    }
+    .vh-card-title {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .vh-card-astronaut {
+        width: 320px;
+        margin: auto;
+        grid-column: 5 / span 4;
     }
 }
 
-@media (max-width: 1440px) {}
+@media (max-width: 1280px) {
+    .quienessomos {
+        padding: 30px 0px 140px 0px;
+        font-size: 18px;
+    }
+    .text-p1 {
+        grid-column: 2 / span 5;
+    }
+    .text-p1 h2 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .about-img {
+        grid-column: 7 / span 6;
+        padding: 10px;
+    }
+    .about-logo {
+        width: 250px;
+        height: auto;
+    }
+    .bigcube {
+        margin: 0px 60px;
+    }
+    .title-valores {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    .title-valores span {
+        font-size: 48px;
+    }
+    .valores {
+        margin: 8px 8px;
+        gap: 45px;
+    }
+    .valores_circle_img {
+        width: 200px;
+        height: 200px;
+        border: 6px solid #ffffff;
+        margin: 26px auto;
+    }
+    .valores_circle_img img {
+        width: 200px;
+        height: auto;
+    }
+    .title-card_img {
+        font-size: 26px;
+    }
+    .text-card-img {
+        font-size: 20px;
+        padding: 26px;
+        margin-top: 32px;
+    }
+    .innovacion {
+        grid-column: 1 / span 4;
+    }
+    .pasion {
+        grid-column: 5 / span 4;
+    }
+    .excelencia {
+        grid-column: 9 / span 4;
+    }
+    .simple-line {
+        margin: auto;
+        width: 100%;
+        height: 4.5px;
+        margin: 80px 0px;
+    }
+    .vision-historia {
+        gap: 45px;
+        margin-bottom: 70px;
+    }
+    .vision-historia .vh-card:nth-child(1) {
+        grid-column: 1 / span 4;
+    }
+    .vision-historia .vh-card:nth-child(3) {
+        grid-column: 9 / span 4;
+    }
+    .vh-card-text {
+        font-size: 20px;
+        padding: 25px;
+    }
+    .vh-card-title {
+        font-size: 36px;
+        margin-top: 24px;
+    }
+    .vh-card-astronaut {
+        width: 300px;
+        margin: auto;
+        grid-column: 5 / span 4;
+    }
+}
 
-@media (max-width: 1024px) {}
+@media (max-width: 1164px) {
+    .text-p1 h2 {
+        font-size: 42px;
+        margin-bottom: 25px;
+    }
+}
 
-@media (max-width: 600px) {}
+@media (max-width: 1060px) {
+    .quienessomos {
+        padding: 24px 0px 124px 0px;
+        font-size: 16px;
+    }
+    .text-p1 {
+        grid-column: 2 / span 5;
+    }
+    .text-p1 h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .about-img {
+        grid-column: 7 / span 6;
+    }
+    .about-logo {
+        width: 220px;
+        height: auto;
+    }
+    .bigcube {
+        margin: 0px 40px;
+    }
+    .title-valores {
+        font-size: 26px;
+        margin-top: 40px;
+    }
+    .title-valores span {
+        font-size: 40px;
+    }
+    .valores {
+        margin: 8px 8px;
+        gap: 50px;
+    }
+    .valores_circle_img {
+        width: 180px;
+        height: 180px;
+        border: 4px solid #ffffff;
+        margin: 24px auto;
+    }
+    .valores_circle_img img {
+        width: 180px;
+        height: auto;
+    }
+    .title-card_img {
+        font-size: 24px;
+    }
+    .text-card-img {
+        font-size: 18px;
+        padding: 26px;
+        margin-top: 26px;
+    }
+    .innovacion {
+        grid-column: 1 / span 4;
+    }
+    .pasion {
+        grid-column: 5 / span 4;
+    }
+    .excelencia {
+        grid-column: 9 / span 4;
+    }
+    .simple-line {
+        margin: auto;
+        width: 100%;
+        height: 4px;
+        margin: 60px 0px;
+    }
+    .vision-historia {
+        gap: 50px;
+        margin-bottom: 40px;
+    }
+    .vision-historia .vh-card:nth-child(1) {
+        grid-column: 1 / span 4;
+    }
+    .vision-historia .vh-card:nth-child(3) {
+        grid-column: 9 / span 4;
+    }
+    .vh-card-text {
+        font-size: 18px;
+        padding: 25px;
+    }
+    .vh-card-title {
+        font-size: 30px;
+        margin-top: 22px;
+    }
+    .vh-card-astronaut {
+        width: 280px;
+        margin: auto;
+        grid-column: 5 / span 4;
+    }
+}
 
-@media (min-width: 425px) {}
+@media (max-width: 960px) {
+    .quienessomos {
+        padding: 22px 0px 116px 0px;
+        font-size: 14px;
+    }
+    .text-p1 {
+        grid-column: 2 / span 5;
+    }
+    .text-p1 h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .about-img {
+        grid-column: 7 / span 6;
+    }
+    .about-logo {
+        width: 180px;
+        height: auto;
+    }
+    .bigcube {
+        margin: 0px 30px;
+    }
+    .title-valores {
+        font-size: 22px;
+        margin-top: 32px;
+    }
+    .title-valores span {
+        font-size: 32px;
+    }
+    .valores {
+        margin: 6px;
+        gap: 45px;
+    }
+    .valores_circle_img {
+        width: 150px;
+        height: 150px;
+        border: 2px solid #ffffff;
+        margin: 20px auto;
+    }
+    .valores_circle_img img {
+        width: 150px;
+        height: auto;
+    }
+    .title-card_img {
+        font-size: 20px;
+    }
+    .text-card-img {
+        font-size: 14px;
+        padding: 24px;
+        margin-top: 24px;
+    }
+    .innovacion {
+        grid-column: 1 / span 4;
+    }
+    .pasion {
+        grid-column: 5 / span 4;
+    }
+    .excelencia {
+        grid-column: 9 / span 4;
+    }
+    .simple-line {
+        height: 3px;
+        margin: 50px 0px;
+    }
+    .vision-historia {
+        gap: 50px;
+        margin-bottom: 35px;
+    }
+    .vision-historia .vh-card:nth-child(1) {
+        grid-column: 1 / span 4;
+    }
+    .vision-historia .vh-card:nth-child(3) {
+        grid-column: 9 / span 4;
+    }
+    .vh-card-text {
+        font-size: 18px;
+        padding: 20px;
+    }
+    .vh-card-title {
+        font-size: 25px;
+        margin-top: 18px;
+    }
+    .vh-card-astronaut {
+        width: 240px;
+        margin: auto;
+        grid-column: 5 / span 4;
+    }
+}
 
+@media (max-width: 860px) {
+    .quienessomos {
+        padding: 20px 0px 108px 0px;
+        font-size: 12px;
+    }
+    .text-p1 {
+        grid-column: 2 / span 5;
+    }
+    .text-p1 h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .about-img {
+        grid-column: 7 / span 6;
+    }
+    .about-logo {
+        width: 140px;
+        height: auto;
+    }
+    .bigcube {
+        margin: 0px 25px;
+    }
+    .title-valores {
+        font-size: 20px;
+        margin-top: 28px;
+    }
+    .title-valores span {
+        font-size: 28px;
+    }
+    .valores {
+        margin: 4px;
+        gap: 40px;
+    }
+    .valores_circle_img {
+        width: 130px;
+        height: 130px;
+        border: 1px solid #ffffff;
+        margin: 30px auto;
+    }
+    .valores_circle_img img {
+        width: 130px;
+        height: auto;
+    }
+    .title-card_img {
+        font-size: 18px;
+    }
+    .text-card-img {
+        font-size: 12px;
+        padding: 20px;
+        margin-top: 18px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    .innovacion {
+        grid-column: 1 / span 4;
+    }
+    .pasion {
+        grid-column: 5 / span 4;
+    }
+    .excelencia {
+        grid-column: 9 / span 4;
+    }
+    .simple-line {
+        height: 2px;
+        margin: 45px 0px;
+    }
+    .vision-historia {
+        gap: 45px;
+        margin-bottom: 35px;
+    }
+    .vision-historia .vh-card:nth-child(1) {
+        grid-column: 1 / span 4;
+    }
+    .vision-historia .vh-card:nth-child(3) {
+        grid-column: 9 / span 4;
+    }
+    .vh-card-text {
+        font-size: 14px;
+        padding: 24px;
+    }
+    /* aqui llegue continuamos manania :D */
+    .vh-card-title {
+        font-size: 25px;
+        margin-top: 18px;
+    }
+    .vh-card-astronaut {
+        width: 240px;
+        margin: auto;
+        grid-column: 5 / span 4;
+    }
+}
 
-/*changing the looking of the navbar here with the button menu toggler */
+@media (max-width: 768px) {
+    .quienessomos {
+        padding: 14px 0px 80px 0px;
+        font-size: 12px;
+    }
+    .text-p1 {
+        grid-column: 2 / span 5;
+    }
+    .text-p1 h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .about-img {
+        grid-column: 7 / span 6;
+    }
+    .about-logo {
+        width: 120px;
+        height: auto;
+    }
+    .bigcube {
+        margin: 0px 20px;
+    }
+    .title-valores {
+        font-size: 18px;
+        margin-top: 24px;
+    }
+    .title-valores span {
+        font-size: 26px;
+    }
+    .valores {
+        margin: 10px;
+        gap: 32px;
+    }
+    .valores_circle_img {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ffffff;
+        margin: 25px auto;
+    }
+    .valores_circle_img img {
+        width: 100px;
+        height: auto;
+    }
+    .title-card_img {
+        font-size: 16px;
+    }
+    .text-card-img {
+        font-size: 12px;
+        padding: 20px;
+        margin-top: 14px;
+    }
+    .innovacion {
+        grid-column: 1 / span 4;
+    }
+    .pasion {
+        grid-column: 5 / span 4;
+    }
+    .excelencia {
+        grid-column: 9 / span 4;
+    }
+    .simple-line {
+        height: 1px;
+        margin: 40px 0px;
+    }
+    .vision-historia {
+        gap: 32px;
+        margin-bottom: 55px;
+    }
+    .vision-historia .vh-card:nth-child(1) {
+        grid-column: 1 / span 4;
+    }
+    .vision-historia .vh-card:nth-child(3) {
+        grid-column: 9 / span 4;
+    }
+    .vh-card-text {
+        font-size: 12px;
+        padding: 24px;
+    }
+    /* aqui llegue continuamos manania :D */
+    .vh-card-title {
+        font-size: 20px;
+        margin-top: 14px;
+    }
+    .vh-card-astronaut {
+        width: 200px;
+        margin: auto;
+        grid-column: 5 / span 4;
+    }
+}
+
+@media (max-width: 668px) {
+    .quienessomos {
+        padding: 12px 0px 60px 0px;
+        font-size: 11px;
+    }
+    .text-p1 {
+        grid-column: 2 / span 5;
+    }
+    .text-p1 h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .about-img {
+        grid-column: 7 / span 6;
+    }
+    .about-logo {
+        width: 100px;
+        height: auto;
+    }
+    .bigcube {
+        margin: 0px 20px;
+    }
+    .title-valores {
+        font-size: 16px;
+        margin-top: 22px;
+    }
+    .title-valores span {
+        font-size: 24px;
+    }
+    .valores {
+        margin: 8px;
+        gap: 30px;
+    }
+    .valores_circle_img {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #ffffff;
+        margin: 20px auto;
+    }
+    .valores_circle_img img {
+        width: 80px;
+        height: auto;
+    }
+    .title-card_img {
+        font-size: 14px;
+    }
+    .text-card-img {
+        font-size: 11px;
+        padding: 20px;
+        margin-top: 12px;
+    }
+    .innovacion {
+        grid-column: 1 / span 4;
+    }
+    .pasion {
+        grid-column: 5 / span 4;
+    }
+    .excelencia {
+        grid-column: 9 / span 4;
+    }
+    .simple-line {
+        height: 1px;
+        margin: 35px 0px;
+    }
+    .vision-historia {
+        gap: 30px;
+        margin-bottom: 65px;
+    }
+    .vision-historia .vh-card:nth-child(1) {
+        grid-column: 1 / span 4;
+    }
+    .vision-historia .vh-card:nth-child(3) {
+        grid-column: 9 / span 4;
+    }
+    .vh-card-text {
+        font-size: 11px;
+        padding: 24px;
+    }
+    .vh-card-title {
+        font-size: 16px;
+        margin-top: 14px;
+    }
+    .vh-card-astronaut {
+        width: 160px;
+        margin: auto;
+        grid-column: 5 / span 4;
+    }
+}
+
+@media (max-width: 568px) {
+    .quienessomos {
+        padding: 12px 0px 60px 0px;
+        font-size: 13px;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .text-p1 {
+        grid-column: 2 / span 10;
+        grid-row: 2 / span 1;
+    }
+    .text-p1 h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .about-img {
+        grid-column: 2 / span 10;
+        grid-row: 1 / span 1;
+    }
+    .about-logo {
+        width: 120px;
+        height: auto;
+    }
+    .bigcube {
+        margin: 0px 20px;
+    }
+    .title-valores {
+        font-size: 20px;
+        margin-top: 28px;
+    }
+    .title-valores span {
+        font-size: 28px;
+    }
+    .valores {
+        margin: 24px;
+        gap: 30px;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 40px;
+    }
+    .innovacion {
+        grid-column: 2 / span 10;
+        grid-row: 1 / span 1;
+    }
+    .pasion {
+        grid-column: 2 / span 10;
+        grid-row: 2 / span 1;
+    }
+    .excelencia {
+        grid-column: 2 / span 10;
+        grid-row: 3 / span 1;
+    }
+    .valores_circle_img {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ffffff;
+        margin: 20px auto;
+    }
+    .valores_circle_img img {
+        width: 100px;
+        height: auto;
+    }
+    .title-card_img {
+        font-size: 18px;
+    }
+    .text-card-img {
+        font-size: 13px;
+        padding: 20px;
+        margin-top: 12px;
+    }
+    .simple-line {
+        height: 1px;
+        margin: 40px 0px;
+    }
+    .vision-historia {
+        gap: 30px;
+        margin-bottom: 45px;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 0px;
+    }
+    .vision-historia .vh-card:nth-child(1) {
+        grid-row: 1;
+        grid-column: 2 / span 9;
+    }
+    .vision-historia .vh-card:nth-child(3) {
+        grid-row: 2;
+        grid-column: 2 / span 16;
+    }
+    .vh-card-text {
+        font-size: 13px;
+        padding: 24px;
+    }
+    .vh-card-title {
+        font-size: 16px;
+        margin-top: 14px;
+    }
+    .vh-card-astronaut {
+        width: 160px;
+        margin: auto;
+        grid-column: 9 / span 10;
+        grid-row: 1 / span 1;
+    }
+}
+
+@media (max-width: 544px) {}
 
 @media (max-width: 425px) {}
 
