@@ -12,7 +12,6 @@
 .columns{
   grid-column: span 12;
 }
-
 .background{
   grid-column: 2/ span 10;
   display: grid;
@@ -27,28 +26,22 @@
   border-radius: 25px;
 }
 
-
-
 /*title*/
 
 .title {
   grid-column: span 10;
   color: white;
 }
-
 .title h1 {
   font-family: 'Martel', serif;
   font-size: 4vw;
 }
 
-
 /*Form*/
 
 .form {
   grid-column: 3 /span 6;
-
 }
-
 .form-control {
   border-radius: 10px;
   border: none;
@@ -57,9 +50,7 @@
   height: 7vh;
   background-color: #D0D0D0;
   font-size: 2vh;
-
 }
-
 .form-text {
   border-radius: 10px;
   border: none;
@@ -70,17 +61,15 @@
   background-color: #D0D0D0;
   font-size: 2vh;
 }
-
 .form-control::placeholder {
   font-family: 'Martel', serif;
 }
-
 .form-text::placeholder {
   font-family: 'Martel', serif;
 }
 
-
 /*Button*/
+
 .buttonForm{
   padding-right: 3vh;
   padding-left: 3vh;
@@ -94,20 +83,16 @@
   font-family: 'Alfa Slab One', cursive;
   font-size: 1.5vw;
   margin-top: 3vh;
-
 }
 .buttonForm:hover{
   background-color: #061C5B;
   justify-content: center;
 }
-
 .buttonDiv {
   grid-column: 5 / span 2;
   margin-top: 1vh;
   margin-bottom: 1vh;
 }
-
-
 
 /*Contact info*/
 
@@ -115,27 +100,25 @@
   grid-column: 4 / span 4;
   color: white;
 }
-
 .contactInfo p {
   font-size: 1.5vw;
+  margin: 0;
   font-family: 'Roboto', sans-serif;
 }
-
 .socialMedia {
   grid-column: 4/ span 4;
 }
-
 .socialMedia i{
   font-size: 3vw;
   padding: 1vw;
 }
 
-@media screen and (width: 2560px) {
+/*Queries*/
 
+@media screen and (width: 2560px) {
   .form-control {
     border-radius: 20px;
   }
-
   .form-text {
     border-radius: 20px;
   }
@@ -143,7 +126,6 @@
     padding-right: 4vh;
     padding-left: 4vh;
     border-radius: 20px;
-
   }
 }
 @media screen and (max-width: 920px) {
@@ -155,20 +137,15 @@
     grid-column: 2 /span 8;
   }
   .form-control {
-
     font-size: 1.3vh;
   }
-
   .form-text {
-
     font-size: 1.3vh;
   }
-
   .contactInfo p {
     font-size: 2vw;
     font-family: 'Roboto', sans-serif;
   }
-
 }
 
 @media screen and (max-width: 798px) {
@@ -178,7 +155,6 @@
   .title h1 {
     font-size: 7vw;
   }
-
   .socialMedia i{
     font-size: 4vw;
   }
@@ -190,7 +166,6 @@
     font-size: 2vw;
     font-family: 'Roboto', sans-serif;
   }
-
   .buttonForm{
     font-size: 2vw;
   }
@@ -199,7 +174,6 @@
   .title h1 {
     font-size: 6vw;
   }
-
   .form {
     grid-column: 1 /span 10;
   }
@@ -215,19 +189,15 @@
     font-size: 5vw;
     padding: 2vw;
   }
-
   .socialMedia {
     grid-column: 1 / span 10;
   }
-
   .contactInfo {
     grid-column: 1 / span 10;
   }
-
   .contactInfo p {
     font-size: 3vw;
   }
-
   .buttonForm{
     font-size: 3vw;
   }
@@ -235,7 +205,6 @@
 @media screen and (max-width: 442px) {
   .background{
     grid-column: 1/ span 12;
-
   }
   .title h1 {
     font-family: 'Martel', serif;
@@ -246,7 +215,6 @@
   }
   .socialMedia i {
     font-size: 8vw;
-
   }
   .form {
     grid-column: 2 /span 8;
@@ -256,22 +224,18 @@
   }
 }
 @media screen and (max-width: 320px) {
-
   .background{
     grid-column: 1/ span 11;
-
   }
   .form {
     grid-column: 2 /span 8;
-
   }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 300px) {
   .grid-layout{
     gap:0;
   }
-
   .background{
     grid-column: 1/ span 12;
     gap: 0;
@@ -283,19 +247,19 @@
   .socialMedia {
     grid-column: 1 / span 11;
   }
-
   .contactInfo {
     grid-column: 1 / span 11;
+  }
+  .contactInfo p {
+    margin-bottom: 1vh;
   }
   .title{
     grid-column: span 11;
   }
-
   .form-control {
     padding: 2vw;
     font-size: 1.5vh;
   }
-
   .form-text {
     padding: 2vw;
     font-size: 1.5vh;
