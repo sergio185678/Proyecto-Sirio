@@ -3,18 +3,18 @@
     margin: 0;
     list-style-type: none;
     color: white;
+    --fontsize-little-text: 22px;
+    --fontsize-normal-text: 30px;
 }
 
 .quienessomos {
+    padding: 50px 0px 200px 0px;
+    font-size: var(--fontsize-little-text);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding: 50px 0px 200px 0px;
-    font-size: 22px;
     background-image: url("../../../assets/images/about/about-background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    justify-content: center;
-    align-items: center;
 }
 
 .text-p1 {
@@ -22,19 +22,20 @@
 }
 
 .text-p1 h2 {
-    text-align: center;
-    font-family: 'Martel';
     font-size: 70px;
-    font-weight: 500;
     margin-bottom: 50px;
+    font-family: 'Martel';
+    text-align: center;
+    font-weight: 500;
 }
 
 .card-text {
-    background-color: rgb(0, 0, 0, 0.75);
+    font-size: var(--fontsize-little-text);
     font-family: 'Roboto';
-    border-radius: 30px;
-    padding: 10%;
     text-align: justify;
+    background-color: rgb(0, 0, 0, 0.75);
+    padding: 10%;
+    border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
@@ -44,56 +45,76 @@
 .about-img {
     grid-column: 7 / span 6;
     margin: auto;
+    padding: 20px;
     background-color: white;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
 }
 
 .about-logo {
-    background-color: transparent;
     width: 300px;
     height: auto;
+    background-color: transparent;
 }
 
 .valores-vision-historia {
     display: grid;
     background-color: #141D2E;
-    align-items: center;
-    justify-content: center;
 }
 
 .bigcube {
-    margin: 0px 100px;
-}
-
-.title-valores {
-    font-family: 'Martel';
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 30px;
-    margin-top: 50px;
-}
-
-.title-valores span {
-    text-align: center;
-    font-size: 50px;
-    color: #ffffff;
+    margin: 50px 100px;
 }
 
 .valores {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin: 10px 50px;
-    gap: 32px;
+    gap: 40px;
+}
+
+.simple-line {
+    height: 5px;
+    margin: 80px 0px;
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.title-valores {
+    font-size: var(--fontsize-normal-text);
+    margin-bottom: 50px;
+    font-family: 'Martel';
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.title-valores span {
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.innovacion {
+    grid-column: 1 / span 4;
+    --color: hsl(302, 100%, 50%);
+}
+
+.pasion {
+    grid-column: 5 / span 4;
+    --color: hsl(0, 100%, 50%);
+}
+
+.excelencia {
+    grid-column: 9 / span 4;
+    --color: hsl(240, 100%, 50%);
 }
 
 .card_img {
@@ -102,32 +123,20 @@
 }
 
 .valores_circle_img {
-    display: flex;
+    margin: 30px auto;
     width: 230px;
     height: 230px;
+    display: flex;
     background-color: transparent;
     align-items: center;
     justify-content: center;
-    border: 8px solid #ffffff;
+    border: 8px solid white;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin: 30px auto;
     box-shadow: 0px 0px 0px 8px #141313, 0 0 600px 0.5px var(--color);
-}
-
-.innovacion {
-    --color: hsl(302, 100%, 50%);
-}
-
-.pasion {
-    --color: hsl(0, 100%, 50%);
-}
-
-.excelencia {
-    --color: hsl(240, 100%, 50%);
 }
 
 .valores_circle_img img {
@@ -136,99 +145,84 @@
 }
 
 .title-card_img {
+    font-size: var(--fontsize-normal-text);
     font-family: 'Martel';
     text-align: center;
     font-weight: 500;
-    font-size: 30px;
 }
 
 .text-card-img {
+    margin-top: 50px;
+    font-size: var(--fontsize-normal-text);
     display: flex;
     flex-grow: 1;
     text-align: justify;
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 24px;
     background-color: rgb(10, 15, 24, 0.5);
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    padding: 30px;
-    margin-top: 50px;
-}
-
-.innovacion {
-    grid-column: 1 / span 4;
-}
-
-.pasion {
-    grid-column: 5 / span 4;
-}
-
-.excelencia {
-    grid-column: 9 / span 4;
-}
-
-.simple-line {
-    margin: auto;
-    width: 100%;
-    height: 5px;
-    background-color: #0047FF;
-    margin: 80px 0px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    padding: 10%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 .vision-historia {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 32px;
-    margin-bottom: 100px;
-}
-
-.vh-card {
-    align-self: center;
-}
-
-.vision-historia .vh-card:nth-child(1) {
-    grid-column: 1 / span 4;
-}
-
-.vision-historia .vh-card:nth-child(3) {
-    grid-column: 9 / span 4;
+    grid-template-rows: auto 1fr auto;
+    gap: 40px;
 }
 
 .vh-card-text {
+    font-size: var(--fontsize-little-text);
+    display: grid;
+    height: 100%;
     font-family: 'Roboto';
-    font-size: 22px;
-    background-color: rgb(10, 15, 24, 0.5);
-    margin: auto;
-    padding: 25px;
     text-align: justify;
+    margin: 0px auto;
+    padding: 10%;
     border-radius: 30px;
+    background-color: rgb(10, 15, 24, 0.5);
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+}
+
+.Mision {
+    grid-row: 1;
+    grid-column: 1 / span 4;
+}
+
+.Vision {
+    grid-row: 1;
+    grid-column: 9 / span 4;
 }
 
 .vh-card-title {
+    font-size: var(--fontsize-normal-text);
     font-family: 'Martel';
-    font-size: 30px;
-    font-weight: 500;
-    margin-top: 30px;
     text-align: center;
+    font-weight: 500;
+}
+
+.MisionTitle {
+    grid-row: 2;
+    grid-column: 1 / span 4;
+}
+
+.VisionTitle {
+    grid-row: 2;
+    grid-column: 9 / span 4;
 }
 
 .vh-card-astronaut {
-    width: 350px;
-    margin: auto;
+    width: 300px;
+    grid-row: 1;
     grid-column: 5 / span 4;
+    margin: 0px auto;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -236,315 +230,191 @@
     -o-border-radius: 30px;
 }
 
-@media (max-width: 2560px) {}
+@media (max-width: 2760px) {
+    * {
+        --fontsize-little-text: 30px;
+        --fontsize-normal-text: 42px;
+    }
+    .quienessomos {
+        font-size: var(--fontsize-little-text);
+    }
+    .title-valores span {
+        font-size: 56px;
+    }
+    .title-card_img {
+        font-size: var(--fontsize-normal-text);
+    }
+    .text-card-img {
+        font-size: var(--fontsize-little-text);
+    }
+    .vh-card-text {
+        font-size: var(--fontsize-little-text);
+    }
+    .vh-card-title {
+        font-size: var(--fontsize-normal-text)
+    }
+    .vh-card-astronaut {
+        width: 380px;
+    }
+}
 
-@media (max-width: 1440px) {
+@media (max-width: 1740px) {
+    * {
+        --fontsize-little-text: 20px;
+        --fontsize-normal-text: 28px;
+    }
     .quienessomos {
         padding: 40px 0px 150px 0px;
-        font-size: 20px;
-    }
-    .text-p1 {
-        grid-column: 2 / span 5;
+        font-size: var(--fontsize-little-text);
     }
     .text-p1 h2 {
         font-size: 60px;
         margin-bottom: 40px;
     }
-    .about-img {
-        grid-column: 7 / span 6;
-        padding: 15px;
-    }
     .about-logo {
         width: 270px;
         height: auto;
     }
-    .bigcube {
-        margin: 0px 80px;
-    }
-    .title-valores {
-        font-size: 30px;
-        margin-top: 45px;
-    }
     .title-valores span {
         font-size: 48px;
-    }
-    .valores {
-        margin: 8px 45px;
-        gap: 40px;
     }
     .valores_circle_img {
         width: 220px;
         height: 220px;
-        border: 7px solid #ffffff;
-        margin: 28px auto;
+        border-width: 4px;
     }
     .valores_circle_img img {
         width: 220px;
         height: auto;
     }
     .title-card_img {
-        font-size: 28px;
+        font-size: var(--fontsize-normal-text);
     }
     .text-card-img {
-        font-size: 22px;
-        padding: 28px;
+        font-size: var(--fontsize-little-text);
         margin-top: 40px;
     }
-    .innovacion {
-        grid-column: 1 / span 4;
-    }
-    .pasion {
-        grid-column: 5 / span 4;
-    }
-    .excelencia {
-        grid-column: 9 / span 4;
-    }
-    .simple-line {
-        margin: auto;
-        width: 100%;
-        height: 4.5px;
-        margin: 80px 0px;
-    }
-    .vision-historia {
-        gap: 40px;
-        margin-bottom: 80px;
-    }
-    .vision-historia .vh-card:nth-child(1) {
-        grid-column: 1 / span 4;
-    }
-    .vision-historia .vh-card:nth-child(3) {
-        grid-column: 9 / span 4;
-    }
     .vh-card-text {
-        font-size: 20px;
-        padding: 30px;
+        font-size: var(--fontsize-little-text);
     }
     .vh-card-title {
-        font-size: 40px;
-        margin-top: 30px;
+        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
-        width: 320px;
-        margin: auto;
-        grid-column: 5 / span 4;
+        width: 280px;
     }
 }
 
 @media (max-width: 1280px) {
-    .quienessomos {
-        padding: 30px 0px 140px 0px;
-        font-size: 18px;
+    * {
+        --fontsize-little-text: 18px;
+        --fontsize-normal-text: 26px;
     }
-    .text-p1 {
-        grid-column: 2 / span 5;
+    .quienessomos {
+        font-size: var(--fontsize-little-text);
     }
     .text-p1 h2 {
         font-size: 50px;
         margin-bottom: 30px;
     }
-    .about-img {
-        grid-column: 7 / span 6;
-        padding: 10px;
-    }
     .about-logo {
         width: 250px;
         height: auto;
     }
-    .bigcube {
-        margin: 0px 60px;
-    }
-    .title-valores {
-        font-size: 28px;
-        margin-top: 40px;
-    }
     .title-valores span {
-        font-size: 48px;
-    }
-    .valores {
-        margin: 8px 8px;
-        gap: 45px;
+        font-size: 46px;
     }
     .valores_circle_img {
         width: 200px;
         height: 200px;
-        border: 6px solid #ffffff;
-        margin: 26px auto;
+        border-width: 3px;
     }
     .valores_circle_img img {
         width: 200px;
         height: auto;
     }
     .title-card_img {
-        font-size: 26px;
+        font-size: var(--fontsize-normal-text);
     }
     .text-card-img {
-        font-size: 20px;
-        padding: 26px;
+        font-size: var(--fontsize-little-text);
         margin-top: 32px;
     }
-    .innovacion {
-        grid-column: 1 / span 4;
-    }
-    .pasion {
-        grid-column: 5 / span 4;
-    }
-    .excelencia {
-        grid-column: 9 / span 4;
-    }
-    .simple-line {
-        margin: auto;
-        width: 100%;
-        height: 4.5px;
-        margin: 80px 0px;
-    }
-    .vision-historia {
-        gap: 45px;
-        margin-bottom: 70px;
-    }
-    .vision-historia .vh-card:nth-child(1) {
-        grid-column: 1 / span 4;
-    }
-    .vision-historia .vh-card:nth-child(3) {
-        grid-column: 9 / span 4;
-    }
     .vh-card-text {
-        font-size: 20px;
-        padding: 25px;
+        font-size: var(--fontsize-little-text);
     }
     .vh-card-title {
-        font-size: 36px;
-        margin-top: 24px;
+        font-size: var(--fontsize-normal-text)
     }
-    .vh-card-astronaut {
-        width: 300px;
-        margin: auto;
-        grid-column: 5 / span 4;
+    .bigcube {
+        margin: 50px;
     }
 }
 
 @media (max-width: 1164px) {
     .text-p1 h2 {
         font-size: 42px;
-        margin-bottom: 25px;
     }
 }
 
-@media (max-width: 1060px) {
-    .quienessomos {
-        padding: 24px 0px 124px 0px;
-        font-size: 16px;
+@media (max-width: 1130px) {
+    * {
+        --fontsize-little-text: 17px;
+        --fontsize-normal-text: 22px;
     }
-    .text-p1 {
-        grid-column: 2 / span 5;
+    .quienessomos {
+        font-size: var(--fontsize-little-text);
     }
     .text-p1 h2 {
         font-size: 35px;
         margin-bottom: 20px;
     }
-    .about-img {
-        grid-column: 7 / span 6;
-    }
     .about-logo {
         width: 220px;
         height: auto;
     }
-    .bigcube {
-        margin: 0px 40px;
-    }
-    .title-valores {
-        font-size: 26px;
-        margin-top: 40px;
-    }
     .title-valores span {
         font-size: 40px;
-    }
-    .valores {
-        margin: 8px 8px;
-        gap: 50px;
     }
     .valores_circle_img {
         width: 180px;
         height: 180px;
-        border: 4px solid #ffffff;
-        margin: 24px auto;
+        border-width: 2px;
     }
     .valores_circle_img img {
         width: 180px;
         height: auto;
     }
     .title-card_img {
-        font-size: 24px;
+        font-size: var(--fontsize-normal-text);
     }
     .text-card-img {
-        font-size: 18px;
-        padding: 26px;
-        margin-top: 26px;
-    }
-    .innovacion {
-        grid-column: 1 / span 4;
-    }
-    .pasion {
-        grid-column: 5 / span 4;
-    }
-    .excelencia {
-        grid-column: 9 / span 4;
-    }
-    .simple-line {
-        margin: auto;
-        width: 100%;
-        height: 4px;
-        margin: 60px 0px;
-    }
-    .vision-historia {
-        gap: 50px;
-        margin-bottom: 40px;
-    }
-    .vision-historia .vh-card:nth-child(1) {
-        grid-column: 1 / span 4;
-    }
-    .vision-historia .vh-card:nth-child(3) {
-        grid-column: 9 / span 4;
+        font-size: var(--fontsize-little-text);
+        margin-top: 32px;
     }
     .vh-card-text {
-        font-size: 18px;
-        padding: 25px;
+        font-size: var(--fontsize-little-text);
     }
     .vh-card-title {
-        font-size: 30px;
-        margin-top: 22px;
-    }
-    .vh-card-astronaut {
-        width: 280px;
-        margin: auto;
-        grid-column: 5 / span 4;
+        font-size: var(--fontsize-normal-text)
     }
 }
 
-@media (max-width: 960px) {
-    .quienessomos {
-        padding: 22px 0px 116px 0px;
-        font-size: 14px;
+@media (max-width: 973px) {
+    * {
+        --fontsize-little-text: 15px;
+        --fontsize-normal-text: 20px;
     }
-    .text-p1 {
-        grid-column: 2 / span 5;
+    .quienessomos {
+        font-size: var(--fontsize-little-text);
     }
     .text-p1 h2 {
         font-size: 30px;
         margin-bottom: 15px;
     }
-    .about-img {
-        grid-column: 7 / span 6;
-    }
     .about-logo {
         width: 180px;
         height: auto;
-    }
-    .bigcube {
-        margin: 0px 30px;
-    }
-    .title-valores {
-        font-size: 22px;
-        margin-top: 32px;
     }
     .title-valores span {
         font-size: 32px;
@@ -556,920 +426,433 @@
     .valores_circle_img {
         width: 150px;
         height: 150px;
-        border: 2px solid #ffffff;
-        margin: 20px auto;
     }
     .valores_circle_img img {
         width: 150px;
         height: auto;
     }
     .title-card_img {
-        font-size: 20px;
+        font-size: var(--fontsize-normal-text);
     }
     .text-card-img {
-        font-size: 14px;
-        padding: 24px;
-        margin-top: 24px;
-    }
-    .innovacion {
-        grid-column: 1 / span 4;
-    }
-    .pasion {
-        grid-column: 5 / span 4;
-    }
-    .excelencia {
-        grid-column: 9 / span 4;
-    }
-    .simple-line {
-        height: 3px;
-        margin: 50px 0px;
-    }
-    .vision-historia {
-        gap: 50px;
-        margin-bottom: 35px;
-    }
-    .vision-historia .vh-card:nth-child(1) {
-        grid-column: 1 / span 4;
-    }
-    .vision-historia .vh-card:nth-child(3) {
-        grid-column: 9 / span 4;
+        font-size: var(--fontsize-little-text);
+        margin-top: 32px;
     }
     .vh-card-text {
-        font-size: 18px;
-        padding: 20px;
+        font-size: var(--fontsize-little-text);
     }
     .vh-card-title {
-        font-size: 25px;
-        margin-top: 18px;
+        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
         width: 240px;
-        margin: auto;
-        grid-column: 5 / span 4;
     }
 }
 
-@media (max-width: 860px) {
-    .quienessomos {
-        padding: 20px 0px 108px 0px;
-        font-size: 12px;
+@media (max-width: 906px) {
+    * {
+        --fontsize-little-text: 14px;
+        --fontsize-normal-text: 19px;
     }
-    .text-p1 {
-        grid-column: 2 / span 5;
+    .quienessomos {
+        font-size: var(--fontsize-little-text);
     }
     .text-p1 h2 {
         font-size: 25px;
         margin-bottom: 10px;
     }
-    .about-img {
-        grid-column: 7 / span 6;
-    }
     .about-logo {
         width: 140px;
         height: auto;
     }
-    .bigcube {
-        margin: 0px 25px;
-    }
     .title-valores {
-        font-size: 20px;
-        margin-top: 28px;
+        margin-bottom: 20px;
     }
     .title-valores span {
         font-size: 28px;
     }
     .valores {
         margin: 4px;
-        gap: 40px;
+        gap: 30px;
+    }
+    .bigcube {
+        margin: 50px 20px;
+    }
+    .vision-historia {
+        gap: 20px;
     }
     .valores_circle_img {
         width: 130px;
         height: 130px;
-        border: 1px solid #ffffff;
-        margin: 30px auto;
     }
     .valores_circle_img img {
         width: 130px;
         height: auto;
     }
     .title-card_img {
-        font-size: 18px;
+        font-size: var(--fontsize-normal-text);
     }
     .text-card-img {
-        font-size: 12px;
-        padding: 20px;
-        margin-top: 18px;
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-    }
-    .innovacion {
-        grid-column: 1 / span 4;
-    }
-    .pasion {
-        grid-column: 5 / span 4;
-    }
-    .excelencia {
-        grid-column: 9 / span 4;
-    }
-    .simple-line {
-        height: 2px;
-        margin: 45px 0px;
-    }
-    .vision-historia {
-        gap: 45px;
-        margin-bottom: 35px;
-    }
-    .vision-historia .vh-card:nth-child(1) {
-        grid-column: 1 / span 4;
-    }
-    .vision-historia .vh-card:nth-child(3) {
-        grid-column: 9 / span 4;
+        font-size: var(--fontsize-little-text);
+        margin-top: 30px;
     }
     .vh-card-text {
-        font-size: 14px;
-        padding: 24px;
+        font-size: var(--fontsize-little-text);
     }
-    /* aqui llegue continuamos manania :D */
     .vh-card-title {
-        font-size: 25px;
-        margin-top: 18px;
-    }
-    .vh-card-astronaut {
-        width: 240px;
-        margin: auto;
-        grid-column: 5 / span 4;
+        font-size: var(--fontsize-normal-text)
     }
 }
 
 @media (max-width: 768px) {
-    .quienessomos {
-        padding: 14px 0px 80px 0px;
-        font-size: 12px;
+    * {
+        --fontsize-little-text: 12px;
+        --fontsize-normal-text: 18px;
     }
-    .text-p1 {
-        grid-column: 2 / span 5;
+    .quienessomos {
+        font-size: var(--fontsize-little-text);
     }
     .text-p1 h2 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .about-img {
-        grid-column: 7 / span 6;
+        font-size: 25px;
     }
     .about-logo {
         width: 120px;
         height: auto;
     }
-    .bigcube {
-        margin: 0px 20px;
-    }
-    .title-valores {
-        font-size: 18px;
-        margin-top: 24px;
-    }
     .title-valores span {
         font-size: 26px;
-    }
-    .valores {
-        margin: 10px;
-        gap: 32px;
     }
     .valores_circle_img {
         width: 100px;
         height: 100px;
-        border: 1px solid #ffffff;
-        margin: 25px auto;
     }
     .valores_circle_img img {
         width: 100px;
         height: auto;
     }
     .title-card_img {
-        font-size: 16px;
+        font-size: var(--fontsize-normal-text);
     }
     .text-card-img {
-        font-size: 12px;
-        padding: 20px;
-        margin-top: 14px;
-    }
-    .innovacion {
-        grid-column: 1 / span 4;
-    }
-    .pasion {
-        grid-column: 5 / span 4;
-    }
-    .excelencia {
-        grid-column: 9 / span 4;
-    }
-    .simple-line {
-        height: 1px;
-        margin: 40px 0px;
-    }
-    .vision-historia {
-        gap: 32px;
-        margin-bottom: 55px;
-    }
-    .vision-historia .vh-card:nth-child(1) {
-        grid-column: 1 / span 4;
-    }
-    .vision-historia .vh-card:nth-child(3) {
-        grid-column: 9 / span 4;
+        font-size: var(--fontsize-little-text);
+        margin-top: 30px;
     }
     .vh-card-text {
-        font-size: 12px;
-        padding: 24px;
+        font-size: var(--fontsize-little-text);
     }
-    /* aqui llegue continuamos manania :D */
     .vh-card-title {
-        font-size: 20px;
-        margin-top: 14px;
+        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
-        width: 200px;
-        margin: auto;
-        grid-column: 5 / span 4;
+        width: 210px;
     }
 }
 
-@media (max-width: 668px) {
+@media (max-width: 680px) {
+    * {
+        --fontsize-little-text: 11px;
+        --fontsize-normal-text: 16px;
+    }
     .quienessomos {
-        padding: 12px 0px 60px 0px;
-        font-size: 11px;
-    }
-    .text-p1 {
-        grid-column: 2 / span 5;
-    }
-    .text-p1 h2 {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    .about-img {
-        grid-column: 7 / span 6;
+        font-size: var(--fontsize-little-text);
     }
     .about-logo {
         width: 100px;
         height: auto;
     }
-    .bigcube {
-        margin: 0px 20px;
-    }
-    .title-valores {
-        font-size: 16px;
-        margin-top: 22px;
-    }
     .title-valores span {
         font-size: 24px;
-    }
-    .valores {
-        margin: 8px;
-        gap: 30px;
     }
     .valores_circle_img {
         width: 80px;
         height: 80px;
-        border: 1px solid #ffffff;
-        margin: 20px auto;
+        box-shadow: 0px 0px 0px 5px #141313, 0 0 600px 0.5px var(--color);
     }
     .valores_circle_img img {
         width: 80px;
         height: auto;
+        border-width: 1px;
     }
     .title-card_img {
-        font-size: 14px;
+        font-size: var(--fontsize-normal-text);
     }
     .text-card-img {
-        font-size: 11px;
-        padding: 20px;
-        margin-top: 12px;
-    }
-    .innovacion {
-        grid-column: 1 / span 4;
-    }
-    .pasion {
-        grid-column: 5 / span 4;
-    }
-    .excelencia {
-        grid-column: 9 / span 4;
-    }
-    .simple-line {
-        height: 1px;
-        margin: 35px 0px;
-    }
-    .vision-historia {
-        gap: 30px;
-        margin-bottom: 65px;
-    }
-    .vision-historia .vh-card:nth-child(1) {
-        grid-column: 1 / span 4;
-    }
-    .vision-historia .vh-card:nth-child(3) {
-        grid-column: 9 / span 4;
+        font-size: var(--fontsize-little-text);
+        margin-top: 30px;
     }
     .vh-card-text {
-        font-size: 11px;
-        padding: 24px;
+        font-size: var(--fontsize-little-text);
     }
     .vh-card-title {
-        font-size: 16px;
-        margin-top: 14px;
+        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
-        width: 160px;
-        margin: auto;
-        grid-column: 5 / span 4;
+        width: 200px;
     }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 640px) {
+    * {
+        --fontsize-little-text: 13px;
+        --fontsize-normal-text: 16px;
+    }
     .quienessomos {
-        padding: 12px 0px 60px 0px;
-        font-size: 13px;
+        font-size: var(--fontsize-little-text);
         grid-template-rows: repeat(2, 1fr);
     }
     .text-p1 {
         grid-column: 2 / span 10;
-        grid-row: 2 / span 1;
-    }
-    .text-p1 h2 {
-        font-size: 20px;
-        margin-bottom: 10px;
+        grid-row: 2;
     }
     .about-img {
         grid-column: 2 / span 10;
-        grid-row: 1 / span 1;
+        grid-row: 1;
     }
     .about-logo {
         width: 120px;
         height: auto;
     }
-    .bigcube {
-        margin: 0px 20px;
-    }
-    .title-valores {
-        font-size: 20px;
-        margin-top: 28px;
-    }
     .title-valores span {
         font-size: 28px;
     }
     .valores {
-        margin: 24px;
-        gap: 30px;
+        margin: 0px;
+        gap: 0px;
         grid-template-rows: repeat(3, 1fr);
         row-gap: 40px;
     }
     .innovacion {
-        grid-column: 2 / span 10;
         grid-row: 1;
+        grid-column: 2 / span 10;
     }
     .pasion {
-        grid-column: 2 / span 10;
         grid-row: 2;
+        grid-column: 2 / span 10;
     }
     .excelencia {
-        grid-column: 2 / span 10;
         grid-row: 3;
+        grid-column: 2 / span 10;
     }
     .valores_circle_img {
         width: 100px;
         height: 100px;
-        border: 1px solid #ffffff;
-        margin: 20px auto;
+        border-width: 2px;
     }
     .valores_circle_img img {
         width: 100px;
         height: auto;
     }
     .title-card_img {
-        font-size: 18px;
+        font-size: var(--fontsize-normal-text);
     }
     .text-card-img {
-        font-size: 13px;
-        padding: 20px;
+        font-size: var(--fontsize-little-text);
         margin-top: 12px;
     }
     .simple-line {
-        height: 1px;
-        margin: 40px 0px;
+        height: 2px;
     }
     .vision-historia {
-        gap: 30px;
-        margin-bottom: 45px;
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 0px;
+        grid-template-rows: 4 1fr auto;
+        gap: 20px;
+        row-gap: 10px;
     }
-    .vision-historia .vh-card:nth-child(1) {
+    .MisionTitle {
         grid-row: 1;
         grid-column: 2 / span 6;
     }
-    .vision-historia .vh-card:nth-child(3) {
+    .vision-historia .Mision {
         grid-row: 2;
+        grid-column: 2 / span 6;
+    }
+    .VisionTitle {
+        margin-top: 40px;
+        grid-row: 3;
+        grid-column: 1 / span 12;
+    }
+    .vision-historia .Vision {
+        grid-row: 4;
         grid-column: 2 / span 10;
     }
     .vh-card-text {
-        font-size: 13px;
-        padding: 24px;
+        font-size: var(--fontsize-little-text);
     }
     .vh-card-title {
-        font-size: 16px;
-        margin-top: 14px;
+        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
         width: 160px;
         margin: auto;
-        grid-column: 7 / span 6;
-        grid-row: 1;
+        grid-column: 8 / span 4;
+        grid-row: 2;
     }
 }
 
-@media (max-width: 544px) {
+@media (max-width: 560px) {
+    * {
+        --fontsize-little-text: 15px;
+        --fontsize-normal-text: 20px;
+    }
     .quienessomos {
-        padding: 12px 0px 60px 0px;
-        font-size: 14px;
-        grid-template-rows: repeat(2, 1fr);
-    }
-    .text-p1 {
-        grid-column: 2 / span 10;
-        grid-row: 2;
-    }
-    .text-p1 h2 {
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
-    .about-img {
-        grid-column: 2 / span 10;
-        grid-row: 1;
-    }
-    .about-logo {
-        width: 140px;
-        height: auto;
-    }
-    .bigcube {
-        margin: 0px 20px;
-    }
-    .title-valores {
-        font-size: 20px;
-        margin-top: 28px;
-    }
-    .title-valores span {
-        font-size: 28px;
-    }
-    .valores {
-        margin: 24px;
-        gap: 30px;
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 40px;
-    }
-    .innovacion {
-        grid-column: 2 / span 10;
-        grid-row: 1;
-    }
-    .pasion {
-        grid-column: 2 / span 10;
-        grid-row: 2;
-    }
-    .excelencia {
-        grid-column: 2 / span 10;
-        grid-row: 3;
-    }
-    .valores_circle_img {
-        width: 110px;
-        height: 110px;
-        border: 1px solid #ffffff;
-        margin: 20px auto;
-    }
-    .valores_circle_img img {
-        width: 110px;
-        height: auto;
-    }
-    .title-card_img {
-        font-size: 20px;
-    }
-    .text-card-img {
-        font-size: 14px;
-        padding: 20px;
-        margin-top: 12px;
-    }
-    .line {
-        padding: 0px 24px;
-    }
-    .simple-line {
-        height: 1px;
-        flex-grow: 1;
-    }
-    .vision-historia {
-        gap: 30px;
-        margin-bottom: 45px;
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 0px;
-    }
-    .vision-historia .vh-card:nth-child(1) {
-        grid-row: 1;
-        grid-column: 2 / span 6;
-    }
-    .vision-historia .vh-card:nth-child(3) {
-        grid-row: 2;
-        grid-column: 2 / span 10;
-    }
-    .vh-card-text {
-        font-size: 14px;
-        padding: 24px;
-    }
-    .vh-card-title {
-        font-size: 16px;
-        margin-top: 14px;
-    }
-    .vh-card-astronaut {
-        width: 140px;
-        margin: auto;
-        grid-column: 7 / span 6;
-        grid-row: 1;
-    }
-}
-
-@media (max-width: 512px) {
-    .quienessomos {
-        padding: 20px 0px 60px 0px;
-        font-size: 16px;
-        grid-template-rows: repeat(2, 1fr);
-    }
-    .text-p1 {
-        grid-column: 2 / span 10;
-        grid-row: 2;
-    }
-    .text-p1 h2 {
-        font-size: 26px;
-        margin-bottom: 15px;
-    }
-    .about-img {
-        grid-column: 2 / span 10;
-        grid-row: 1;
+        font-size: var(--fontsize-little-text);
     }
     .about-logo {
         width: 150px;
         height: auto;
     }
-    .bigcube {
-        margin: 0px;
-    }
-    .title-valores {
-        font-size: 22px;
-        margin-top: 34px;
-    }
     .title-valores span {
         font-size: 30px;
     }
-    .valores {
-        margin: 0px;
-        gap: 0px;
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 40px;
-    }
-    .innovacion {
-        grid-column: 2 / span 10;
-        grid-row: 1;
-    }
-    .pasion {
-        grid-column: 2 / span 10;
-        grid-row: 2;
-    }
-    .excelencia {
-        grid-column: 2 / span 10;
-        grid-row: 3;
-    }
-    .valores_circle_img {
-        width: 110px;
-        height: 110px;
-        border: 1px solid #ffffff;
-        margin: 20px auto;
-    }
-    .valores_circle_img img {
-        width: 110px;
-        height: auto;
-    }
     .title-card_img {
-        font-size: 20px;
+        font-size: var(--fontsize-normal-text);
     }
     .text-card-img {
-        font-size: 14px;
-        padding: 20px;
-        margin-top: 12px;
-    }
-    .line {
-        padding: 0px 24px;
-    }
-    .simple-line {
-        height: 1px;
-        flex-grow: 1;
+        font-size: var(--fontsize-little-text);
     }
     .vision-historia {
-        gap: 30px;
-        margin-bottom: 45px;
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 0px;
-    }
-    .vision-historia .vh-card:nth-child(1) {
-        grid-row: 1;
-        grid-column: 2 / span 6;
-    }
-    .vision-historia .vh-card:nth-child(3) {
-        grid-row: 2;
-        grid-column: 2 / span 10;
-    }
-    .vh-card-text {
-        font-size: 14px;
-        padding: 24px;
-    }
-    .vh-card-title {
-        font-size: 16px;
-        margin-top: 14px;
-    }
-    .vh-card-astronaut {
-        width: 160px;
-        margin: auto;
-        grid-column: 7 / span 6;
-        grid-row: 1 / span 1;
-    }
-}
-
-@media (max-width: 490px) {
-    .quienessomos {
-        padding: 20px 0px 60px 0px;
-        font-size: 16px;
-        grid-template-rows: repeat(2, 1fr);
-    }
-    .text-p1 {
-        grid-column: 2 / span 10;
-        grid-row: 2;
-    }
-    .text-p1 h2 {
-        font-size: 26px;
-        margin-bottom: 15px;
-    }
-    .about-img {
-        grid-column: 2 / span 10;
-        grid-row: 1;
-    }
-    .about-logo {
-        width: 150px;
-        height: auto;
-    }
-    .bigcube {
-        margin: 0px;
-    }
-    .title-valores {
-        font-size: 22px;
-        margin-top: 34px;
-    }
-    .title-valores span {
-        font-size: 30px;
-    }
-    .valores {
-        margin: 0px;
+        grid-template-rows: 5 1fr auto;
         gap: 0px;
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 40px;
     }
-    .innovacion {
-        grid-column: 2 / span 10;
-        grid-row: 1;
-    }
-    .pasion {
-        grid-column: 2 / span 10;
-        grid-row: 2;
-    }
-    .excelencia {
-        grid-column: 2 / span 10;
-        grid-row: 3;
-    }
-    .valores_circle_img {
-        width: 110px;
-        height: 110px;
-        border: 1px solid #ffffff;
-        margin: 20px auto;
-    }
-    .valores_circle_img img {
-        width: 110px;
-        height: auto;
-    }
-    .title-card_img {
-        font-size: 24px;
-    }
-    .text-card-img {
-        font-size: 16px;
-        padding: 20px;
-        margin-top: 12px;
-    }
-    .line {
-        padding: 0px 24px;
-    }
-    .simple-line {
-        height: 1px;
-    }
-    .vision-historia {
-        gap: 30px;
-        margin-bottom: 45px;
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 20px;
-    }
-    .vision-historia .vh-card:nth-child(1) {
+    .MisionTitle {
+        margin-top: 50px;
         grid-row: 2;
         grid-column: 2 / span 10;
     }
-    .vision-historia .vh-card:nth-child(3) {
+    .vision-historia .Mision {
         grid-row: 3;
         grid-column: 2 / span 10;
+    }
+    .VisionTitle {
+        margin-top: 50px;
+        grid-row: 4;
+    }
+    .vision-historia .Vision {
+        grid-row: 5;
+        grid-column: 2 /span 10;
     }
     .vh-card-text {
-        font-size: 16px;
-        padding: 24px;
+        font-size: var(--fontsize-little-text);
     }
     .vh-card-title {
-        font-size: 20px;
-        margin-top: 14px;
+        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
         width: 200px;
         margin: auto;
-        grid-column: 2 / span 10;
         grid-row: 1;
+        grid-column: 2 / span 10;
+    }
+}
+
+@media (max-width: 490px) {
+    * {
+        --fontsize-little-text: 16px;
+        --fontsize-normal-text: 22px;
+    }
+    .quienessomos {
+        font-size: var(--fontsize-little-text);
+    }
+    .about-logo {
+        width: 160px;
+        height: auto;
+    }
+    .title-valores span {
+        font-size: 30px;
+    }
+    .title-card_img {
+        font-size: var(--fontsize-normal-text);
+    }
+    .text-card-img {
+        font-size: var(--fontsize-little-text);
+    }
+    .vh-card-text {
+        font-size: var(--fontsize-little-text);
+    }
+    .vh-card-title {
+        font-size: var(--fontsize-normal-text)
+    }
+    .vh-card-astronaut {
+        width: 220px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 440px) {
+    .text-p1 {
+        margin-top: 65px;
     }
 }
 
 @media (max-width: 375px) {
-    .vh-card-title {
-        font-size: 24px;
-    }
-    .vh-card-astronaut {
-        width: 170px;
-    }
-}
-
-@media (max-width: 335px) {
-    .quienessomos {
-        padding: 10px 0px 60px 0px;
-        font-size: 14px;
-    }
-    .text-p1 h2 {
-        font-size: 20px;
-        margin-bottom: 12px;
+    * {
+        --fontsize-little-text: 16px;
+        --fontsize-normal-text: 24px;
     }
     .about-logo {
-        width: 140px;
+        width: 180px;
         height: auto;
     }
     .bigcube {
-        margin: 0px;
-    }
-    .title-valores {
-        font-size: 18px;
-        margin-top: 34px;
-    }
-    .title-valores span {
-        font-size: 26px;
-    }
-    .valores {
-        margin: 0px;
-        gap: 0px;
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 60px;
-    }
-    .valores_circle_img {
-        width: 110px;
-        height: 110px;
-        border: 1px solid #ffffff;
-        margin: 20px auto;
-    }
-    .valores_circle_img img {
-        width: 110px;
-        height: auto;
+        margin: 50px 5;
     }
     .title-card_img {
-        font-size: 20px;
-    }
-    .text-card-img {
-        font-size: 14px;
-        padding: 20px;
-        margin-top: 12px;
-    }
-    .line {
-        padding: 0px 24px;
-    }
-    .simple-line {
-        height: 1px;
-    }
-    .vision-historia {
-        gap: 0px;
-        margin-bottom: 65px;
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 50px;
-    }
-    .vision-historia .vh-card:nth-child(1) {
-        grid-row: 2;
-        grid-column: 2 / span 10;
-    }
-    .vision-historia .vh-card:nth-child(3) {
-        grid-row: 3;
-        grid-column: 2 / span 10;
-    }
-    .vh-card-text {
-        font-size: 14px;
-        padding: 28px;
+        font-size: var(--fontsize-normal-text);
     }
     .vh-card-title {
-        font-size: 18px;
-        margin-top: 20px;
+        font-size: var(--fontsize-normal-text)
+    }
+}
+
+@media (max-width: 375px) {
+    * {
+        --fontsize-little-text: 16px;
+        --fontsize-normal-text: 24px;
+    }
+    .quienessomos {
+        grid-template-rows: auto 1fr auto;
+        row-gap: 220px;
+        font-size: var(--fontsize-little-text);
+    }
+    .about-logo {
+        width: 150px;
+        height: auto;
+    }
+    .about-img {
+        margin-top: 100px;
+    }
+    .title-valores span {
+        font-size: 34px;
+    }
+    .title-card_img {
+        font-size: var(--fontsize-normal-text);
+    }
+    .text-card-img {
+        font-size: var(--fontsize-little-text);
+    }
+    .vh-card-text {
+        font-size: var(--fontsize-little-text);
+    }
+    .vh-card-title {
+        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
-        width: 160px;
+        width: 200px;
         margin: auto;
-        grid-column: 2 / span 10;
-        grid-row: 1;
     }
 }
 
 @media (max-width: 285px) {
-    .quienessomos {
-        padding: 10px 0px 60px 0px;
-        font-size: 14px;
-    }
-    .text-p1 h2 {
-        font-size: 20px;
-        margin-bottom: 12px;
-    }
     .about-logo {
-        width: 140px;
+        width: 150px;
         height: auto;
-    }
-    .bigcube {
-        margin: 0px;
-    }
-    .title-valores {
-        font-size: 18px;
-        margin-top: 34px;
     }
     .title-valores span {
-        font-size: 26px;
+        font-size: 36px;
     }
-    .valores {
-        margin: 0px;
-        gap: 0px;
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 60px;
+    .text-p1 {
+        margin-top: 0px;
     }
-    .valores_circle_img {
-        width: 110px;
-        height: 110px;
-        border: 1px solid #ffffff;
-        margin: 20px auto;
-    }
-    .valores_circle_img img {
-        width: 110px;
-        height: auto;
-    }
-    .title-card_img {
-        font-size: 20px;
-    }
-    .text-card-img {
-        font-size: 14px;
-        padding: 20px;
-        margin-top: 12px;
-    }
-    .line {
-        padding: 0px 24px;
-    }
-    .simple-line {
-        height: 1px;
-    }
-    .vision-historia {
-        gap: 0px;
-        margin-bottom: 65px;
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 50px;
-    }
-    .vision-historia .vh-card:nth-child(1) {
-        grid-row: 2;
-        grid-column: 2 / span 10;
-    }
-    .vision-historia .vh-card:nth-child(3) {
-        grid-row: 3;
-        grid-column: 2 / span 10;
-    }
-    .vh-card-text {
-        font-size: 14px;
-        padding: 28px;
-    }
-    .vh-card-title {
-        font-size: 18px;
-        margin-top: 20px;
-    }
-    .vh-card-astronaut {
-        width: 160px;
-        margin: auto;
-        grid-column: 2 / span 10;
-        grid-row: 1;
+    .bigcube {
+        margin: 20px 6px;
     }
 }
