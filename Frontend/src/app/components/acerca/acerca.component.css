@@ -235,23 +235,8 @@
         --fontsize-little-text: 30px;
         --fontsize-normal-text: 42px;
     }
-    .quienessomos {
-        font-size: var(--fontsize-little-text);
-    }
     .title-valores span {
         font-size: 56px;
-    }
-    .title-card_img {
-        font-size: var(--fontsize-normal-text);
-    }
-    .text-card-img {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-text {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-title {
-        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
         width: 380px;
@@ -265,7 +250,6 @@
     }
     .quienessomos {
         padding: 40px 0px 150px 0px;
-        font-size: var(--fontsize-little-text);
     }
     .text-p1 h2 {
         font-size: 60px;
@@ -287,18 +271,8 @@
         width: 220px;
         height: auto;
     }
-    .title-card_img {
-        font-size: var(--fontsize-normal-text);
-    }
     .text-card-img {
-        font-size: var(--fontsize-little-text);
         margin-top: 40px;
-    }
-    .vh-card-text {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-title {
-        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
         width: 280px;
@@ -309,9 +283,6 @@
     * {
         --fontsize-little-text: 18px;
         --fontsize-normal-text: 26px;
-    }
-    .quienessomos {
-        font-size: var(--fontsize-little-text);
     }
     .text-p1 h2 {
         font-size: 50px;
@@ -333,18 +304,8 @@
         width: 200px;
         height: auto;
     }
-    .title-card_img {
-        font-size: var(--fontsize-normal-text);
-    }
     .text-card-img {
-        font-size: var(--fontsize-little-text);
         margin-top: 32px;
-    }
-    .vh-card-text {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-title {
-        font-size: var(--fontsize-normal-text)
     }
     .bigcube {
         margin: 50px;
@@ -361,9 +322,6 @@
     * {
         --fontsize-little-text: 17px;
         --fontsize-normal-text: 22px;
-    }
-    .quienessomos {
-        font-size: var(--fontsize-little-text);
     }
     .text-p1 h2 {
         font-size: 35px;
@@ -385,18 +343,8 @@
         width: 180px;
         height: auto;
     }
-    .title-card_img {
-        font-size: var(--fontsize-normal-text);
-    }
     .text-card-img {
-        font-size: var(--fontsize-little-text);
         margin-top: 32px;
-    }
-    .vh-card-text {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-title {
-        font-size: var(--fontsize-normal-text)
     }
 }
 
@@ -404,9 +352,6 @@
     * {
         --fontsize-little-text: 15px;
         --fontsize-normal-text: 20px;
-    }
-    .quienessomos {
-        font-size: var(--fontsize-little-text);
     }
     .text-p1 h2 {
         font-size: 30px;
@@ -431,18 +376,8 @@
         width: 150px;
         height: auto;
     }
-    .title-card_img {
-        font-size: var(--fontsize-normal-text);
-    }
     .text-card-img {
-        font-size: var(--fontsize-little-text);
         margin-top: 32px;
-    }
-    .vh-card-text {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-title {
-        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
         width: 240px;
@@ -453,9 +388,6 @@
     * {
         --fontsize-little-text: 14px;
         --fontsize-normal-text: 19px;
-    }
-    .quienessomos {
-        font-size: var(--fontsize-little-text);
     }
     .text-p1 h2 {
         font-size: 25px;
@@ -489,18 +421,8 @@
         width: 130px;
         height: auto;
     }
-    .title-card_img {
-        font-size: var(--fontsize-normal-text);
-    }
     .text-card-img {
-        font-size: var(--fontsize-little-text);
         margin-top: 30px;
-    }
-    .vh-card-text {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-title {
-        font-size: var(--fontsize-normal-text)
     }
 }
 
@@ -508,9 +430,6 @@
     * {
         --fontsize-little-text: 12px;
         --fontsize-normal-text: 18px;
-    }
-    .quienessomos {
-        font-size: var(--fontsize-little-text);
     }
     .text-p1 h2 {
         font-size: 25px;
@@ -530,18 +449,8 @@
         width: 100px;
         height: auto;
     }
-    .title-card_img {
-        font-size: var(--fontsize-normal-text);
-    }
     .text-card-img {
-        font-size: var(--fontsize-little-text);
         margin-top: 30px;
-    }
-    .vh-card-text {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-title {
-        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
         width: 210px;
@@ -552,9 +461,6 @@
     * {
         --fontsize-little-text: 11px;
         --fontsize-normal-text: 16px;
-    }
-    .quienessomos {
-        font-size: var(--fontsize-little-text);
     }
     .about-logo {
         width: 100px;
@@ -573,18 +479,8 @@
         height: auto;
         border-width: 1px;
     }
-    .title-card_img {
-        font-size: var(--fontsize-normal-text);
-    }
     .text-card-img {
-        font-size: var(--fontsize-little-text);
         margin-top: 30px;
-    }
-    .vh-card-text {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-title {
-        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
         width: 200px;
@@ -597,7 +493,6 @@
         --fontsize-normal-text: 16px;
     }
     .quienessomos {
-        font-size: var(--fontsize-little-text);
         grid-template-rows: repeat(2, 1fr);
     }
     .text-p1 {
@@ -642,11 +537,7 @@
         width: 100px;
         height: auto;
     }
-    .title-card_img {
-        font-size: var(--fontsize-normal-text);
-    }
     .text-card-img {
-        font-size: var(--fontsize-little-text);
         margin-top: 12px;
     }
     .simple-line {
@@ -674,12 +565,6 @@
         grid-row: 4;
         grid-column: 2 / span 10;
     }
-    .vh-card-text {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-title {
-        font-size: var(--fontsize-normal-text)
-    }
     .vh-card-astronaut {
         width: 160px;
         margin: auto;
@@ -693,21 +578,12 @@
         --fontsize-little-text: 15px;
         --fontsize-normal-text: 20px;
     }
-    .quienessomos {
-        font-size: var(--fontsize-little-text);
-    }
     .about-logo {
         width: 150px;
         height: auto;
     }
     .title-valores span {
         font-size: 30px;
-    }
-    .title-card_img {
-        font-size: var(--fontsize-normal-text);
-    }
-    .text-card-img {
-        font-size: var(--fontsize-little-text);
     }
     .vision-historia {
         grid-template-rows: 5 1fr auto;
@@ -730,12 +606,6 @@
         grid-row: 5;
         grid-column: 2 /span 10;
     }
-    .vh-card-text {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-title {
-        font-size: var(--fontsize-normal-text)
-    }
     .vh-card-astronaut {
         width: 200px;
         margin: auto;
@@ -749,27 +619,12 @@
         --fontsize-little-text: 16px;
         --fontsize-normal-text: 22px;
     }
-    .quienessomos {
-        font-size: var(--fontsize-little-text);
-    }
     .about-logo {
         width: 160px;
         height: auto;
     }
     .title-valores span {
         font-size: 30px;
-    }
-    .title-card_img {
-        font-size: var(--fontsize-normal-text);
-    }
-    .text-card-img {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-text {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-title {
-        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
         width: 220px;
@@ -795,12 +650,6 @@
     .bigcube {
         margin: 50px 5;
     }
-    .title-card_img {
-        font-size: var(--fontsize-normal-text);
-    }
-    .vh-card-title {
-        font-size: var(--fontsize-normal-text)
-    }
 }
 
 @media (max-width: 375px) {
@@ -811,7 +660,6 @@
     .quienessomos {
         grid-template-rows: auto 1fr auto;
         row-gap: 220px;
-        font-size: var(--fontsize-little-text);
     }
     .about-logo {
         width: 150px;
@@ -822,18 +670,6 @@
     }
     .title-valores span {
         font-size: 34px;
-    }
-    .title-card_img {
-        font-size: var(--fontsize-normal-text);
-    }
-    .text-card-img {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-text {
-        font-size: var(--fontsize-little-text);
-    }
-    .vh-card-title {
-        font-size: var(--fontsize-normal-text)
     }
     .vh-card-astronaut {
         width: 200px;
@@ -855,4 +691,24 @@
     .bigcube {
         margin: 20px 6px;
     }
+}
+
+.quienessomos {
+    font-size: var(--fontsize-little-text);
+}
+
+.title-card_img {
+    font-size: var(--fontsize-normal-text);
+}
+
+.text-card-img {
+    font-size: var(--fontsize-little-text);
+}
+
+.vh-card-text {
+    font-size: var(--fontsize-little-text);
+}
+
+.vh-card-title {
+    font-size: var(--fontsize-normal-text)
 }
