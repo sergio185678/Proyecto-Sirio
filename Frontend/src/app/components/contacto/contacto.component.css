@@ -146,6 +146,9 @@
     font-size: 2vw;
     font-family: 'Roboto', sans-serif;
   }
+  .contactInfo {
+    grid-column: 1 / span 10;
+  }
 }
 
 @media screen and (max-width: 798px) {
@@ -157,10 +160,6 @@
   }
   .socialMedia i{
     font-size: 4vw;
-  }
-  .contactInfo {
-    grid-column: 4 / span 4;
-    color: white;
   }
   .contactInfo p {
     font-size: 2vw;
