@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "titulo": "Noticia 1",
+    "descripcion": "Description 1",
+    "url_img": "image_url_1",
+    "url_noticia": "news_url_1"
+  },
+  {
+    "id": 1,
+    "titulo": "Noticia 2",
+    "descripcion": "Description 2",
+    "url_img": null,
+    "url_noticia": null
+  },
+  {
+    "id": 2,
+    "titulo": "Noticia 3",
+    "descripcion": "Description 3",
+    "url_img": "image_url_3",
+    "url_noticia": null
+  },
+  {
+    "id": 3,
+    "titulo": "Noticia 4",
+    "descripcion": "Description 4",
+    "url_img": "image_url_4",
+    "url_noticia": null
+  },
+  {
+    "id": 4,
+    "titulo": "Noticia 5",
+    "descripcion": "Description 4",
+    "url_img": "image_url_4",
+    "url_noticia": null
+  }
+]

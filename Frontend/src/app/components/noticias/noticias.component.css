@@ -33,7 +33,11 @@ p{
 }
 
 /*news*/
-
+.test{
+  grid-column: 2/ span 10;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
 .new{
   border-radius: 39px;
   grid-column: 2/ span 10;

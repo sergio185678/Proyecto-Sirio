@@ -5,52 +5,42 @@
     <h1>Noticias</h1>
   </div>
 
-  <div class="new">
-    <div class="new1img">
-      <img class="news1" src="../../../assets/images/noticias/news1.png">
-    </div>
-    <div class="newsDetails1">
-      <h1>Noticia 1</h1>
-      <p>
-        El telescopio SuperBIT, lanzado por la NASA en un globo científico el 16 de abril, ha tomado sus primeras imágenes de investigación de las galaxias de la Nebulosa de la Tarántula y las galaxias Antena.
-      </p>
-      <button>
-        <p><a>Más información</a></p>
-      </button>
-    </div>
-  </div>
-
-  <hr class="line">
-
-  <div class="new">
-    <div class="newsDetails2">
-      <h1>Noticia 2</h1>
-      <p>
-        La nave espacial RHESSI de la NASA se desintegró en la atmósfera sobre el desierto del Sáhara, tras casi 21 años desde su lanzamiento. Durante su tiempo en órbita, RHESSI observó erupciones solares, proporcionando conocimientos sobre su física.
-      </p>
-      <button>
-        <p><a>Más información</a></p>
-      </button>
-    </div>
-    <div class="new2img">
-      <img class="news2" src="../../../assets/images/noticias/news2.png">
-    </div>
-  </div>
-
-  <hr class="line">
-
-  <div class="new">
-    <div class="new3img">
-      <img class="news3"  src="../../../assets/images/noticias/news3.png">
-    </div>
-    <div class="newsDetails3">
-      <h1>Noticia 3</h1>
-      <p>
-        La nave espacial RHESSI de la NASA se desintegró en la atmósfera sobre el desierto del Sáhara, tras casi 21 años desde su lanzamiento. Durante su tiempo en órbita, RHESSI observó erupciones solares, proporcionando conocimientos sobre su física.
-      </p>
-      <button>
-        <p><a>Más información</a></p>
-      </button>
+  <div class= "test" *ngIf= "info && info.length>0">
+    <div class= "test" *ngFor="let infoData of info">
+      <div class ="test" *ngIf="infoData.id %2 ==0">
+        <div class = "new">
+          <div class="new1img">
+            <img class="news1" src="../../../assets/images/noticias/news1.png">
+          </div>
+          <div class="newsDetails1">
+            <h1>{{infoData.titulo}}</h1>
+            <p>
+              {{infoData.descripcion}}
+            </p>
+            <button>
+              <p><a>Más información</a></p>
+            </button>
+          </div>
+        </div>
+        <hr class="line">
+      </div>
+      <div class ="test" *ngIf="infoData.id %2 != 0">
+        <div class="new">
+          <div class="newsDetails2">
+            <h1>{{infoData.titulo}}</h1>
+            <p>
+              {{infoData.descripcion}}
+            </p>
+            <button>
+              <p><a>Más información</a></p>
+            </button>
+          </div>
+          <div class="new2img">
+            <img class="news2" src="../../../assets/images/noticias/news2.png">
+          </div>
+        </div>
+        <hr class="line">
+      </div>
     </div>
   </div>
 
