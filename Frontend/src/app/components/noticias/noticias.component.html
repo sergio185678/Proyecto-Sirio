@@ -6,7 +6,7 @@
   </div>
 
   <div class= "test" *ngIf= "info && info.length>0">
-    <div class= "test" *ngFor="let infoData of info">
+    <div class= "test" *ngFor="let infoData of info.slice(0, itemsToShow)">
       <div class ="test" *ngIf="infoData.id %2 ==0">
         <div class = "new">
           <div class="new1img">
@@ -44,7 +44,7 @@
     </div>
   </div>
 
-  <button class="verMas">
+  <button class="verMas" *ngIf="itemsToShow <info.length" (click)="loadMore()">
     <p><a>Ver más</a></p>
   </button>
 

@@ -10,8 +10,8 @@ import * as http from "http";
 export class NoticiasComponent implements OnInit{
   info : any = {
   };
-
   cargada = false;
+  itemsToShow = 3;
   constructor(private http: HttpClient) {
     console.log("Todo okay")
     http.get("../../assets/noticias_list.json")
@@ -22,5 +22,10 @@ export class NoticiasComponent implements OnInit{
   }
   ngOnInit() {
   }
+
+  loadMore(){
+    this.itemsToShow += 3;
+  }
+
 
 }
