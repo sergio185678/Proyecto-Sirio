@@ -1,3 +1,26 @@
+/*elementos globales*/
+
+#buscador p{
+    text-align: start;
+    margin: auto 0 auto 0;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 19px;
+}
+#buscador ul{
+    background-color: #f1f1f1;
+}
+#buscador a{
+    cursor: pointer;
+}
+#buscador h3{
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+}
+
 .grid-layout{
     background-image: url("../../../../assets/images/proyectos/backgrounddddd.png");
     background-repeat: no-repeat;
@@ -125,7 +148,7 @@
     border-radius: 50px;
 }
 .btn-group>button>p{
-    color: black;
+    color: black !important;
     font-weight: bold;
     animation: parpadeo 2.5s infinite;
 }
@@ -178,30 +201,6 @@
     grid-column: 1/13;
 }
 
-/*elimentos globales*/
-
-p{
-    text-align: start;
-    margin: auto 0 auto 0;
-    color: white;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 19px;
-}
-ul{
-    background-color: #f1f1f1;
-}
-a{
-    cursor: pointer;
-}
-h3{
-    font-family: 'Roboto';
-    font-weight: bold;
-    color: #FFF;
-    text-align: center;
-    margin: 0;
-}
-
 /*media querry*/
 
 @media screen and (max-width: 1350px) {
@@ -236,14 +235,8 @@ h3{
     #txt-1{
         height: 40px;
     }
-    h3{
-        font-size: 21px;
-    }
     .div_3_bus{
         gap:20px;
-    }
-    p{
-        font-size: 14px;
     }
     .btn-group>button{
         font-size: 14px;
@@ -257,6 +250,13 @@ h3{
     }
     .resultado>img{
         height: 70px;
+    }
+
+    #buscador h3{
+        font-size: 21px;
+    }
+    #buscador p{
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 1100px) {
@@ -291,14 +291,8 @@ h3{
     #txt-1{
         height: 30px;
     }
-    h3{
-        font-size: 19px;
-    }
     .div_3_bus{
         gap:15px;
-    }
-    p{
-        font-size: 12px;
     }
     .btn-group>button{
         font-size: 12px;
@@ -340,6 +334,13 @@ h3{
         padding: 0;
         margin-bottom: 20px;
     }
+
+    #buscador h3{
+        font-size: 19px;
+    }
+    #buscador p{
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 850px) {
     #busss{
@@ -374,9 +375,6 @@ h3{
     #txt-1{
         height: 25px;
     }
-    h3{
-        font-size: 16px;
-    }
     .fa-magnifying-glass{
         scale: 0.8;
     }
@@ -385,9 +383,6 @@ h3{
     }
     .div_3_bus{
         gap:10px;
-    }
-    p{
-        font-size: 8px;
     }
     .btn-group>button{
         font-size: 8px;
@@ -429,6 +424,13 @@ h3{
     .dropdown-menu {
         min-width:100px;
     }
+
+    #buscador h3{
+        font-size: 16px;
+    }
+    #buscador p{
+        font-size: 8px;
+    }
 }
 @media screen and (max-width: 650px) {
     #busss{
@@ -464,14 +466,8 @@ h3{
         height: 25px;
         margin-bottom: 10px;
     }
-    h3{
-        font-size: 13px;
-    }
     .div_3_bus{
         gap:5px;
-    }
-    p{
-        font-size: 7px;
     }
     .btn-group>button{
         font-size: 7px;
@@ -506,6 +502,13 @@ h3{
     }
     #res{
         margin-bottom: 15px;
+    }
+
+    #buscador h3{
+        font-size: 13px;
+    }
+    #buscador p{
+        font-size: 7px;
     }
 }
 @media screen and (max-width: 550px){
