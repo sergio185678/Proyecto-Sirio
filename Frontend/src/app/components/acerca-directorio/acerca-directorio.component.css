@@ -1,7 +1,9 @@
 *{
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  box-sizing: border-box;
+  color: aliceblue;
+  list-style: none;
 
 }
 
@@ -14,13 +16,7 @@
     background-color: #0a0f18;
     text-align: center;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: aliceblue;
-  list-style: none;
-}
+
 
 .areas-menu{
   display: flex;
@@ -34,9 +30,7 @@
   width: min-content;
   color: white;
 }
-svg use {
-  fill: red; /* Change 'red' to the desired color */
-}
+
 
 .areas-menu-icon{
   color: white;
