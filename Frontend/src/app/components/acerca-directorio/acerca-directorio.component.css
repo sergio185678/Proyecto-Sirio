@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+}
+
 .directorio {
     font-family: 'Martel';
     font-size: 60px;
@@ -6,4 +13,142 @@
 .directorio-title {
     background-color: #0a0f18;
     text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+  list-style: none;
+}
+
+.areas-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #222237;
+}
+.a{
+  height: min-content;
+  width: min-content;
+  color: white;
+}
+svg use {
+  fill: red; /* Change 'red' to the desired color */
+}
+
+.areas-menu-icon{
+  color: white;
+  fill: white;
+  background-color: white;
+}
+.menu {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .toggle {
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.menu .toggle img {
+  width: 100px;
+  height: auto;
+}
+
+.menu .toggle.active {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  box-shadow: 0px 0px 0px 100px #141313, 0 0 600px 68px #5f5b5b;
+}
+
+li ion-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.menu li {
+  position: absolute;
+  /*Calculate the rotation angle based on the number of menu items*/
+  --angle: calc(360deg / 8 * var(--i));
+  /* Calculate the distance from the center for each logo */
+  --distance: 80px;
+  /* You can adjust this value as needed */
+  transform: rotate(var(--angle));
+  -webkit-transform: rotate(var(--angle));
+  -moz-transform: rotate(var(--angle));
+  -ms-transform: rotate(var(--angle));
+  -o-transform: rotate(var(--angle));
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  z-index: 10;
+  /* Calculate the position of the logo using trigonometric functions */
+  top: calc(46% - var(--distance) * cos(var(--angle)));
+  left: calc(46% + var(--distance) * sin(var(--angle)));
+  height: min-content;
+  width: min-content;
+}
+
+
+/* Define background colors for each menu item */
+
+.menu li:nth-child(1) {
+  --color: #FF5733;
+  /* Desarrollo Web */
+}
+
+.menu li:nth-child(2) {
+  --color: #FFC300;
+  /* Disenio y Publicidad */
+}
+
+.menu li:nth-child(3) {
+  --color: #C70039;
+  /* Mecanica */
+}
+
+.menu li:nth-child(4) {
+  --color: #900C3F;
+  /* Electronica */
+}
+
+.menu li:nth-child(5) {
+  --color: #581845;
+  /* Control y Programacion */
+}
+
+.menu.active li {
+  visibility: visible;
+  opacity: 1;
 }
