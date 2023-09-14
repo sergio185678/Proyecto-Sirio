@@ -4,17 +4,22 @@
   box-sizing: border-box;
   color: aliceblue;
   list-style: none;
+  display: flex;
 
 }
 
 .directorio {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     font-family: 'Martel';
     font-size: 60px;
+    align-items: center;
+    text-align: center;
 }
 
 .directorio-title {
     background-color: #0a0f18;
-    text-align: center;
+    justify-content: center;
 }
 
 
@@ -25,18 +30,9 @@
   min-height: 100vh;
   background: #222237;
 }
-.a{
-  height: min-content;
-  width: min-content;
-  color: white;
-}
 
 
-.areas-menu-icon{
-  color: white;
-  fill: white;
-  background-color: white;
-}
+
 .menu {
   position: relative;
   width: 300px;
@@ -45,7 +41,10 @@
   justify-content: center;
   align-items: center;
 }
-
+a{
+  height: min-content;
+  width: min-content;
+}
 .menu .toggle {
   position: absolute;
   width: 115px;

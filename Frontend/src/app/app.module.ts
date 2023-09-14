@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -13,6 +12,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import {FormsModule} from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
 import { AcercaDirectorioComponent } from './components/acerca-directorio/acerca-directorio.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -33,6 +33,8 @@ import { AcercaDirectorioComponent } from './components/acerca-directorio/acerca
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  //this schemas customs elements is needed in this project in order to work with ionicons (icons svg typing structure) - about-Directorio section in the page, but it will not show errors about typing correctly in angular.
 })
 export class AppModule { }
