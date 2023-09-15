@@ -34,6 +34,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   ],
   providers: [],
   bootstrap: [AppComponent],
+  //JUST REMEMBER IF YOU WANT TO CHECK TYPING JUST DELETE THIS LINE BELOW AND ALSO DELETE ABOUT-DIRECTORIO HTML CODE TO CHECK WHATEVER TYPING YOU WANT. Of course after that please do ctrl+z to add what you have deleted.
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
   //this schemas customs elements is needed in this project in order to work with ionicons (icons svg typing structure) - about-Directorio section in the page, but it will not show errors about typing correctly in angular.
 })
