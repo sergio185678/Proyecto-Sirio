@@ -11,10 +11,12 @@ export class AcercaDirectorioComponent implements OnInit {
 
   ngOnInit(): void {
     let menuToggle = document.querySelector('.toggle');
+    let animation = document.querySelector('.animation');
     let menu = document.querySelector('.menu');
     menuToggle?.addEventListener('click', () => {
       menu?.classList?.toggle('active');
       menuToggle?.classList?.toggle('active');
+      animation?.classList?.toggle('noDisplay');
     });
   }
 }
