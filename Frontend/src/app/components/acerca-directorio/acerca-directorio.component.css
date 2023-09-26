@@ -26,7 +26,7 @@
 .animation {
   margin-top: -140px;
   display: flex;
-  grid-column: 2/ span 2;
+  grid-column: 2/ span 10;
   width: auto;
   flex-direction: column;
   height: min-content;
@@ -64,13 +64,21 @@
       -o-transform: translateY(+150px);
 }
 }
-
+.areas-menu-tittle{
+  grid-column: 2 / span 10;
+  font-size: 22px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  justify-self: center;
+  text-decoration: underline;
+  padding-bottom: 30px;
+}
 .areas-menu{
+  padding-top: 120px;
   display: grid;
-  grid-column: 1/ span 12;
+  grid-column: 1 / span 12;
   align-items: center;
-  min-height: 100vh;
-  background: #222237;
+  background: #0D1525;
 }
 
 svg{
@@ -79,12 +87,11 @@ svg{
 }
 
 .menu {
-  grid-column: 2 / span 2;
+  grid-column: 2 / span 10;
   position: relative;
   width: 600px;
   height: 600px;
   margin: auto;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
@@ -130,7 +137,7 @@ a{
   -moz-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   -o-transform: rotate(360deg);
-  box-shadow: 0px 0px 0px 144px #141313, 0 0 600px 68px #5f5b5b;
+  box-shadow: 0px 0px 0px 135px #060A12, 0 0 600px 68px #455798;
 }
 
 
@@ -139,13 +146,7 @@ a{
   /*Calculate the rotation angle based on the number of menu items*/
   --angle: calc(360deg / 8 * var(--i));
   /* Calculate the distance from the center for each logo */
-  --distance: 160px;
-  /* You can adjust this value as needed */
-  transform: rotate(var(--angle));
-  -webkit-transform: rotate(var(--angle));
-  -moz-transform: rotate(var(--angle));
-  -ms-transform: rotate(var(--angle));
-  -o-transform: rotate(var(--angle));
+  --distance: 180px;
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
@@ -159,66 +160,68 @@ a{
   left: calc(46% + var(--distance) * sin(var(--angle)));
   height: min-content;
   width: min-content;
-  /* background-color: var(--color); */
 }
-
+.menu svg{
+  position: absolute;
+  /*Calculate the rotation angle based on the number of menu items*/
+  --angle: calc(360deg / 8 * var(--i));
+  /* Calculate the distance from the center for each logo */
+  --distance: 135px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  z-index: 12;
+  /* Calculate the position of the logo using trigonometric functions */
+  top: calc(49% - var(--distance) * cos(var(--angle)));
+  left: calc(49% + var(--distance) * sin(var(--angle)));
+  height: min-content;
+  width: min-content;
+}
 .lista-areas{
   font-size: 28px;
-  display: grid;
-  grid-column: 8 / span 4;
-}
-
-/* Define circle color for each item in list-area */
-
-.lista-areas li:nth-child(1) {
-  --color: #FF5733;
-  /* Desarrollo Web */
-}
-
-.lista-areas li ion-icon:nth-of-type(1){
-  color: var(--color);
-}
-
-.menu li:nth-child(2) {
-  --color: #FFC300;
-  /* Disenio y Publicidad */
-}
-
-.lista-areas li ion-icon:nth-of-type(2){
-  color: #FFC300;
-}
-
-.menu li:nth-child(3) {
-  --color: #C70039;
-  /* Mecanica */
-}
-
-.menu li:nth-child(4) {
-  --color: #900C3F;
-  /* Electronica */
-}
-
-.menu li:nth-child(5) {
-  --color: #581845;
-  /* Control y Programacion */
+  grid-column: 2/ span 10;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 0 10%;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .menu.active li {
   visibility: visible;
   opacity: 1;
 }
-
-li ion-icon {
-  width: 48px;
-  height: 48px;
+.menu.active svg {
+  visibility: visible;
+  opacity: 1;
 }
+li img{
+  width: 50px;
+  height: 50px;
+}
+li{
+  width: min-content;
+  height: min-content;
+}
+.menu svg{
+  width: 12px;
+  height: 15px;
+  text-align: center;
+}
+
 
 /*MEMBERS*/
 .members {
   grid-column: span 12;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background: #222237;
+  background: #0D1525;
   border: red 2px solid;
 }
 .cardMember {
