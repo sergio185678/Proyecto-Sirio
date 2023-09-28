@@ -1,0 +1,140 @@
+{
+    "Desarrollo web": {
+        "Director": {
+            "Nombre": "Sergio Flores",
+            "Photo": "./images/about/members/profile.png",
+            "Carrera": "Ciencias de la Computación",
+            "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
+            "Github": "https://github.com/",
+            "Linkedin": "https://www.linkedin.com"
+        },
+        "Subdirectora": {
+            "Nombre": "Danixa Ropón",
+            "Carrera": "Ingeniería Electrónica"
+        },
+        "Integrantes": [{
+                "Nombre": "Gabriel Amaya",
+                "Carrera": "Ingeniería de sistemas de información"
+            },
+            {
+                "Nombre": "Mathias Javier",
+                "Carrera": "Ingeniería de software"
+            },
+            {
+                "Nombre": "Kevin Dextre",
+                "Carrera": "Ingeniería de sistemas de información"
+            },
+            {
+                "Nombre": "Abraham Ayquipa",
+                "Carrera": "Ingeniería de software"
+            },
+            {
+                "Nombre": "Kevin Oliva",
+                "Carrera": "Ingeniería de software"
+            },
+            {
+                "Nombre": "Diego Santivañez",
+                "Carrera": "Ingeniería de software"
+            },
+            {
+                "Nombre": "Ibrahim Arquiñigo",
+                "Carrera": "Ciencias de la Computación"
+            },
+            {
+                "Nombre": "Freddy Cuadros",
+                "Carrera": "Ciencias de la Computación"
+            },
+            {
+                "Nombre": "James Hurtado",
+                "Carrera": "Ingeniería de software"
+            }
+        ]
+    },
+    "Diseño y publicidad": {
+        "Director": {
+            "Nombre": "Lisha Tintaya",
+            "Carrera": "Comunicación Audiovisual y Medios Interactivos"
+        },
+        "Subdirector": {
+            "Nombre": "Cesar Sánchez",
+            "Carrera": "Ciencias de la Computación"
+        }
+    },
+    "Electrónica": {
+        "Director": {
+            "Nombre": "Alessandro Vicente",
+            "Carrera": "Ingeniería Electrónica"
+        },
+        "Subdirector": {
+            "Nombre": "Jean Cueva",
+            "Carrera": "Ingeniería Mecatrónica"
+        },
+        "Integrantes": [{
+                "Nombre": "Lalo Villacorta",
+                "Carrera": "Ingeniería Mecatrónica"
+            },
+            {
+                "Nombre": "Joanna Carrion",
+                "Carrera": "Ingeniería Electrónica"
+            },
+            {
+                "Nombre": "Paul Gomez",
+                "Carrera": "Ingeniería Mecatrónica"
+            }
+        ]
+    },
+    "Mecánica": {
+        "Director": {
+            "Nombre": "Harold Huallanca",
+            "Carrera": "Ingeniería Mecatrónica"
+        },
+        "Subdirector": {
+            "Nombre": "Angel Montes",
+            "Carrera": "Ingeniería Mecatrónica"
+        },
+        "Integrantes": [{
+                "Nombre": "Scarlet Aguero",
+                "Carrera": "Ingeniería Mecatrónica"
+            },
+            {
+                "Nombre": "Lucia Zegarra",
+                "Carrera": "Ingeniería Mecatrónica"
+            },
+            {
+                "Nombre": "Julio Ortiz",
+                "Carrera": "Ingeniería Mecatrónica"
+            },
+            {
+                "Nombre": "Bruno Quispe",
+                "Carrera": "Ingeniería Mecatrónica"
+            }
+        ]
+    },
+    "Control y Programación": {
+        "Director": {
+            "Nombre": "Elvis De la Torre",
+            "Carrera": "Ingeniería Mecatrónica"
+        },
+        "Subdirector": {
+            "Nombre": "Kenny Farfan",
+            "Carrera": "Ingeniería Mecatrónica"
+        },
+        "Integrantes": [{
+                "Nombre": "Robert Vásquez",
+                "Carrera": "Ingeniería Mecatrónica"
+            },
+            {
+                "Nombre": "Raziel Chumacero",
+                "Carrera": "Ingeniería Mecatrónica"
+            },
+            {
+                "Nombre": "Abraham Prado",
+                "Carrera": "Ingeniería Mecatrónica"
+            },
+            {
+                "Nombre": "Renato Gómez",
+                "Carrera": "Ingeniería Mecatrónica"
+            }
+        ]
+    }
+}
