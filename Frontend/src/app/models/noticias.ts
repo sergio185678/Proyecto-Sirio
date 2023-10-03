@@ -4,7 +4,7 @@ export class Noticias{
   descripcion?:string;
   url_img?:string;
   url_noticia?:string;
-  constructor(id:number,nombre:string, descripcion:string,url_img:string,url_noticia:string){
+  constructor(id:number, nombre:string, descripcion:string, url_img:string, url_noticia:string){
     this.id=id;
     this.nombre= nombre;
     this.descripcion=descripcion;

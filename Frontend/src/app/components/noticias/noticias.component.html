@@ -5,10 +5,10 @@
     <h1>Noticias</h1>
   </div>
 
-  <div class= "test" *ngIf= "info && info.length>0">
-    <div class= "test" *ngFor="let infoData of info.slice(0, itemsToShow)">
-      <div class ="test" *ngIf="infoData.id %2 ==0">
-        <div class = "new">
+  <div class="test" *ngIf="info && info.length>0">
+    <div class="test" *ngFor="let infoData of info.slice(0, itemsToShow)">
+      <div class="test" *ngIf="infoData.id %2 ==0">
+        <div class="new">
           <div class="new1img">
             <img class="news1" src="../../../assets/images/noticias/news1.png">
           </div>
@@ -24,7 +24,7 @@
         </div>
         <hr class="line">
       </div>
-      <div class ="test" *ngIf="infoData.id %2 != 0">
+      <div class="test" *ngIf="infoData.id %2 != 0">
         <div class="new">
           <div class="newsDetails2">
             <h1>{{infoData.titulo}}</h1>

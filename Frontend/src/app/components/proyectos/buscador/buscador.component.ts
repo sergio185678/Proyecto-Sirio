@@ -40,7 +40,7 @@ export class BuscadorComponent {
         targetDiv.scrollIntoView({ behavior: "smooth" });
     }
 }
-  
+
   actualizar_proyecto_año(){
     this.proyectos_this_year=this.proyectos.filter((proyecto)=>proyecto.fecha == this.year);
   }
@@ -50,7 +50,7 @@ export class BuscadorComponent {
     lupa!.classList.add("lupa_activo");
     lupa!.style.cursor="pointer";
   }
-  btn_seleccion(titulo:string,id:string,opcion:string){//solucionar que aca realize el cambio del titulo
+  btn_seleccion(titulo:string, id:string, opcion:string){//solucionar que aca realize el cambio del titulo
     if(opcion=="op1_p"){this.op1_p=titulo;}
     if(opcion=="op2_p"){this.op2_p=titulo;}
     if(opcion=="op3_p"){this.op3_p=titulo;}
@@ -138,7 +138,7 @@ export class BuscadorComponent {
     }
   }
   aparecer_proyecto(id:number){
-    this.proyecto_mostrar=id;
+    this.proyecto_mostrar = id;
     setTimeout(() => {
       const proyectoElement = document.getElementById("Proyecto" + id.toString());
       proyectoElement!.scrollIntoView({ behavior: "smooth" });

@@ -351,3 +351,11 @@ a {
     width: 24px;
     margin-right: 24px;
 }
+
+.datablack {
+    color: #0a0f18;
+    background-color: rgb(1, 1, 1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}

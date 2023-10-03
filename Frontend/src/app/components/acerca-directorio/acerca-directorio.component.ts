@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Area } from 'src/app/models/area';
+import { AreaService } from 'src/app/services/area.service';
 
 @Component({
   selector: 'app-acerca-directorio',
@@ -6,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./acerca-directorio.component.css']
 })
 export class AcercaDirectorioComponent implements OnInit {
+    areas: { [key: string]: Area } = {};
+    areasNames?: string[];
     numColors: number = 8;
     colorsUsed: string[] = ['#0019FD', '#DE0D98', '#DEC800', '#2AC11D', '#03C1F5', '#1B1B1A', '#1B1B1B', '#1B1B1C'];
     colors: string[] = this.colorsUsed;
     highlightedColor: string | null = null;
-    constructor() { }
+    constructor(private areaService: AreaService) { }
     ngOnInit(): void {
       let menuToggle = document.querySelector('.toggle');
       let animation = document.querySelector('.animation-rows');
@@ -23,6 +27,12 @@ export class AcercaDirectorioComponent implements OnInit {
         container?.classList?.toggle('active');
         container?.classList?.toggle('inactive');
         this.calculateDrawingPizzaColor();
+      });
+      this.areaService.getData().subscribe((result) => {
+        this.areas = result;
+        this.areasNames = Object.keys(this.areas);
+        console.log(this.areas);
+        console.log(this.areasNames);
       });
     }
     chooseColor(color: string, colors: string[]): void {
