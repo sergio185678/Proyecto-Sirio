@@ -1,7 +1,7 @@
 export interface Area {
   Director: Lider;
   Subdirector: Lider;
-  Integrantes?: Integrante[];
+  Integrantes: Integrante[];
 }
 export interface Lider {
   Nombre: string;

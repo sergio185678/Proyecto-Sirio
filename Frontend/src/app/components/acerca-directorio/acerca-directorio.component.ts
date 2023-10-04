@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Area } from 'src/app/models/area';
 import { AreaService } from 'src/app/services/area.service';
-
 @Component({
   selector: 'app-acerca-directorio',
   templateUrl: './acerca-directorio.component.html',
   styleUrls: ['./acerca-directorio.component.css']
 })
 export class AcercaDirectorioComponent implements OnInit {
+    selectedArea: string | null = null; // Variable to store the selected area
     areas: { [key: string]: Area } = {};
     areasNames?: string[];
     numColors: number = 8;
@@ -70,5 +70,14 @@ export class AcercaDirectorioComponent implements OnInit {
         this.clearColors();// Reset to default (e.g., transparent)
         this.highlightedColor = null;
       }
+    }
+
+
+    showArea(areaName: string): void {
+      this.selectedArea = areaName;
+      setTimeout(() => {
+        const areaElement = document.getElementById(areaName);
+        areaElement!.scrollIntoView({ behavior: "smooth" });
+      }, 50);
     }
 }

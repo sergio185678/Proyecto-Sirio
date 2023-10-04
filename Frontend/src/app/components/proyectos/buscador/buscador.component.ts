@@ -39,7 +39,7 @@ export class BuscadorComponent {
     if (targetDiv) {
         targetDiv.scrollIntoView({ behavior: "smooth" });
     }
-}
+  }
 
   actualizar_proyecto_año(){
     this.proyectos_this_year=this.proyectos.filter((proyecto)=>proyecto.fecha == this.year);
