@@ -359,3 +359,18 @@ a {
     flex-wrap: wrap;
     flex-direction: column;
 }
+
+.selectedArea {
+    display: flex;
+    flex-direction: column;
+}
+
+.Subdirector {
+    display: flex;
+    flex-direction: column;
+}
+
+.ulintegrantes {
+    display: flex;
+    flex-direction: column;
+}

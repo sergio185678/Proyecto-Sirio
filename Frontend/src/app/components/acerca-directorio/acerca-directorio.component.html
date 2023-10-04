@@ -140,20 +140,20 @@
 
   <div *ngIf="selectedArea" id="{{selectedArea}}">
     <h2>{{ selectedArea }}</h2>
-    <div>
+    <div class="selectedArea">
       <h3>Director</h3>
       <p>{{ areas[selectedArea].Director.Nombre }}</p>
       <p>{{ areas[selectedArea].Director.Carrera }}</p>
       <!-- Add more director details if needed -->
     </div>
-    <div *ngIf="areas[selectedArea].Subdirector">
+    <div *ngIf="areas[selectedArea].Subdirector" class="selectedArea Subdirector">
       <h3>Subdirector</h3>
       <p>{{ areas[selectedArea].Subdirector.Nombre }}</p>
       <p>{{ areas[selectedArea].Subdirector.Carrera }}</p>
     </div>
-    <div *ngIf="areas[selectedArea].Integrantes">
+    <div *ngIf="areas[selectedArea].Integrantes" class="selectedArea Subdirector">
       <h3>Integrantes</h3>
-      <ul>
+      <ul class="ulintegrantes">
         <li *ngFor="let integrante of areas[selectedArea].Integrantes">
           {{ integrante.Nombre }} - {{ integrante.Carrera }}
         </li>
