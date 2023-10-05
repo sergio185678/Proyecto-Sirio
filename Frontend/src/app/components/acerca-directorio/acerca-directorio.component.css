@@ -4,20 +4,19 @@
     box-sizing: border-box;
     color: aliceblue;
     list-style: none;
-    display: flex;
 }
 
 .directorio {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     font-family: 'Martel';
-    font-size: 60px;
     align-items: center;
     text-align: center;
 }
 
 .directorio-title {
     grid-column: 1 / span 12;
+    font-size: 60px;
     background-color: #0a0f18;
     justify-content: center;
 }
@@ -96,7 +95,6 @@
 .container_AreasMenu {
     padding-top: 120px;
     display: grid;
-    grid-column: 1 / span 12;
     align-items: center;
     background: #0D1525;
 }
@@ -173,14 +171,17 @@
     margin: auto;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 a {
     height: min-content;
     width: min-content;
+    display: flex;
 }
 
 .AreasMenu .toggle {
+    display: flex;
     z-index: 10;
     position: absolute;
     width: 230px;
@@ -206,6 +207,7 @@ a {
     z-index: 10;
     width: 200px;
     height: auto;
+    display: flex;
 }
 
 .AreasMenu .toggle.active {
@@ -217,6 +219,7 @@ a {
 }
 
 .container-box {
+    display: flex;
     background: conic-gradient(from 0deg, var(--color-stops));
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -246,6 +249,7 @@ a {
 }
 
 .AreasMenu .Area {
+    display: flex;
     position: absolute;
     /*Calculate the rotation angle based on the number of menu items*/
     --angle: calc(360deg / 8 * var(--i));
@@ -265,11 +269,13 @@ a {
 }
 
 .Area .icon {
+    display: flex;
     width: 50px;
     height: 50px;
 }
 
 .circle-menu {
+    display: flex;
     width: 12px;
     height: 12px;
 }
@@ -307,6 +313,7 @@ a {
 }
 
 .AreasMenu .circle-menu {
+    display: flex;
     position: absolute;
     /*Calculate the rotation angle based on the number of menu items*/
     --angle: calc(360deg / 8 * var(--i));
@@ -336,15 +343,19 @@ a {
 }
 
 .lista_DescripcionAreas {
+    display: flex;
     font-size: 28px;
     grid-column: 2/ span 10;
     gap: 32px;
     justify-content: center;
     align-items: center;
-    display: flex;
     padding: 0 10%;
     flex-wrap: wrap;
-    flex-direction: row;
+    margin-bottom: 3%;
+}
+
+.lista_DescripcionAreas li {
+    display: flex;
 }
 
 .circle-list-area {
@@ -352,25 +363,150 @@ a {
     margin-right: 24px;
 }
 
-.datablack {
-    color: #0a0f18;
-    background-color: rgb(1, 1, 1);
+.selectedArea {
+    display: grid;
+    grid-template-columns: (12, 1fr);
+    grid-template-rows: (5, 1fr);
+    background-color: #001133;
+    flex-direction: column;
+    font-family: 'Martel';
+}
+
+.animated {
+    opacity: 0;
+    top: 100px;
+    position: relative;
+    animation: slideAndFade 2.5s ease forwards;
+    -webkit-animation: slideAndFade 2.5s ease forwards;
+}
+
+@keyframes slideAndFade {
+    0% {
+        opacity: 0;
+        top: 50px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+#selectedArea_De {
+    margin-top: 3%;
+    grid-column: 1 /span 12;
+    grid-row: 1;
+    font-size: 30px;
+    align-self: center;
+    justify-self: center;
+}
+
+#selectedArea_Title {
+    margin-bottom: 3%;
+    grid-column: 1 /span 12;
+    grid-row: 2;
+    font-size: 40px;
+    align-self: center;
+    justify-self: center;
+}
+
+.selectedArea_Director {
+    display: grid;
+    grid-row: 3;
+    grid-column: 1 /span 12;
+    grid-template-columns: (12, 1fr);
+    gap: 3%;
+}
+
+.DirSub_svgPart {
+    display: grid;
+    grid-column: 2 / span 4;
+    font-family: 'Baloo 2';
+    width: fit-content;
+    background-image: url(../../../assets/images/about/backgroundSVGs/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 18%;
+}
+
+.DirSub_svgPart_Nombre {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.DirSub_svgPart_RolCarrera {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 4%;
+}
+
+.DirSub_svgPart p {
+    max-width: 42vw;
+}
+
+.DirSub_iconPart {
+    grid-column: 6 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DirSub_iconPartIMG {
+    width: 200px;
+}
+
+.animatedIcon {
+    position: relative;
+    animation: moveUpandDown 5s ease-in-out infinite;
+    -webkit-animation: moveUpandDown 5s ease-in-out infinite;
+}
+
+@keyframes moveUpandDown {
+    0%,
+    100% {
+        top: 0px;
+    }
+    50% {
+        top: -50px;
+    }
+}
+
+#DirSub_PhotoPartIMG {
+    width: 300px;
+}
+
+.social_media {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    align-items: center;
+    justify-self: center;
 }
 
-.selectedArea {
-    display: flex;
-    flex-direction: column;
+.social_media a {
+    margin-right: 5px;
+    margin-top: -100px;
 }
 
-.Subdirector {
-    display: flex;
-    flex-direction: column;
+.social_media a img {
+    width: min-content;
+    height: min-content;
 }
 
-.ulintegrantes {
-    display: flex;
-    flex-direction: column;
+.DirSub_PhotoPart {
+    grid-column: 7 / span 5;
+    display: grid;
+    align-items: center;
+    justify-self: center;
+    margin-right: 30%;
+}
+
+.selectedArea_Subdirector {
+    grid-row: 4;
+    display: grid;
+}
+
+.selectedArea_Integrantes {
+    grid-row: 5;
+    display: grid;
 }

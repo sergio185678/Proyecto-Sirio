@@ -1,19 +1,19 @@
 export interface Area {
   Director: Lider;
   Subdirector: Lider;
-  Integrantes: Integrante[];
+  Integrantes?: Integrante[];
 }
 export interface Lider {
   Nombre: string;
   Carrera: string;
-  Photo: string;
   Descripcion: string;
+  Icon?: string;
+  Photo: string;
   Linkedin: string;
   Instagram?: string;
   Facebook?: string;
   Twitter?: string;
   Github?: string;
-  Threads?: string;
 }
 export interface Integrante {
   Nombre: string;
@@ -21,6 +21,5 @@ export interface Integrante {
   Photo: string;
   Linkedin: string;
   Github?: string;
-  Threads?: string;
 }
 

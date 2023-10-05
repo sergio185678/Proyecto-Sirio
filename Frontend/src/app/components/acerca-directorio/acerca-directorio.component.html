@@ -1,19 +1,19 @@
 <div class="directorio">
-  <div class="directorio-title">Directorio</div>
+  <h1 class="directorio-title">Directorio</h1>
 
   <div class="members">
     <div class="cardMember">
       <div class="memberInfo">
-        <img class="profilePhoto" src="assets/images/about/members/profile.png" />
+        <img class="profilePhoto" src="assets/images/about/members/profile.svg" />
         <div class="socialLinks">
           <a target="_blank" href="https://www.facebook.com"><img class="socialLink"
-              src="assets/images/about/members/Facebook.png" /></a>
+              src="assets/images/about/members/facebook.svg" /></a>
           <a target="_blank" href="https://www.twitter.com"><img class="socialLink"
-              src="assets/images/about/members/Twitter.png" /></a>
+              src="assets/images/about/members/twitter.svg" /></a>
           <a target="_blank" href="https://pe.linkedin.com"><img class="socialLink"
-              src="assets/images/about/members/Linkedin.png" /></a>
+              src="assets/images/about/members/linkedin.svg" /></a>
           <a target="_blank" href="https://www.instagram.com"><img class="socialLink"
-              src="assets/images/about/members/Instagram.png" /></a>
+              src="assets/images/about/members/instagram.svg" /></a>
         </div>
         <h1 class="fullName">Jose Oliden Martinez</h1>
         <p class="position">ADVISOR - ING. MECATRONICA</p>
@@ -27,138 +27,181 @@
       </div>
     </div>
   </div>
-
-  <div class="container_AreasMenu">
-    <div class="container_AreasMenu-tittle">NUESTRAS AREAS</div>
-    <div class="animation-rows">
-      <img class="row row1" src="../../../assets/images/about/Icons/icon-arrow.png" />
-      <img class="row row2" src="../../../assets/images/about/Icons/icon-arrow.png" />
-      <img class="row row3" src="../../../assets/images/about/Icons/icon-arrow.png" />
-    </div>
-
-    <ul class="AreasMenu">
-      <div class="toggle">
-        <img class="logoSirio" src="../../../assets/images/about/logo_Sirio.png" alt="logo Sirio" />
-      </div>
-      <div class="container-box inactive"></div>
-
-      <li style="--i: 0" class="Area Desarrollo-Web">
-        <a href="javascript:void(0);" (click)="showArea('Desarrollo Web')">
-          <img class="icon" (mouseover)="highlightSection('#0019FD')" (mouseleave)="clearHighlight()"
-            src="../../../assets/images/about/Icons/code-solid 1.svg" />
-        </a>
-      </li>
-      <img class="circle-menu bluecircle" src="../../../assets/images/about/circleSVGs/bluecircle.svg" />
-
-      <li style="--i: 1" class="Area Disenio-Publicidad">
-        <a href="javascript:void(0);" (click)="showArea('Diseño y Publicidad')">
-          <img class="icon" (mouseover)="highlightSection('#DE0D98')" (mouseleave)="clearHighlight()"
-            src="../../../assets/images/about/Icons/palette-solid 1.svg" />
-        </a>
-      </li>
-      <img class="circle-menu pinkcircle" (mouseover)="highlightSection('#DE0D98')" (mouseleave)="clearHighlight()"
-        src="../../../assets/images/about/circleSVGs/pinkcircle.svg" />
-
-      <li style="--i: 2" class="Area Electronica">
-        <a href="javascript:void(0);" (click)="showArea('Electrónica')">
-          <img class="icon" (mouseover)="highlightSection('#DEC800')" (mouseleave)="clearHighlight()"
-            src="../../../assets/images/about/Icons/microchip-solid 1.svg" />
-        </a>
-      </li>
-      <img class="circle-menu yellowcircle" src="../../../assets/images/about/circleSVGs/yellowcircle.svg" />
-
-      <li style="--i: 3" class="Area Mecanica">
-        <a href="javascript:void(0);" (click)="showArea('Mecánica')">
-          <img class="icon" (mouseover)="highlightSection('#2AC11D')" (mouseleave)="clearHighlight()"
-            src="../../../assets/images/about/Icons/wrench-solid 1.svg" />
-        </a>
-      </li>
-      <img class="circle-menu greencircle" src="../../../assets/images/about/circleSVGs/greencircle.svg" />
-
-      <li style="--i: 4" class="Area Control-Programacion">
-        <a href="javascript:void(0);" (click)="showArea('Control y Programación')">
-          <img class="icon" (mouseover)="highlightSection('#03C1F5')" (mouseleave)="clearHighlight()"
-            src="../../../assets/images/about/Icons/gear-solid 1.svg" />
-        </a>
-      </li>
-      <img class="circle-menu ciancircle" src="../../../assets/images/about/circleSVGs/ciancircle.svg" />
-
-      <li style="--i: 5" class="Area otros rotated">
-        <a href="javascript:void(0);">
-          <img class="icon" (mouseover)="highlightSection('#1B1B1A')" (mouseleave)="clearHighlight()"
-            src="../../../assets/images/about/Icons/ellipsis-solid 1.svg" />
-        </a>
-      </li>
-      <img class="circle-menu graycircle" src="../../../assets/images/about/circleSVGs/graycircle.svg" />
-
-      <li style="--i: 6" class="Area otros">
-        <a href="javascript:void(0);">
-          <img class="icon" (mouseover)="highlightSection('#1B1B1B')" (mouseleave)="clearHighlight()"
-            src="../../../assets/images/about/Icons/ellipsis-solid 2.svg" />
-        </a>
-      </li>
-      <img class="circle-menu graycircle2" src="../../../assets/images/about/circleSVGs/graycircle.svg" />
-
-      <li style="--i: 7" class="Area otros rotated">
-        <a href="javascript:void(0);">
-          <img class="icon" (mouseover)="highlightSection('#1B1B1C')" (mouseleave)="clearHighlight()"
-            src="../../../assets/images/about/Icons/ellipsis-solid 3.svg" />
-        </a>
-      </li>
-      <img class="circle-menu graycircle3" src="../../../assets/images/about/circleSVGs/graycircle.svg" />
-    </ul>
-
-    <ul class="lista_DescripcionAreas">
-      <li>
-        <img class="circle-list-area" src="../../../assets/images/about/circleSVGs/bluecircle.svg" />
-        <p>Desarrollo Web</p>
-      </li>
-      <li>
-        <img class="circle-list-area" src="../../../assets/images/about/circleSVGs/pinkcircle.svg" />
-        <p>Diseño y Publicidad</p>
-      </li>
-      <li>
-        <img class="circle-list-area" src="../../../assets/images/about/circleSVGs/yellowcircle.svg" />
-        <p>Electronica</p>
-      </li>
-      <li>
-        <img class="circle-list-area" src="../../../assets/images/about/circleSVGs/greencircle.svg" />
-        <p>Mecanica</p>
-      </li>
-      <li>
-        <img class="circle-list-area" src="../../../assets/images/about/circleSVGs/ciancircle.svg" />
-        <p>Control y Programacion</p>
-      </li>
-      <li>
-        <img class="circle-list-area graycircle" src="../../../assets/images/about/circleSVGs/graycircle.svg" />
-        <p>Otros</p>
-      </li>
-    </ul>
-  </div>
 </div>
-<div class="datablack">
-
-  <div *ngIf="selectedArea" id="{{selectedArea}}">
-    <h2>{{ selectedArea }}</h2>
-    <div class="selectedArea">
-      <h3>Director</h3>
-      <p>{{ areas[selectedArea].Director.Nombre }}</p>
-      <p>{{ areas[selectedArea].Director.Carrera }}</p>
-      <!-- Add more director details if needed -->
-    </div>
-    <div *ngIf="areas[selectedArea].Subdirector" class="selectedArea Subdirector">
-      <h3>Subdirector</h3>
-      <p>{{ areas[selectedArea].Subdirector.Nombre }}</p>
-      <p>{{ areas[selectedArea].Subdirector.Carrera }}</p>
-    </div>
-    <div *ngIf="areas[selectedArea].Integrantes" class="selectedArea Subdirector">
-      <h3>Integrantes</h3>
-      <ul class="ulintegrantes">
-        <li *ngFor="let integrante of areas[selectedArea].Integrantes">
-          {{ integrante.Nombre }} - {{ integrante.Carrera }}
-        </li>
-      </ul>
-    </div>
+<div class="container_AreasMenu">
+  <div class="container_AreasMenu-tittle">NUESTRAS AREAS</div>
+  <div class="animation-rows">
+    <img class="row row1" src="assets/images/about/Icons/icon-arrow.png" />
+    <img class="row row2" src="assets/images/about/Icons/icon-arrow.png" />
+    <img class="row row3" src="assets/images/about/Icons/icon-arrow.png" />
   </div>
+
+  <ul class="AreasMenu">
+    <div class="toggle">
+      <img class="logoSirio" src="../../../assets/images/about/logo_Sirio.png" alt="logo Sirio" />
+    </div>
+    <div class="container-box inactive"></div>
+
+    <li style="--i: 0" class="Area Desarrollo-Web">
+      <a href="javascript:void(0);" (click)="showArea('Desarrollo Web'); removeAnimation(); addAnimation()">
+        <img class="icon" (mouseover)="highlightSection('#0019FD')" (mouseleave)="clearHighlight()"
+          src="../../../assets/images/about/Icons/code-solid 1.svg" />
+      </a>
+    </li>
+    <img class="circle-menu bluecircle" src="../../../assets/images/about/circleSVGs/bluecircle.svg" />
+
+    <li style="--i: 1" class="Area Disenio-Publicidad">
+      <a href="javascript:void(0);" (click)="showArea('Diseño y Publicidad'); removeAnimation();
+      addAnimation()">
+        <img class="icon" (mouseover)="highlightSection('#DE0D98')" (mouseleave)="clearHighlight()"
+          src="../../../assets/images/about/Icons/palette-solid 1.svg" />
+      </a>
+    </li>
+    <img class="circle-menu pinkcircle" (mouseover)="highlightSection('#DE0D98')" (mouseleave)="clearHighlight()"
+      src="../../../assets/images/about/circleSVGs/pinkcircle.svg" />
+
+    <li style="--i: 2" class="Area Electronica">
+      <a href="javascript:void(0);" (click)="showArea('Electrónica'); removeAnimation();
+      addAnimation()">
+        <img class="icon" (mouseover)="highlightSection('#DEC800')" (mouseleave)="clearHighlight()"
+          src="../../../assets/images/about/Icons/microchip-solid 1.svg" />
+      </a>
+    </li>
+    <img class="circle-menu yellowcircle" src="../../../assets/images/about/circleSVGs/yellowcircle.svg" />
+
+    <li style="--i: 3" class="Area Mecanica">
+      <a href="javascript:void(0);" (click)="showArea('Mecánica'); removeAnimation();
+      addAnimation()">
+        <img class="icon" (mouseover)="highlightSection('#2AC11D')" (mouseleave)="clearHighlight()"
+          src="../../../assets/images/about/Icons/wrench-solid 1.svg" />
+      </a>
+    </li>
+    <img class="circle-menu greencircle" src="../../../assets/images/about/circleSVGs/greencircle.svg" />
+
+    <li style="--i: 4" class="Area Control-Programacion">
+      <a href="javascript:void(0);" (click)="showArea('Control y Programación'); removeAnimation();
+      addAnimation()">
+        <img class="icon" (mouseover)="highlightSection('#03C1F5')" (mouseleave)="clearHighlight()"
+          src="../../../assets/images/about/Icons/gear-solid 1.svg" />
+      </a>
+    </li>
+    <img class="circle-menu ciancircle" src="../../../assets/images/about/circleSVGs/ciancircle.svg" />
+
+    <li style="--i: 5" class="Area otros rotated">
+      <a href="javascript:void(0);" (click)="showArea('Otros'); removeAnimation();
+      addAnimation()">
+        <img class="icon" (mouseover)="highlightSection('#1B1B1A')" (mouseleave)="clearHighlight()"
+          src="../../../assets/images/about/Icons/ellipsis-solid 1.svg" />
+      </a>
+    </li>
+    <img class="circle-menu graycircle" src="../../../assets/images/about/circleSVGs/graycircle.svg" />
+
+    <li style="--i: 6" class="Area otros">
+      <a href="javascript:void(0);" (click)="showArea('Otros'); removeAnimation();
+      addAnimation()">
+        <img class="icon" (mouseover)="highlightSection('#1B1B1B')" (mouseleave)="clearHighlight()"
+          src="../../../assets/images/about/Icons/ellipsis-solid 2.svg" />
+      </a>
+    </li>
+    <img class="circle-menu graycircle2" src="../../../assets/images/about/circleSVGs/graycircle.svg" />
+
+    <li style="--i: 7" class="Area otros rotated">
+      <a href="javascript:void(0);" (click)="showArea('Otros'); removeAnimation();
+      addAnimation()">
+        <img class="icon" (mouseover)="highlightSection('#1B1B1C')" (mouseleave)="clearHighlight()"
+          src="../../../assets/images/about/Icons/ellipsis-solid 3.svg" />
+      </a>
+    </li>
+    <img class="circle-menu graycircle3" src="../../../assets/images/about/circleSVGs/graycircle.svg" />
+  </ul>
+
+  <ul class="lista_DescripcionAreas">
+    <li>
+      <img class="circle-list-area" src="../../../assets/images/about/circleSVGs/bluecircle.svg" />
+      <p>Desarrollo Web</p>
+    </li>
+    <li>
+      <img class="circle-list-area" src="../../../assets/images/about/circleSVGs/pinkcircle.svg" />
+      <p>Diseño y Publicidad</p>
+    </li>
+    <li>
+      <img class="circle-list-area" src="../../../assets/images/about/circleSVGs/yellowcircle.svg" />
+      <p>Electronica</p>
+    </li>
+    <li>
+      <img class="circle-list-area" src="../../../assets/images/about/circleSVGs/greencircle.svg" />
+      <p>Mecanica</p>
+    </li>
+    <li>
+      <img class="circle-list-area" src="../../../assets/images/about/circleSVGs/ciancircle.svg" />
+      <p>Control y Programacion</p>
+    </li>
+    <li>
+      <img class="circle-list-area graycircle" src="../../../assets/images/about/circleSVGs/graycircle.svg" />
+      <p>Otros</p>
+    </li>
+  </ul>
+</div>
+
+<div class="selectedArea" *ngIf="selectedArea ==='Otros'" id="{{selectedArea}}">
+  <h2 id="selectedArea_Otros">Próximamente :D</h2>
+</div>
+
+<div class="selectedArea" *ngIf="selectedArea !== 'Otros' && selectedArea !== null" id="{{selectedArea}}">
+
+  <h2 id="selectedArea_De" class="animated">Area de</h2>
+  <h2 id="selectedArea_Title" class="animated">{{ selectedArea }}</h2>
+
+  <div class="selectedArea_Director animated">
+
+    <div class="DirSub_svgPart animated">
+      <p class="DirSub_svgPart_Nombre animated">{{ areas[selectedArea].Director.Nombre }}</p>
+      <p class="DirSub_svgPart_RolCarrera animated"> DIRECTOR - {{ areas[selectedArea].Director.Carrera }}</p>
+      <p class="DirSub_svgPart_Descripcion animated"> {{ areas[selectedArea].Director.Descripcion }}</p>
+    </div>
+
+    <div class="DirSub_iconPart">
+      <img [src]="areas[selectedArea].Director.Icon" alt="Icono del Area de {{selectedArea}}"
+        class="DirSub_iconPartIMG animated" />
+    </div>
+
+    <div class="DirSub_PhotoPart">
+      <img class="DirSub_PhotoPartIMG animated" [src]="areas[selectedArea].Director.Photo"
+        alt="image of the director of {{selectedArea}}" />
+      <div class="social_media animated">
+        <a *ngIf="areas[selectedArea].Director.Facebook" href="{{ areas[selectedArea].Director.Facebook }}">
+          <img src="../../../assets/images/about/members/facebook.svg" alt="icon of facebook">
+        </a>
+        <a *ngIf="areas[selectedArea].Director.Instagram" href="{{ areas[selectedArea].Director.Instagram }}">
+          <img src="../../../assets/images/about/members/instagram.svg" alt="icon of instagram">
+        </a>
+        <a *ngIf="areas[selectedArea].Director.Twitter" href="{{ areas[selectedArea].Director.Twitter }}">
+          <img src="../../../assets/images/about/members/twitter.svg" alt="icon of twitter">
+        </a>
+        <a *ngIf="areas[selectedArea].Director.Linkedin" href="{{ areas[selectedArea].Director.Linkedin }}">
+          <img src="../../../assets/images/about/members/linkedin.svg" alt="icon of linkedin">
+        </a>
+        <a *ngIf="areas[selectedArea].Director.Github" href="{{ areas[selectedArea].Director.Github }}">
+          <img src="../../../assets/images/about/members/github.svg" alt="icon of github">
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <div class="selectedArea_Subdirector" *ngIf="areas[selectedArea].Subdirector">
+    <p>{{ areas[selectedArea].Subdirector.Nombre }}</p>
+    <p>SUBDIRECTOR - {{ areas[selectedArea].Subdirector.Carrera }}</p>
+  </div>
+
+  <div class="selectedArea_Integrantes" *ngIf="areas[selectedArea].Integrantes">
+    <h3>INTEGRANTES</h3>
+    <ul class="ulintegrantes">
+      <li *ngFor="let integrante of areas[selectedArea].Integrantes">
+        {{ integrante.Nombre }} - {{ integrante.Carrera }}
+      </li>
+    </ul>
+  </div> -->
 
 </div>
