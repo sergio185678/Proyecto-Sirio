@@ -2,36 +2,36 @@
   {
     "id": 0,
     "titulo": "Noticia 1",
-    "descripcion": "Description 1",
-    "url_img": "image_url_1",
-    "url_noticia": "news_url_1"
+    "descripcion": "El telescopio SuperBIT, lanzado por la NASA en un globo científico el 16 de abril, ha tomado sus primeras imágenes de investigación de las galaxias de la Nebulosa de la Tarántula y las galaxias Antena.",
+    "url_img": "../../../assets/images/noticias/news1.png",
+    "url_noticia": "https://blogs.nasa.gov/superpressureballoon/2023/04/20/balloon-borne-superbit-telescope-releases-1st-research-images/"
   },
   {
     "id": 1,
     "titulo": "Noticia 2",
-    "descripcion": "Description 2",
-    "url_img": null,
-    "url_noticia": null
+    "descripcion": "La nave espacial RHESSI de la NASA se desintegró en la atmósfera sobre el desierto del Sáhara, tras casi 21 años desde su lanzamiento. Durante su tiempo en órbita, RHESSI observó erupciones solares, proporcionando conocimientos sobre su física.",
+    "url_img": "../../../assets/images/noticias/news2.png",
+    "url_noticia": "https://cnnespanol.cnn.com/2023/04/21/obsoleta-nave-espacial-rhessi-nasa-regresa-tierra-21-anos-despues-trax/"
   },
   {
     "id": 2,
     "titulo": "Noticia 3",
-    "descripcion": "Description 3",
-    "url_img": "image_url_3",
-    "url_noticia": null
+    "descripcion": "El helicóptero Ingenuity de la NASA en Marte ha restablecido el contacto con el rover Perseverance tras 63 días de silencio. A pesar de la interrupción de las comunicaciones, los datos indican que Ingenuity está en buen estado y podría volver a volar pronto. Este pequeño helicóptero, inicialmente planeado para una misión de 30 días, ha superado todas las expectativas con más de once kilómetros de vuelo y valiosas imágenes aéreas.",
+    "url_img": "../../../assets/images/noticias/news3.png",
+    "url_noticia": "https://www.jpl.nasa.gov/news/nasas-ingenuity-mars-helicopter-phones-home"
   },
   {
     "id": 3,
     "titulo": "Noticia 4",
-    "descripcion": "Description 4",
-    "url_img": "image_url_4",
-    "url_noticia": null
+    "descripcion": "Sagitario A*, el agujero negro supermasivo en el centro de la Vía Láctea, el agujero negro central de nuestra galaxia no ha estado devorando activamente material a su alrededor. Sin embargo, nueva evidencia obtenida por el telescopio Explorador de polarimetría de imágenes de rayos X (IXPE, por sus siglas en inglés) de la NASA sugiere que el antiguo gigante dormido despertó recientemente —hace unos 200 años— para devorar gas y otros desechos cósmicos que estaban a su alcance.",
+    "url_img": "../../../assets/images/noticias/news4.png",
+    "url_noticia": "https://ciencia.nasa.gov/universo/el-agujero-negro-en-el-centro-de-la-via-lactea-desperto-hace-2-siglos-revela-telescopio-ixpe/"
   },
   {
     "id": 4,
     "titulo": "Noticia 5",
     "descripcion": "Description 5",
-    "url_img": "image_url_4",
+    "url_img": "image_url_5",
     "url_noticia": null
   },
   {
