@@ -23,6 +23,8 @@ export class NoticiasComponent implements OnInit{
   ngOnInit() {
   }
 
+
+
   loadMore(){
     this.itemsToShow += 3;
   }
