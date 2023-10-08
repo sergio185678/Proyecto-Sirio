@@ -90,16 +90,16 @@
     height: 3vw;
     width: auto;
 }
-/*
+
 @media screen and (max-width: 800px) {
   .cardMember{
      grid-column: span 12;
-    padding-top: 15vw;
-    padding-bottom: 50vw;
+    padding-top: 11vw;
+    padding-bottom: 25vw;
   }
   .memberInfo{
-    padding-right: 21vw;
-    padding-left: 22vw;
+    padding-right: 6vw;
+    padding-left: 8vw;
   }
   .socialLinks .socialLink {
     margin-left: 1vw;
@@ -115,25 +115,30 @@
     width: 24vw;
     height: auto;
   }
-
   .cardMember .fullName {
     padding-right: 2.2vw;
     padding-left: 2.2vw;
-    font-size: 4.5vw;
-    margin: 0.5vw;
+    font-size: 5vw;
+    margin: 1vw;
   }
 
   .position {
     font-size: 3vw;
+    padding-right: 2.2vw;
+    padding-left: 2.2vw;
+    margin-bottom: 1vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
   }
 
   .description {
-    font-size: 1.2vw;
+    font-size: 2.5vw;
     padding-right: 7vw;
     padding-left: 9vw;
   }
+
 }
-*/
+
 .container_AreasMenu {
     padding-top: 120px;
     display: grid;
