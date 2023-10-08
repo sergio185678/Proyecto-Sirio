@@ -7,7 +7,7 @@ import { AreaService } from 'src/app/services/area.service';
   styleUrls: ['./acerca-directorio.component.css']
 })
 export class AcercaDirectorioComponent implements OnInit {
-
+    repeatCount = 2;
     firstTimeAnimated: boolean = true;
     selectedArea: string | null = null; // Variable to store the selected area
     areas: { [key: string]: Area } = {};

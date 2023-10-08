@@ -2,7 +2,7 @@
   <h1 class="directorio-title">Directorio</h1>
 
   <div class="members">
-    <div class="cardMember">
+    <div *ngFor="let _ of [].constructor(repeatCount); let i = index" class="cardMember">
       <div class="memberInfo">
         <img class="profilePhoto" src="assets/images/about/members/profile.svg" />
         <div class="socialLinks">
@@ -27,6 +27,7 @@
       </div>
     </div>
   </div>
+
 </div>
 <div class="container_AreasMenu">
   <div class="container_AreasMenu-tittle">NUESTRAS AREAS</div>
