@@ -143,16 +143,16 @@
   </ul>
 </div>
 
-<div class="selectedArea" *ngIf="selectedArea ==='Otros'" id="{{selectedArea}}">
+<div *ngIf="selectedArea ==='Otros'" id="selectedAreaOtrosSECTION">
   <h2 id="selectedArea_Otros">Próximamente :D</h2>
 </div>
 
-<div class="selectedArea" *ngIf="selectedArea !== 'Otros' && selectedArea !== null" id="{{selectedArea}}">
+<div *ngIf="selectedArea !== 'Otros' && selectedArea !== null" id="selectedAreaSECTION">
 
   <h2 id="selectedArea_De" class="animated">Area de</h2>
   <h2 id="selectedArea_Title" class="animated">{{ selectedArea }}</h2>
 
-  <div class="selectedArea_Director animated">
+  <div class="selectedArea_DirSub animated director">
 
     <div class="DirSub_svgPart animated">
       <p class="DirSub_svgPart_Nombre animated">{{ areas[selectedArea].Director.Nombre }}</p>
@@ -168,7 +168,7 @@
     <div class="DirSub_PhotoPart">
       <img class="DirSub_PhotoPartIMG animated" [src]="areas[selectedArea].Director.Photo"
         alt="image of the director of {{selectedArea}}" />
-      <div class="social_media animated">
+      <div class="social_media" #elemento>
         <a *ngIf="areas[selectedArea].Director.Facebook" href="{{ areas[selectedArea].Director.Facebook }}">
           <img src="../../../assets/images/about/members/facebook.svg" alt="icon of facebook">
         </a>
@@ -190,18 +190,48 @@
 
   </div>
 
-  <!-- <div class="selectedArea_Subdirector" *ngIf="areas[selectedArea].Subdirector">
-    <p>{{ areas[selectedArea].Subdirector.Nombre }}</p>
-    <p>SUBDIRECTOR - {{ areas[selectedArea].Subdirector.Carrera }}</p>
+  <div class="simple-line"></div>
+
+  <div class="selectedArea_DirSub animated subdirector">
+    <div class="DirSub_svgPart animated">
+      <p class="DirSub_svgPart_Nombre animated">{{ areas[selectedArea].Subdirector.Nombre }}</p>
+      <p class="DirSub_svgPart_RolCarrera animated"> SUBDIRECTOR - {{ areas[selectedArea].Subdirector.Carrera }}</p>
+      <p class="DirSub_svgPart_Descripcion animated"> {{ areas[selectedArea].Subdirector.Descripcion }}</p>
+    </div>
+    <div class="DirSub_iconPart">
+    </div>
+    <div class="DirSub_PhotoPart">
+      <img class="DirSub_PhotoPartIMG animated" [src]="areas[selectedArea].Subdirector.Photo"
+        alt="image of the second leader of {{selectedArea}}" />
+      <div class="social_media animated">
+        <a *ngIf="areas[selectedArea].Subdirector.Facebook" href="{{ areas[selectedArea].Subdirector.Facebook }}">
+          <img src="../../../assets/images/about/members/facebook.svg" alt="icon of facebook">
+        </a>
+        <a *ngIf="areas[selectedArea].Subdirector.Instagram" href="{{ areas[selectedArea].Subdirector.Instagram }}">
+          <img src="../../../assets/images/about/members/instagram.svg" alt="icon of instagram">
+        </a>
+        <a *ngIf="areas[selectedArea].Subdirector.Twitter" href="{{ areas[selectedArea].Subdirector.Twitter }}">
+          <img src="../../../assets/images/about/members/twitter.svg" alt="icon of twitter">
+        </a>
+        <a *ngIf="areas[selectedArea].Subdirector.Linkedin" href="{{ areas[selectedArea].Subdirector.Linkedin }}">
+          <img src="../../../assets/images/about/members/linkedin.svg" alt="icon of linkedin">
+        </a>
+        <a *ngIf="areas[selectedArea].Subdirector.Github" href="{{ areas[selectedArea].Director.Github }}">
+          <img src="../../../assets/images/about/members/github.svg" alt="icon of github">
+        </a>
+
+      </div>
+    </div>
+
   </div>
 
-  <div class="selectedArea_Integrantes" *ngIf="areas[selectedArea].Integrantes">
-    <h3>INTEGRANTES</h3>
-    <ul class="ulintegrantes">
-      <li *ngFor="let integrante of areas[selectedArea].Integrantes">
-        {{ integrante.Nombre }} - {{ integrante.Carrera }}
-      </li>
-    </ul>
+  <!-- <div class="selectedArea_Integrantes" *ngIf="areas[selectedArea].Integrantes">
+        <h3>INTEGRANTES</h3>
+        <ul class="ulintegrantes">
+            <li *ngFor="let integrante of areas[selectedArea].Integrantes">
+                {{ integrante.Nombre }} - {{ integrante.Carrera }}
+            </li>
+        </ul>
   </div> -->
 
 </div>

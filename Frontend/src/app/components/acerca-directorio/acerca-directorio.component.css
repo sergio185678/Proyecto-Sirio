@@ -363,21 +363,36 @@ a {
     margin-right: 24px;
 }
 
-.selectedArea {
+#selectedAreaSECTION {
     display: grid;
     grid-template-columns: (12, 1fr);
-    grid-template-rows: (5, 1fr);
+    grid-template-rows: (6, 1fr);
     background-color: #001133;
-    flex-direction: column;
     font-family: 'Martel';
+}
+
+span {
+    position: absolute;
+    bottom: -50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    pointer-events: none;
+    z-index: 900;
+    box-shadow: inset 0 0 10px rgb(0, 110, 255);
+    background-color: aliceblue;
+    animation: animate 5000s linear infinite;
+    -webkit-animation: animate 5000s linear infinite;
 }
 
 .animated {
     opacity: 0;
     top: 100px;
     position: relative;
-    animation: slideAndFade 2.5s ease forwards;
-    -webkit-animation: slideAndFade 2.5s ease forwards;
+    animation: slideAndFade 2.5s ease-in-out forwards;
+    -webkit-animation: slideAndFade 2.5s ease-in-out forwards;
 }
 
 @keyframes slideAndFade {
@@ -409,17 +424,19 @@ a {
     justify-self: center;
 }
 
-.selectedArea_Director {
+.selectedArea_DirSub {
     display: grid;
-    grid-row: 3;
-    grid-column: 1 /span 12;
+    grid-column: 1 / span 12;
     grid-template-columns: (12, 1fr);
-    gap: 3%;
+}
+
+.director {
+    grid-row: 3;
 }
 
 .DirSub_svgPart {
     display: grid;
-    grid-column: 2 / span 4;
+    grid-column: 1 / span 6;
     font-family: 'Baloo 2';
     width: fit-content;
     background-image: url(../../../assets/images/about/backgroundSVGs/Vector.svg);
@@ -427,6 +444,7 @@ a {
     background-position: center;
     background-size: contain;
     padding: 18%;
+    margin-left: 8%;
 }
 
 .DirSub_svgPart_Nombre {
@@ -446,14 +464,19 @@ a {
 }
 
 .DirSub_iconPart {
-    grid-column: 6 / span 1;
-    display: flex;
-    justify-content: center;
+    grid-column: 7 / span 2;
+    width: 150px;
+    display: grid;
     align-items: center;
+    justify-self: center;
 }
 
 .DirSub_iconPartIMG {
-    width: 200px;
+    position: relative;
+    left: 30%;
+    width: 150px;
+    align-self: center;
+    justify-self: center;
 }
 
 .animatedIcon {
@@ -488,25 +511,34 @@ a {
     margin-top: -100px;
 }
 
-.social_media a img {
-    width: min-content;
-    height: min-content;
-}
-
 .DirSub_PhotoPart {
-    grid-column: 7 / span 5;
+    grid-column: 9 / span 4;
     display: grid;
     align-items: center;
     justify-self: center;
-    margin-right: 30%;
+    margin-right: 8%;
 }
 
-.selectedArea_Subdirector {
-    grid-row: 4;
-    display: grid;
+.subdirector {
+    grid-row: 5;
 }
 
 .selectedArea_Integrantes {
-    grid-row: 5;
+    grid-row: 6;
     display: grid;
+}
+
+.simple-line {
+    grid-row: 4;
+    display: grid;
+    grid-column: 1 / span 12;
+    height: 5px;
+    margin: 5%;
+    width: 90%;
+    background-color: white;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }

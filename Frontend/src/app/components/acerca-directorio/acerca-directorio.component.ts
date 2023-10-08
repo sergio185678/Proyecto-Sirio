@@ -7,6 +7,7 @@ import { AreaService } from 'src/app/services/area.service';
   styleUrls: ['./acerca-directorio.component.css']
 })
 export class AcercaDirectorioComponent implements OnInit {
+
     firstTimeAnimated: boolean = true;
     selectedArea: string | null = null; // Variable to store the selected area
     areas: { [key: string]: Area } = {};
@@ -19,27 +20,37 @@ export class AcercaDirectorioComponent implements OnInit {
     constructor(private areaService: AreaService) { }
 
     ngOnInit(): void {
+      this.toggleMenu();
+      this.fetchData();
+
+    }
+
+    toggleMenu(): void {
       let menuToggle = document.querySelector('.toggle');
       let animation = document.querySelector('.animation-rows');
       let menu = document.querySelector('.AreasMenu');
       let container = document.querySelector('.container-box');
 
-      menuToggle?.addEventListener('click', () => {
-        menu?.classList?.toggle('active');
-        animation?.classList?.toggle('noDisplay');
-        menuToggle?.classList?.toggle('active');
-        container?.classList?.toggle('active');
-        container?.classList?.toggle('inactive');
-        this.calculateDrawingPizzaColor();
-      });
+      if (menuToggle && menu && animation && container) {
+          menuToggle?.addEventListener('click', () => {
+          menu?.classList?.toggle('active');
+          animation?.classList?.toggle('noDisplay');
+          menuToggle?.classList?.toggle('active');
+          container?.classList?.toggle('active');
+          container?.classList?.toggle('inactive');
+          this.calculateDrawingPizzaColor();
+        });
+      }
+    }
 
+    fetchData(): void {
       this.areaService.getData().subscribe((result) => {
         this.areas = result;
         this.areasNames = Object.keys(this.areas);
       });
     }
 
-    chooseColor(color: string, colors: string[]): void {
+    chooseColor(color: string): void {
       this.colors = this.colorsUsed.map((usedColor) => usedColor === color ? usedColor : '#060A12');
     }
 
@@ -48,7 +59,7 @@ export class AcercaDirectorioComponent implements OnInit {
     }
 
     calculateDrawingPizzaColor(colorChosen: string = 'transparent'): void {
-      this.chooseColor(colorChosen, this.colors);
+      this.chooseColor(colorChosen);
       let colorStops = '';
       let angleStep = 360 / this.numColors;
       angleStep = (angleStep / 360) * 100 / 2;
@@ -77,38 +88,54 @@ export class AcercaDirectorioComponent implements OnInit {
         this.highlightedColor = null;
       }
     }
-    selectedSnowColor(areaName: string): void {
-      this.selectedArea = areaName;
+
+    selectedSnowColor(): void {
       let colorSelected = '#1B1B1B';
       if (this.selectedArea == 'Desarrollo Web'){
-        colorSelected = '#001133';
+        colorSelected = '#006eff';
       }else if (this.selectedArea == 'Diseño y Publicidad'){
         colorSelected = '#09003E';
       }
       document.documentElement.style.setProperty('--areaSnowColor', colorSelected);
     }
-    showArea(areaName: string): void {
-      this.selectedSnowColor(areaName);
+    createBubbles(areaName: string): void{
+      const areaElement = document.getElementById(areaName);
+      const createElement = document.createElement('span');
+      // const maxWidth = areaElement?.offsetWidth;
+      // const maxHeight = areaElement?.offsetHeight;
+
+      // createElement.style.width = 2 + 'px';
+      // createElement.style.height = 2 + 'px';
+      // createElement.style.left = Math.random() * (maxWidth ? maxWidth : 0) + "px";
+      // createElement.style.top = Math.random() *  (maxHeight ? maxHeight : 0) + "px";
+      // areaElement?.appendChild(createElement);
 
       setTimeout(() => {
-        const areaElement = document.getElementById(areaName);
+          // createElement.remove();
+      }, 4000);
+  }
+
+    showArea(areaName: string): void {
+      this.selectedArea = areaName;
+      this.selectedSnowColor();
+      setTimeout(() => {
+        const areaElement = document.getElementById('selectedAreaSECTION');
         areaElement!.scrollIntoView({ behavior: "smooth" });
+        const createBubblesForArea = this.createBubbles.bind(this);
+        setInterval(() => createBubblesForArea('selectedAreaSECTION'), 50);
       }, 50);
     }
 
     removeAnimaElements(items: string, animation: string): void{
       const animatedElements = document.getElementsByClassName(items);
-
       for (let i = 0; i < animatedElements.length; i++) {
         animatedElements[i].classList.remove(animation);
       }
     }
-
     removeAnimaElement(item: string, animation: string): void{
       const animatedElement = document.getElementById(item);
         animatedElement?.classList.remove(animation);
     }
-
     removeAnimation(): void {
       setTimeout(() => {
         this.removeAnimaElement('selectedArea_De','animated');
@@ -129,7 +156,6 @@ export class AcercaDirectorioComponent implements OnInit {
       const animatedElement = document.getElementById(item);
       animatedElement?.classList.add(animation);
     }
-
     addAnimaElements(items: string, animation: string):void{
       const animatedElements = document.getElementsByClassName(items);
 
