@@ -17,7 +17,7 @@ export class AcercaDirectorioComponent implements OnInit {
     colors: string[] = this.colorsUsed;
     highlightedColor: string | null = null;
 
-    @ViewChild('selectedAreaSECTION', { static: false }) selectedAreaSection!: ElementRef;
+    @ViewChild('AreaSelected', { static: false }) AreaSelected!: ElementRef;
     constructor(private areaService: AreaService, private renderer: Renderer2) { }
 
     ngOnInit(): void {
@@ -27,13 +27,13 @@ export class AcercaDirectorioComponent implements OnInit {
 
     toggleMenu(): void {
       let menuToggle = document.querySelector('.toggle');
-      let animation = document.querySelector('.animation-rows');
-      let menu = document.querySelector('.AreasMenu');
-      let container = document.querySelector('.container-box');
+      let animation = document.querySelector('.animationRows');
+      let circularMenu = document.querySelector('.CircularAreasMenu');
+      let container = document.querySelector('.backgroundCircle');
 
-      if (menuToggle && menu && animation && container) {
+      if (menuToggle && circularMenu && animation && container) {
           menuToggle?.addEventListener('click', () => {
-          menu?.classList?.toggle('active');
+          circularMenu?.classList?.toggle('active');
           animation?.classList?.toggle('noDisplay');
           menuToggle?.classList?.toggle('active');
           container?.classList?.toggle('active');
@@ -55,10 +55,10 @@ export class AcercaDirectorioComponent implements OnInit {
     }
 
     clearColors(): void {
-      this.calculateDrawingPizzaColor('transparent');
+      this.calculateDrawingPizzaColor('#060A12');
     }
 
-    calculateDrawingPizzaColor(colorChosen: string = 'transparent'): void {
+    calculateDrawingPizzaColor(colorChosen: string = '#060A12'): void {
       this.chooseColor(colorChosen);
       let colorStops = '';
       let angleStep = 360 / this.numColors;
@@ -89,18 +89,18 @@ export class AcercaDirectorioComponent implements OnInit {
       }
     }
 
-    selectedSnowColor(): void {
+    selectedBubblesColor(): void {
       let colorSelected = '#1B1B1B';
       if (this.selectedArea == 'Desarrollo Web'){
         colorSelected = '#006eff';
       }else if (this.selectedArea == 'Diseño y Publicidad'){
         colorSelected = '#09003E';
       }
-      document.documentElement.style.setProperty('--areaSnowColor', colorSelected);
+      document.documentElement.style.setProperty('--areaBubbleColor', colorSelected);
     }
-    createBubbles() {
-      if (this.selectedAreaSection) {
-        const selectedAreaDiv = this.selectedAreaSection.nativeElement;
+    createStar() {
+      if (this.AreaSelected) {
+        const selectedAreaDiv = this.AreaSelected.nativeElement;
         const createElement = this.renderer.createElement('span');
         const bubbleSize = 2; // Tamaño de las burbujas
         const maxWidth = selectedAreaDiv.offsetWidth - bubbleSize; // Restamos el tamaño de las burbujas
@@ -122,14 +122,14 @@ export class AcercaDirectorioComponent implements OnInit {
 
     showArea(areaName: string): void {
       this.selectedArea = areaName;
-      this.selectedSnowColor();
+      this.selectedBubblesColor();
       setTimeout(() => {
-        const areaElement = document.getElementById('selectedAreaSECTION');
+        const areaElement = document.getElementById('AreaSelected');
         areaElement!.scrollIntoView({ behavior: "smooth" });
-        this.createBubbles();
+        this.createStar();
         setInterval(() => {
-          this.createBubbles();
-        }, 90);
+          this.createStar();
+        }, 70);
       }, 50);
     }
 
@@ -145,16 +145,16 @@ export class AcercaDirectorioComponent implements OnInit {
     }
     removeAnimation(): void {
       setTimeout(() => {
-        this.removeAnimaElement('selectedArea_De','animated');
-        this.removeAnimaElement('selectedArea_Title','animated');
-        this.removeAnimaElements('DirSub_svgPart','animated');
-        this.removeAnimaElements('DirSub_svgPart_Nombre','animated');
-        this.removeAnimaElements('DirSub_svgPart_RolCarrera','animated');
-        this.removeAnimaElements('DirSub_svgPart_Descripcion','animated');
+        this.removeAnimaElement('AreaSelected_De','animated');
+        this.removeAnimaElement('AreaSelected_Title','animated');
+        this.removeAnimaElements('svgPart','animated');
+        this.removeAnimaElements('Nombre','animated');
+        this.removeAnimaElements('RolCarrera','animated');
+        this.removeAnimaElements('Descripcion','animated');
         this.removeAnimaElements('DirSub_iconPartIMG','animated');
         this.addAnimaElements('DirSub_iconPartIMG','animatedIcon');
         this.removeAnimaElements('DirSub_PhotoPartIMG','animated');
-        this.removeAnimaElements('social_media','animated');
+        this.removeAnimaElements('socialMedia','animated');
       }, 2600);
       this.firstTimeAnimated = false;
     }
@@ -165,23 +165,22 @@ export class AcercaDirectorioComponent implements OnInit {
     }
     addAnimaElements(items: string, animation: string):void{
       const animatedElements = document.getElementsByClassName(items);
-
       for (let i = 0; i < animatedElements.length; i++) {
         animatedElements[i].classList.add(animation);
       }
     }
     addAnimation(): void {
       if (!this.firstTimeAnimated){
-        this.addAnimaElement('selectedArea_De','animated');
-        this.addAnimaElement('selectedArea_Title','animated');
-        this.addAnimaElements('DirSub_svgPart','animated');
-        this.addAnimaElements('DirSub_svgPart_Nombre','animated');
-        this.addAnimaElements('DirSub_svgPart_RolCarrera','animated');
-        this.addAnimaElements('DirSub_svgPart_Descripcion','animated');
+        this.addAnimaElement('AreaSelected_De','animated');
+        this.addAnimaElement('AreaSelected_Title','animated');
+        this.addAnimaElements('svgPart','animated');
+        this.addAnimaElements('Nombre','animated');
+        this.addAnimaElements('RolCarrera','animated');
+        this.addAnimaElements('Descripcion','animated');
         this.addAnimaElements('DirSub_iconPartIMG','animated');
         this.removeAnimaElements('DirSub_iconPartIMG','animatedIcon');
         this.addAnimaElements('DirSub_PhotoPartIMG','animated');
-        this.addAnimaElements('social_media','animated');
+        this.addAnimaElements('socialMedia','animated');
       }
     }
 }
