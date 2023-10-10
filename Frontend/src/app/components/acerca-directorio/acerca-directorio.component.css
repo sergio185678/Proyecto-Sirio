@@ -459,6 +459,15 @@ a {
     justify-self: center;
 }
 
+#selectedArea_De,
+#selectedArea_Title,
+.selectedArea_DirSub,
+.DirSub_svgPart,
+.DirSub_iconPart,
+.DirSub_PhotoPart {
+    z-index: 2;
+}
+
 #selectedArea_Title {
     margin-bottom: 3%;
     grid-column: 1 /span 12;
