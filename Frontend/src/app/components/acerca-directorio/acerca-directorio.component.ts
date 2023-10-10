@@ -16,6 +16,10 @@ export class AcercaDirectorioComponent implements OnInit {
     colorsUsed: string[] = ['#0019FD', '#DE0D98', '#DEC800', '#2AC11D', '#03C1F5', '#1B1B1A', '#1B1B1B', '#1B1B1C'];
     colors: string[] = this.colorsUsed;
     highlightedColor: string | null = null;
+    // variables for bubbles in area selected
+    private bubbleCount = 0;
+    private readonly maxBubbles = 120; // Adjust the maximum number of bubbles as needed
+    private intervalId: any;
 
     @ViewChild('AreaSelected', { static: false }) AreaSelected!: ElementRef;
     constructor(private areaService: AreaService, private renderer: Renderer2) { }
@@ -98,19 +102,21 @@ export class AcercaDirectorioComponent implements OnInit {
       }
       document.documentElement.style.setProperty('--areaBubbleColor', colorSelected);
     }
-    createStar() {
+    createStar(): void{
       if (this.AreaSelected) {
         const selectedAreaDiv = this.AreaSelected.nativeElement;
         const createElement = this.renderer.createElement('span');
-        const bubbleSize = 2; // Tamaño de las burbujas
-        const maxWidth = selectedAreaDiv.offsetWidth - bubbleSize; // Restamos el tamaño de las burbujas
-        const maxHeight = selectedAreaDiv.offsetHeight - bubbleSize; // Restamos el tamaño de las burbujas
+        const starSize = 2; // Tamaño de las estrellas
 
-        this.renderer.setStyle(createElement, 'width', bubbleSize + 'px');
-        this.renderer.setStyle(createElement, 'height', bubbleSize + 'px');
+        const maxWidth = selectedAreaDiv.offsetWidth - starSize; // Restamos el tamaño de las estrellas
+        const maxHeight = selectedAreaDiv.offsetHeight - starSize; // Restamos el tamaño de las estrellas
+
+        this.renderer.setStyle(createElement, 'width', starSize + 'px');
+        this.renderer.setStyle(createElement, 'height', starSize + 'px');
         this.renderer.setStyle(createElement, 'left', Math.random() * maxWidth + 'px');
         this.renderer.setStyle(createElement, 'top', Math.random() * maxHeight + 'px');
         this.renderer.setStyle(createElement, 'position', 'absolute'); // Cambiado a 'absolute'
+        this.renderer.addClass(createElement,'star');
 
         this.renderer.appendChild(selectedAreaDiv, createElement);
 
@@ -119,20 +125,52 @@ export class AcercaDirectorioComponent implements OnInit {
         }, 4000);
       }
     }
+    smoothScroll(): void{
+      const areaElement = document.getElementById('AreaSelected');
+      areaElement!.scrollIntoView({ behavior: "smooth" });
+    }
+    createStarsBackground(){
+      this.createStar();
+      setInterval(() => {
+        this.createStar();
+      }, 70);
+    }
 
     showArea(areaName: string): void {
       this.selectedArea = areaName;
       this.selectedBubblesColor();
       setTimeout(() => {
-        const areaElement = document.getElementById('AreaSelected');
-        areaElement!.scrollIntoView({ behavior: "smooth" });
-        this.createStar();
-        setInterval(() => {
-          this.createStar();
-        }, 70);
+        this.smoothScroll();
+        this.createStarsBackground();
+        this.intervalId = setInterval(() => this.createBubbles(), 0.1);
+        this.bubbleCount = 0;
       }, 50);
     }
 
+  createBubbles() {
+    const selectedAreaDiv = this.AreaSelected.nativeElement;
+    const createElement = this.renderer.createElement('span');
+    const size = Math.random() * 60;
+
+    const width = size + 20; const height = size + 20;
+
+    this.renderer.setStyle(createElement, 'width', width +'px');
+    this.renderer.setStyle(createElement, 'height', height +'px');
+    this.renderer.setStyle(createElement, 'left', Math.random() * window.innerWidth - width+ 'px');
+    this.renderer.addClass(createElement, 'bubble');
+    this.renderer.appendChild(selectedAreaDiv, createElement);
+
+    setTimeout(() => {
+      this.renderer.removeChild(selectedAreaDiv, createElement);
+    }, 4000);
+
+    this.bubbleCount++;
+    console.log(this.bubbleCount);
+
+    if (this.bubbleCount >= this.maxBubbles && this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+  }
     removeAnimaElements(items: string, animation: string): void{
       const animatedElements = document.getElementsByClassName(items);
       for (let i = 0; i < animatedElements.length; i++) {
