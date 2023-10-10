@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { Area } from 'src/app/models/area';
 import { AreaService } from 'src/app/services/area.service';
 @Component({
@@ -17,12 +17,12 @@ export class AcercaDirectorioComponent implements OnInit {
     colors: string[] = this.colorsUsed;
     highlightedColor: string | null = null;
 
-    constructor(private areaService: AreaService) { }
+    @ViewChild('selectedAreaSECTION', { static: false }) selectedAreaSection!: ElementRef;
+    constructor(private areaService: AreaService, private renderer: Renderer2) { }
 
     ngOnInit(): void {
       this.toggleMenu();
       this.fetchData();
-
     }
 
     toggleMenu(): void {
@@ -98,22 +98,27 @@ export class AcercaDirectorioComponent implements OnInit {
       }
       document.documentElement.style.setProperty('--areaSnowColor', colorSelected);
     }
-    createBubbles(areaName: string): void{
-      const areaElement = document.getElementById(areaName);
-      const createElement = document.createElement('span');
-      // const maxWidth = areaElement?.offsetWidth;
-      // const maxHeight = areaElement?.offsetHeight;
+    createBubbles() {
+      if (this.selectedAreaSection) {
+        const selectedAreaDiv = this.selectedAreaSection.nativeElement;
+        const createElement = this.renderer.createElement('span');
+        const bubbleSize = 2; // Tamaño de las burbujas
+        const maxWidth = selectedAreaDiv.offsetWidth - bubbleSize; // Restamos el tamaño de las burbujas
+        const maxHeight = selectedAreaDiv.offsetHeight - bubbleSize; // Restamos el tamaño de las burbujas
 
-      // createElement.style.width = 2 + 'px';
-      // createElement.style.height = 2 + 'px';
-      // createElement.style.left = Math.random() * (maxWidth ? maxWidth : 0) + "px";
-      // createElement.style.top = Math.random() *  (maxHeight ? maxHeight : 0) + "px";
-      // areaElement?.appendChild(createElement);
+        this.renderer.setStyle(createElement, 'width', bubbleSize + 'px');
+        this.renderer.setStyle(createElement, 'height', bubbleSize + 'px');
+        this.renderer.setStyle(createElement, 'left', Math.random() * maxWidth + 'px');
+        this.renderer.setStyle(createElement, 'top', Math.random() * maxHeight + 'px');
+        this.renderer.setStyle(createElement, 'position', 'absolute'); // Cambiado a 'absolute'
 
-      setTimeout(() => {
-          // createElement.remove();
-      }, 4000);
-  }
+        this.renderer.appendChild(selectedAreaDiv, createElement);
+
+        setTimeout(() => {
+          this.renderer.removeChild(selectedAreaDiv, createElement);
+        }, 4000);
+      }
+    }
 
     showArea(areaName: string): void {
       this.selectedArea = areaName;
@@ -121,8 +126,10 @@ export class AcercaDirectorioComponent implements OnInit {
       setTimeout(() => {
         const areaElement = document.getElementById('selectedAreaSECTION');
         areaElement!.scrollIntoView({ behavior: "smooth" });
-        const createBubblesForArea = this.createBubbles.bind(this);
-        setInterval(() => createBubblesForArea('selectedAreaSECTION'), 50);
+        this.createBubbles();
+        setInterval(() => {
+          this.createBubbles();
+        }, 90);
       }, 50);
     }
 
