@@ -441,6 +441,9 @@ a {
         opacity: 0;
         top: 50px;
     }
+    10% {
+        opacity: 0;
+    }
     100% {
         opacity: 1;
         top: 0;
@@ -459,8 +462,8 @@ a {
     pointer-events: none;
     z-index: 10;
     box-shadow: inset 0 0 10px #00d9ff;
-    animation: animateBubble 5s linear;
-    -webkit-animation: animateBubble 5s linear;
+    animation: animateBubble 4s linear;
+    -webkit-animation: animateBubble 4s linear;
 }
 
 

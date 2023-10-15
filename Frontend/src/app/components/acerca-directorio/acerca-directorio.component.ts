@@ -142,7 +142,7 @@ export class AcercaDirectorioComponent implements OnInit {
       setTimeout(() => {
         this.smoothScroll();
         this.createStarsBackground();
-        this.intervalId = setInterval(() => this.createBubbles(), 0.1);
+        this.intervalId = (setInterval(() => this.createBubbles(), 0.1));
         this.bubbleCount = 0;
       }, 50);
     }
@@ -162,7 +162,7 @@ export class AcercaDirectorioComponent implements OnInit {
 
     setTimeout(() => {
       this.renderer.removeChild(selectedAreaDiv, createElement);
-    }, 4000);
+    }, 2300);
 
     this.bubbleCount++;
     console.log(this.bubbleCount);
