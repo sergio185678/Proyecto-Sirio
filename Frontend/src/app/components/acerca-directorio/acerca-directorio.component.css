@@ -27,12 +27,12 @@
 .members {
     grid-column: span 12;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Divide el contenedor en 2 columnas para 2 tarjetas por fila */
     background: #0D1525;
+    grid-gap: 1rem; /* Espacio entre las tarjetas de miembros */
 }
 
 .cardMember {
-    grid-column: span 6;
     background-image: url('../../../assets/figure.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -42,7 +42,19 @@
     padding-top: 7vw;
     padding-bottom: 15vw;
 }
-
+.divider {
+  grid-column: span 12;
+  background-color: #0D1525;
+  height: 100px;
+}
+.hr1{
+  background-color: white;
+  height: 10px;
+  margin-right: 15vh;
+  margin-left: 15vh;
+  opacity: 100%;
+  border-radius: 50rem
+}
 .memberInfo {
     align-items: center;
     justify-content: center;
@@ -136,6 +148,7 @@
         padding-left: 9vw;
     }
 }
+/*///////////////////////////////////////////*/
 
 .container_CircularAreasMenu {
     display: grid;

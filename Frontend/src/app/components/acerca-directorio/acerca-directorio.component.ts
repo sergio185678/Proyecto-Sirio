@@ -1,13 +1,18 @@
 import { Component, OnInit, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { Area } from 'src/app/models/area';
 import { AreaService } from 'src/app/services/area.service';
+import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'app-acerca-directorio',
   templateUrl: './acerca-directorio.component.html',
   styleUrls: ['./acerca-directorio.component.css']
 })
 export class AcercaDirectorioComponent implements OnInit {
-    repeatCount = 2;
+    infoMembers: { [key: string]: any } = {};
+    charge= false;
+    memberPairs: any[][] = [];
+    memberCount: number = 0;
+
     firstTimeAnimated: boolean = true;
     selectedArea: string | null = null; // Variable to store the selected area
     areas: { [key: string]: Area } = {};
@@ -22,8 +27,23 @@ export class AcercaDirectorioComponent implements OnInit {
     private intervalId: any;
 
     @ViewChild('AreaSelected', { static: false }) AreaSelected!: ElementRef;
-    constructor(private areaService: AreaService, private renderer: Renderer2) { }
-
+    constructor(private areaService: AreaService, private renderer: Renderer2, private http: HttpClient) {
+      http.get("../../assets/acercaDeDirectorio.json")
+        .subscribe( data => {
+          this.infoMembers = data;
+          this.charge = true;
+          this.infoMembers = this.infoMembers["membersData"]
+          this.memberCount = Object.keys(this.infoMembers).length;
+          this.memberPairs = this.chunkArray(Object.values(this.infoMembers), 2);
+        });
+    }
+  chunkArray(arr: any[], chunkSize: number) {
+    const result = [];
+    for (let i = 0; i < arr.length; i += chunkSize) {
+      result.push(arr.slice(i, i + chunkSize));
+    }
+    return result;
+  }
     ngOnInit(): void {
       this.toggleMenu();
       this.fetchData();

@@ -1,33 +1,27 @@
 <div class="directorio">
   <h1 class="directorio-title">Directorio</h1>
-
-  <div class="members">
-    <div *ngFor="let _ of [].constructor(repeatCount); let i = index" class="cardMember">
-      <div class="memberInfo">
-        <img class="profilePhoto" src="assets/images/about/members/profile.svg" />
-        <div class="socialLinks">
-          <a target="_blank" href="https://www.facebook.com"><img class="socialLink"
-              src="assets/images/about/members/facebook.svg" /></a>
-          <a target="_blank" href="https://www.twitter.com"><img class="socialLink"
-              src="assets/images/about/members/twitter.svg" /></a>
-          <a target="_blank" href="https://pe.linkedin.com"><img class="socialLink"
-              src="assets/images/about/members/linkedin.svg" /></a>
-          <a target="_blank" href="https://www.instagram.com"><img class="socialLink"
-              src="assets/images/about/members/instagram.svg" /></a>
+  <ng-container *ngFor="let pair of memberPairs; let r = index">
+    <div class="members">
+      <div class="cardMember" *ngFor="let member of pair; let i = index">
+        <div class="memberInfo">
+          <img class="profilePhoto" [src]="member.url_img" />
+          <div class="socialLinks">
+            <a target="_blank" [href]="member.facebook"><img class="socialLink" src="assets/images/about/members/facebook.svg" /></a>
+            <a target="_blank" [href]="member.twitter"><img class="socialLink" src="assets/images/about/members/twitter.svg" /></a>
+            <a target="_blank" [href]="member.linkedin"><img class="socialLink" src="assets/images/about/members/linkedin.svg" /></a>
+            <a target="_blank" [href]="member.instagram"><img class="socialLink" src="assets/images/about/members/instagram.svg" /></a>
+          </div>
+          <h1 class="fullName">{{ member.fullname }}</h1>
+          <p class="position">{{ member.position }}</p>
+          <p class="description">{{ member.description }}</p>
         </div>
-        <h1 class="fullName">Jose Oliden Martinez</h1>
-        <p class="position">ADVISOR - ING. MECATRONICA</p>
-        <p class="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor
-          sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum
-          dolor sit amet, consectetur adipiscing
-          elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula
-          a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet.
-        </p>
       </div>
     </div>
-  </div>
-
+    <!-- Agrega un <hr> después de cada repetición excepto la última -->
+    <div class="divider" *ngIf="r < memberPairs.length - 1">
+      <hr class="hr1">
+    </div>
+  </ng-container>
 </div>
 <div class="container_CircularAreasMenu">
   <div class="container_CircularAreasMenu_Title">NUESTRAS AREAS</div>

@@ -1,0 +1,64 @@
+{
+  "membersData": {
+    "1":{
+      "url_img": "assets/images/about/members/profile.svg",
+      "facebook": "https://www.facebook.com",
+      "twitter": "https://www.twitter.com",
+      "linkedin": "https://pe.linkedin.com",
+      "instagram": "https://www.instagram.com",
+      "fullname": "Jose Oliden Martinez",
+      "position": "Advisor - Ing. MECATRONICA",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet."
+    },
+    "2":{
+      "url_img": "assets/images/about/members/profile.svg",
+      "facebook": "https://www.facebook.com",
+      "twitter": "https://www.twitter.com",
+      "linkedin": "https://pe.linkedin.com",
+      "instagram": "https://www.instagram.com",
+      "fullname": "Pamela Diaz Achachao",
+      "position": "VICEPRESIDENTA - Ing. MECATRONICA",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet."
+    },
+    "3":{
+      "url_img": "assets/images/about/members/profile.svg",
+      "facebook": "https://www.facebook.com",
+      "twitter": "https://www.twitter.com",
+      "linkedin": "https://pe.linkedin.com",
+      "instagram": "https://www.instagram.com",
+      "fullname": "Enmanuel Olivera B.",
+      "position": "TESORERO - Ing. MECATRONICA",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet."
+    },
+    "4":{
+      "url_img": "assets/images/about/members/profile.svg",
+      "facebook": "https://www.facebook.com",
+      "twitter": "https://www.twitter.com",
+      "linkedin": "https://pe.linkedin.com",
+      "instagram": "https://www.instagram.com",
+      "fullname": "Kenny Farfan Olivares",
+      "position": "SECRETARIO - Ing. MECATRONICA",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet."
+    },
+    "5":{
+      "url_img": "assets/images/about/members/profile.svg",
+      "facebook": "https://www.facebook.com",
+      "twitter": "https://www.twitter.com",
+      "linkedin": "https://pe.linkedin.com",
+      "instagram": "https://www.instagram.com",
+      "fullname": "Enmanuel Olivera B.",
+      "position": "TESORERO - Ing. MECATRONICA",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet."
+    },
+    "6":{
+      "url_img": "assets/images/about/members/profile.svg",
+      "facebook": "https://www.facebook.com",
+      "twitter": "https://www.twitter.com",
+      "linkedin": "https://pe.linkedin.com",
+      "instagram": "https://www.instagram.com",
+      "fullname": "Kenny Farfan Olivares",
+      "position": "SECRETARIO - Ing. MECATRONICA",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet."
+    }
+  }
+}
