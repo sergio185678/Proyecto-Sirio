@@ -225,4 +225,88 @@
   margin-left: 40px;
 }
 
+@media screen and (max-width: 550px){
+  .grid-layout {
+    gap: 10px;
+  }
 
+  .columns {
+    grid-column: span 12;
+  }
+
+  .dataProject {
+    grid-column: 1 / span 12;
+    text-align: center;
+  }
+
+  .projectTeamImage {
+    grid-column: 1 / span 12;
+  }
+
+  .projectTeamImage img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .advisor {
+    grid-template-rows: 1fr; /* Ajusta una sola fila */
+  }
+
+  .institution {
+    grid-template-rows: 1fr;
+  }
+
+  .institution img {
+    width: auto;
+    max-height: 100%;
+  }
+
+  .member {
+    grid-column: 1 / span 12;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .tituloIntegrantes {
+    grid-column: 1 / span 12;
+  }
+
+  .participacionTextElectronica,
+  .participacionTextPruebas,
+  .participacionTextControl,
+  .participacionTextIntegracion,
+  .participacionTextMecanica,
+  .participacionTextIng {
+    margin: 5px 2px; /* Ajustar el espaciado entre etiquetas de participación */
+  }
+
+  .informacion,
+  .especificaciones {
+    grid-column: 1 / span 12; /* Ampliar para abarcar toda la pantalla */
+  }
+
+  .tituloInformacion,
+  .tituloEspecificaciones {
+    text-align: center; /* Centrar el texto del título */
+  }
+
+  .imgInformacion,
+  .imgElectronica1,
+  .imgElectronica2,
+  .imgMecanica1,
+  .imgMecanica2 {
+    width: 100%; /* Ajustar el ancho de las imágenes al 100% de la pantalla */
+    margin-bottom: 20px; /* Reducir el espacio inferior de las imágenes */
+  }
+
+  .textInformacion,
+  .info,
+  .infoMecanica {
+    text-align: justify; /* Justificar el texto */
+    margin-left: 0; /* Eliminar el margen izquierdo */
+    margin-right: 0; /* Eliminar el margen derecho */
+  }
+}
