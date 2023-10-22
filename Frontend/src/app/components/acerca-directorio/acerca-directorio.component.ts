@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef, Renderer2, ViewChild } from '@angular/core';
-import { Area } from 'src/app/models/area';
+import { Area, Integrante } from 'src/app/models/area';
 import { AreaService } from 'src/app/services/area.service';
 import {HttpClient} from "@angular/common/http";
 @Component({
@@ -12,7 +12,7 @@ export class AcercaDirectorioComponent implements OnInit {
     charge= false;
     memberPairs: any[][] = [];
     memberCount: number = 0;
-
+    studentGroups: Integrante[][] = [];
     firstTimeAnimated: boolean = true;
     selectedArea: string | null = null; // Variable to store the selected area
     areas: { [key: string]: Area } = {};
@@ -22,9 +22,9 @@ export class AcercaDirectorioComponent implements OnInit {
     colors: string[] = this.colorsUsed;
     highlightedColor: string | null = null;
     // variables for bubbles in area selected
-    private bubbleCount = 0;
-    private readonly maxBubbles = 120; // Adjust the maximum number of bubbles as needed
-    private intervalId: any;
+    bubbleCount = 0;
+    maxBubbles = 120; // Adjust the maximum number of bubbles as needed
+    intervalId: any;
 
     @ViewChild('AreaSelected', { static: false }) AreaSelected!: ElementRef;
     constructor(private areaService: AreaService, private renderer: Renderer2, private http: HttpClient) {
@@ -37,16 +37,12 @@ export class AcercaDirectorioComponent implements OnInit {
           this.memberPairs = this.chunkArray(Object.values(this.infoMembers), 2);
         });
     }
-  chunkArray(arr: any[], chunkSize: number) {
-    const result = [];
-    for (let i = 0; i < arr.length; i += chunkSize) {
-      result.push(arr.slice(i, i + chunkSize));
-    }
-    return result;
-  }
-    ngOnInit(): void {
-      this.toggleMenu();
-      this.fetchData();
+    chunkArray(arr: any[], chunkSize: number) {
+      const result = [];
+      for (let i = 0; i < arr.length; i += chunkSize) {
+        result.push(arr.slice(i, i + chunkSize));
+      }
+      return result;
     }
 
     toggleMenu(): void {
@@ -153,9 +149,13 @@ export class AcercaDirectorioComponent implements OnInit {
       this.createStar();
       setInterval(() => {
         this.createStar();
-      }, 70);
+      }, 50);
     }
 
+    ngOnInit(): void {
+      this.toggleMenu();
+      this.fetchData();
+    }
     showArea(areaName: string): void {
       this.selectedArea = areaName;
       this.selectedBubblesColor();
@@ -164,33 +164,34 @@ export class AcercaDirectorioComponent implements OnInit {
         this.createStarsBackground();
         this.intervalId = (setInterval(() => this.createBubbles(), 0.1));
         this.bubbleCount = 0;
+        this.studentGroups = this.chunkArray(Object.values(this.areas[areaName].Integrantes || []),2);
+        // this.studentsinGroup(this.areas[areaName]?.Integrantes || []);
       }, 50);
     }
 
-  createBubbles() {
-    const selectedAreaDiv = this.AreaSelected.nativeElement;
-    const createElement = this.renderer.createElement('span');
-    const size = Math.random() * 60;
+    createBubbles() {
+      const selectedAreaDiv = this.AreaSelected.nativeElement;
+      const createElement = this.renderer.createElement('span');
+      const size = Math.random() * 60;
 
-    const width = size + 20; const height = size + 20;
+      const width = size + 20; const height = size + 20;
 
-    this.renderer.setStyle(createElement, 'width', width +'px');
-    this.renderer.setStyle(createElement, 'height', height +'px');
-    this.renderer.setStyle(createElement, 'left', Math.random() * window.innerWidth - width+ 'px');
-    this.renderer.addClass(createElement, 'bubble');
-    this.renderer.appendChild(selectedAreaDiv, createElement);
+      this.renderer.setStyle(createElement, 'width', width +'px');
+      this.renderer.setStyle(createElement, 'height', height +'px');
+      this.renderer.setStyle(createElement, 'left', Math.random() * window.innerWidth - width+ 'px');
+      this.renderer.addClass(createElement, 'bubble');
+      this.renderer.appendChild(selectedAreaDiv, createElement);
 
-    setTimeout(() => {
-      this.renderer.removeChild(selectedAreaDiv, createElement);
-    }, 2300);
+      setTimeout(() => {
+        this.renderer.removeChild(selectedAreaDiv, createElement);
+      }, 2000);
 
-    this.bubbleCount++;
-    console.log(this.bubbleCount);
+      this.bubbleCount++;
 
-    if (this.bubbleCount >= this.maxBubbles && this.intervalId) {
-      clearInterval(this.intervalId);
+      if (this.bubbleCount >= this.maxBubbles && this.intervalId) {
+        clearInterval(this.intervalId);
+      }
     }
-  }
     removeAnimaElements(items: string, animation: string): void{
       const animatedElements = document.getElementsByClassName(items);
       for (let i = 0; i < animatedElements.length; i++) {

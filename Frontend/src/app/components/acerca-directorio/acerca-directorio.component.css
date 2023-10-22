@@ -27,9 +27,11 @@
 .members {
     grid-column: span 12;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Divide el contenedor en 2 columnas para 2 tarjetas por fila */
+    grid-template-columns: repeat(2, 1fr);
+    /* Divide el contenedor en 2 columnas para 2 tarjetas por fila */
     background: #0D1525;
-    grid-gap: 1rem; /* Espacio entre las tarjetas de miembros */
+    grid-gap: 1rem;
+    /* Espacio entre las tarjetas de miembros */
 }
 
 .cardMember {
@@ -42,19 +44,22 @@
     padding-top: 7vw;
     padding-bottom: 15vw;
 }
+
 .divider {
-  grid-column: span 12;
-  background-color: #0D1525;
-  height: 100px;
+    grid-column: span 12;
+    background-color: #0D1525;
+    height: 100px;
 }
-.hr1{
-  background-color: white;
-  height: 10px;
-  margin-right: 15vh;
-  margin-left: 15vh;
-  opacity: 100%;
-  border-radius: 50rem
+
+.hr1 {
+    background-color: white;
+    height: 10px;
+    margin-right: 15vh;
+    margin-left: 15vh;
+    opacity: 100%;
+    border-radius: 50rem
 }
+
 .memberInfo {
     align-items: center;
     justify-content: center;
@@ -148,6 +153,8 @@
         padding-left: 9vw;
     }
 }
+
+
 /*///////////////////////////////////////////*/
 
 .container_CircularAreasMenu {
@@ -427,6 +434,7 @@ a {
     background-color: #001133;
     font-family: 'Martel';
     overflow: hidden;
+    align-items: start;
 }
 
 #AreaSelected .star {
@@ -465,7 +473,6 @@ a {
 
 #AreaSelected .bubble {
     position: absolute;
-    bottom: -100px;
     background: linear-gradient(to right, #005eff, #0073ff);
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -475,14 +482,14 @@ a {
     pointer-events: none;
     z-index: 10;
     box-shadow: inset 0 0 10px #00d9ff;
-    animation: animateBubble 4s linear;
-    -webkit-animation: animateBubble 4s linear;
+    animation: animateBubble 3s linear;
+    -webkit-animation: animateBubble 3s linear;
 }
 
 
-/* #AreaSelected .bubble {
+/*
+#AreaSelected .bubble {
     position: absolute;
-    bottom: -50px;
     background: linear-gradient(to right, #2e0063, #390067);
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -491,8 +498,8 @@ a {
     -o-border-radius: 50%;
     pointer-events: none;
     box-shadow: inset 0 0 10px #8a00ad;
-    animation: animateBubble 2s linear;
-    -webkit-animation: animateBubble 2s linear;
+    animation: animateBubble 3s linear;
+    -webkit-animation: animateBubble 3s linear;
 } */
 
 #AreaSelected .bubble:before {
@@ -515,23 +522,23 @@ a {
 
 @keyframes animateBubble {
     0% {
-        transform: translateY(-2300%);
         opacity: 0;
-        -webkit-transform: translateY(-2300%);
-        -moz-transform: translateY(-2300%);
-        -ms-transform: translateY(-2300%);
-        -o-transform: translateY(-2300%);
-    }
-    5% {
-        opacity: 1;
-    }
-    100% {
         transform: translateY(0%);
         -webkit-transform: translateY(0%);
         -moz-transform: translateY(0%);
         -ms-transform: translateY(0%);
         -o-transform: translateY(0%);
+    }
+    5% {
         opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(2300%);
+        -webkit-transform: translateY(2300%);
+        -moz-transform: translateY(2300%);
+        -ms-transform: translateY(2300%);
+        -o-transform: translateY(2300%);
     }
 }
 
@@ -657,10 +664,6 @@ a {
     margin-right: 8%;
 }
 
-.subdirector {
-    grid-row: 5;
-}
-
 .simple-line {
     grid-row: 4;
     display: grid;
@@ -676,7 +679,50 @@ a {
     -o-border-radius: 50px;
 }
 
+.subdirector {
+    grid-row: 5;
+}
+
 .selectedArea_Integrantes {
     grid-row: 6;
+    grid-column: 1 / span 12;
     display: grid;
+    background-color: #001133;
+}
+
+.selectedArea_Integrantes h3 {
+    font-family: 'Roboto';
+    font-weight: 600;
+    grid-column: 1 / span 12;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.selectedArea_Integrantes ul {
+    display: grid;
+    grid-column: span 12;
+    grid-template-columns: (2, 1fr);
+    font-size: larger;
+}
+
+.selectedArea_Integrantes li {
+    width: fit-content;
+    background: url(../../../assets/images/about/backgroundSVGs/VectorSmall.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 18%;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.socialMediaIntegrante {
+    display: flex;
+}
+
+.selectedArea_Integrantes .members,
+.selectedArea_Integrantes .divider {
+    background-color: #001133;
 }

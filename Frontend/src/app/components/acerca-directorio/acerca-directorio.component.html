@@ -6,10 +6,14 @@
         <div class="memberInfo">
           <img class="profilePhoto" [src]="member.url_img" />
           <div class="socialLinks">
-            <a target="_blank" [href]="member.facebook"><img class="socialLink" src="assets/images/about/members/facebook.svg" /></a>
-            <a target="_blank" [href]="member.twitter"><img class="socialLink" src="assets/images/about/members/twitter.svg" /></a>
-            <a target="_blank" [href]="member.linkedin"><img class="socialLink" src="assets/images/about/members/linkedin.svg" /></a>
-            <a target="_blank" [href]="member.instagram"><img class="socialLink" src="assets/images/about/members/instagram.svg" /></a>
+            <a target="_blank" [href]="member.facebook"><img class="socialLink"
+                src="assets/images/about/members/facebook.svg" /></a>
+            <a target="_blank" [href]="member.twitter"><img class="socialLink"
+                src="assets/images/about/members/twitter.svg" /></a>
+            <a target="_blank" [href]="member.linkedin"><img class="socialLink"
+                src="assets/images/about/members/linkedin.svg" /></a>
+            <a target="_blank" [href]="member.instagram"><img class="socialLink"
+                src="assets/images/about/members/instagram.svg" /></a>
           </div>
           <h1 class="fullName">{{ member.fullname }}</h1>
           <p class="position">{{ member.position }}</p>
@@ -213,19 +217,35 @@
         <a *ngIf="areas[selectedArea].Subdirector.Github" href="{{ areas[selectedArea].Director.Github }}">
           <img src="assets/images/about/members/github.svg" alt="icon of github">
         </a>
-
       </div>
     </div>
 
   </div>
-
-  <!-- <div class="selectedArea_Integrantes" *ngIf="areas[selectedArea].Integrantes">
-        <h3>INTEGRANTES</h3>
-        <ul class="ulintegrantes">
-            <li *ngFor="let integrante of areas[selectedArea].Integrantes">
-                {{ integrante.Nombre }} - {{ integrante.Carrera }}
-            </li>
-        </ul>
-  </div> -->
+  <div *ngIf="studentGroups.length" class="selectedArea_Integrantes">
+    <h3>INTEGRANTES</h3>
+    <ng-container *ngFor="let pair of studentGroups; let x = index">
+      <ul class="members">
+        <li class="cardMember" *ngFor="let member of pair">
+          <div class="memberInfo">
+            <img class="profilePhoto" [src]="member.Photo" />
+            <div class="socialMediaIntegrante">
+              <a *ngIf="member?.Linkedin" href="{{ member.Linkedin }}">
+                <img src="assets/images/about/members/linkedin.svg" alt="Icono de Linkedin">
+              </a>
+              <a *ngIf="member?.Github" href="{{ member.Github }}">
+                <img src="assets/images/about/members/github.svg" alt="Icono de Github">
+              </a>
+            </div>
+            <h1 class="fullName">{{ member.Nombre }}</h1>
+            <p class="position">{{ member.Carrera }}</p>
+          </div>
+        </li>
+      </ul>
+      <!-- Agrega un <hr> después de cada repetición excepto la última -->
+      <div class="divider" *ngIf="x < studentGroups.length - 1">
+        <hr class="hr1">
+      </div>
+    </ng-container>
+  </div>
 
 </div>

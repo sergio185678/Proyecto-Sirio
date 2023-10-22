@@ -25,55 +25,64 @@
                 "Nombre": "Gabriel Amaya",
                 "Carrera": "Ingeniería de sistemas de información",
                 "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/"
+                "Github": "https://github.com/",
+                "Photo": "assets/images/about/members/profile.svg"
             },
             {
                 "Nombre": "Mathias Javier",
                 "Carrera": "Ingeniería de software",
                 "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/"
+                "Github": "https://github.com/",
+                "Photo": "assets/images/about/members/profile.svg"
             },
             {
                 "Nombre": "Kevin Dextre",
                 "Carrera": "Ingeniería de sistemas de información",
                 "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/"
+                "Github": "https://github.com/",
+                "Photo": "assets/images/about/members/profile.svg"
             },
             {
                 "Nombre": "Abraham Ayquipa",
                 "Carrera": "Ingeniería de software",
                 "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/"
+                "Github": "https://github.com/",
+                "Photo": "assets/images/about/members/profile.svg"
             },
             {
                 "Nombre": "Kevin Oliva",
                 "Carrera": "Ingeniería de software",
                 "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/"
+                "Github": "https://github.com/",
+                "Photo": "assets/images/about/members/profile.svg"
             },
             {
                 "Nombre": "Diego Santivañez",
                 "Carrera": "Ingeniería de software",
                 "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/"
+                "Github": "https://github.com/",
+                "Photo": "assets/images/about/members/profile.svg"
             },
             {
                 "Nombre": "Ibrahim Arquiñigo",
                 "Carrera": "Ciencias de la Computación",
                 "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/"
+                "Github": "https://github.com/",
+                "Photo": "assets/images/about/members/profile.svg"
             },
             {
                 "Nombre": "Freddy Cuadros",
                 "Carrera": "Ciencias de la Computación",
                 "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/"
+                "Github": "https://github.com/",
+                "Photo": "assets/images/about/members/profile.svg"
             },
             {
                 "Nombre": "James Hurtado",
                 "Carrera": "Ingeniería de software",
                 "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/"
+                "Github": "https://github.com/",
+                "Photo": "assets/images/about/members/profile.svg"
             }
         ]
     },
