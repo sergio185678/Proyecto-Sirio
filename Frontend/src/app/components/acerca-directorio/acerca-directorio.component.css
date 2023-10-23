@@ -694,9 +694,10 @@ a {
     font-family: 'Roboto';
     font-weight: 600;
     grid-column: span 12;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     text-decoration: underline;
+    margin-top: 5%;
 }
 
 .selectedArea_Integrantes ul {
@@ -713,11 +714,24 @@ a {
     background-position: center;
     background-size: contain;
     padding: 0 10% 8% 10%;
-    margin-left: 8%;
+    margin: 5% auto 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: space-around;
+    font-family: 'Baloo 2';
     z-index: 10;
+}
+
+.selectedArea_Integrantes li .fullName {
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 34px;
+}
+
+.selectedArea_Integrantes li .position {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
 .socialMediaIntegrante {

@@ -14,7 +14,7 @@
         },
         "Subdirector": {
             "Nombre": "Danixa Ropón",
-            "Carrera": "Ingeniería Electrónica",
+            "Carrera": "Ing. Electrónica",
             "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
             "Photo": "assets/images/about/members/profile.svg",
             "Facebook": "https://www.facebook.com",
@@ -23,42 +23,42 @@
         },
         "Integrantes": [{
                 "Nombre": "Gabriel Amaya",
-                "Carrera": "Ingeniería de sistemas de información",
+                "Carrera": "Ing. sistemas de información",
                 "Linkedin": "https://www.linkedin.com",
                 "Github": "https://github.com/",
                 "Photo": "assets/images/about/members/profile.svg"
             },
             {
                 "Nombre": "Mathias Javier",
-                "Carrera": "Ingeniería de software",
+                "Carrera": "Ing. software",
                 "Linkedin": "https://www.linkedin.com",
                 "Github": "https://github.com/",
                 "Photo": "assets/images/about/members/profile.svg"
             },
             {
                 "Nombre": "Kevin Dextre",
-                "Carrera": "Ingeniería de sistemas de información",
+                "Carrera": "Ing. sistemas de información",
                 "Linkedin": "https://www.linkedin.com",
                 "Github": "https://github.com/",
                 "Photo": "assets/images/about/members/profile.svg"
             },
             {
                 "Nombre": "Abraham Ayquipa",
-                "Carrera": "Ingeniería de software",
+                "Carrera": "Ing. software",
                 "Linkedin": "https://www.linkedin.com",
                 "Github": "https://github.com/",
                 "Photo": "assets/images/about/members/profile.svg"
             },
             {
                 "Nombre": "Kevin Oliva",
-                "Carrera": "Ingeniería de software",
+                "Carrera": "Ing. software",
                 "Linkedin": "https://www.linkedin.com",
                 "Github": "https://github.com/",
                 "Photo": "assets/images/about/members/profile.svg"
             },
             {
                 "Nombre": "Diego Santivañez",
-                "Carrera": "Ingeniería de software",
+                "Carrera": "Ing. software",
                 "Linkedin": "https://www.linkedin.com",
                 "Github": "https://github.com/",
                 "Photo": "assets/images/about/members/profile.svg"
@@ -79,7 +79,7 @@
             },
             {
                 "Nombre": "James Hurtado",
-                "Carrera": "Ingeniería de software",
+                "Carrera": "Ing. software",
                 "Linkedin": "https://www.linkedin.com",
                 "Github": "https://github.com/",
                 "Photo": "assets/images/about/members/profile.svg"
@@ -112,7 +112,7 @@
     "Electrónica": {
         "Director": {
             "Nombre": "Alessandro Vicente",
-            "Carrera": "Ingeniería Electrónica",
+            "Carrera": "Ing. Electrónica",
             "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
             "Icon": "assets/images/about/members/iconElectronica.png",
             "Photo": "assets/images/about/members/profile.svg",
@@ -123,7 +123,7 @@
         },
         "Subdirector": {
             "Nombre": "Jean Cueva",
-            "Carrera": "Ingeniería Mecatrónica",
+            "Carrera": "Ing. Mecatrónica",
             "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
             "Photo": "assets/images/about/members/profile.svg",
             "Facebook": "https://www.facebook.com",
@@ -133,19 +133,19 @@
         },
         "Integrantes": [{
                 "Nombre": "Lalo Villacorta",
-                "Carrera": "Ingeniería Mecatrónica",
+                "Carrera": "Ing. Mecatrónica",
                 "Photo": "assets/images/about/members/profile.svg",
                 "Linkedin": "https://www.linkedin.com"
             },
             {
                 "Nombre": "Joanna Carrion",
-                "Carrera": "Ingeniería Electrónica",
+                "Carrera": "Ing. Electrónica",
                 "Photo": "assets/images/about/members/profile.svg",
                 "Linkedin": "https://www.linkedin.com"
             },
             {
                 "Nombre": "Paul Gomez",
-                "Carrera": "Ingeniería Mecatrónica",
+                "Carrera": "Ing. Mecatrónica",
                 "Photo": "assets/images/about/members/profile.svg",
                 "Linkedin": "https://www.linkedin.com"
             }
@@ -154,7 +154,7 @@
     "Mecánica": {
         "Director": {
             "Nombre": "Harold Huallanca",
-            "Carrera": "Ingeniería Mecatrónica",
+            "Carrera": "Ing. Mecatrónica",
             "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
             "Icon": "assets/images/about/members/iconDisenio.svg",
             "Photo": "assets/images/about/members/profile.svg",
@@ -165,7 +165,7 @@
         },
         "Subdirector": {
             "Nombre": "Angel Montes",
-            "Carrera": "Ingeniería Mecatrónica",
+            "Carrera": "Ing. Mecatrónica",
             "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
             "Photo": "assets/images/about/members/profile.svg",
             "Facebook": "https://www.facebook.com",
@@ -175,25 +175,25 @@
         },
         "Integrantes": [{
                 "Nombre": "Scarlet Aguero",
-                "Carrera": "Ingeniería Mecatrónica",
+                "Carrera": "Ing. Mecatrónica",
                 "Photo": "assets/images/about/members/profile.svg",
                 "Linkedin": "https://www.linkedin.com"
             },
             {
                 "Nombre": "Lucia Zegarra",
-                "Carrera": "Ingeniería Mecatrónica",
+                "Carrera": "Ing. Mecatrónica",
                 "Photo": "assets/images/about/members/profile.svg",
                 "Linkedin": "https://www.linkedin.com"
             },
             {
                 "Nombre": "Julio Ortiz",
-                "Carrera": "Ingeniería Mecatrónica",
+                "Carrera": "Ing. Mecatrónica",
                 "Photo": "assets/images/about/members/profile.svg",
                 "Linkedin": "https://www.linkedin.com"
             },
             {
                 "Nombre": "Bruno Quispe",
-                "Carrera": "Ingeniería Mecatrónica",
+                "Carrera": "Ing. Mecatrónica",
                 "Photo": "assets/images/about/members/profile.svg",
                 "Linkedin": "https://www.linkedin.com"
             }
@@ -202,7 +202,7 @@
     "Control y Programación": {
         "Director": {
             "Nombre": "Elvis De la Torre",
-            "Carrera": "Ingeniería Mecatrónica",
+            "Carrera": "Ing. Mecatrónica",
             "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
             "Icon": "assets/images/about/members/iconDisenio.svg",
             "Photo": "assets/images/about/members/profile.svg",
@@ -213,7 +213,7 @@
         },
         "Subdirector": {
             "Nombre": "Kenny Farfan",
-            "Carrera": "Ingeniería Mecatrónica",
+            "Carrera": "Ing. Mecatrónica",
             "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
             "Photo": "assets/images/about/members/profile.svg",
             "Facebook": "https://www.facebook.com",
@@ -223,25 +223,25 @@
         },
         "Integrantes": [{
                 "Nombre": "Robert Vásquez",
-                "Carrera": "Ingeniería Mecatrónica",
+                "Carrera": "Ing. Mecatrónica",
                 "Photo": "assets/images/about/members/profile.svg",
                 "Linkedin": "https://www.linkedin.com"
             },
             {
                 "Nombre": "Raziel Chumacero",
-                "Carrera": "Ingeniería Mecatrónica",
+                "Carrera": "Ing. Mecatrónica",
                 "Photo": "assets/images/about/members/profile.svg",
                 "Linkedin": "https://www.linkedin.com"
             },
             {
                 "Nombre": "Abraham Prado",
-                "Carrera": "Ingeniería Mecatrónica",
+                "Carrera": "Ing. Mecatrónica",
                 "Photo": "assets/images/about/members/profile.svg",
                 "Linkedin": "https://www.linkedin.com"
             },
             {
                 "Nombre": "Renato Gómez",
-                "Carrera": "Ingeniería Mecatrónica",
+                "Carrera": "Ing. Mecatrónica",
                 "Photo": "assets/images/about/members/profile.svg",
                 "Linkedin": "https://www.linkedin.com"
             }
