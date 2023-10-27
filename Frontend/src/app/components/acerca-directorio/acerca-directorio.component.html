@@ -6,13 +6,13 @@
         <div class="memberInfo">
           <img class="profilePhoto" [src]="member.url_img" alt="profile photo of {{ member.fullname }}" />
           <div class="socialLinks">
-            <a target="_blank" [href]="member.facebook"><img class="socialLink"
+            <a target="_blank" *ngIf="member.facebook" [href]="member.facebook"><img class="socialLink"
                 src="assets/images/about/members/facebook.svg" alt="socialLink icon of facebook" /></a>
-            <a target="_blank" [href]="member.twitter"><img class="socialLink"
+            <a target="_blank" *ngIf="member.twitter" [href]="member.twitter"><img class="socialLink"
                 src="assets/images/about/members/twitter.svg" alt="socialLink icon of twitter" /></a>
-            <a target="_blank" [href]="member.linkedin"><img class="socialLink"
+            <a target="_blank" *ngIf="member.linkedin" [href]="member.linkedin"><img class="socialLink"
                 src="assets/images/about/members/linkedin.svg" alt="socialLink icon of linkedin" /></a>
-            <a target="_blank" [href]="member.instagram"><img class="socialLink"
+            <a target="_blank" *ngIf="member.instagram" [href]="member.instagram"><img class="socialLink"
                 src="assets/images/about/members/instagram.svg" alt="socialLink icon of instagram" /></a>
           </div>
           <h1 class="fullName">{{ member.fullname }}</h1>
