@@ -16,7 +16,7 @@
 
 .directorio-title {
     grid-column: 1 / span 12;
-    font-size: 60px;
+    font-size: 4vw;
     background-color: #0a0f18;
     justify-content: center;
 }
@@ -46,9 +46,9 @@
 }
 
 .divider {
-    grid-column: span 12;
+    grid-column: 1/ span 12;
     background-color: #0D1525;
-    height: 100px;
+    height: fit-content;
 }
 
 .hr1 {
@@ -120,10 +120,7 @@
         padding-left: 8vw;
     }
     .socialLinks .socialLink {
-        margin-left: 1vw;
-        margin-right: 1vw;
-        margin-bottom: 1vw;
-        margin-top: 1vw;
+        margin: 1vw;
         border-radius: 100%;
         height: 7vw;
         width: auto;
@@ -168,10 +165,11 @@
 .container_CircularAreasMenu_Title {
     text-align: center;
     grid-column: 2 / span 10;
-    font-size: 22px;
+    font-size: 2vw;
     font-family: 'Roboto';
-    font-weight: 600;
+    font-weight: 800;
     text-decoration: underline;
+    letter-spacing: 2px;
 }
 
 .animation-rows .row {
@@ -184,19 +182,19 @@
 }
 
 .row1 {
-    width: 60px;
+    width: 4vw;
 }
 
 .row2 {
-    width: 40px;
+    width: 2.5vw;
 }
 
 .row3 {
-    width: 20px;
+    width: 1vw;
 }
 
 .animationRows {
-    margin-top: -160px;
+    margin-top: -10vw;
     display: grid;
     grid-column: 2 / span 10;
     justify-content: center;
@@ -210,18 +208,18 @@
 
 @keyframes moveUpDown {
     0% {
-        transform: translateY(+250px);
-        -webkit-transform: translateY(+250px);
-        -moz-transform: translateY(+250px);
-        -ms-transform: translateY(+250px);
-        -o-transform: translateY(+250px);
+        transform: translateY(200%);
+        -webkit-transform: translateY(200%);
+        -moz-transform: translateY(200%);
+        -ms-transform: translateY(200%);
+        -o-transform: translateY(200%);
     }
     100% {
-        transform: translateY(+150px);
-        -webkit-transform: translateY(+150px);
-        -moz-transform: translateY(+150px);
-        -ms-transform: translateY(+150px);
-        -o-transform: translateY(+150px);
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
     }
 }
 
@@ -233,8 +231,8 @@
 .CircularAreasMenu {
     grid-column: 2 / span 10;
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 40vw;
+    height: 38vw;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -251,8 +249,8 @@ a {
     display: flex;
     z-index: 10;
     position: absolute;
-    width: 230px;
-    height: 230px;
+    width: 15.33vw;
+    height: 15.33vw;
     display: flex;
     background-color: whitesmoke;
     justify-content: center;
@@ -272,7 +270,7 @@ a {
 
 .CircularAreasMenu .toggle .logoSirio {
     z-index: 10;
-    width: 200px;
+    width: 13.33vw;
     height: auto;
     display: flex;
 }
@@ -302,8 +300,8 @@ a {
 }
 
 .CircularAreasMenu .backgroundCircle.active {
-    width: 500px;
-    height: 500px;
+    width: 33.33vw;
+    height: 33.33vw;
     visibility: visible;
     opacity: 1;
 }
@@ -321,7 +319,7 @@ a {
     /*Calculate the rotation angle based on the number of menu items*/
     --angle: calc(360deg / 8 * var(--i));
     /* Calculate the distance from the center for each logo */
-    --distance: 180px;
+    --distance: 12.33vw;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
@@ -337,14 +335,14 @@ a {
 
 .CircularAreasMenu .AreaOption .icon {
     display: flex;
-    width: 50px;
-    height: 50px;
+    width: 3.33vw;
+    height: 3.33vw;
 }
 
 .CircularAreasMenu .littleCircle {
     display: flex;
-    width: 12px;
-    height: 12px;
+    width: 0.8vw;
+    height: 0.8vw;
 }
 
 .blueCircle {
@@ -385,7 +383,7 @@ a {
     /*Calculate the rotation angle based on the number of menu items*/
     --angle: calc(360deg / 8 * var(--i));
     /* Calculate the distance from the center for each logo */
-    --distance: 135px;
+    --distance: 9vw;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
@@ -407,7 +405,7 @@ a {
 
 .listAreasOptions {
     display: flex;
-    font-size: 28px;
+    font-size: 1.86vw;
     grid-column: 2/ span 10;
     gap: 32px;
     justify-content: center;
@@ -422,8 +420,8 @@ a {
 }
 
 .listAreasOptions .MediumCircle {
-    width: 24px;
-    margin-right: 24px;
+    width: 1.6vw;
+    margin-right: 1.6vw;
 }
 
 #AreaSelected {
@@ -438,20 +436,20 @@ a {
 }
 
 #AreaSelected .star {
-    bottom: -50px;
+    bottom: -3.33vw;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     pointer-events: none;
-    box-shadow: inset 0 0 10px aliceblue;
+    box-shadow: inset 0 0 0.66vw aliceblue;
     background-color: aliceblue;
 }
 
 .animated {
     opacity: 0;
-    top: 100px;
+    top: 6.66vw;
     position: relative;
     animation: slideAndFade 2.5s ease-in-out forwards;
     -webkit-animation: slideAndFade 2.5s ease-in-out forwards;
@@ -460,7 +458,7 @@ a {
 @keyframes slideAndFade {
     0% {
         opacity: 0;
-        top: 50px;
+        top: 3.33vw;
     }
     10% {
         opacity: 0;
@@ -481,26 +479,10 @@ a {
     -o-border-radius: 50%;
     pointer-events: none;
     z-index: 10;
-    box-shadow: inset 0 0 10px #00d9ff;
+    box-shadow: inset 0 0 0.66vw #00d9ff;
     animation: animateBubble 3s linear;
     -webkit-animation: animateBubble 3s linear;
 }
-
-
-/*
-#AreaSelected .bubble {
-    position: absolute;
-    background: linear-gradient(to right, #2e0063, #390067);
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    pointer-events: none;
-    box-shadow: inset 0 0 10px #8a00ad;
-    animation: animateBubble 3s linear;
-    -webkit-animation: animateBubble 3s linear;
-} */
 
 #AreaSelected .bubble:before {
     content: '';
@@ -546,7 +528,7 @@ a {
     margin-top: 3%;
     grid-column: 1 /span 12;
     grid-row: 1;
-    font-size: 30px;
+    font-size: 2vw;
     align-self: center;
     justify-self: center;
 }
@@ -564,7 +546,7 @@ a {
     margin-bottom: 3%;
     grid-column: 1 /span 12;
     grid-row: 2;
-    font-size: 40px;
+    font-size: 2.6vw;
     align-self: center;
     justify-self: center;
 }
@@ -593,13 +575,13 @@ a {
 }
 
 .svgPart .Nombre {
-    font-size: 34px;
+    font-size: 2.26vw;
     font-weight: 800;
-    letter-spacing: 5px;
+    letter-spacing: 0.33vw;
 }
 
 .svgPart .RolCarrera {
-    font-size: 16px;
+    font-size: 1.06vw;
     text-transform: uppercase;
     margin-bottom: 4%;
 }
@@ -610,7 +592,7 @@ a {
 
 .iconPart {
     grid-column: 7 / span 2;
-    width: 150px;
+    width: 10vw;
     display: grid;
     align-items: center;
     justify-self: center;
@@ -619,7 +601,7 @@ a {
 .DirSub_iconPartIMG {
     position: relative;
     left: 30%;
-    width: 150px;
+    width: 10vw;
     align-self: center;
     justify-self: center;
 }
@@ -636,12 +618,12 @@ a {
         top: 0px;
     }
     50% {
-        top: -50px;
+        top: -3.33vw;
     }
 }
 
 .DirSub_PhotoPartIMG {
-    width: 300px;
+    width: 20vw;
 }
 
 .socialMedia {
@@ -652,8 +634,8 @@ a {
 }
 
 .socialMedia a {
-    margin-right: 5px;
-    margin-top: -100px;
+    margin-right: 0.33vw;
+    margin-top: -6.66vw;
 }
 
 .PhotoPart {
@@ -668,15 +650,15 @@ a {
     grid-row: 4;
     display: grid;
     grid-column: span 12;
-    height: 5px;
+    height: 0.33vw;
     margin: 5%;
     width: 90%;
     background-color: white;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 3.33vw;
+    -webkit-border-radius: 3.33vw;
+    -moz-border-radius: 3.33vw;
+    -ms-border-radius: 3.33vw;
+    -o-border-radius: 3.33vw;
 }
 
 .subdirector {
@@ -692,9 +674,9 @@ a {
 
 .selectedArea_Integrantes h3 {
     font-family: 'Roboto';
-    font-weight: 600;
+    font-weight: 700;
     grid-column: span 12;
-    font-size: 30px;
+    font-size: 2vw;
     text-align: center;
     text-decoration: underline;
     margin-top: 5%;
@@ -722,16 +704,16 @@ a {
 }
 
 .selectedArea_Integrantes li .fullName {
-    font-weight: 600;
-    letter-spacing: 5px;
+    font-weight: 800;
+    letter-spacing: 0.33vw;
     text-align: center;
-    font-size: 34px;
+    font-size: 2.26vw;
 }
 
 .selectedArea_Integrantes li .position {
     text-align: center;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.06vw;
 }
 
 .socialMediaIntegrante {
@@ -744,5 +726,180 @@ a {
 }
 
 .socialMediaIntegrante a {
-    margin-right: 5px;
+    margin-right: 0.33vw;
 }
+
+
+/*
+@media screen and (max-width: 2561px) {
+    .container_CircularAreasMenu_Title {
+        font-size: 42px;
+        letter-spacing: 2px;
+    }
+    .row1 {
+        width: 120px;
+        height: auto;
+    }
+    .row2 {
+        width: 80px;
+        height: auto;
+    }
+    .row3 {
+        width: 40px;
+        height: auto;
+    }
+    .CircularAreasMenu {
+        width: 1200px;
+        height: 1200px;
+    }
+    .animationRows {
+        margin-top: -10%;
+    }
+    .CircularAreasMenu .toggle {
+        width: 460px;
+        height: 460px;
+    }
+    .CircularAreasMenu .toggle .logoSirio {
+        width: 400px;
+        height: auto;
+    }
+    .CircularAreasMenu .backgroundCircle.active {
+        width: 980px;
+        height: 980px;
+    }
+    .CircularAreasMenu .AreaOption {
+        --distance: 375px;
+        top: calc(46% - var(--distance) * cos(var(--angle)));
+        left: calc(45.5% + var(--distance) * sin(var(--angle)));
+    }
+    .CircularAreasMenu .AreaOption .icon {
+        width: 100px;
+        height: 100px;
+    }
+    .CircularAreasMenu .littleCircle {
+        width: 24px;
+        height: 24px;
+    }
+    .CircularAreasMenu .littleCircle {
+        --distance: 270px;
+        top: calc(49% - var(--distance) * cos(var(--angle)));
+        left: calc(48.7% + var(--distance) * sin(var(--angle)));
+    }
+    .listAreasOptions {
+        font-size: 42px;
+        gap: 64px;
+    }
+    .listAreasOptions .MediumCircle {
+        width: 24px;
+        margin-right: 24px;
+    }
+    #AreaSelected .star {
+        bottom: -50px;
+    }
+    .animated {
+        top: 100px;
+    }
+    #AreaSelected_De {
+        font-size: 60px;
+    }
+    #AreaSelected_Title {
+        font-size: 80px;
+    }
+    .svgPart .Nombre {
+        font-size: 60px;
+    }
+    .svgPart .RolCarrera {
+        font-size: 32px;
+    }
+    .svgPart .Descripcion {
+        font-size: 25px;
+    }
+    .iconPart {
+        width: 300px;
+    }
+    .DirSub_iconPartIMG {
+        width: 300px;
+    }
+    .DirSub_PhotoPartIMG {
+        width: 600px;
+    }
+    .socialMedia a {
+        margin-right: 5px;
+        margin-top: -100px;
+    }
+    .PhotoPart {
+        margin-right: 8%;
+    }
+    .simple-line {
+        grid-row: 4;
+        display: grid;
+        grid-column: span 12;
+        height: 5px;
+        margin: 5%;
+        width: 90%;
+        background-color: white;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    .subdirector {
+        grid-row: 5;
+    }
+    .selectedArea_Integrantes {
+        grid-row: 6;
+        grid-column: span 12;
+        display: grid;
+        background-color: #001133;
+    }
+    .selectedArea_Integrantes h3 {
+        font-family: 'Roboto';
+        font-weight: 700;
+        grid-column: span 12;
+        font-size: 30px;
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 5%;
+    }
+    .selectedArea_Integrantes ul {
+        display: grid;
+        grid-column: span 12;
+        grid-template-columns: (2, 1fr);
+        font-size: larger;
+    }
+    .selectedArea_Integrantes li {
+        width: fit-content;
+        background: url(../../../assets/images/about/backgroundSVGs/VectorSmall.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        padding: 0 10% 8% 10%;
+        margin: 5% auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Baloo 2';
+        z-index: 10;
+    }
+    .selectedArea_Integrantes li .fullName {
+        font-weight: 800;
+        letter-spacing: 5px;
+        text-align: center;
+        font-size: 34px;
+    }
+    .selectedArea_Integrantes li .position {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    .socialMediaIntegrante {
+        display: flex;
+    }
+    .selectedArea_Integrantes .members,
+    .selectedArea_Integrantes .divider {
+        background-color: #001133;
+    }
+    .socialMediaIntegrante a {
+        margin-right: 5px;
+    }
+} */

@@ -1,258 +1,236 @@
 <div class="directorio">
-  <h1 class="directorio-title">Directorio</h1>
-  <ng-container *ngFor="let pair of memberPairs; let r = index">
-    <div class="members">
-      <div class="cardMember" *ngFor="let member of pair; let i = index">
-        <div class="memberInfo">
-          <img class="profilePhoto" [src]="member.url_img" alt="profile photo of {{ member.fullname }}" />
-          <div class="socialLinks">
-            <a target="_blank" *ngIf="member.facebook" [href]="member.facebook"><img class="socialLink"
-                src="assets/images/about/members/facebook.svg" alt="socialLink icon of facebook" /></a>
-            <a target="_blank" *ngIf="member.twitter" [href]="member.twitter"><img class="socialLink"
-                src="assets/images/about/members/twitter.svg" alt="socialLink icon of twitter" /></a>
-            <a target="_blank" *ngIf="member.linkedin" [href]="member.linkedin"><img class="socialLink"
-                src="assets/images/about/members/linkedin.svg" alt="socialLink icon of linkedin" /></a>
-            <a target="_blank" *ngIf="member.instagram" [href]="member.instagram"><img class="socialLink"
-                src="assets/images/about/members/instagram.svg" alt="socialLink icon of instagram" /></a>
-          </div>
-          <h1 class="fullName">{{ member.fullname }}</h1>
-          <p class="position">{{ member.position }}</p>
-          <p class="description">{{ member.description }}</p>
+    <h1 class="directorio-title">Directorio</h1>
+    <ng-container *ngFor="let pair of memberPairs; let r = index">
+        <div class="members">
+            <div class="cardMember" *ngFor="let member of pair; let i = index">
+                <div class="memberInfo">
+                    <img class="profilePhoto" [src]="member.url_img" alt="profile photo of {{ member.fullname }}" />
+                    <div class="socialLinks">
+                        <a target="_blank" *ngIf="member.facebook" [href]="member.facebook"><img class="socialLink" src="assets/images/about/members/facebook.svg" alt="socialLink icon of facebook" /></a>
+                        <a target="_blank" *ngIf="member.twitter" [href]="member.twitter"><img class="socialLink" src="assets/images/about/members/twitter.svg" alt="socialLink icon of twitter" /></a>
+                        <a target="_blank" *ngIf="member.linkedin" [href]="member.linkedin"><img class="socialLink" src="assets/images/about/members/linkedin.svg" alt="socialLink icon of linkedin" /></a>
+                        <a target="_blank" *ngIf="member.instagram" [href]="member.instagram"><img class="socialLink" src="assets/images/about/members/instagram.svg" alt="socialLink icon of instagram" /></a>
+                    </div>
+                    <h1 class="fullName">{{ member.fullname }}</h1>
+                    <p class="position">{{ member.position }}</p>
+                    <p class="description">{{ member.description }}</p>
+
+                </div>
+            </div>
+
         </div>
-      </div>
-    </div>
-    <!-- Agrega un <hr> después de cada repetición excepto la última -->
-    <div class="divider" *ngIf="r < memberPairs.length - 1">
-      <hr class="hr1">
-    </div>
-  </ng-container>
+        <div class="divider" *ngIf="r < memberPairs.length - 1">
+            <hr class="hr1">
+        </div>
+    </ng-container>
 </div>
 <div class="container_CircularAreasMenu">
-  <div class="container_CircularAreasMenu_Title">NUESTRAS AREAS</div>
-  <div class="animationRows">
-    <img class="row row1" src="assets/images/about/Icons/icon-arrow.webp" alt="an icon of an arrow" />
-    <img class="row row2" src="assets/images/about/Icons/icon-arrow.webp" alt="an icon of an arrow" />
-    <img class="row row3" src="assets/images/about/Icons/icon-arrow.webp" alt="an icon of an arrow" />
-  </div>
-
-  <ul class="CircularAreasMenu">
-    <div class="toggle">
-      <img class="logoSirio" src="assets/images/about/logo_Sirio.webp" alt="logo Sirio" />
+    <div class="container_CircularAreasMenu_Title">NUESTRAS AREAS</div>
+    <div class="animationRows">
+        <img class="row row1" src="assets/images/about/Icons/icon-arrow.webp" alt="an icon of an arrow" />
+        <img class="row row2" src="assets/images/about/Icons/icon-arrow.webp" alt="an icon of an arrow" />
+        <img class="row row3" src="assets/images/about/Icons/icon-arrow.webp" alt="an icon of an arrow" />
     </div>
-    <div class="backgroundCircle inactive"></div>
 
-    <li style="--i: 0" class="AreaOption Desarrollo-Web">
-      <a href="javascript:void(0);" (click)="showArea('Desarrollo Web'); removeAnimation(); addAnimation()">
-        <img class="icon" (mouseover)="highlightSection('#0019FD')" (mouseleave)="clearHighlight()"
-          src="assets/images/about/Icons/code-solid 1.svg" alt="an icon of code" />
-      </a>
-    </li>
-    <img class="littleCircle blueCircle" src="assets/images/about/circleSVGs/bluecircle.svg"
-      alt="an icon of a blueCircle" />
+    <ul class="CircularAreasMenu">
+        <div class="toggle">
+            <img class="logoSirio" src="assets/images/about/logo_Sirio.webp" alt="logo Sirio" />
+        </div>
+        <div class="backgroundCircle inactive"></div>
 
-    <li style="--i: 1" class="AreaOption Disenio-Publicidad">
-      <a href="javascript:void(0);" (click)="showArea('Diseño y Publicidad'); removeAnimation();
+        <li style="--i: 0" class="AreaOption Desarrollo-Web">
+            <a href="javascript:void(0);" (click)="showArea('Desarrollo Web'); removeAnimation(); addAnimation()">
+                <img class="icon" (mouseover)="highlightSection('#0019FD')" (mouseleave)="clearHighlight()" src="assets/images/about/Icons/code-solid 1.svg" alt="an icon of code" />
+            </a>
+        </li>
+        <img class="littleCircle blueCircle" src="assets/images/about/circleSVGs/bluecircle.svg" alt="an icon of a blueCircle" />
+
+        <li style="--i: 1" class="AreaOption Disenio-Publicidad">
+            <a href="javascript:void(0);" (click)="showArea('Diseño y Publicidad'); removeAnimation();
       addAnimation()">
-        <img class="icon" (mouseover)="highlightSection('#DE0D98')" (mouseleave)="clearHighlight()"
-          src="assets/images/about/Icons/palette-solid 1.svg" alt="an icon of palette" />
-      </a>
-    </li>
-    <img class="littleCircle pinkCircle" (mouseover)="highlightSection('#DE0D98')" (mouseleave)="clearHighlight()"
-      src="assets/images/about/circleSVGs/pinkcircle.svg" alt="an icon of a pinkCircle" />
+                <img class="icon" (mouseover)="highlightSection('#DE0D98')" (mouseleave)="clearHighlight()" src="assets/images/about/Icons/palette-solid 1.svg" alt="an icon of palette" />
+            </a>
+        </li>
+        <img class="littleCircle pinkCircle" (mouseover)="highlightSection('#DE0D98')" (mouseleave)="clearHighlight()" src="assets/images/about/circleSVGs/pinkcircle.svg" alt="an icon of a pinkCircle" />
 
-    <li style="--i: 2" class="AreaOption Electronica">
-      <a href="javascript:void(0);" (click)="showArea('Electrónica'); removeAnimation();
+        <li style="--i: 2" class="AreaOption Electronica">
+            <a href="javascript:void(0);" (click)="showArea('Electrónica'); removeAnimation();
       addAnimation()">
-        <img class="icon" (mouseover)="highlightSection('#DEC800')" (mouseleave)="clearHighlight()"
-          src="assets/images/about/Icons/microchip-solid 1.svg" alt="an icon of microchip" />
-      </a>
-    </li>
-    <img class="littleCircle yellowCircle" src="assets/images/about/circleSVGs/yellowcircle.svg"
-      alt="an icon of a yellowCircle" />
+                <img class="icon" (mouseover)="highlightSection('#DEC800')" (mouseleave)="clearHighlight()" src="assets/images/about/Icons/microchip-solid 1.svg" alt="an icon of microchip" />
+            </a>
+        </li>
+        <img class="littleCircle yellowCircle" src="assets/images/about/circleSVGs/yellowcircle.svg" alt="an icon of a yellowCircle" />
 
-    <li style="--i: 3" class="AreaOption Mecanica">
-      <a href="javascript:void(0);" (click)="showArea('Mecánica'); removeAnimation();
+        <li style="--i: 3" class="AreaOption Mecanica">
+            <a href="javascript:void(0);" (click)="showArea('Mecánica'); removeAnimation();
       addAnimation()">
-        <img class="icon" (mouseover)="highlightSection('#2AC11D')" (mouseleave)="clearHighlight()"
-          src="assets/images/about/Icons/wrench-solid 1.svg" alt="an icon of wrench" />
-      </a>
-    </li>
-    <img class="littleCircle greenCircle" src="assets/images/about/circleSVGs/greencircle.svg"
-      alt="an icon of a greenCircle" />
+                <img class="icon" (mouseover)="highlightSection('#2AC11D')" (mouseleave)="clearHighlight()" src="assets/images/about/Icons/wrench-solid 1.svg" alt="an icon of wrench" />
+            </a>
+        </li>
+        <img class="littleCircle greenCircle" src="assets/images/about/circleSVGs/greencircle.svg" alt="an icon of a greenCircle" />
 
-    <li style="--i: 4" class="AreaOption Control-Programacion">
-      <a href="javascript:void(0);" (click)="showArea('Control y Programación'); removeAnimation();
+        <li style="--i: 4" class="AreaOption Control-Programacion">
+            <a href="javascript:void(0);" (click)="showArea('Control y Programación'); removeAnimation();
       addAnimation()">
-        <img class="icon" (mouseover)="highlightSection('#03C1F5')" (mouseleave)="clearHighlight()"
-          src="assets/images/about/Icons/gear-solid 1.svg" alt="an icon of gear" />
-      </a>
-    </li>
-    <img class="littleCircle cianCircle" src="assets/images/about/circleSVGs/ciancircle.svg"
-      alt="an icon of a cianCircle" />
+                <img class="icon" (mouseover)="highlightSection('#03C1F5')" (mouseleave)="clearHighlight()" src="assets/images/about/Icons/gear-solid 1.svg" alt="an icon of gear" />
+            </a>
+        </li>
+        <img class="littleCircle cianCircle" src="assets/images/about/circleSVGs/ciancircle.svg" alt="an icon of a cianCircle" />
 
-    <li style="--i: 5" class="AreaOption otros rotated">
-      <a href="javascript:void(0);" (click)="showArea('Otros'); removeAnimation();
+        <li style="--i: 5" class="AreaOption otros rotated">
+            <a href="javascript:void(0);" (click)="showArea('Otros'); removeAnimation();
       addAnimation()">
-        <img class="icon" (mouseover)="highlightSection('#1B1B1A')" (mouseleave)="clearHighlight()"
-          src="assets/images/about/Icons/ellipsis-solid 1.svg" alt="an icon of ellipsis" />
-      </a>
-    </li>
-    <img class="littleCircle grayCircle" src="assets/images/about/circleSVGs/graycircle.svg"
-      alt="an icon of a grayCircle" />
+                <img class="icon" (mouseover)="highlightSection('#1B1B1A')" (mouseleave)="clearHighlight()" src="assets/images/about/Icons/ellipsis-solid 1.svg" alt="an icon of ellipsis" />
+            </a>
+        </li>
+        <img class="littleCircle grayCircle" src="assets/images/about/circleSVGs/graycircle.svg" alt="an icon of a grayCircle" />
 
-    <li style="--i: 6" class="AreaOption otros">
-      <a href="javascript:void(0);" (click)="showArea('Otros'); removeAnimation();
+        <li style="--i: 6" class="AreaOption otros">
+            <a href="javascript:void(0);" (click)="showArea('Otros'); removeAnimation();
       addAnimation()">
-        <img class="icon" (mouseover)="highlightSection('#1B1B1B')" (mouseleave)="clearHighlight()"
-          src="assets/images/about/Icons/ellipsis-solid 2.svg" alt="an icon of ellipsis" />
-      </a>
-    </li>
-    <img class="littleCircle grayCircle2" src="assets/images/about/circleSVGs/graycircle.svg"
-      alt="an icon of a grayCircle" />
+                <img class="icon" (mouseover)="highlightSection('#1B1B1B')" (mouseleave)="clearHighlight()" src="assets/images/about/Icons/ellipsis-solid 2.svg" alt="an icon of ellipsis" />
+            </a>
+        </li>
+        <img class="littleCircle grayCircle2" src="assets/images/about/circleSVGs/graycircle.svg" alt="an icon of a grayCircle" />
 
-    <li style="--i: 7" class="AreaOption otros rotated">
-      <a href="javascript:void(0);" (click)="showArea('Otros'); removeAnimation();
+        <li style="--i: 7" class="AreaOption otros rotated">
+            <a href="javascript:void(0);" (click)="showArea('Otros'); removeAnimation();
       addAnimation()">
-        <img class="icon" (mouseover)="highlightSection('#1B1B1C')" (mouseleave)="clearHighlight()"
-          src="assets/images/about/Icons/ellipsis-solid 3.svg" alt="an icon of ellipsis" />
-      </a>
-    </li>
-    <img class="littleCircle grayCircle3" src="assets/images/about/circleSVGs/graycircle.svg"
-      alt="an icon of a grayCircle" />
-  </ul>
+                <img class="icon" (mouseover)="highlightSection('#1B1B1C')" (mouseleave)="clearHighlight()" src="assets/images/about/Icons/ellipsis-solid 3.svg" alt="an icon of ellipsis" />
+            </a>
+        </li>
+        <img class="littleCircle grayCircle3" src="assets/images/about/circleSVGs/graycircle.svg" alt="an icon of a grayCircle" />
+    </ul>
 
-  <ul class="listAreasOptions">
-    <li>
-      <img class="MediumCircle" src="assets/images/about/circleSVGs/bluecircle.svg" alt="an icon of a BlueCircle" />
-      <p>Desarrollo Web</p>
-    </li>
-    <li>
-      <img class="MediumCircle" src="assets/images/about/circleSVGs/pinkcircle.svg" alt="an icon of a pinkcircle" />
-      <p>Diseño y Publicidad</p>
-    </li>
-    <li>
-      <img class="MediumCircle" src="assets/images/about/circleSVGs/yellowcircle.svg" alt="an icon of a yellowcircle" />
-      <p>Electronica</p>
-    </li>
-    <li>
-      <img class="MediumCircle" src="assets/images/about/circleSVGs/greencircle.svg" alt="an icon of a greencircle" />
-      <p>Mecanica</p>
-    </li>
-    <li>
-      <img class="MediumCircle" src="assets/images/about/circleSVGs/ciancircle.svg" alt="an icon of a greencircle" />
-      <p>Control y Programacion</p>
-    </li>
-    <li>
-      <img class="MediumCircle" src="assets/images/about/circleSVGs/graycircle.svg" alt="an icon of a greencircle" />
-      <p>Otros</p>
-    </li>
-  </ul>
+    <ul class="listAreasOptions">
+        <li>
+            <img class="MediumCircle" src="assets/images/about/circleSVGs/bluecircle.svg" alt="an icon of a BlueCircle" />
+            <p>Desarrollo Web</p>
+        </li>
+        <li>
+            <img class="MediumCircle" src="assets/images/about/circleSVGs/pinkcircle.svg" alt="an icon of a pinkcircle" />
+            <p>Diseño y Publicidad</p>
+        </li>
+        <li>
+            <img class="MediumCircle" src="assets/images/about/circleSVGs/yellowcircle.svg" alt="an icon of a yellowcircle" />
+            <p>Electronica</p>
+        </li>
+        <li>
+            <img class="MediumCircle" src="assets/images/about/circleSVGs/greencircle.svg" alt="an icon of a greencircle" />
+            <p>Mecanica</p>
+        </li>
+        <li>
+            <img class="MediumCircle" src="assets/images/about/circleSVGs/ciancircle.svg" alt="an icon of a greencircle" />
+            <p>Control y Programacion</p>
+        </li>
+        <li>
+            <img class="MediumCircle" src="assets/images/about/circleSVGs/graycircle.svg" alt="an icon of a greencircle" />
+            <p>Otros</p>
+        </li>
+    </ul>
 </div>
 
 <div *ngIf="selectedArea ==='Otros'" id="AreaSelectedOtros">
-  <h2 id="selectedArea_Otros">Próximamente :D</h2>
+    <h2 id="selectedArea_Otros">Próximamente :D</h2>
 </div>
 
 <div *ngIf="selectedArea !== 'Otros' && selectedArea !== null" #AreaSelected id="AreaSelected">
 
-  <h2 id="AreaSelected_De" class="animated">Area de</h2>
-  <h2 id="AreaSelected_Title" class="animated">{{ selectedArea }}</h2>
-  <div class="AreaSelected_DirSub animated director">
+    <h2 id="AreaSelected_De" class="animated">Area de</h2>
+    <h2 id="AreaSelected_Title" class="animated">{{ selectedArea }}</h2>
+    <div class="AreaSelected_DirSub animated director">
 
-    <div class="svgPart animated">
-      <p class="Nombre animated">{{ areas[selectedArea].Director.Nombre }}</p>
-      <p class="RolCarrera animated"> DIRECTOR - {{ areas[selectedArea].Director.Carrera }}</p>
-      <p class="Descripcion animated"> {{ areas[selectedArea].Director.Descripcion }}</p>
-    </div>
+        <div class="svgPart animated">
+            <p class="Nombre animated">{{ areas[selectedArea].Director.Nombre }}</p>
+            <p class="RolCarrera animated"> DIRECTOR - {{ areas[selectedArea].Director.Carrera }}</p>
+            <p class="Descripcion animated"> {{ areas[selectedArea].Director.Descripcion }}</p>
+        </div>
 
-    <div class="iconPart">
-      <img [src]="areas[selectedArea].Director.Icon" alt="Icono del Area de {{selectedArea}}"
-        class="DirSub_iconPartIMG animated" />
-    </div>
+        <div class="iconPart">
+            <img [src]="areas[selectedArea].Director.Icon" alt="Icono del Area de {{selectedArea}}" class="DirSub_iconPartIMG animated" />
+        </div>
 
-    <div class="PhotoPart">
-      <img class="DirSub_PhotoPartIMG animated" [src]="areas[selectedArea].Director.Photo"
-        alt="image of the director of {{selectedArea}}" />
-      <div class="socialMedia">
-        <a *ngIf="areas[selectedArea].Director.Facebook" href="{{ areas[selectedArea].Director.Facebook }}">
-          <img src="assets/images/about/members/facebook.svg" alt="icon of facebook">
-        </a>
-        <a *ngIf="areas[selectedArea].Director.Instagram" href="{{ areas[selectedArea].Director.Instagram }}">
-          <img src="assets/images/about/members/instagram.svg" alt="icon of instagram">
-        </a>
-        <a *ngIf="areas[selectedArea].Director.Twitter" href="{{ areas[selectedArea].Director.Twitter }}">
-          <img src="assets/images/about/members/twitter.svg" alt="icon of twitter">
-        </a>
-        <a *ngIf="areas[selectedArea].Director.Linkedin" href="{{ areas[selectedArea].Director.Linkedin }}">
-          <img src="assets/images/about/members/linkedin.svg" alt="icon of linkedin">
-        </a>
-        <a *ngIf="areas[selectedArea].Director.Github" href="{{ areas[selectedArea].Director.Github }}">
-          <img src="assets/images/about/members/github.svg" alt="icon of github">
-        </a>
+        <div class="PhotoPart">
+            <img class="DirSub_PhotoPartIMG animated" [src]="areas[selectedArea].Director.Photo" alt="image of the director of {{selectedArea}}" />
+            <div class="socialMedia">
+                <a *ngIf="areas[selectedArea].Director.Facebook" href="{{ areas[selectedArea].Director.Facebook }}">
+                    <img src="assets/images/about/members/facebook.svg" alt="icon of facebook">
+                </a>
+                <a *ngIf="areas[selectedArea].Director.Instagram" href="{{ areas[selectedArea].Director.Instagram }}">
+                    <img src="assets/images/about/members/instagram.svg" alt="icon of instagram">
+                </a>
+                <a *ngIf="areas[selectedArea].Director.Twitter" href="{{ areas[selectedArea].Director.Twitter }}">
+                    <img src="assets/images/about/members/twitter.svg" alt="icon of twitter">
+                </a>
+                <a *ngIf="areas[selectedArea].Director.Linkedin" href="{{ areas[selectedArea].Director.Linkedin }}">
+                    <img src="assets/images/about/members/linkedin.svg" alt="icon of linkedin">
+                </a>
+                <a *ngIf="areas[selectedArea].Director.Github" href="{{ areas[selectedArea].Director.Github }}">
+                    <img src="assets/images/about/members/github.svg" alt="icon of github">
+                </a>
 
-      </div>
-    </div>
-
-  </div>
-
-  <div class="simple-line"></div>
-
-  <div class="AreaSelected_DirSub animated subdirector">
-    <div class="svgPart animated">
-      <p class="Nombre animated">{{ areas[selectedArea].Subdirector.Nombre }}</p>
-      <p class="RolCarrera animated"> SUBDIRECTOR - {{ areas[selectedArea].Subdirector.Carrera }}</p>
-      <p class="Descripcion animated"> {{ areas[selectedArea].Subdirector.Descripcion }}</p>
-    </div>
-    <div class="iconPart">
-    </div>
-    <div class="PhotoPart">
-      <img class="DirSub_PhotoPartIMG animated" [src]="areas[selectedArea].Subdirector.Photo"
-        alt="image of the second leader of {{selectedArea}}" />
-      <div class="socialMedia animated">
-        <a *ngIf="areas[selectedArea].Subdirector.Facebook" href="{{ areas[selectedArea].Subdirector.Facebook }}">
-          <img src="assets/images/about/members/facebook.svg" alt="icon of facebook">
-        </a>
-        <a *ngIf="areas[selectedArea].Subdirector.Instagram" href="{{ areas[selectedArea].Subdirector.Instagram }}">
-          <img src="assets/images/about/members/instagram.svg" alt="icon of instagram">
-        </a>
-        <a *ngIf="areas[selectedArea].Subdirector.Twitter" href="{{ areas[selectedArea].Subdirector.Twitter }}">
-          <img src="assets/images/about/members/twitter.svg" alt="icon of twitter">
-        </a>
-        <a *ngIf="areas[selectedArea].Subdirector.Linkedin" href="{{ areas[selectedArea].Subdirector.Linkedin }}">
-          <img src="assets/images/about/members/linkedin.svg" alt="icon of linkedin">
-        </a>
-        <a *ngIf="areas[selectedArea].Subdirector.Github" href="{{ areas[selectedArea].Director.Github }}">
-          <img src="assets/images/about/members/github.svg" alt="icon of github">
-        </a>
-      </div>
-    </div>
-
-  </div>
-  <div *ngIf="studentGroups.length" class="selectedArea_Integrantes">
-    <h3>INTEGRANTES</h3>
-    <ng-container *ngFor="let pair of studentGroups; let x = index">
-      <ul class="members">
-        <li class="cardMember" *ngFor="let member of pair">
-          <div class="memberInfo">
-            <img class="profilePhoto" [src]="member.Photo" alt="profile photo of {{ member.Nombre }}" />
-            <div class="socialMediaIntegrante">
-              <a *ngIf="member.Linkedin" href="{{ member.Linkedin }}">
-                <img src="assets/images/about/members/linkedin.svg" alt="Icono de Linkedin">
-              </a>
-              <a *ngIf="member.Github" href="{{ member.Github }}">
-                <img src="assets/images/about/members/github.svg" alt="Icono de Github">
-              </a>
             </div>
-            <h1 class="fullName">{{ member.Nombre }}</h1>
-            <p class="position">{{ member.Carrera }}</p>
-          </div>
-        </li>
-      </ul>
-      <!-- Agrega un <hr> después de cada repetición excepto la última -->
-      <div class="divider" *ngIf="x < studentGroups.length - 1">
-        <div class="simple-line"> </div>
-      </div>
-    </ng-container>
-  </div>
+        </div>
+
+    </div>
+
+    <div class="simple-line"></div>
+
+    <div class="AreaSelected_DirSub animated subdirector">
+        <div class="svgPart animated">
+            <p class="Nombre animated">{{ areas[selectedArea].Subdirector.Nombre }}</p>
+            <p class="RolCarrera animated"> SUBDIRECTOR - {{ areas[selectedArea].Subdirector.Carrera }}</p>
+            <p class="Descripcion animated"> {{ areas[selectedArea].Subdirector.Descripcion }}</p>
+        </div>
+        <div class="iconPart">
+        </div>
+        <div class="PhotoPart">
+            <img class="DirSub_PhotoPartIMG animated" [src]="areas[selectedArea].Subdirector.Photo" alt="image of the second leader of {{selectedArea}}" />
+            <div class="socialMedia animated">
+                <a *ngIf="areas[selectedArea].Subdirector.Facebook" href="{{ areas[selectedArea].Subdirector.Facebook }}">
+                    <img src="assets/images/about/members/facebook.svg" alt="icon of facebook">
+                </a>
+                <a *ngIf="areas[selectedArea].Subdirector.Instagram" href="{{ areas[selectedArea].Subdirector.Instagram }}">
+                    <img src="assets/images/about/members/instagram.svg" alt="icon of instagram">
+                </a>
+                <a *ngIf="areas[selectedArea].Subdirector.Twitter" href="{{ areas[selectedArea].Subdirector.Twitter }}">
+                    <img src="assets/images/about/members/twitter.svg" alt="icon of twitter">
+                </a>
+                <a *ngIf="areas[selectedArea].Subdirector.Linkedin" href="{{ areas[selectedArea].Subdirector.Linkedin }}">
+                    <img src="assets/images/about/members/linkedin.svg" alt="icon of linkedin">
+                </a>
+                <a *ngIf="areas[selectedArea].Subdirector.Github" href="{{ areas[selectedArea].Director.Github }}">
+                    <img src="assets/images/about/members/github.svg" alt="icon of github">
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div *ngIf="studentGroups.length" class="selectedArea_Integrantes">
+        <h3>INTEGRANTES</h3>
+        <ng-container *ngFor="let pair of studentGroups; let x = index">
+            <ul class="members">
+                <li class="cardMember" *ngFor="let member of pair">
+                    <div class="memberInfo">
+                        <img class="profilePhoto" [src]="member.Photo" alt="profile photo of {{ member.Nombre }}" />
+                        <div class="socialMediaIntegrante">
+                            <a *ngIf="member.Linkedin" href="{{ member.Linkedin }}">
+                                <img src="assets/images/about/members/linkedin.svg" alt="Icono de Linkedin">
+                            </a>
+                            <a *ngIf="member.Github" href="{{ member.Github }}">
+                                <img src="assets/images/about/members/github.svg" alt="Icono de Github">
+                            </a>
+                        </div>
+                        <h1 class="fullName">{{ member.Nombre }}</h1>
+                        <p class="position">{{ member.Carrera }}</p>
+                    </div>
+                </li>
+            </ul>
+            <!-- Agrega un <hr> después de cada repetición excepto la última -->
+            <div class="divider" *ngIf="x < studentGroups.length - 1">
+                <div class="simple-line"> </div>
+            </div>
+        </ng-container>
+    </div>
 
 </div>
