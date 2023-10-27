@@ -21,134 +21,185 @@
     justify-content: center;
 }
 
+/*President*/
+.president{
+  grid-column: span 12;
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+  background: #0D1525;
+  align-items: center;
+  justify-items: center;
+}
+.cardProfilePresident{
+  grid-column: span 4;
+}
+.cardProfilePresident .profilePhoto{
+  margin: 1vw;
+  width: 15vw;
+  height: auto;
+}
+.cardInfoPresident{
+  grid-column: 5/ span 8;
+  background-image: url('../../../assets/figure2.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 7vw;
+  padding-bottom: 9vw;
+  margin-top:5vw;
+  margin-bottom:5vw;
+}
+.cardInfoPresident .fullName{
+  font-size: 3vw;
+  margin: 0.5vw;
+}
 
 /*MEMBERS*/
 
 .members {
-    grid-column: span 12;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Divide el contenedor en 2 columnas para 2 tarjetas por fila */
-    background: #0D1525;
-    grid-gap: 1rem;
-    /* Espacio entre las tarjetas de miembros */
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Divide el contenedor en 2 columnas para 2 tarjetas por fila */
+  background: #0D1525;
+  grid-gap: 1rem;
+  /* Espacio entre las tarjetas de miembros */
 }
 
 .cardMember {
-    background-image: url('../../../assets/figure.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-items: center;
-    justify-items: center;
-    padding-top: 7vw;
-    padding-bottom: 15vw;
+  background-image: url('../../../assets/figure.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-items: center;
+  padding-top: 7vw;
+  padding-bottom: 15vw;
 }
 
 .divider {
-    grid-column: 1/ span 12;
-    background-color: #0D1525;
-    height: fit-content;
+  grid-column: 1/ span 12;
+  background-color: #0D1525;
+  height: fit-content;
 }
 
 .hr1 {
-    background-color: white;
-    height: 10px;
-    margin-right: 15vh;
-    margin-left: 15vh;
-    opacity: 100%;
-    border-radius: 50rem
+  background-color: white;
+  height: 5px;
+  margin-right: 15vh;
+  margin-left: 15vh;
+  opacity: 100%;
+  border-radius: 50rem
 }
 
 .memberInfo {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .cardMember .profilePhoto {
-    margin: 1vw;
-    width: 12vw;
-    height: auto;
+  margin: 1vw;
+  width: 12vw;
+  height: auto;
 }
 
 .cardMember .fullName {
-    padding-right: 2.2vw;
-    padding-left: 2.2vw;
-    font-size: 2.5vw;
-    margin: 0.5vw;
+  padding-right: 2.2vw;
+  padding-left: 2.2vw;
+  font-size: 2.5vw;
+  margin: 0.5vw;
 }
 
 .position {
-    font-size: 1.5vw;
+  font-size: 1.5vw;
+  padding-right: 2.2vw;
+  padding-left: 2.2vw;
+  margin-bottom: 1vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.description {
+  font-size: 1.2vw;
+  padding-right: 7vw;
+  padding-left: 9vw;
+}
+
+.socialLinks {
+  display: flex;
+}
+
+.socialLinks .socialLink {
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  border-radius: 100%;
+  height: 3vw;
+  width: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .cardInfoPresident{
+    grid-column:span 12;
+    padding-top: 10vw;
+  }
+  .cardProfilePresident{
+    grid-column: span 12;
+    margin-top: 5vw;
+  }
+  .cardProfilePresident .profilePhoto {
+    margin: 1vw;
+    width: 24vw;
+    height: auto;
+  }
+  .cardInfoPresident .fullName {
+    padding-right: 2.2vw;
+    padding-left: 2.2vw;
+    font-size: 5vw;
+    margin: 1vw;
+  }
+  .cardMember {
+    grid-column: span 12;
+    padding-top: 11vw;
+    padding-bottom: 25vw;
+  }
+  .memberInfo {
+    padding-right: 6vw;
+    padding-left: 8vw;
+  }
+  .socialLinks .socialLink {
+    margin: 1vw;
+    border-radius: 100%;
+    height: 7vw;
+    width: auto;
+  }
+  .cardMember .profilePhoto {
+    margin: 1vw;
+    width: 24vw;
+    height: auto;
+  }
+  .cardMember .fullName {
+    padding-right: 2.2vw;
+    padding-left: 2.2vw;
+    font-size: 5vw;
+    margin: 1vw;
+  }
+  .position {
+    font-size: 3vw;
     padding-right: 2.2vw;
     padding-left: 2.2vw;
     margin-bottom: 1vw;
     margin-right: 5vw;
     margin-left: 5vw;
-}
-
-.description {
-    font-size: 1.2vw;
+  }
+  .description {
+    font-size: 2.5vw;
     padding-right: 7vw;
     padding-left: 9vw;
-}
-
-.socialLinks {
-    display: flex;
-}
-
-.socialLinks .socialLink {
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
-    margin-bottom: 1vw;
-    margin-top: 1vw;
-    border-radius: 100%;
-    height: 3vw;
-    width: auto;
-}
-
-@media screen and (max-width: 800px) {
-    .cardMember {
-        grid-column: span 12;
-        padding-top: 11vw;
-        padding-bottom: 25vw;
-    }
-    .memberInfo {
-        padding-right: 6vw;
-        padding-left: 8vw;
-    }
-    .socialLinks .socialLink {
-        margin: 1vw;
-        border-radius: 100%;
-        height: 7vw;
-        width: auto;
-    }
-    .cardMember .profilePhoto {
-        margin: 1vw;
-        width: 24vw;
-        height: auto;
-    }
-    .cardMember .fullName {
-        padding-right: 2.2vw;
-        padding-left: 2.2vw;
-        font-size: 5vw;
-        margin: 1vw;
-    }
-    .position {
-        font-size: 3vw;
-        padding-right: 2.2vw;
-        padding-left: 2.2vw;
-        margin-bottom: 1vw;
-        margin-right: 5vw;
-        margin-left: 5vw;
-    }
-    .description {
-        font-size: 2.5vw;
-        padding-right: 7vw;
-        padding-left: 9vw;
-    }
+  }
 }
 
 
