@@ -10,6 +10,11 @@
   grid-column: span 12;
 }
 
+.subrayado{
+  text-decoration: underline;
+  text-underline-offset: 15px;
+}
+
 /*Data Project - NAME - YEAR - CONTEST - CATEGORY*/
 .dataProject{
   grid-column: 2/ span 4;
@@ -36,9 +41,6 @@
   color: white;
   grid-template-rows: 1fr 1fr 1fr;
 }
-.advisor h4{
-  text-decoration: underline;
-}
 
 /*Institution information*/
 .institution{
@@ -51,9 +53,6 @@
   width: 7vw;
   height: 7vw;
   border-radius: 25px;
-}
-.institution h4{
-  text-decoration: underline;
 }
 /*Members*/
 
@@ -79,7 +78,6 @@
   grid-column: 2/ span 10;
   color: white;
   text-align: center;
-  text-decoration: underline;
 }
 
 .participacionTextElectronica{
@@ -308,5 +306,21 @@
     text-align: justify; /* Justificar el texto */
     margin-left: 0; /* Eliminar el margen izquierdo */
     margin-right: 0; /* Eliminar el margen derecho */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*Data Project - NAME - YEAR - CONTEST - CATEGORY*/
+  .dataProject{
+    grid-column: 2/ span 6;
+    color: white;
+    text-align: left;
+  }
+
+  .dataProject h3{
+    font-size: 1.3em;
+  }
+  .dataProject h1{
+    font-size: 2em;
   }
 }
