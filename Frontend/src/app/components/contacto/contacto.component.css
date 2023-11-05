@@ -126,7 +126,32 @@
 
 .socialMedia i {
     font-size: 3vw;
-    padding: 1vw;
+    margin: 1vw;
+    transition: font-size 0.2s ease;
+    -webkit-transition: font-size 0.2s ease;
+    -moz-transition: font-size 0.2s ease;
+    -ms-transition: font-size 0.2s ease;
+    -o-transition: font-size 0.2s ease;
+}
+
+.socialMedia a:hover i {
+    font-size: 4vw;
+}
+
+.socialMedia a:hover .fa-facebook-f {
+    color: #0047FF !important;
+}
+
+.socialMedia a:hover .fa-twitter {
+    color: #1DA1F2 !important;
+}
+
+.socialMedia a:hover .fa-linkedin-in {
+    color: #0A66C2 !important;
+}
+
+.socialMedia a:hover .fa-instagram {
+    color: #E4405F !important;
 }
 
 
