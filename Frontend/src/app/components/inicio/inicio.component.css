@@ -1,68 +1,80 @@
-#parte1{
-    background-image: url("../../../assets/images/home/background1.png");
+* {
+    overflow: hidden;
+}
+
+#parte1 {
+    background-image: url("../../../assets/images/home/background1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin:0;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap:0px 32px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0px 32px;
     text-align: left;
     padding-bottom: 50px;
 }
-#parte2{
-    background-image: url("../../../assets/images/home/background2y4.png");
+
+#parte2 {
+    background-image: url("../../../assets/images/home/background2y4.webp");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin:0;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap:0px 32px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0px 32px;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 100px;
 }
-#parte3{
-    background-image: url("../../../assets/images/home/background3.png");
+
+#parte3 {
+    background-image: url("../../../assets/images/home/background3.webp");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin:0;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap:0px 32px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0px 32px;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-#parte4{
-    background-image: url("../../../assets/images/home/background2y4.png");
+
+#parte4 {
+    background-image: url("../../../assets/images/home/background2y4.webp");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin:0;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap:0px 32px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0px 32px;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 80px;
 }
-#part1_h1{
+
+#part1_h1 {
     font-family: 'Martel';
     color: #FFFFFF;
-    grid-column: 2/ 6;
+    grid-column: 2/ 8;
     font-size: 120px;
 }
-#part1_p{
+
+#part1_p {
     font-family: 'Roboto';
     color: #FFFFFF;
     grid-column: 2/ 8;
     font-size: 30px;
 }
+
+
 /************************/
-#parte2>h1{
+
+#parte2>h1 {
     font-family: 'Martel';
     color: #FFFFFF;
     grid-column: 1/ 13;
@@ -70,69 +82,83 @@
     margin-bottom: 30px;
     margin: 0;
 }
-#parte2>p{
+
+#parte2>p {
     font-family: 'Roboto';
     color: #FFFFFF;
-    grid-column: 3/ 11; 
+    grid-column: 2/ 12;
     font-size: 30px;
     margin: 0;
 }
-#parte2>img{
-    grid-column: 1/ 13; 
+
+#parte2>img {
+    grid-column: 1/ 13;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
 }
+
+
 /************************/
-#parte3>h3{
+
+#parte3>h3 {
     font-family: 'Roboto';
     color: #FFFFFF;
     grid-column: 3/ 11;
     font-size: 50px;
     margin: 0;
 }
+
+
 /************************/
-#parte4>h2{
+
+#parte4>h2 {
     font-family: 'Martel';
     color: #FFFFFF;
-    grid-column: 4/ 10; 
+    grid-column: 4/ 10;
     font-size: 120px;
     margin: 0;
 }
-#parte4>p{
+
+#parte4>p {
     font-family: 'Roboto';
     color: #FFFFFF;
-    grid-column: 5/ 9; 
+    grid-column: 5/ 9;
     font-size: 30px;
-    margin-top:20px;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
-#proyectosss{
+
+#proyectosss {
     grid-column: 2/ 12;
     display: flex;
     justify-content: space-around;
 }
-#proy1{
-    background-image: url("../../../assets/images/home/proyecto1.png");
+
+#proy1 {
+    background-image: url("../../../assets/images/home/proyecto1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
     width: 400px;
-    border-radius:10px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column-reverse;
     cursor: pointer;
 }
-#proy1:hover{
+
+#proy1:hover {
     transform: scale(1.05, 1.05);
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
     opacity: 0.9;
 }
-#textooo1{
+
+#textooo1 {
     padding: 30px;
     text-align: start;
 }
-#textooo1>h4{
+
+#textooo1>h4 {
     font-family: 'Martel';
     color: #FFFFFF;
     font-size: 42px;
@@ -140,14 +166,18 @@
     text-decoration: underline;
     padding-bottom: 15px;
 }
-#textooo1>p{
+
+#textooo1>p {
     font-family: 'Roboto';
     color: #FFFFFF;
-    margin:0;
+    margin: 0;
     font-size: 23px;
 }
+
+
 /************************/
-#btn_pro{
+
+#btn_pro {
     grid-column: 6/ 8;
     width: 65%;
     margin-left: auto;
@@ -156,7 +186,8 @@
     border: 5px solid #ffffff;
     margin-top: 50px;
 }
-#btn_pro>p{
+
+#btn_pro>p {
     font-family: 'Martel';
     color: #FFFFFF;
     font-size: 20px;
@@ -164,65 +195,66 @@
     margin-bottom: 15px;
     cursor: pointer;
 }
+
 #btn_pro:hover {
-  border: 4px solid #ebebeb;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, .6), 0 0 20px rgba(255, 255, 255, .4);
-  outline-offset: 15px;
-  text-shadow: 1px 1px 2px #c9caca; 
+    border: 4px solid whitesmoke;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4);
+    text-shadow: 1px 1px 2px #c9caca;
 }
+
 
 /****************************************/
 
 @media (max-width: 2100px) {
-    #part1_h1{
+    #part1_h1 {
         font-size: 100px;
     }
-    #part1_p{
+    #part1_p {
         font-size: 25px;
     }
     /************************/
-    #parte2>h1{
+    #parte2>h1 {
         font-size: 100px;
         margin-bottom: 30px;
     }
-    #parte2>p{
+    #parte2>p {
         font-size: 25px;
     }
     /************************/
-    #parte3>h3{
+    #parte3>h3 {
         font-size: 40px;
     }
     /************************/
-    #parte4>h2{
+    #parte4>h2 {
         font-size: 100px;
     }
-    #parte4>p{
+    #parte4>p {
         font-size: 25px;
-        margin-top:20px;
+        margin-top: 20px;
         margin-bottom: 40px;
     }
     /************************/
-    #proy1{
+    #proy1 {
         height: 450px;
         width: 360px;
     }
-    #textooo1{
+    #textooo1 {
         padding: 30px;
     }
-    #textooo1>h4{
+    #textooo1>h4 {
         font-size: 38px;
         padding-bottom: 15px;
     }
-    #textooo1>p{
+    #textooo1>p {
         font-size: 21px;
     }
     /************************/
-    #btn_pro{
+    #btn_pro {
         width: 70%;
         border: 4px solid #ffffff;
         margin-top: 50px;
     }
-    #btn_pro>p{
+    #btn_pro>p {
         font-size: 18px;
         margin-top: 13px;
         margin-bottom: 13px;
@@ -230,55 +262,55 @@
 }
 
 @media (max-width: 1800px) {
-    #part1_h1{
+    #part1_h1 {
         font-size: 70px;
     }
-    #part1_p{
+    #part1_p {
         font-size: 20px;
     }
     /************************/
-    #parte2>h1{
+    #parte2>h1 {
         font-size: 70px;
         margin-bottom: 30px;
     }
-    #parte2>p{
+    #parte2>p {
         font-size: 20px;
     }
     /************************/
-    #parte3>h3{
+    #parte3>h3 {
         font-size: 30px;
     }
     /************************/
-    #parte4>h2{
+    #parte4>h2 {
         font-size: 70px;
     }
-    #parte4>p{
+    #parte4>p {
         font-size: 20px;
-        margin-top:20px;
+        margin-top: 20px;
         margin-bottom: 40px;
     }
     /************************/
-    #proy1{
+    #proy1 {
         height: 400px;
         width: 320px;
     }
-    #textooo1{
+    #textooo1 {
         padding: 20px;
     }
-    #textooo1>h4{
+    #textooo1>h4 {
         font-size: 32px;
         padding-bottom: 15px;
     }
-    #textooo1>p{
+    #textooo1>p {
         font-size: 17px;
     }
     /************************/
-    #btn_pro{
+    #btn_pro {
         width: 80%;
         border: 4px solid #ffffff;
         margin-top: 40px;
     }
-    #btn_pro>p{
+    #btn_pro>p {
         font-size: 15px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -286,77 +318,77 @@
 }
 
 @media (max-width: 1400px) {
-    #parte1{
+    #parte1 {
         padding-bottom: 30px;
     }
-    #parte2{
+    #parte2 {
         padding-top: 30px;
         padding-bottom: 50px;
     }
-    #parte3{
+    #parte3 {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    #parte4{
+    #parte4 {
         padding-top: 30px;
         padding-bottom: 50px;
     }
-    #part1_h1{
+    #part1_h1 {
         font-size: 55px;
         margin-left: -30px;
     }
-    #part1_p{
+    #part1_p {
         font-size: 16px;
         margin-left: -30px;
     }
     /************************/
-    #parte2>h1{
+    #parte2>h1 {
         font-size: 55px;
         margin-bottom: 15px;
     }
-    #parte2>p{
+    #parte2>p {
         font-size: 16px;
     }
-    #parte2>img{
+    #parte2>img {
         margin-top: 15px;
         width: 420px;
         height: 240px;
     }
     /************************/
-    #parte3>h3{
+    #parte3>h3 {
         font-size: 25px;
     }
     /************************/
-    #parte4>h2{
+    #parte4>h2 {
         font-size: 55px;
     }
-    #parte4>p{
+    #parte4>p {
         font-size: 16px;
-        margin-top:10px;
+        margin-top: 10px;
         margin-bottom: 30px;
     }
     /************************/
-    #proy1{
+    #proy1 {
         height: 300px;
         width: 240px;
     }
-    #textooo1{
+    #textooo1 {
         padding: 15px;
     }
-    #textooo1>h4{
+    #textooo1>h4 {
         font-size: 28px;
         padding-bottom: 10px;
     }
-    #textooo1>p{
+    #textooo1>p {
         font-size: 13px;
     }
     /************************/
-    #btn_pro{
+    #btn_pro {
         width: 90%;
         border: 3px solid #ffffff;
         margin-top: 30px;
     }
-    #btn_pro>p{
+    #btn_pro>p {
         font-size: 12px;
         margin-top: 8px;
         margin-bottom: 8px;
@@ -364,77 +396,77 @@
 }
 
 @media (max-width: 1100px) {
-    #parte1{
+    #parte1 {
         padding-bottom: 20px;
     }
-    #parte2{
+    #parte2 {
         padding-top: 20px;
         padding-bottom: 40px;
     }
-    #parte3{
+    #parte3 {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    #parte4{
+    #parte4 {
         padding-top: 20px;
         padding-bottom: 40px;
     }
-    #part1_h1{
+    #part1_h1 {
         font-size: 45px;
         margin-left: -30px;
     }
-    #part1_p{
+    #part1_p {
         font-size: 13px;
         margin-left: -30px;
     }
     /************************/
-    #parte2>h1{
-        font-size:45px;
+    #parte2>h1 {
+        font-size: 45px;
         margin-bottom: 15px;
     }
-    #parte2>p{
+    #parte2>p {
         font-size: 13px;
     }
-    #parte2>img{
+    #parte2>img {
         margin-top: 15px;
         width: 350px;
         height: 200px;
     }
     /************************/
-    #parte3>h3{
+    #parte3>h3 {
         font-size: 20px;
     }
     /************************/
-    #parte4>h2{
+    #parte4>h2 {
         font-size: 45px;
     }
-    #parte4>p{
+    #parte4>p {
         font-size: 13px;
-        margin-top:10px;
+        margin-top: 10px;
         margin-bottom: 30px;
     }
     /************************/
-    #proy1{
+    #proy1 {
         height: 250px;
         width: 200px;
     }
-    #textooo1{
+    #textooo1 {
         padding: 12px;
     }
-    #textooo1>h4{
+    #textooo1>h4 {
         font-size: 22px;
         padding-bottom: 10px;
     }
-    #textooo1>p{
+    #textooo1>p {
         font-size: 11px;
     }
     /************************/
-    #btn_pro{
+    #btn_pro {
         width: 90%;
         border: 2px solid #ffffff;
         margin-top: 30px;
     }
-    #btn_pro>p{
+    #btn_pro>p {
         font-size: 10px;
         margin-top: 6px;
         margin-bottom: 6px;
@@ -442,265 +474,269 @@
 }
 
 @media (max-width: 800px) {
-    #parte1{
+    #parte1 {
         padding-bottom: 10px;
     }
-    #parte2{
+    #parte2 {
         padding-top: 20px;
         padding-bottom: 40px;
     }
-    #parte3{
+    #parte3 {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    #parte4{
+    #parte4 {
         padding-top: 20px;
         padding-bottom: 40px;
     }
-    #part1_h1{
-        font-size: 30px;
+    #part1_h1 {
+        font-size: 45px;
         margin-left: -30px;
         margin-top: 300px;
     }
-    #part1_p{
-        font-size: 10px;
+    #part1_p {
+        font-size: 13px;
         margin-left: -30px;
     }
     /************************/
-    #parte2>h1{
-        font-size:30px;
+    #parte2>h1 {
+        font-size: 40px;
         margin-bottom: 15px;
     }
-    #parte2>p{
-        font-size: 10px;
+    #parte2>p {
+        font-size: 13px;
     }
-    #parte2>img{
+    #parte2>img {
         margin-top: 15px;
-        width: 280px;
-        height: 160px;
+        width: 500px;
+        height: auto;
     }
     /************************/
-    #parte3>h3{
-        font-size: 15px;
+    #parte3>h3 {
+        font-size: 20px;
     }
     /************************/
-    #parte4>h2{
-        font-size: 30px;
+    #parte4>h2 {
+        font-size: 40px;
+        grid-column: 2/12;
     }
-    #parte4>p{
-        font-size: 10px;
-        margin-top:10px;
+    #parte4>p {
+        font-size: 13px;
+        margin-top: 10px;
         margin-bottom: 30px;
+        grid-column: 4/10;
     }
     /************************/
-    #proy1{
-        height: 200px;
-        width: 160px;
+    #proy1 {
+        height: 250px;
+        width: 210px;
     }
-    #textooo1{
+    #textooo1 {
         padding: 10px;
     }
-    #textooo1>h4{
-        font-size: 18px;
-        padding-bottom: 5px;
+    #textooo1>h4 {
+        font-size: 25px;
+        padding-bottom: 10px;
     }
-    #textooo1>p{
-        font-size: 9px;
+    #textooo1>p {
+        font-size: 12px;
     }
     /************************/
-    #btn_pro{
+    #btn_pro {
         width: 100%;
         border: 2px solid #ffffff;
         margin-top: 30px;
+        padding: 0.5vw;
     }
-    #btn_pro>p{
-        font-size: 8px;
+    #btn_pro>p {
+        font-size: 11px;
         margin-top: 6px;
         margin-bottom: 6px;
     }
 }
+
 @media (max-width: 600px) {
-    #parte1{
+    #parte1 {
         padding-bottom: 10px;
     }
-    #parte2{
+    #parte2 {
         padding-top: 20px;
         padding-bottom: 40px;
     }
-    #parte3{
-        padding-top: 10px;
-        padding-bottom: 10px;
+    #parte3 {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-    #parte4{
+    #parte4 {
         padding-top: 20px;
         padding-bottom: 40px;
     }
-    #part1_h1{
-        font-size: 21px;
-        margin-left: -10px;
-        margin-top: 200px;
+    #part1_h1 {
+        font-size: 35px;
+        margin-left: -20px;
+        margin-top: 300px;
     }
-    #part1_p{
-        font-size: 8px;
-        margin-left: -10px;
+    #part1_p {
+        font-size: 13px;
+        margin-left: -20px;
     }
     /************************/
-    #parte2>h1{
-        font-size:21px;
-        margin-bottom: 10px;
+    #parte2>h1 {
+        font-size: 35px;
+        margin-bottom: 15px;
     }
-    #parte2>p{
-        font-size: 8px;
+    #parte2>p {
+        font-size: 13px;
     }
-    #parte2>img{
+    #parte2>img {
         margin-top: 15px;
+        width: 400px;
+        height: auto;
+    }
+    /************************/
+    #parte3>h3 {
+        font-size: 20px;
+        grid-column: 2/12;
+    }
+    /************************/
+    #parte4>h2 {
+        grid-column: 2/12;
+        font-size: 35px;
+    }
+    #parte4>p {
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    /************************/
+    #proy1 {
+        height: 250px;
         width: 210px;
-        height: 120px;
+    }
+    #textooo1 {
+        padding: 10px;
+    }
+    #textooo1>h4 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    #textooo1>p {
+        font-size: 12px;
     }
     /************************/
-    #parte3>h3{
-        font-size: 16px;
-    }
-    /************************/
-    #parte4>h2{
-        font-size: 21px;
-    }
-    #parte4>p{
-        font-size: 8px;
-        margin-top:5px;
-        margin-bottom: 20px;
-    }
-    /************************/
-    #proy1{
-        height: 150px;
-        width: 120px;
-    }
-    #textooo1{
-        padding: 5px;
-    }
-    #textooo1>h4{
-        font-size: 14px;
-        padding-bottom: 5px;
-    }
-    #textooo1>p{
-        font-size: 7px;
-    }
-    /************************/
-    #btn_pro{
+    #btn_pro {
         grid-column: 5/ 9;
         width: 60%;
         border: 1px solid #ffffff;
-        margin-top: 20px;
+        margin-top: 30px;
     }
-    #btn_pro>p{
-        font-size: 6px;
+    #btn_pro>p {
+        font-size: 11px;
         margin-top: 6px;
         margin-bottom: 6px;
     }
 }
-@media (max-width: 400px) {
-    #parte1{
-        padding-bottom: 5px;
+
+@media (max-width: 500px) {
+    #parte1 {
+        padding-bottom: 10px;
     }
-    #parte2{
-        padding-top: 10px;
+    #parte2 {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    #parte3 {
+        padding-top: 20px;
         padding-bottom: 20px;
     }
-    #parte3{
-        padding-top: 5px;
-        padding-bottom: 5px;
+    #parte4 {
+        padding-top: 20px;
+        padding-bottom: 40px;
     }
-    #parte4{
-        padding-top: 10px;
-        padding-bottom: 20px;
+    #part1_h1 {
+        font-size: 35px;
+        margin-left: -10px;
+        margin-top: 300px;
     }
-    #part1_h1{
-        font-size: 17px;
-        margin-left: -5px;
-        margin-top: 150px;
-    }
-    #part1_p{
-        font-size: 6px;
+    #part1_p {
+        font-size: 13px;
         margin-left: -10px;
     }
     /************************/
-    #parte2>h1{
-        font-size:17px;
-        margin-bottom: 10px;
+    #parte2>h1 {
+        font-size: 35px;
+        margin-bottom: 15px;
     }
-    #parte2>p{
-        font-size: 6px;
+    #parte2>p {
+        font-size: 13px;
     }
-    #parte2>img{
+    #parte2>img {
         margin-top: 15px;
-        width: 140px;
-        height: 80px;
+        width: 250px;
+        height: auto;
     }
     /************************/
-    #parte3>h3{
-        font-size: 11px;
+    #parte3>h3 {
+        font-size: 20px;
+        grid-column: 2/12;
     }
     /************************/
-    #parte4>h2{
-        font-size: 17px;
+    #parte4>h2 {
+        grid-column: 2/12;
+        font-size: 35px;
     }
-    #parte4>p{
-        font-size: 6px;
-        margin-top:0px;
-        margin-bottom: 10px;
-    }
-    /************************/
-    #proy1{
-        height: 100px;
-        width: 80px;
-    }
-    #textooo1{
-        padding: 4px;
-    }
-    #textooo1>h4{
-        font-size: 10px;
-        padding-bottom: 4px;
-    }
-    #textooo1>p{
-        font-size: 5px;
-    }
-    /************************/
-    #btn_pro{
-        width: 65%;
-        border: 1px solid #ffffff;
+    #parte4>p {
+        font-size: 13px;
         margin-top: 10px;
+        margin-bottom: 30px;
     }
-    #btn_pro>p{
-        font-size: 5px;
-        margin-top: 5px;
-        margin-bottom: 5px;
+    /************************/
+    #proy1 {
+        height: 250px;
+        width: 210px;
+    }
+    #textooo1 {
+        padding: 10px;
+    }
+    #textooo1>h4 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    #textooo1>p {
+        font-size: 12px;
+    }
+    /************************/
+    #btn_pro {
+        grid-column: 4/ 10;
+        width: 60%;
+        border: 1px solid #ffffff;
+        margin-top: 30px;
+    }
+    #btn_pro>p {
+        font-size: 11px;
+        margin-top: 6px;
+        margin-bottom: 6px;
     }
 }
-@media (max-width: 360px){
-    #parte1{
-        gap:0px;
+
+@media (max-width: 320px) {
+    #part1_h1 {
+        grid-column: 2/12;
+        margin-left: 0;
     }
-    #parte2{
-        gap:0px;
+    #part1_p {
+        margin-left: 0;
     }
-    #parte3{
-        gap:0px;
+    #parte1 {
+        gap: 0px;
     }
-    #parte4{
-        gap:0px;
+    #parte2 {
+        gap: 0px;
     }
-}
-@media (max-width: 300px){
-    #parte2>h1{
-        font-size:15px;
+    #parte3 {
+        gap: 0px;
     }
-    #parte2>h1{
-        font-size:15px;
-    }
-    #parte3>h3{
-        font-size: 9px;
-    }
-    #parte4>h2{
-        font-size: 15px;
+    #parte4 {
+        gap: 0px;
     }
 }
