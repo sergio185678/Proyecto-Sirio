@@ -165,6 +165,17 @@ hr {
 .verMas {
     grid-column: 6/ span 2;
     margin-bottom: 32px;
+    transition: transform 1.2s;
+    -webkit-transition: transform 1.2s;
+    -moz-transition: transform 1.2s;
+    -ms-transition: transform 1.2s;
+    -o-transition: transform 1.2s;
+}
+
+.verMas:hover {
+    background-color: white;
+    color: #01111B;
+    transform: scale(1.1);
 }
 
 a.btn:hover {
@@ -173,7 +184,7 @@ a.btn:hover {
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 625px) {
     .grid-layout {
         gap: 0;
     }
