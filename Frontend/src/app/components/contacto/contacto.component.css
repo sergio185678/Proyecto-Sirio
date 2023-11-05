@@ -125,17 +125,21 @@
 }
 
 .socialMedia i {
-    font-size: 3vw;
+    font-size: 5vw;
     margin: 1vw;
-    transition: font-size 0.2s ease;
-    -webkit-transition: font-size 0.2s ease;
-    -moz-transition: font-size 0.2s ease;
-    -ms-transition: font-size 0.2s ease;
-    -o-transition: font-size 0.2s ease;
+    transition: transform 0.2s;
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -ms-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
 }
 
 .socialMedia a:hover i {
-    font-size: 4vw;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .socialMedia a:hover .fa-facebook-f {
@@ -201,9 +205,6 @@
     .title h1 {
         font-size: 7vw;
     }
-    .socialMedia i {
-        font-size: 4vw;
-    }
     .contactInfo p {
         font-size: 2vw;
         font-family: 'Roboto', sans-serif;
@@ -213,7 +214,7 @@
     }
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 607px) {
     .title h1 {
         font-size: 6vw;
     }
@@ -227,10 +228,6 @@
     .form-text {
         height: 8vh;
         border-radius: 5px;
-    }
-    .socialMedia i {
-        font-size: 5vw;
-        padding: 2vw;
     }
     .socialMedia {
         grid-column: 1 / span 10;
@@ -246,7 +243,7 @@
     }
 }
 
-@media screen and (max-width: 442px) {
+@media screen and (max-width: 482px) {
     .background {
         grid-column: 1/ span 12;
     }
@@ -258,7 +255,7 @@
         font-size: 4vw;
     }
     .socialMedia i {
-        font-size: 8vw;
+        font-size: 6vw;
     }
     .form {
         grid-column: 2 /span 8;
@@ -288,9 +285,6 @@
     .form {
         grid-column: 2 /span 9;
         margin-right: 1vw;
-    }
-    .socialMedia {
-        grid-column: 1 / span 11;
     }
     .contactInfo {
         grid-column: 1 / span 11;

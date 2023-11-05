@@ -506,6 +506,7 @@
     #parte2>img {
         margin-top: 15px;
         width: 500px;
+        height: auto;
     }
     /************************/
     #parte3>h3 {
@@ -587,6 +588,7 @@
     #parte2>img {
         margin-top: 15px;
         width: 400px;
+        height: auto;
     }
     /************************/
     #parte3>h3 {
@@ -668,6 +670,7 @@
     #parte2>img {
         margin-top: 15px;
         width: 250px;
+        height: auto;
     }
     /************************/
     #parte3>h3 {

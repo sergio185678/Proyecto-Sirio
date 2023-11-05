@@ -18,6 +18,7 @@
     align-items: center;
     font-family: 'Roboto';
     width: auto;
+    font-size: larger;
 }
 
 
@@ -117,14 +118,14 @@ pero solo saldra cuando se haga hover*/
     width: 100%;
 }
 
-@media (max-width: 2560px) {
+@media (max-width: 2860px) {
     /* Boton Toggler (para abrir el menu en movil) */
     .navbar-toggler {
         font-size: larger;
     }
     /*All navbar */
     .navbar>.container-fluid {
-        font-size: 16px;
+        font-size: larger;
         padding: 14px 20px;
         max-width: 2560px;
     }
