@@ -163,7 +163,7 @@ export class AcercaDirectorioComponent implements OnInit {
         this.smoothScroll();
         this.createStarsBackground();
         this.bubbleCount = 0;
-        // this.intervalId = (setInterval(() => this.createBubbles(), 0.1));
+        this.intervalId = (setInterval(() => this.createBubbles(), 0.1));
         this.studentGroups = this.chunkArray(Object.values(this.areas[areaName].Integrantes || []),2);
       }, 10);
     }

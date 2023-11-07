@@ -4,6 +4,8 @@
     box-sizing: border-box;
     color: aliceblue;
     list-style: none;
+    --scale-factor: 1vw;
+    --scale-factor2: 1vw;
 }
 
 .directorio {
@@ -16,190 +18,216 @@
 
 .directorio-title {
     grid-column: 1 / span 12;
-    font-size: 4vw;
+    font-size: 5vw;
     background-color: #0a0f18;
     justify-content: center;
 }
 
+
 /*President*/
-.president{
-  grid-column: span 12;
-  grid-template-columns: repeat(12, 1fr);
-  display: grid;
-  background: #0D1525;
-  align-items: center;
-  justify-items: center;
+
+.president {
+    grid-column: span 12;
+    grid-template-columns: repeat(12, 1fr);
+    display: grid;
+    background: #0D1525;
+    align-items: center;
+    justify-items: center;
 }
-.cardProfilePresident{
-  grid-column: span 4;
+
+.cardProfilePresident {
+    grid-column: span 4;
 }
-.cardProfilePresident .profilePhoto{
-  margin: 1vw;
-  width: 15vw;
-  height: auto;
+
+.cardProfilePresident .profilePhoto {
+    margin: 1vw;
+    width: 15vw;
+    height: auto;
 }
-.cardInfoPresident{
-  grid-column: 5/ span 8;
-  background-image: url('../../../assets/figure2.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 7vw;
-  padding-bottom: 9vw;
-  margin-top:5vw;
-  margin-bottom:5vw;
+
+.cardInfoPresident {
+    grid-column: 5/ span 8;
+    background-image: url('../../../assets/figure2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 7vw;
+    padding-bottom: 9vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
 }
-.cardInfoPresident .fullName{
-  font-size: 3vw;
-  margin: 0.5vw;
+
+.cardInfoPresident .fullName {
+    font-size: 3vw;
+    margin: 0.5vw;
 }
+
 
 /*MEMBERS*/
 
 .members {
-  grid-column: span 12;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* Divide el contenedor en 2 columnas para 2 tarjetas por fila */
-  background: #0D1525;
-  grid-gap: 1rem;
-  /* Espacio entre las tarjetas de miembros */
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Divide el contenedor en 2 columnas para 2 tarjetas por fila */
+    background: #0D1525;
+    grid-gap: 1rem;
+    /* Espacio entre las tarjetas de miembros */
 }
 
 .cardMember {
-  background-image: url('../../../assets/figure.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-items: center;
-  justify-items: center;
-  padding-top: 7vw;
-  padding-bottom: 15vw;
+    background-image: url('../../../assets/figure.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-items: center;
+    padding-top: 7vw;
+    padding-bottom: 15vw;
 }
 
 .divider {
-  grid-column: 1/ span 12;
-  background-color: #0D1525;
-  height: fit-content;
+    grid-column: 1/ span 12;
+    background-color: #0D1525;
+    height: fit-content;
 }
 
 .hr1 {
-  background-color: white;
-  height: 5px;
-  margin-right: 15vh;
-  margin-left: 15vh;
-  opacity: 100%;
-  border-radius: 50rem
+    background-color: white;
+    height: 5px;
+    margin-right: 15vh;
+    margin-left: 15vh;
+    opacity: 100%;
+    border-radius: 50rem;
+    -webkit-border-radius: 50rem;
+    -moz-border-radius: 50rem;
+    -ms-border-radius: 50rem;
+    -o-border-radius: 50rem;
 }
 
 .memberInfo {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .cardMember .profilePhoto {
-  margin: 1vw;
-  width: 12vw;
-  height: auto;
+    margin: 1vw;
+    width: 12vw;
+    height: auto;
 }
 
 .cardMember .fullName {
-  padding-right: 2.2vw;
-  padding-left: 2.2vw;
-  font-size: 2.5vw;
-  margin: 0.5vw;
+    padding-right: 2.2vw;
+    padding-left: 2.2vw;
+    font-size: 2.5vw;
+    margin: 0.5vw;
 }
 
 .position {
-  font-size: 1.5vw;
-  padding-right: 2.2vw;
-  padding-left: 2.2vw;
-  margin-bottom: 1vw;
-  margin-right: 5vw;
-  margin-left: 5vw;
-}
-
-.description {
-  font-size: 1.2vw;
-  padding-right: 7vw;
-  padding-left: 9vw;
-}
-
-.socialLinks {
-  display: flex;
-}
-
-.socialLinks .socialLink {
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
-  margin-bottom: 1vw;
-  margin-top: 1vw;
-  border-radius: 100%;
-  height: 3vw;
-  width: auto;
-}
-
-@media screen and (max-width: 800px) {
-  .cardInfoPresident{
-    grid-column:span 12;
-    padding-top: 10vw;
-  }
-  .cardProfilePresident{
-    grid-column: span 12;
-    margin-top: 5vw;
-  }
-  .cardProfilePresident .profilePhoto {
-    margin: 1vw;
-    width: 24vw;
-    height: auto;
-  }
-  .cardInfoPresident .fullName {
-    padding-right: 2.2vw;
-    padding-left: 2.2vw;
-    font-size: 5vw;
-    margin: 1vw;
-  }
-  .cardMember {
-    grid-column: span 12;
-    padding-top: 11vw;
-    padding-bottom: 25vw;
-  }
-  .memberInfo {
-    padding-right: 6vw;
-    padding-left: 8vw;
-  }
-  .socialLinks .socialLink {
-    margin: 1vw;
-    border-radius: 100%;
-    height: 7vw;
-    width: auto;
-  }
-  .cardMember .profilePhoto {
-    margin: 1vw;
-    width: 24vw;
-    height: auto;
-  }
-  .cardMember .fullName {
-    padding-right: 2.2vw;
-    padding-left: 2.2vw;
-    font-size: 5vw;
-    margin: 1vw;
-  }
-  .position {
-    font-size: 3vw;
+    font-size: 1.5vw;
     padding-right: 2.2vw;
     padding-left: 2.2vw;
     margin-bottom: 1vw;
     margin-right: 5vw;
     margin-left: 5vw;
-  }
-  .description {
-    font-size: 2.5vw;
+}
+
+.description {
+    font-size: 1.2vw;
     padding-right: 7vw;
     padding-left: 9vw;
-  }
+}
+
+.socialLinks {
+    display: flex;
+}
+
+.socialLinks .socialLink {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    border-radius: 100%;
+    height: 3vw;
+    width: auto;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+
+.socialLinks .socialLink:hover {
+    box-shadow: 0px 0px 20px 0px #000000;
+    border-radius: 50%;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+@media screen and (max-width: 620px) {
+    .cardInfoPresident {
+        grid-column: span 12;
+        padding-top: 10vw;
+    }
+    .cardProfilePresident {
+        grid-column: span 12;
+        margin-top: 5vw;
+    }
+    .cardProfilePresident .profilePhoto {
+        margin: 1vw;
+        width: 24vw;
+        height: auto;
+    }
+    .cardInfoPresident .fullName {
+        padding-right: 2.2vw;
+        padding-left: 2.2vw;
+        font-size: 5vw;
+        margin: 1vw;
+    }
+    .cardMember {
+        grid-column: span 12;
+        padding-top: 11vw;
+        padding-bottom: 25vw;
+    }
+    .memberInfo {
+        padding-right: 6vw;
+        padding-left: 8vw;
+    }
+    .socialLinks .socialLink {
+        margin: 1vw;
+        border-radius: 100%;
+        height: 7vw;
+        width: auto;
+    }
+    .cardMember .profilePhoto {
+        margin: 1vw;
+        width: 24vw;
+        height: auto;
+    }
+    .cardMember .fullName {
+        padding-right: 2.2vw;
+        padding-left: 2.2vw;
+        font-size: 5vw;
+        margin: 1vw;
+    }
+    .position {
+        font-size: 3vw;
+        padding-right: 2.2vw;
+        padding-left: 2.2vw;
+        margin-bottom: 1vw;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+    .description {
+        font-size: 2.5vw;
+        padding-right: 7vw;
+        padding-left: 9vw;
+    }
 }
 
 
@@ -234,14 +262,17 @@
 
 .row1 {
     width: 4vw;
+    height: auto;
 }
 
 .row2 {
     width: 2.5vw;
+    height: auto;
 }
 
 .row3 {
     width: 1vw;
+    height: auto;
 }
 
 .animationRows {
@@ -637,6 +668,10 @@ a {
     margin-bottom: 4%;
 }
 
+.svgPart .Descripcion {
+    font-size: 1vw;
+}
+
 .svgPart p {
     max-width: 42vw;
 }
@@ -675,6 +710,7 @@ a {
 
 .DirSub_PhotoPartIMG {
     width: 20vw;
+    margin-bottom: 30%;
 }
 
 .socialMedia {
@@ -685,8 +721,27 @@ a {
 }
 
 .socialMedia a {
-    margin-right: 0.33vw;
-    margin-top: -6.66vw;
+    margin-right: 1vw;
+}
+
+.socialMedia img {
+    width: 3.5vw;
+    height: auto;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+
+.socialMedia img:hover {
+    box-shadow: 0px 0px 20px 0px #005eff;
+    border-radius: 50%;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .PhotoPart {
@@ -776,181 +831,329 @@ a {
     background-color: #001133;
 }
 
-.socialMediaIntegrante a {
+.socialMediaIntegrante img {
     margin-right: 0.33vw;
+    width: 3.5vw;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
 }
 
+.socialMediaIntegrante img:hover {
+    box-shadow: 0px 0px 20px 0px #005eff;
+    border-radius: 50%;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
 
-/*
-@media screen and (max-width: 2561px) {
-    .container_CircularAreasMenu_Title {
-        font-size: 42px;
-        letter-spacing: 2px;
+@media screen and (max-width: 870px) {
+    * {
+        --scale-factor: 1.2vw;
     }
-    .row1 {
-        width: 120px;
+    .socialMedia img {
+        width: 4vw;
         height: auto;
-    }
-    .row2 {
-        width: 80px;
-        height: auto;
-    }
-    .row3 {
-        width: 40px;
-        height: auto;
-    }
-    .CircularAreasMenu {
-        width: 1200px;
-        height: 1200px;
-    }
-    .animationRows {
-        margin-top: -10%;
-    }
-    .CircularAreasMenu .toggle {
-        width: 460px;
-        height: 460px;
-    }
-    .CircularAreasMenu .toggle .logoSirio {
-        width: 400px;
-        height: auto;
-    }
-    .CircularAreasMenu .backgroundCircle.active {
-        width: 980px;
-        height: 980px;
-    }
-    .CircularAreasMenu .AreaOption {
-        --distance: 375px;
-        top: calc(46% - var(--distance) * cos(var(--angle)));
-        left: calc(45.5% + var(--distance) * sin(var(--angle)));
-    }
-    .CircularAreasMenu .AreaOption .icon {
-        width: 100px;
-        height: 100px;
-    }
-    .CircularAreasMenu .littleCircle {
-        width: 24px;
-        height: 24px;
-    }
-    .CircularAreasMenu .littleCircle {
-        --distance: 270px;
-        top: calc(49% - var(--distance) * cos(var(--angle)));
-        left: calc(48.7% + var(--distance) * sin(var(--angle)));
-    }
-    .listAreasOptions {
-        font-size: 42px;
-        gap: 64px;
-    }
-    .listAreasOptions .MediumCircle {
-        width: 24px;
-        margin-right: 24px;
-    }
-    #AreaSelected .star {
-        bottom: -50px;
-    }
-    .animated {
-        top: 100px;
-    }
-    #AreaSelected_De {
-        font-size: 60px;
-    }
-    #AreaSelected_Title {
-        font-size: 80px;
-    }
-    .svgPart .Nombre {
-        font-size: 60px;
-    }
-    .svgPart .RolCarrera {
-        font-size: 32px;
-    }
-    .svgPart .Descripcion {
-        font-size: 25px;
-    }
-    .iconPart {
-        width: 300px;
     }
     .DirSub_iconPartIMG {
-        width: 300px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    * {
+        --scale-factor2: 1.3vw;
+    }
+    .socialMedia img {
+        width: 5vw;
+        height: auto;
     }
     .DirSub_PhotoPartIMG {
-        width: 600px;
-    }
-    .socialMedia a {
-        margin-right: 5px;
-        margin-top: -100px;
+        align-self: center;
+        justify-self: center;
+        justify-content: center;
     }
     .PhotoPart {
-        margin-right: 8%;
+        grid-row: 1;
+        grid-column: 2 /span 7;
+        align-self: center;
+        justify-self: center;
+        justify-content: center;
+        margin: 0px !important;
     }
-    .simple-line {
-        grid-row: 4;
-        display: grid;
-        grid-column: span 12;
-        height: 5px;
-        margin: 5%;
-        width: 90%;
-        background-color: white;
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        -ms-border-radius: 50px;
-        -o-border-radius: 50px;
+    .iconPart {
+        display: none;
     }
-    .subdirector {
-        grid-row: 5;
+    .svgPart {
+        grid-row: 2;
+        grid-column: 2 /span 6;
+        align-self: center;
+        justify-self: center;
+        justify-content: center;
+        margin-left: 0;
+        padding: 10% 25% 10% 27%;
     }
-    .selectedArea_Integrantes {
-        grid-row: 6;
-        grid-column: span 12;
-        display: grid;
-        background-color: #001133;
+    .socialMediaIntegrante img {
+        width: 5vw;
+        height: auto;
     }
-    .selectedArea_Integrantes h3 {
-        font-family: 'Roboto';
-        font-weight: 700;
-        grid-column: span 12;
-        font-size: 30px;
-        text-align: center;
-        text-decoration: underline;
-        margin-top: 5%;
+}
+
+@media screen and (max-width: 700px) {
+    * {
+        --scale-factor2: 1.5vw;
     }
-    .selectedArea_Integrantes ul {
-        display: grid;
-        grid-column: span 12;
-        grid-template-columns: (2, 1fr);
-        font-size: larger;
+    .socialMedia img {
+        width: 5vw;
     }
-    .selectedArea_Integrantes li {
-        width: fit-content;
-        background: url(../../../assets/images/about/backgroundSVGs/VectorSmall.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        padding: 0 10% 8% 10%;
-        margin: 5% auto 0 auto;
-        display: flex;
-        flex-direction: column;
-        font-family: 'Baloo 2';
-        z-index: 10;
+}
+
+@media screen and (max-width: 656px) {
+    * {
+        --scale-factor: 1.5vw;
+        --scale-factor2: 1.7vw;
     }
-    .selectedArea_Integrantes li .fullName {
-        font-weight: 800;
-        letter-spacing: 5px;
-        text-align: center;
-        font-size: 34px;
+    .animationRows {
+        margin-top: -15%;
     }
-    .selectedArea_Integrantes li .position {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 16px;
+    .socialMedia img {
+        width: 5.5vw;
     }
-    .socialMediaIntegrante {
-        display: flex;
+    .socialMediaIntegrante img {
+        width: 5.5vw;
+        height: auto;
     }
-    .selectedArea_Integrantes .members,
-    .selectedArea_Integrantes .divider {
-        background-color: #001133;
+}
+
+@media screen and (max-width: 561px) {
+    * {
+        --scale-factor: 1.7vw;
+        --scale-factor2: 1.9vw;
     }
-    .socialMediaIntegrante a {
-        margin-right: 5px;
+    .directorio-title {
+        font-size: 8vw;
     }
-} */
+    .socialMedia img {
+        width: 6vw;
+    }
+    .socialMediaIntegrante img {
+        width: 6vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    * {
+        --scale-factor: 2vw;
+        --scale-factor2: 2.5vw;
+    }
+    .directorio-title {
+        font-size: 10vw;
+    }
+    .socialMedia img {
+        width: 10vw;
+    }
+    .socialMediaIntegrante img {
+        width: 10vw;
+        height: auto;
+    }
+    .svgPart {
+        margin-top: -15%;
+        margin-bottom: -15%;
+        padding: 30% 15%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    * {
+        --scale-factor2: 2.7vw;
+    }
+    .directorio-title {
+        font-size: 15vw;
+    }
+    .socialMedia img {
+        width: 13vw;
+    }
+    .socialMediaIntegrante img {
+        width: 13vw;
+        height: auto;
+    }
+    .svgPart {
+        margin-top: -15%;
+        margin-bottom: -15%;
+        padding: 30% 15%;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    * {
+        --scale-factor: 2.5vw;
+        --scale-factor2: 3vw;
+    }
+    .animationRows {
+        margin-top: -25%;
+    }
+    .directorio-title {
+        font-size: 17vw;
+    }
+    .socialMedia img {
+        width: 15vw;
+    }
+    .socialMediaIntegrante img {
+        width: 15vw;
+        height: auto;
+    }
+    .svgPart {
+        margin-top: -15%;
+        margin-bottom: -15%;
+        padding: 35% 5% 35% 10%;
+    }
+}
+
+.row1 {
+    width: calc(4 * var(--scale-factor));
+    height: auto;
+}
+
+.row2 {
+    width: calc(2.5 * var(--scale-factor));
+    height: auto;
+}
+
+.row3 {
+    width: calc(1 * var(--scale-factor));
+    height: auto;
+}
+
+.container_CircularAreasMenu_Title {
+    font-size: calc(2 * var(--scale-factor));
+}
+
+.CircularAreasMenu {
+    width: calc(40 * var(--scale-factor));
+    height: calc(38 * var(--scale-factor));
+}
+
+.CircularAreasMenu .toggle {
+    width: calc(15.33 * var(--scale-factor));
+    height: calc(15.33 * var(--scale-factor));
+}
+
+.CircularAreasMenu .toggle .logoSirio {
+    width: calc(13.33 * var(--scale-factor));
+    height: auto;
+}
+
+.CircularAreasMenu .backgroundCircle.active {
+    width: calc(33.33 * var(--scale-factor));
+    height: calc(33.33 * var(--scale-factor));
+}
+
+.CircularAreasMenu .AreaOption {
+    --distance: calc(12.33 * var(--scale-factor));
+    top: calc(46% - var(--distance) * cos(var(--angle)));
+    left: calc(45.5% + var(--distance) * sin(var(--angle)));
+}
+
+.CircularAreasMenu .AreaOption .icon {
+    width: calc(3.33 * var(--scale-factor));
+    height: calc(3.33 * var(--scale-factor));
+}
+
+.CircularAreasMenu .littleCircle {
+    width: calc(0.8 * var(--scale-factor));
+    height: calc(0.8 * var(--scale-factor));
+}
+
+.CircularAreasMenu .littleCircle {
+    --distance: calc(9 * var(--scale-factor));
+    top: calc(49% - var(--distance) * cos(var(--angle)));
+    left: calc(48.7% + var(--distance) * sin(var(--angle)));
+}
+
+.listAreasOptions {
+    font-size: calc(1.86 * var(--scale-factor));
+}
+
+.listAreasOptions .MediumCircle {
+    width: calc(1.6 * var(--scale-factor));
+    margin-right: calc(1.6 * var(--scale-factor));
+}
+
+#AreaSelected .star {
+    bottom: calc(-3.33 * var(--scale-factor2));
+}
+
+.animated {
+    top: calc(6.66 * var(--scale-factor2));
+}
+
+#AreaSelected_De {
+    font-size: calc(2 * var(--scale-factor2));
+}
+
+#AreaSelected_Title {
+    font-size: calc(2.6 * var(--scale-factor2));
+}
+
+.svgPart .Nombre {
+    font-size: calc(2.26 * var(--scale-factor2));
+}
+
+.svgPart .RolCarrera {
+    font-size: calc(1.06 * var(--scale-factor2));
+}
+
+.svgPart .Descripcion {
+    font-size: calc(1 * var(--scale-factor2));
+}
+
+.svgPart p {
+    max-width: calc(42 * var(--scale-factor2));
+}
+
+.iconPart {
+    width: calc(10 * var(--scale-factor2));
+}
+
+.DirSub_iconPartIMG {
+    width: calc(10 * var(--scale-factor2));
+}
+
+.DirSub_PhotoPartIMG {
+    width: calc(20 * var(--scale-factor2));
+}
+
+.socialMedia a {
+    margin-right: calc(1 * var(--scale-factor2));
+    margin-top: calc(-6.66 * var(--scale-factor2));
+}
+
+.PhotoPart {
+    margin-right: 8%;
+}
+
+.simple-line {
+    height: calc(0.33 * var(--scale-factor2));
+}
+
+.selectedArea_Integrantes h3 {
+    font-size: calc(2 * var(--scale-factor2));
+}
+
+.selectedArea_Integrantes li .fullName {
+    letter-spacing: calc(0.33 * var(--scale-factor2r));
+    font-size: calc(2.26 * var(--scale-factor2));
+}
+
+.selectedArea_Integrantes li .position {
+    font-size: calc(1.06 * var(--scale-factor2));
+}
+
+.socialMediaIntegrante a {
+    margin-right: calc(0.33 * var(--scale-factor2));
+}
