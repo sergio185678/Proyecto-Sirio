@@ -6,7 +6,7 @@
             "concurso":"Concurso Iberoamericano de Satélites Enlatados",
             "categoria":"CanSat",
             "fecha":"2023",
-            "url_img_principal":"../../../../assets/images/proyectos/satellite1_recort.png"
+            "url_img_principal":"../../../../assets/images/proyectos/satellite2_recort.png"
         },
         {
             "id":2,
@@ -14,7 +14,7 @@
             "concurso":"Concurso3",
             "categoria":"Cohete",
             "fecha":"2023",
-            "url_img_principal":"../../../../assets/images/proyectos/satellite2_recort.png"
+            "url_img_principal":"../../../../assets/images/proyectos/satellite1_recort.png"
         }
     ]
 }

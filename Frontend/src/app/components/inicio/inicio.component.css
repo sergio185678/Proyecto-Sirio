@@ -737,3 +737,23 @@
         gap: 0px;
     }
 }
+
+/*Animacion simple de scroll*/
+@keyframes show{
+    from{
+        opacity: 0;
+        scale:25%;
+    }
+    to{
+        opacity: 1;
+        scale:100%;
+    }
+}
+img,h1:not(#part1_h1),p:not(#part1_p),h3,#proyectosss,#btn_pro{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range:entry 25% cover 30%;
+    animation-fill-mode: both;
+}

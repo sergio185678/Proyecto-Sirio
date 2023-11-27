@@ -86,6 +86,12 @@
 #plat div:last-child {
     animation: animastelite2 10s linear infinite;
 }
+#btn-left:hover{
+    scale:1.2;
+}
+#btn-right:hover{
+    scale:1.2;
+}
 
 /*Parte 2 - derecha*/
 

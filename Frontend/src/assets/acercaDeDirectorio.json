@@ -1,64 +1,34 @@
 {
   "membersData": {
     "1":{
-      "url_img": "assets/images/about/members/profile.svg",
-      "facebook": "https://www.facebook.com",
+      "url_img": "assets/images/about/areaSelected/advisor.svg",
+      "facebook": "https://www.facebook.com/joseolidenm",
       "twitter": "",
-      "linkedin": "https://pe.linkedin.com",
-      "instagram": "https://www.instagram.com",
+      "linkedin": "https://www.linkedin.com/in/jos%C3%A9-oliden-mart%C3%ADnez-9b9581b7/",
+      "instagram": "",
       "fullname": "Jose Oliden Martinez",
       "position": "Advisor - Ing. MECATRONICA",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet."
+      "description": "Investigador calificado RENACYT. Magister en Gestión de Proyectos Electromecánicos e Ingeniero Mecatrónico de la Universidad Nacional de Ingeniería. UNI. Primer puesto de la primera promoción. Profesor de la Facultad de Ingeniería Mecánica, especialidad de Ing. Mecatrónica desde el 2001. Ex Director del Centro de Tecnologías de Información de la UNI (CTIC-UNI). Promotor y gestor de proyectos de investigación e innovación de la UNI y otros financiados por FINCYT."
     },
     "2":{
-      "url_img": "assets/images/about/members/profile.svg",
-      "facebook": "https://www.facebook.com",
-      "twitter": "https://www.twitter.com",
-      "linkedin": "https://pe.linkedin.com",
+      "url_img": "assets/images/about/areaSelected/vicepresidenta.svg",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/pamela-diaz-achachao-6bb5961b8/",
       "instagram": "",
       "fullname": "Pamela Diaz Achachao",
       "position": "VICEPRESIDENTA - Ing. MECATRONICA",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet."
+      "description": "Soy una estudiante entusiasta de Ingeniería Mecatrónica con una sólida trayectoria como Presidenta del capítulo Women in Engineering (WIE) en la UPC. Mi compromiso con la equidad de género en tecnología se refleja en mi liderazgo, promoviendo la participación activa de mujeres en el campo. Fui honrada con una beca para participar en el Campamento Internacional de Mujeres en Ciencia en 2016, una experiencia enriquecedora que amplió mis horizontes y me conectó con mentes brillantes a nivel global."
     },
     "3":{
-      "url_img": "assets/images/about/members/profile.svg",
-      "facebook": "https://www.facebook.com",
-      "twitter": "https://www.twitter.com",
-      "linkedin": "https://pe.linkedin.com",
-      "instagram": "https://www.instagram.com",
-      "fullname": "Enmanuel Olivera B.",
-      "position": "TESORERO - Ing. MECATRONICA",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet."
-    },
-    "4":{
-      "url_img": "assets/images/about/members/profile.svg",
-      "facebook": "https://www.facebook.com",
-      "twitter": "https://www.twitter.com",
-      "linkedin": "https://pe.linkedin.com",
-      "instagram": "https://www.instagram.com",
+      "url_img": "assets/images/about/areaSelected/secretario.svg",
+      "facebook": "https://www.facebook.com/kenny.farfanolivares",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/kennyfarfanolivares/",
+      "instagram": "https://www.instagram.com/kenny_farfanolivares",
       "fullname": "Kenny Farfan Olivares",
       "position": "SECRETARIO - Ing. MECATRONICA",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet."
-    },
-    "5":{
-      "url_img": "assets/images/about/members/profile.svg",
-      "facebook": "https://www.facebook.com",
-      "twitter": "https://www.twitter.com",
-      "linkedin": "https://pe.linkedin.com",
-      "instagram": "https://www.instagram.com",
-      "fullname": "Enmanuel Olivera B.",
-      "position": "TESORERO - Ing. MECATRONICA",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet."
-    },
-    "6":{
-      "url_img": "assets/images/about/members/profile.svg",
-      "facebook": "https://www.facebook.com",
-      "twitter": "https://www.twitter.com",
-      "linkedin": "https://pe.linkedin.com",
-      "instagram": "https://www.instagram.com",
-      "fullname": "Kenny Farfan Olivares",
-      "position": "SECRETARIO - Ing. MECATRONICA",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet."
+      "description": "Soy una persona responsable, organizada y proactiva, con capacidad para trabajar en equipo, de buenas relaciones interpersonales y con facilidad de adaptación a nuevos entornos. Considero importante realizar mis labores de la mejor manera posible con predisposición y autocrítica para una mejora constante. Me gusta innovar y dar solución a problemas. Busco consolidar una sólida experiencia profesional a través de mis conocimientos y aprendizaje continuo."
     }
   }
 }

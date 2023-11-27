@@ -17,8 +17,8 @@ body {
 .title {
     grid-column: span 12;
     color: white;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
 }
 
 .title h1 {
@@ -30,7 +30,7 @@ h1 {
     font-family: 'Martel', serif;
 }
 
-p {
+p,h6 {
     font-family: 'Roboto', serif;
 }
 
@@ -52,14 +52,21 @@ p {
     text-align: center;
     background-color: #01111B;
     overflow: hidden;
+    border:2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .new h1 {
-    font-size: 2.8vw;
+    font-size: 2.3vw;
 }
 
 .new p {
-    font-size: 1.4vw;
+    font-size: 1vw;
+}
+.new h6 {
+    font-size: 0.8vw;
+    color: #e8e8e8;
+    font-style: italic;
 }
 
 
@@ -277,8 +284,20 @@ a.btn:hover {
         grid-column: 5/ span 4;
         font-size: 10.8px;
     }
+    .verMas {
+        grid-column: 5/ span 4;
+    }
 }
-
+@media screen and (max-width: 450px) {
+    .verMas a {
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .verMas a {
+        font-size: 7px;
+    }
+}
 @media screen and (max-width: 375px) {
     .title h1 {
         font-family: 'Martel', serif;
@@ -334,21 +353,29 @@ a.btn:hover {
     }
     button.verMas {
         margin: 0px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
-
-/* @media screen and (max-width: 700px) {
-    .new h1 {
-        font-size: 20px;
+@keyframes show{
+    from{
+        opacity: 0;
+        scale:25%;
     }
-    .new p {
-        font-size: 10.8px;
+    to{
+        opacity: 1;
+        scale:100%;
     }
-    .verMas {
-        margin: 40px;
-        grid-column: 5/ span 4;
-    }
-} */
+}
+.new{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range:entry 10% cover 15%;
+    animation-fill-mode: both;
+}
+.inv{
+    display: none;
+}

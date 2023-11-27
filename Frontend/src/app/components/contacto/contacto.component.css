@@ -100,12 +100,6 @@
     justify-content: center;
 }
 
-.buttonDiv {
-    grid-column: 5 / span 2;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-}
-
 
 /*Contact info*/
 
@@ -125,8 +119,9 @@
 }
 
 .socialMedia i {
-    font-size: 5vw;
-    margin: 1vw;
+    font-size: 3vw;
+    margin: 2vw;
+    margin-top: 0;
     transition: transform 0.2s;
     -webkit-transition: transform 0.2s;
     -moz-transition: transform 0.2s;

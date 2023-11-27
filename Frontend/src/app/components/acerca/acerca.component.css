@@ -800,3 +800,23 @@
 .vm-card-title {
     font-size: var(--fontsize-normal-text)
 }
+
+/*Animacion simple de scroll*/
+@keyframes show{
+    from{
+        opacity: 0;
+        scale:25%;
+    }
+    to{
+        opacity: 1;
+        scale:100%;
+    }
+}
+.valores-vision-mision *:not(.valores-vision-mision){
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range:entry 25% cover 30%;
+    animation-fill-mode: both;
+}

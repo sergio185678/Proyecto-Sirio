@@ -3,65 +3,65 @@
         "Director": {
             "Nombre": "Sergio Flores",
             "Carrera": "Ciencias de la Computación",
-            "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
+            "Descripcion": "Soy un joven programador y estudiante de Ciencias de la Computación en la UPC, me caracterizo por mi inquietud y curiosidad innata. Siempre estoy en la búsqueda constante de oportunidades que me permitan expandir mis conocimientos y perfeccionar mis habilidades. Mi verdadera pasión reside en el desarrollo web, donde encuentro un espacio ideal para explorar nuevas tecnologías y tendencias. Disfruto creando experiencias en línea atractivas y funcionales que reflejen mi dedicación a la excelencia en el ámbito de la programación web.",
             "Icon": "assets/images/about/members/iconDesarrolloWeb.svg",
-            "Photo": "assets/images/about/members/profile.svg",
-            "Facebook": "https://www.facebook.com",
-            "Twitter": "https://twitter.com",
-            "Linkedin": "https://www.linkedin.com",
-            "Instagram": "https://instagram.com",
-            "Github": "https://github.com/"
+            "Photo": "assets/images/about/areaSelected/DesarrolloWeb/Sergio_flores.svg",
+            "Facebook": "",
+            "Twitter": "",
+            "Linkedin": "https://pe.linkedin.com/in/sergio-andres-flores-%C3%B1ahuis-83b78a202",
+            "Instagram": "",
+            "Github": "https://github.com/sergio185678"
         },
         "Subdirector": {
             "Nombre": "Danixa Ropón",
             "Carrera": "Ing. Electrónica",
-            "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
-            "Photo": "assets/images/about/members/profile.svg",
-            "Facebook": "https://www.facebook.com",
-            "Linkedin": "https://www.linkedin.com",
-            "Instagram": "https://instagram.com"
+            "Descripcion": "Soy una apasionada ingeniera electrónica graduada de la Universidad Peruana de Ciencias Aplicadas (UPC). Mi formación académica en Ingeniería Electrónica me ha proporcionado una sólida base de conocimientos, permitiéndome explorar y comprender a fondo los aspectos más fascinantes de la electrónica y la tecnología.",
+            "Photo": "assets/images/about/areaSelected/DesarrolloWeb/Danixa.svg",
+            "Facebook": "https://www.facebook.com/danixavaleria",
+            "Linkedin": "https://www.linkedin.com/in/danixa-rop%C3%B3n-yarlequ%C3%A9-484364229/",
+            "Instagram": ""
         },
         "Integrantes": [{
                 "Nombre": "Gabriel Amaya",
                 "Carrera": "Ing. sistemas de información",
-                "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/",
-                "Photo": "assets/images/about/members/profile.svg"
+                "Linkedin": "https://www.linkedin.com/in/gabrielamaya28",
+                "Github": "https://github.com/G4bri3el",
+                "Photo": "assets/images/about/areaSelected/DesarrolloWeb/gabriel.svg"
             },
             {
                 "Nombre": "Mathias Javier",
                 "Carrera": "Ing. software",
-                "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/",
-                "Photo": "assets/images/about/members/profile.svg"
+                "Linkedin": "https://www.linkedin.com/in/mathias-javier-murillo-336738246/",
+                "Github": "",
+                "Photo": "assets/images/about/areaSelected/DesarrolloWeb/mathias.svg"
             },
             {
                 "Nombre": "Kevin Dextre",
                 "Carrera": "Ing. sistemas de información",
-                "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/",
-                "Photo": "assets/images/about/members/profile.svg"
+                "Linkedin": "https://www.linkedin.com/in/kevin-dextre-miguel-19b545254/",
+                "Github": "https://github.com/KevinDextreMiguel",
+                "Photo": "assets/images/about/areaSelected/DesarrolloWeb/kevin_dextre.svg"
             },
             {
                 "Nombre": "Abraham Ayquipa",
                 "Carrera": "Ing. software",
-                "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/",
-                "Photo": "assets/images/about/members/profile.svg"
+                "Linkedin": "https://www.linkedin.com/in/abraham-ayquipa-ubaldo/",
+                "Github": "https://github.com/abrahamayquipa",
+                "Photo": "assets/images/about/areaSelected/DesarrolloWeb/abraham.svg"
             },
             {
                 "Nombre": "Kevin Oliva",
                 "Carrera": "Ing. software",
-                "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/",
-                "Photo": "assets/images/about/members/profile.svg"
+                "Linkedin": "https://www.linkedin.com/in/kevin-oliva-alva/",
+                "Github": "https://github.com/koliva1997",
+                "Photo": "assets/images/about/areaSelected/DesarrolloWeb/kevin_oliva.svg"
             },
             {
                 "Nombre": "Diego Santivañez",
                 "Carrera": "Ing. software",
-                "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/",
-                "Photo": "assets/images/about/members/profile.svg"
+                "Linkedin": "https://www.linkedin.com/in/diegosantivanez/",
+                "Github": "https://github.com/Ergotox",
+                "Photo": "assets/images/about/areaSelected/DesarrolloWeb/Diego_sant.svg"
             },
             {
                 "Nombre": "Ibrahim Arquiñigo",
@@ -73,16 +73,16 @@
             {
                 "Nombre": "Freddy Cuadros",
                 "Carrera": "Ciencias de la Computación",
-                "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/",
-                "Photo": "assets/images/about/members/profile.svg"
+                "Linkedin": "https://www.linkedin.com/in/freddy-alejandro-cuadros-contreras-78a3b724b",
+                "Github": "https://github.com/Alecit13",
+                "Photo": "assets/images/about/areaSelected/DesarrolloWeb/freddy_cuadros.svg"
             },
             {
                 "Nombre": "James Hurtado",
                 "Carrera": "Ing. software",
-                "Linkedin": "https://www.linkedin.com",
-                "Github": "https://github.com/",
-                "Photo": "assets/images/about/members/profile.svg"
+                "Linkedin": "https://www.linkedin.com/in/jamesrhurtado/",
+                "Github": "https://github.com/jamesrhurtado",
+                "Photo": "assets/images/about/areaSelected/DesarrolloWeb/James_Hurtado.svg"
             }
         ]
     },
@@ -90,13 +90,13 @@
         "Director": {
             "Nombre": "Lisha Tintaya",
             "Carrera": "Comunicación Audiovisual y Medios Interactivos",
-            "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
+            "Descripcion": "Soy una entusiasta estudiante universitaria inmersa en la carrera de Comunicación Audiovisual y Medios Interactivos. Mi travesía académica en esta fascinante disciplina me ha llevado a explorar la convergencia entre la narrativa visual y la interactividad digital. Apasionada por la creación de contenido innovador, he participado activamente en proyectos que fusionan el poder de la imagen y la tecnología, buscando transmitir mensajes de manera impactante y memorable.",
             "Icon": "assets/images/about/members/iconDisenio.svg",
-            "Photo": "assets/images/about/members/profile.svg",
-            "Facebook": "https://www.facebook.com",
-            "Twitter": "https://twitter.com",
-            "Linkedin": "https://www.linkedin.com",
-            "Instagram": "https://instagram.com"
+            "Photo": "assets/images/about/areaSelected/Diseño y publicidad/Lisha.svg",
+            "Facebook": "",
+            "Twitter": "",
+            "Linkedin": "https://www.linkedin.com/in/lisha-tintaya-torres/",
+            "Instagram": ""
         },
         "Subdirector": {
             "Nombre": "Cesar Sánchez",
@@ -113,41 +113,41 @@
         "Director": {
             "Nombre": "Alessandro Vicente",
             "Carrera": "Ing. Electrónica",
-            "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
+            "Descripcion": "Como estudiante de Ingeniería Electrónica en la Universidad Peruana de Ciencias Aplicadas, me destaco por mi dedicación y rendimiento académico excepcional, alcanzando el décimo superior de mi promoción. Mi viaje en la carrera ha sido una apasionante exploración de los fundamentos y desafíos de la electrónica, impulsándome a participar activamente en proyectos innovadores y adquirir habilidades prácticas.",
             "Icon": "assets/images/about/members/iconElectronica.png",
-            "Photo": "assets/images/about/members/profile.svg",
-            "Facebook": "https://www.facebook.com",
-            "Twitter": "https://twitter.com",
-            "Linkedin": "https://www.linkedin.com",
-            "Instagram": "https://instagram.com"
+            "Photo": "assets/images/about/areaSelected/Electronica/Alessandro_Vicente.svg",
+            "Facebook": "",
+            "Twitter": "",
+            "Linkedin": "https://www.linkedin.com/in/alessandro-vicente-conislla-343706207",
+            "Instagram": ""
         },
         "Subdirector": {
             "Nombre": "Jean Cueva",
-            "Carrera": "Ing. Mecatrónica",
-            "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
-            "Photo": "assets/images/about/members/profile.svg",
-            "Facebook": "https://www.facebook.com",
-            "Twitter": "https://twitter.com",
-            "Linkedin": "https://www.linkedin.com",
-            "Instagram": "https://instagram.com"
+            "Carrera": "Ing. Electrónica",
+            "Descripcion": "Soy estudiante del 8vo ciclo de Ingeniería Electrónica en la Universidad Peruana de Ciencias Aplicadas. Me encuentro interesado en desarrollarme en áreas de IoT, programación o telecomunicaciones. He adquirido conocimientos en circuitos electrónicos y su construcción, además de trabajar con microcontroladores y sistemas embebidos para proyectos IoT utilizando Linux OS y diferentes tipos de sensores.",
+            "Photo": "assets/images/about/areaSelected/Electronica/Jean_Cueva.svg",
+            "Facebook": "",
+            "Twitter": "",
+            "Linkedin": "https://www.linkedin.com/in/jean-pierre-michael-cueva-rivadeneyra-87935a228/",
+            "Instagram": ""
         },
         "Integrantes": [{
                 "Nombre": "Lalo Villacorta",
                 "Carrera": "Ing. Mecatrónica",
                 "Photo": "assets/images/about/members/profile.svg",
-                "Linkedin": "https://www.linkedin.com"
+                "Linkedin": "https://www.linkedin.com/in/lalo-nandito-villacorta-garcia-6a8a23255/"
             },
             {
                 "Nombre": "Joanna Carrion",
                 "Carrera": "Ing. Electrónica",
-                "Photo": "assets/images/about/members/profile.svg",
-                "Linkedin": "https://www.linkedin.com"
+                "Photo": "assets/images/about/areaSelected/Electronica/Joanna_Carrion.svg",
+                "Linkedin": "https://www.linkedin.com/in/joanna-carrion-perez/"
             },
             {
                 "Nombre": "Paul Gomez",
                 "Carrera": "Ing. Mecatrónica",
-                "Photo": "assets/images/about/members/profile.svg",
-                "Linkedin": "https://www.linkedin.com"
+                "Photo": "assets/images/about/areaSelected/Electronica/Paul_Gomez.svg",
+                "Linkedin": "https://www.linkedin.com/in/paul-gomez-vasquez-04656722b"
             }
         ]
     },
@@ -155,35 +155,35 @@
         "Director": {
             "Nombre": "Harold Huallanca",
             "Carrera": "Ing. Mecatrónica",
-            "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
+            "Descripcion": "Estudiante de 10mo ciclo de la carrera de Ingeniería Mecatrónica perteneciente al quinto superior, becado por el estado peruano bajo el programa de Beca 18. Me considero una persona responsable, dedicado, creativo y apasionado en mi trabajo. Tengo fluidez para trabajar en equipos multidisciplinarios y adaptarme a los cambios. Poseo experiencia como Diseñador Mecánico y desarrollo de Ingeniería de Detalle en FLOURP SOLUCIONES EIRL, también experiencia como Asistente de Investigación en MEDABOTS SAC.",
             "Icon": "assets/images/about/members/iconDisenio.svg",
-            "Photo": "assets/images/about/members/profile.svg",
-            "Facebook": "https://www.facebook.com",
-            "Twitter": "https://twitter.com",
-            "Linkedin": "https://www.linkedin.com",
-            "Instagram": "https://instagram.com"
+            "Photo": "assets/images/about/areaSelected/Mecanica/Harold_Huallanca.svg",
+            "Facebook": "",
+            "Twitter": "",
+            "Linkedin": "https://www.linkedin.com/in/harold-gaudencio-huallanca-escalera-9a8658183",
+            "Instagram": ""
         },
         "Subdirector": {
             "Nombre": "Angel Montes",
             "Carrera": "Ing. Mecatrónica",
-            "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
-            "Photo": "assets/images/about/members/profile.svg",
-            "Facebook": "https://www.facebook.com",
-            "Twitter": "https://twitter.com",
-            "Linkedin": "https://www.linkedin.com",
-            "Instagram": "https://instagram.com"
+            "Descripcion": "Soy estudiante de Ingeniería Mecatrónica, actualmente en el octavo ciclo, y mi ardiente pasión por la tecnología y la innovación impulsa mi búsqueda de oportunidades. Mi experiencia destaca mi participación como miembro del Grupo de Excelencia Académica (GEA), donde he cultivado y perfeccionado habilidades esenciales, tales como la empatía y la colaboración en equipo. Mi firme compromiso con la mecatrónica es mi motor constante para alcanzar la excelencia en cada proyecto en el que me embarco. Estoy ávido por explorar oportunidades que me permitan aportar y prosperar en este emocionante campo.",
+            "Photo": "assets/images/about/areaSelected/Mecanica/Angel_Montes.svg",
+            "Facebook": "",
+            "Twitter": "",
+            "Linkedin": "https://www.linkedin.com/in/angel-luis-montes-ore-5805b128a",
+            "Instagram": ""
         },
         "Integrantes": [{
                 "Nombre": "Scarlet Aguero",
                 "Carrera": "Ing. Mecatrónica",
-                "Photo": "assets/images/about/members/profile.svg",
-                "Linkedin": "https://www.linkedin.com"
+                "Photo": "assets/images/about/areaSelected/Mecanica/Scarlet_Aguero.svg",
+                "Linkedin": "https://www.linkedin.com/in/scarlet-aguero-1687ab271/"
             },
             {
                 "Nombre": "Lucia Zegarra",
                 "Carrera": "Ing. Mecatrónica",
-                "Photo": "assets/images/about/members/profile.svg",
-                "Linkedin": "https://www.linkedin.com"
+                "Photo": "assets/images/about/areaSelected/Mecanica/Lucia_Zegarra.svg",
+                "Linkedin": "https://www.linkedin.com/in/luc%C3%ADa-zegarra-le%C3%B3n-332603193"
             },
             {
                 "Nombre": "Julio Ortiz",
@@ -203,47 +203,47 @@
         "Director": {
             "Nombre": "Elvis De la Torre",
             "Carrera": "Ing. Mecatrónica",
-            "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
+            "Descripcion": "Me considero que el trabajo en equipo es esencial para el éxito de cualquier proyecto, y mi actitud proactiva y capacidad de adaptación me permiten integrarme fácilmente y colaborar con colegas para alcanzar objetivos comunes. Siempre estoy en busca de oportunidades para aprender y crecer profesionalmente, y estoy emocionado por la posibilidad de aportar mi talento y entusiasmo a un equipo liderado por profesionales experimentados.",
             "Icon": "assets/images/about/members/iconDisenio.svg",
-            "Photo": "assets/images/about/members/profile.svg",
-            "Facebook": "https://www.facebook.com",
-            "Twitter": "https://twitter.com",
-            "Linkedin": "https://www.linkedin.com",
-            "Instagram": "https://instagram.com"
+            "Photo": "assets/images/about/areaSelected/Control y Programacion/Elvis De la Torre.svg",
+            "Facebook": "",
+            "Twitter": "",
+            "Linkedin": "https://www.linkedin.com/in/elvisdt",
+            "Instagram": ""
         },
         "Subdirector": {
             "Nombre": "Kenny Farfan",
             "Carrera": "Ing. Mecatrónica",
-            "Descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit, libero ac lacinia sodales, justo elit tincidunt elit, eu interdum orci augue vel dolor. Fusce ullamcorper rhoncus risus, quis laoreet urna varius a. Aenean at bibendum quam. Vestibulum bibendum cursus eros, eu porttitor sapien.",
-            "Photo": "assets/images/about/members/profile.svg",
-            "Facebook": "https://www.facebook.com",
-            "Twitter": "https://twitter.com",
-            "Linkedin": "https://www.linkedin.com",
-            "Instagram": "https://instagram.com"
+            "Descripcion": "Soy una persona responsable, organizada y proactiva, con capacidad para trabajar en equipo, de buenas relaciones interpersonales y con facilidad de adaptación a nuevos entornos. Considero importante realizar mis labores de la mejor manera posible con predisposición y autocrítica para una mejora constante. Me gusta innovar y dar solución a problemas. Busco consolidar una sólida experiencia profesional a través de mis conocimientos y aprendizaje continuo.",
+            "Photo": "assets/images/about/areaSelected/Control y Programacion/Kenny Farfan.svg",
+            "Facebook": "https://www.facebook.com/kenny.farfanolivares",
+            "Twitter": "",
+            "Linkedin": "https://www.linkedin.com/in/kennyfarfanolivares/",
+            "Instagram": "https://www.instagram.com/kenny_farfanolivares"
         },
         "Integrantes": [{
                 "Nombre": "Robert Vásquez",
                 "Carrera": "Ing. Mecatrónica",
-                "Photo": "assets/images/about/members/profile.svg",
-                "Linkedin": "https://www.linkedin.com"
+                "Photo": "assets/images/about/areaSelected/Control y Programacion/Robert Vásquez.svg",
+                "Linkedin": "https://www.linkedin.com/in/robertv-im/"
             },
             {
                 "Nombre": "Raziel Chumacero",
                 "Carrera": "Ing. Mecatrónica",
-                "Photo": "assets/images/about/members/profile.svg",
-                "Linkedin": "https://www.linkedin.com"
+                "Photo": "assets/images/about/areaSelected/Control y Programacion/Raziel Chumacero.svg",
+                "Linkedin": "https://www.linkedin.com/in/razielchumacero/"
             },
             {
                 "Nombre": "Abraham Prado",
                 "Carrera": "Ing. Mecatrónica",
-                "Photo": "assets/images/about/members/profile.svg",
-                "Linkedin": "https://www.linkedin.com"
+                "Photo": "assets/images/about/areaSelected/Control y Programacion/Abraham Prado.svg",
+                "Linkedin": "https://www.linkedin.com/in/abrahamprado"
             },
             {
                 "Nombre": "Renato Gómez",
                 "Carrera": "Ing. Mecatrónica",
-                "Photo": "assets/images/about/members/profile.svg",
-                "Linkedin": "https://www.linkedin.com"
+                "Photo": "assets/images/about/areaSelected/Control y Programacion/Renato Gómez.svg",
+                "Linkedin": "https://www.linkedin.com/in/ren-gomezolazo"
             }
         ]
     }

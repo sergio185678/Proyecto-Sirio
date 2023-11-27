@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import * as http from "http";
 
 @Component({
   selector: 'app-noticias',
@@ -27,6 +26,14 @@ export class NoticiasComponent implements OnInit{
 
   loadMore(){
     this.itemsToShow += 3;
+    const button = document.querySelector('.verMas');
+    if (button) {
+      button.remove();
+    }
+    const elemento = document.getElementById('2');
+    if (elemento) {
+      elemento.classList.remove('inv');
+    }
   }
 
 

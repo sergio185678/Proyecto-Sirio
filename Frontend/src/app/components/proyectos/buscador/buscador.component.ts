@@ -17,7 +17,7 @@ export class BuscadorComponent {
   proyectos:Proyecto[]=[];
   proyectos_filtrados:Proyecto[]=[];
   proyectos_this_year:Proyecto[]=[];
-  proyecto_mostrar:number=1;//0 significa que no muestra ningún proyecto
+  proyecto_mostrar:number=0;//0 significa que no muestra ningún proyecto
 
   constructor(private proyectoservice:ProyectoService){
     this.proyectoservice.getJsonData().subscribe((data)=>{

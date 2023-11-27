@@ -71,11 +71,11 @@
     }
 
     .socialMedia {
-        padding: 3vw 0 2vw 12vw;
+        padding: 3vw 0 2vw 9vw;
     }
 
     .socialMedia svg {
-        height: 3vw;
+        height: 40px;
         width: auto;
         margin-right: 3vh;
         transition: transform 0.2s;
@@ -172,6 +172,9 @@ pero solo saldra cuando se haga hover*/
         .copyright {
             font-size: 20px;
         }
+        .socialMedia svg {
+            height: 30px;
+        }
     }
 
     @media screen and (max-width: 1440px) {
@@ -187,6 +190,9 @@ pero solo saldra cuando se haga hover*/
         }
         .copyright {
             font-size: 18px;
+        }
+        .socialMedia svg {
+            height: 20px;
         }
     }
 
@@ -251,60 +257,67 @@ pero solo saldra cuando se haga hover*/
             height: 6vh;
             width: 6vh;
         }
-        #parte-izquierda {
-            font-size: 11px;
-        }
-        #parte-derecha {
-            padding-top: 6vw;
-            font-size: 11px;
-        }
         .copyright {
             font-size: 11px;
+        }
+        .socialMedia svg {
+            height: 15px;
         }
     }
 
     @media screen and (max-width: 720px) {
-        #parte-izquierda {
-            font-size: 13px;
-        }
-        #parte-derecha {
-            font-size: 13px;
-        }
         .copyright {
             font-size: 13px;
         }
     }
 
     @media screen and (max-width: 673px) {
+        #parte-izquierda {
+            font-size: 11px;
+        }
+        .copyright {
+            font-size: 11px;
+        }
+        #parte-derecha {
+            font-size: 11px;
+        }
         .image img {
             width: 5vh;
             height: 5vh;
-        }
-        #parte-derecha {
-            padding-top: 7vw;
-        }
-        .socialMedia svg {
-            height: 4vw;
-            width: auto;
         }
     }
 
     @media screen and (max-width: 560px) {
+        #parte-izquierda {
+            font-size: 10px;
+        }
+        .copyright {
+            font-size: 10px;
+        }
+        #parte-derecha {
+            font-size: 10px;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
         .socialMedia svg {
-            height: 5vw;
-            width: auto;
+            height: 10px;
         }
     }
 
     @media screen and (max-width: 375px) {
+        #parte-izquierda {
+            font-size: 8px;
+        }
+        .copyright {
+            font-size: 8px;
+        }
+        #parte-derecha {
+            font-size: 8px;
+        }
         .image img {
             width: 5vh;
             height: 5vh;
-        }
-        .socialMedia svg {
-            margin-top: 3vw;
-            height: 7vw;
-            width: auto;
         }
     }
 

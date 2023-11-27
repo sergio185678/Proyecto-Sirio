@@ -2,33 +2,26 @@
   <h1 class="directorio-title">Directorio</h1>
   <div class="president">
     <div class="cardProfilePresident">
-      <img class="profilePhoto" src="assets/images/about/members/profile.svg" />
-      <div class="socialLinks">
-        <a target="_blank" href="https://www.facebook.com"><img class="socialLink"
+      <img class="profilePhoto" src="assets/images/about/areaSelected/presidente.svg" />
+      <div class="socialLinks" style="justify-content: center;">
+        <a target="_blank" href="https://www.linkedin.com/in/jbocanegrah/"><img class="socialLink"
+          src="assets/images/about/members/linkedin.svg" alt="socialLink icon of linkedin" /></a>
+        <a target="_blank" href="https://www.facebook.com/JuniorBocanegraHuilcamango"><img class="socialLink"
             src="assets/images/about/members/facebook.svg" alt="socialLink icon of facebook" /></a>
-        <a target="_blank" href="https://www.twitter.com"><img class="socialLink"
-            src="assets/images/about/members/twitter.svg" alt="socialLink icon of twitter" /></a>
-        <a target="_blank" href="https://pe.linkedin.com"><img class="socialLink"
-            src="assets/images/about/members/linkedin.svg" alt="socialLink icon of linkedin" /></a>
-        <a target="_blank" href="https://www.instagram.com"><img class="socialLink"
-            src="assets/images/about/members/instagram.svg" alt="socialLink icon of instagram" /></a>
       </div>
     </div>
     <div class="cardInfoPresident">
       <h1 class="fullName">Junior Bocanegra Huilcamango</h1>
       <p class="position">Presidente - Ing. Electronica</p>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et venenatis velit. Maecenas
-        faci porttitor sem, et aliquam erat posuere id. Sed molestie, ligula a vestibulum, et aliquam erat posuere
-        id.Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Nulla et venenatis velit. Maecenas faci porttitor sem, et aliquam erat posuere id. Sed
-        molestie, ligula a vestibulum, et aliquam erat posuere id.Lorem ipsum dolor sit amet.</p>
+      <p class="description">Soy un estudiante en el camino de formación como Ingeniero Electrónico, respaldado por una sólida experiencia en liderazgo y gestión. Mi enfoque se centra en la concepción y ejecución de ideas disruptivas dentro del ámbito empresarial, aportando a la planificación estratégica con un toque innovador.
+        En mi papel de emprendedor audaz y agente de cambio, canalizo mi energía hacia la mejora de la calidad de vida de las personas y la contribución al progreso de la sociedad. Mi trayectoria incluye la dirección de equipos en diversos contextos, donde he cultivado la convicción de que la excelencia surge cuando se cuenta con un equipo motivado y comprometido, respaldado por una visión clara y bien definida.</p>
     </div>
   </div>
   <div class="divider">
     <hr class="hr1">
   </div>
   <ng-container *ngFor="let pair of memberPairs; let r = index">
-    <div class="members">
+    <div class="members t_1">
       <div class="cardMember" *ngFor="let member of pair; let i = index">
         <div class="memberInfo">
           <img class="profilePhoto" [src]="member.url_img" alt="profile photo of {{ member.fullname }}" />
@@ -37,10 +30,10 @@
                 src="assets/images/about/members/facebook.svg" alt="socialLink icon of facebook" /></a>
             <a target="_blank" *ngIf="member.twitter" [href]="member.twitter"><img class="socialLink"
                 src="assets/images/about/members/twitter.svg" alt="socialLink icon of twitter" /></a>
-            <a target="_blank" *ngIf="member.linkedin" [href]="member.linkedin"><img class="socialLink"
-                src="assets/images/about/members/linkedin.svg" alt="socialLink icon of linkedin" /></a>
             <a target="_blank" *ngIf="member.instagram" [href]="member.instagram"><img class="socialLink"
                 src="assets/images/about/members/instagram.svg" alt="socialLink icon of instagram" /></a>
+            <a target="_blank" *ngIf="member.linkedin" [href]="member.linkedin"><img class="socialLink"
+                src="assets/images/about/members/linkedin.svg" alt="socialLink icon of instagram" /></a>
           </div>
           <h1 class="fullName">{{ member.fullname }}</h1>
           <p class="position">{{ member.position }}</p>

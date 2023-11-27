@@ -1,9 +1,9 @@
 <div class="grid-layout" id="buscador">
     <div id="parte1">
         <div id="busss">
-            <img src="../../../../assets/images/proyectos/bt-iz.png" (click)="lastyear()">
+            <img id="btn-left" src="../../../../assets/images/proyectos/bt-iz.png" (click)="lastyear()">
             <h3>{{year}}</h3>
-            <img src="../../../../assets/images/proyectos/bt-der.png" (click)="nextyear()">
+            <img id="btn-right"src="../../../../assets/images/proyectos/bt-der.png" (click)="nextyear()">
         </div>
         <div id="plat">
             <div class="proy_girando" *ngFor="let proyecto of proyectos_this_year" style="background-image: url({{proyecto.url_img_principal}});" (click)="aparecer_proyecto(proyecto.id)"></div>
@@ -22,7 +22,7 @@
                       <li><a class="dropdown-item" (click)="op1_0()">-</a></li>
                       <li><a class="dropdown-item" (click)="op1_1('CanSat')">CanSat</a></li>
                       <li><a class="dropdown-item" (click)="op1_1('CubeSat')">CubeSat</a></li>
-                      <li><a class="dropdown-item" (click)="op1_1('PocketSa')">PocketSa</a></li>
+                      <li><a class="dropdown-item" (click)="op1_1('PocketSat')">PocketSat</a></li>
                       <li><a class="dropdown-item" (click)="op1_1('Rocket')">Rocket</a></li>
                       <li><a class="dropdown-item" (click)="op1_1('Rover')">Rover</a></li>
                     </ul>

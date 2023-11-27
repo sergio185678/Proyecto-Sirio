@@ -1210,3 +1210,23 @@ a {
 .socialMediaIntegrante a {
     margin-right: calc(0.33 * var(--scale-factor2));
 }
+
+/*Animacion simple de scroll*/
+@keyframes show{
+    from{
+        opacity: 0;
+        scale:25%;
+    }
+    to{
+        opacity: 1;
+        scale:100%;
+    }
+}
+.president *:not(.president),.t_1 *:not(.t_1){
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range:entry 25% cover 30%;
+    animation-fill-mode: both;
+}
